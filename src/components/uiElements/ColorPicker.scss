@@ -1,0 +1,101 @@
+@import 'style/colors';
+@import 'style/type';
+@import 'style/zed';
+
+$color-picker-width: 15.5rem;
+
+.ColorPicker {
+    align-self: flex-end;
+    visibility: hidden;
+    pointer-events: all;
+    padding: 0 0 0 1.5rem;
+    z-index: zed(optionsMenu);
+    position: absolute;
+    bottom: 3.5rem;
+    right: 0;
+
+    &.visible {
+        visibility: visible;
+    }
+
+    .pickerRoot {
+        flex-direction: row;
+        background-color: color(default, background);
+        border-radius: 1.5rem;
+        display: flex;
+        width: 15.5rem;
+        flex-wrap: wrap;
+        padding: 0 0.25rem;
+        cursor: pointer;
+
+        .colorPick {
+            width: 2rem;
+            height: 2rem;
+            border-radius: 50%;
+            margin: 0.5rem 0.25rem 0.5rem 0.25rem;
+
+            .colorSwatch {
+                width: 2rem;
+                height: 2rem;
+                border-radius: 50%;
+                border: solid 0 white;
+                position: absolute;
+                transition: border 100ms ease-in-out;
+
+                &.bright {
+                    border: 0.5px solid color(form, inputBorder);
+                }
+                &.selected {
+                    border: solid 3px white;
+                }
+            }
+
+            .colorSelect {
+                position: absolute;
+                width: 2rem;
+                height: 2rem;
+                border-radius: 50%;
+                border: solid 1px color(form, inputBorder);
+                opacity: 0;
+                transition: opacity 100ms ease-in-out, border-color 100ms ease-in-out;
+
+                &.selected {
+                    border: solid 2px;
+                    border-color: #111;
+                    opacity: 1;
+                }
+            }
+            .colorCheckmark {
+                position: absolute;
+                width: 2rem;
+                height: 2rem;
+                padding: 0.3125rem 0.625rem;
+            }
+            .diagonal {
+                position: relative;
+                width: 1.35rem;
+                height: 0.1rem;
+                background-color: red;
+                transform: rotate(45deg);
+                top: 0.95rem;
+                left: 0.3rem;
+            }
+            &:hover {
+                .colorSwatch {
+                    border: solid 3px white;
+                }
+                .colorSelect {
+                    opacity: 1;
+                    &.selected {
+                        border: solid 2px;
+                        border-color: #959595;
+                        opacity: 1;
+                    }
+                    &.noColor {
+                        border-color: #111;
+                    }
+                }
+            }
+        }
+    }
+}

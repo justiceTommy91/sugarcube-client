@@ -1,0 +1,16 @@
+@import 'style/colors';
+
+.UploadImageModal {
+    .theatre {
+        max-width: 106rem;
+        left: 50%;
+        transform: translateX(-50%);
+        .modal-header__close {
+            margin: 0.75rem 0.5rem;
+        }
+    }
+    &__content {
+        padding-bottom: 4rem;
+        color: color(default, foreground);
+    }
+}

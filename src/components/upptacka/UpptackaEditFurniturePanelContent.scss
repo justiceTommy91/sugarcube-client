@@ -1,0 +1,81 @@
+@import 'style/colors';
+@import 'style/type';
+
+.UpptackaEditFurniturePanelContent {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 200%;
+    height: 100%;
+    transition: transform cubic-bezier(0.4, 0, 0.2, 1) 300ms;
+    position: relative;
+    &.selectingVariants {
+        transform: translateX(-50%);
+    }
+}
+.UpptackaEditFurniturePanelContent__container--left {
+    display: flex;
+    flex-direction: column;
+    padding: 1.5rem 2rem;
+    height: 100%;
+    overflow-y: scroll;
+}
+.UpptackaEditFurniturePanelContent__container--right {
+    padding: 2rem;
+    .variantsWrapper {
+        padding: 0;
+        .variantSelectionClose--upptacka {
+            width: fit-content;
+            margin-bottom: 1rem;
+        }
+    }
+}
+.UpptackaEditFurniturePanelContent__close {
+    width: fit-content;
+    align-self: flex-end;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    @include upptacka-tertiary-button;
+}
+.UpptackaEditFurniturePanelContent__selected-product {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1.5rem;
+    padding-bottom: 1rem;
+    gap: 1rem;
+    .UpptackaEditFurniturePanelContent__status-stock-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .UpptackaEditFurniturePanelContent__identifier {
+            font-size: 1.25rem;
+        }
+        .UpptackaEditFurniturePanelContent__status {
+            font-weight: bold;
+        }
+    }
+    .UpptackaEditFurniturePanelContent__image-text-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .UpptackaEditFurniturePanelContent__image {
+            width: 11.5rem;
+        }
+        .UpptackaEditFurniturePanelContent__text-container {
+            display: flex;
+            flex-direction: column;
+            width: 17.75rem;
+            .UpptackaEditFurniturePanelContent__name,
+            .UpptackaEditFurniturePanelContent__description {
+                @include body-xl;
+            }
+            // not using text-transform: capitalize as there are some words we dont want capitalized
+            .UpptackaEditFurniturePanelContent__description:first-letter {
+                text-transform: uppercase;
+            }
+            .UpptackaEditFurniturePanelContent__price {
+                margin: 1rem 0 1.5rem 0;
+            }
+        }
+    }
+}

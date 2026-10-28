@@ -1,0 +1,108 @@
+@import 'style/type';
+@import 'style/colors';
+@import 'style/zed';
+
+.DesignSummaryModalMobile {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: white;
+    z-index: zed(modalBaseLayer);
+    overflow-y: auto;
+    padding: 4rem 0;
+
+    .backButton {
+        border-radius: 50%;
+        cursor: pointer;
+        &:hover {
+            background-color: color(cta, tertiary);
+        }
+        &:active {
+            background-color: color(cta, tertiaryDarker);
+        }
+    }
+    .modalHeader {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        @include heading-md;
+        font-weight: 600;
+        padding: 1.5rem;
+        .logoHome {
+            width: 4.25rem;
+            img {
+                width: inherit;
+            }
+        }
+    }
+    .modalBody {
+        .modalBodyHeader {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            @include heading-md;
+            font-weight: 600;
+            margin-bottom: 1.75rem;
+            padding: 0 1.5rem;
+            .compositionName {
+                @include body-md;
+            }
+        }
+        .modalCompositionImage {
+            margin-bottom: 4rem;
+            img {
+                width: 100%;
+            }
+        }
+        .shopDesign {
+            @include body-lg;
+            font-weight: 600;
+            margin-bottom: 1.5rem;
+            padding: 0 1.5rem;
+        }
+        .centerSpacedItems {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .priceText {
+            @include body-md;
+            font-weight: 600;
+        }
+        .priceValue {
+            @include body-lg;
+            font-weight: 600;
+        }
+        .totalPrice {
+            margin-bottom: 2rem;
+            padding: 0 1.5rem;
+        }
+        .ctas {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 1.5rem;
+            .DesignSummaryModalMobile__add-room-button {
+                position: relative;
+                min-width: 15rem;
+            }
+            .favoriteAllCta {
+                margin-left: 1rem;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+        }
+        .productsInRoom {
+            margin: 2.5rem 0;
+            .ProductItemContainer {
+                touch-action: unset;
+                .ProductItem .itemImageContainer .imageContainer {
+                    touch-action: unset;
+                }
+            }
+        }
+    }
+}

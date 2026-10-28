@@ -1,0 +1,37 @@
+@import 'style/colors';
+@import 'style/type';
+
+.ToggleTab {
+    @include body-sm;
+    font-weight: 700;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0 1.5rem;
+    block-size: 2.5rem;
+    border-radius: 2rem;
+    cursor: pointer;
+
+    .ToggleTab__icon {
+        display: none;
+    }
+
+    &[aria-selected='true'] {
+        box-shadow: 0px 4px 16px 0px rgba(0, 0, 0, 0.05);
+        background-color: color(brand, secondaryText);
+
+        .ToggleTab__icon {
+            display: block;
+        }
+    }
+
+    &.isUpptacka {
+        width: 100%;
+        justify-content: space-between;
+        padding: 1.75rem 1.5rem;
+        font-size: 1.25rem;
+        line-height: 1.2;
+    }
+}

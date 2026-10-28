@@ -1,0 +1,13 @@
+@import 'style/zed';
+
+.PlacementIndicator {
+    position: absolute;
+    z-index: zed(above);
+    pointer-events: none;
+    transform: translateX(-50%);
+    display: none;
+
+    &.isVisible {
+        display: block;
+    }
+}

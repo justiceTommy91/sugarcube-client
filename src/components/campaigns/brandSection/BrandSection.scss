@@ -1,0 +1,23 @@
+@import 'style/colors';
+@import 'style/type';
+@import 'style/screen';
+
+.BrandSection {
+    @include heading-md;
+    display: flex;
+    font-weight: 700;
+    align-items: center;
+    margin-bottom: 1.2em;
+    color: color(cta, primary);
+    margin-top: 3.5rem;
+
+    @include md {
+        @include heading-md;
+    }
+
+    .paintBrushIcon {
+        height: 2rem;
+        width: 2rem;
+        margin-right: 0.875rem;
+    }
+}

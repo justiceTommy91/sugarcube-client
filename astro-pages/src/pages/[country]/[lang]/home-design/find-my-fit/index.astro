@@ -1,0 +1,9 @@
+---
+import { generateLocaleStaticPaths } from '@lib/static-paths-utils'
+
+export async function getStaticPaths() {
+    return generateLocaleStaticPaths()
+}
+
+return Astro.redirect(`/${Astro.params.country}/${Astro.params.lang}/home-design/find-my-fit/landing/`)
+---

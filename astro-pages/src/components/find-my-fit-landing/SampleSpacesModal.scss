@@ -1,0 +1,56 @@
+@import 'style/type';
+@import 'style/colors';
+
+.SampleSpacesModal {
+    .prompt__content {
+        padding: 2rem 1.5rem 0;
+    }
+
+    .prompt__heading {
+        @include heading-md;
+        margin-bottom: 1.25rem;
+    }
+
+    .modal-body {
+        padding: 0 0 1.5rem;
+    }
+
+    &__grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 0.75rem;
+    }
+
+    &__error {
+        @include body-md;
+        text-align: center;
+        padding: 2rem 0;
+        color: color(default, description);
+    }
+
+    &__tile {
+        display: flex;
+        flex-direction: column;
+        background: none;
+        border: none;
+        padding: 0;
+        cursor: pointer;
+        text-align: left;
+        border-radius: 0.5rem;
+        overflow: hidden;
+
+        &:hover img,
+        &:active img {
+            opacity: 0.85;
+        }
+    }
+
+    &__tile-image {
+        width: 100%;
+        aspect-ratio: 1;
+        object-fit: cover;
+        border-radius: 0.5rem;
+        display: block;
+        transition: opacity 0.15s ease;
+    }
+}

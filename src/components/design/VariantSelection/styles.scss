@@ -1,0 +1,108 @@
+@import 'style/type';
+@import 'style/colors';
+@import 'style/zed';
+
+.VariantSelection {
+    height: 100%;
+    width: 100%;
+    overflow: auto;
+    .variantsWrapper {
+        overflow-y: auto;
+        display: flex;
+        flex-direction: column;
+        padding: 2rem;
+        padding-inline: 1.5rem;
+    }
+    .variantSelectionClose {
+        align-self: flex-end;
+        margin-bottom: 1rem;
+    }
+    .variantTitle {
+        @include body-lg;
+        font-weight: 600;
+        margin-bottom: 1.5rem;
+    }
+    .variantValues {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 1rem;
+        &:first-letter {
+            text-transform: uppercase;
+        }
+        &.selected {
+            border: solid 2px color(default, hint);
+            border-radius: 0.25rem;
+        }
+        .variantValue {
+            @include body-md;
+            font-weight: 600;
+            margin-bottom: 1rem;
+            outline: solid 2px transparent;
+            position: relative;
+
+            .variantSwapButton {
+                display: flex;
+                align-items: center;
+                padding: 1.5rem 1rem;
+                width: 100%;
+                border: 2px solid color(default, border);
+                border-radius: 0.25rem;
+
+                &.selected,
+                &:hover {
+                    border: 2px solid color(default, hint);
+                }
+
+                .variantValueOptions {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    width: 100%;
+                    .valueWrapper {
+                        display: flex;
+                        flex-direction: column;
+                        align-items: flex-start;
+                        align-content: flex-start;
+                    }
+                }
+
+                .variantCurrencyText {
+                    font-weight: bold;
+                    font-size: 0.825rem;
+                }
+
+                .variantValueKey {
+                    font-size: 0.825rem;
+                    font-weight: bold;
+                }
+                .variantValueKey:first-letter {
+                    text-transform: uppercase;
+                }
+
+                .variantDisabledValue {
+                    font-size: 0.75rem;
+                    opacity: 0.5;
+                }
+                .variantThumbImage {
+                    width: 3.375rem;
+                    height: 3.375rem;
+                    padding: 0.5rem;
+                    margin-right: 1.25rem;
+                }
+            }
+        }
+    }
+    &.isUpptacka {
+        .variantDisabledValue {
+            text-align: left;
+        }
+        .variantTitle,
+        .variantValues .variantValue .variantSwapButton .variantValueKey,
+        .variantValues .variantValue .variantSwapButton .variantCurrencyText {
+            @include body-xl;
+        }
+        .variantValues .variantValue .variantSwapButton .variantDisabledValue {
+            @include body-lg;
+        }
+    }
+}

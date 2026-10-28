@@ -1,0 +1,46 @@
+@import 'style/type';
+@import 'style/colors';
+
+.Planner {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow-y: hidden;
+
+    h3 {
+        @include heading-md;
+    }
+    .stepContainer {
+        padding: 0 2rem 2rem 2rem;
+        flex: 1;
+        overflow-y: auto;
+        overflow-x: hidden;
+    }
+    .Planner__stepHeader {
+        padding: 4rem 2rem 1rem 2rem;
+    }
+    .Planner__progress {
+        @include subheader;
+        color: color(default, subHeader);
+    }
+    .Planner__stepHeading {
+        @include heading-md;
+        font-weight: 700;
+    }
+    .navFooter {
+        display: flex;
+        gap: 1rem;
+        padding: 2rem;
+        border-top: 1px solid color(default, border);
+
+        button {
+            width: 100%;
+        }
+    }
+
+    .debugButtonContainer {
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+}

@@ -1,0 +1,45 @@
+@import 'style/colors';
+@import 'style/type';
+@import 'style/zed';
+
+.MagicEraserTutorial {
+    background-color: color(cta, tertiary);
+    .modalContainer {
+        .modalPrompt {
+            border-radius: 1rem;
+            .tutorialFooter {
+                display: flex;
+                justify-content: space-around;
+                button {
+                    max-height: 3.5rem;
+                    &:first-of-type {
+                        margin-right: 1rem;
+                    }
+                }
+            }
+            .headerImage {
+                display: flex;
+                justify-content: center;
+                margin-top: 1rem;
+                width: fit-content;
+                img {
+                    width: 50%;
+                }
+                .designImage {
+                    margin-top: -2.5rem;
+                    width: 100%;
+                }
+            }
+            h2 {
+                margin-top: 1rem;
+            }
+            .modalContent {
+                p {
+                    @include body-lg;
+                    line-height: 1.625rem;
+                    margin-top: -0.5rem;
+                }
+            }
+        }
+    }
+}

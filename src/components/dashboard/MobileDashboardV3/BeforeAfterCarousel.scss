@@ -1,0 +1,108 @@
+@use 'style/colors' as *;
+@use 'style/typography' as *;
+@use 'style/screen' as *;
+
+#MobileDashboardV3 .BeforeAfterCarousel {
+    --slide-spacing: var(--carousel-slide-spacing);
+    position: relative;
+    padding: 3.5rem var(--page-frame-padding);
+    background-color: $color-gray;
+    &__heading {
+        @include typography-base;
+        @include heading-xl;
+        line-height: 1.5;
+    }
+    &__description {
+        @include typography-base;
+        @include body-l;
+        margin-top: 0.75rem;
+    }
+
+    &__viewport {
+        overflow: hidden;
+        padding: 0 var(--page-frame-padding);
+        margin: 1.25rem calc(var(--page-frame-padding) * -1) 0;
+    }
+
+    &__container {
+        display: flex;
+        align-items: center;
+        margin-left: calc(var(--slide-spacing) * -1);
+    }
+
+    &__slide {
+        flex: 0 0 20rem;
+        padding-left: var(--slide-spacing);
+        position: relative;
+
+        @include skapa-l {
+            flex: 0 0 calc(50% - var(--slide-spacing) / 2);
+        }
+    }
+
+    &__image-container {
+        position: relative;
+        width: 100%;
+        aspect-ratio: 4 / 3;
+        overflow: hidden;
+        border-radius: 0.5rem;
+    }
+
+    &__frame {
+        height: 100%;
+
+        &--before {
+            opacity: 1;
+            z-index: 2;
+            position: relative;
+            animation: ba-show 5.2s ease-in-out infinite;
+        }
+
+        &--after {
+            opacity: 0;
+            z-index: 1;
+            position: absolute;
+            inset: 0;
+            animation: ba-show 5.2s ease-in-out infinite;
+            animation-delay: -2.6s;
+        }
+    }
+
+    &__image {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    &__tag {
+        position: absolute;
+        top: 0.5rem;
+        right: 0.5rem;
+        padding: 0.5rem;
+        z-index: 3;
+    }
+
+    &__controls {
+        display: flex;
+        justify-content: flex-end;
+        margin-top: 1.25rem;
+        gap: 0.5rem;
+        z-index: 10;
+    }
+}
+
+@keyframes ba-show {
+    0%,
+    38.46% {
+        opacity: 1;
+    }
+    50%,
+    88.46% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+

@@ -1,0 +1,140 @@
+@use 'style/typography' as *;
+@use 'style/screen' as *;
+@use 'style/colors' as *;
+
+.UploadHeroSection {
+    width: 100%;
+
+    &__hero-image {
+        width: 100%;
+        height: 100%;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 3rem;
+        color: white;
+        position: relative;
+        text-align: center;
+        padding: 4rem 2rem;
+        @include skapa-l {
+            padding: 5.5rem 2rem;
+        }
+
+        &::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            pointer-events: none;
+            background: #00000080;
+            transition: backdrop-filter 0.25s ease-in-out;
+            backdrop-filter: blur(0.3125rem);
+        }
+
+        &.isDragging::before {
+            backdrop-filter: blur(0.5rem) grayscale(40%) brightness(1.1);
+        }
+
+        > * {
+            position: relative;
+            z-index: 1;
+        }
+    }
+
+    &__icon {
+        width: 5rem;
+        height: 5rem;
+        // Offset the extra spacing added by ingka skapa icon
+        margin-bottom: -1rem;
+    }
+
+    &__hero-heading {
+        @include typography-base;
+        @include display-m;
+        line-height: 1.5;
+    }
+
+    &__status {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+        min-height: 8.25rem;
+
+        .BouncingBallLoader {
+            // Using !important here to override the more specific #DashboardPage.BouncingBallLoader styling
+            min-height: 0 !important;
+        }
+
+        p {
+            @include typography-base;
+            @include body-l;
+            margin: 0;
+        }
+    }
+
+    &__buttons {
+        display: flex;
+        flex-direction: column;
+        gap: 1.25rem;
+    }
+
+    &__auth-buttons {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    &__drag-drop-text {
+        padding: 0 2rem;
+        height: 3.5rem;
+        display: flex;
+        border-radius: 2rem;
+        align-items: center;
+        justify-content: center;
+        @include typography-base;
+        @include label-m;
+        transition: background 0.25s ease-in-out;
+
+        &.isDragging {
+            background: rgba(255, 255, 255, 0.25);
+        }
+    }
+    &__upload-disclaimer {
+        @include typography-base;
+        @include body-s;
+        color: rgba($color-white, 0.75);
+        text-align: center;
+        padding: 0 2rem;
+        margin: 0;
+    }
+
+    &__upload-disclaimer-link {
+        color: rgba($color-white, 0.75);
+        text-decoration: underline;
+
+        &:hover {
+            color: $color-white;
+        }
+    }
+
+    &__footer-text {
+        @include typography-base;
+        @include body-m;
+        display: flex;
+        &--vertical {
+            flex-direction: column;
+            gap: 0.5rem;
+        }
+        &--horizontal {
+            flex-direction: row;
+            p + p::before {
+                content: '•';
+                padding: 0 1rem;
+            }
+        }
+    }
+}

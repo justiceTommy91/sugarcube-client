@@ -1,0 +1,41 @@
+@import 'style/colors';
+@import 'style/type';
+
+.KioskIdlePopup {
+    .kioskPromptBody {
+        color: color(default-invert, foreground);
+
+        .prompt__content-wrapper {
+            background: color(brand, secondary);
+            padding: 9rem 14rem;
+            max-width: 90%;
+            text-align: center;
+            width: 73rem;
+
+            h2 {
+                @include heading-lg;
+            }
+            p {
+                @include body-xl;
+                padding-top: 0.5rem;
+                width: 100%;
+            }
+            .modal-footer {
+                padding-top: 6rem;
+
+                button {
+                    span {
+                        @include body-xl;
+                        padding: 0.75rem 0;
+                    }
+                    &.btn--tertiary {
+                        span {
+                            background-color: color(default, background);
+                            color: color(brand, secondary);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

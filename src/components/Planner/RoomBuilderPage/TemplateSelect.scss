@@ -1,0 +1,42 @@
+@import 'style/colors';
+@import 'style/type';
+
+.TemplateSelect {
+    .templates {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 3.25rem;
+        justify-content: center;
+        padding: 2rem;
+
+        .TemplateButton {
+            outline: 2px solid transparent;
+            border-radius: 2px;
+            transition: outline-color 0.25s ease;
+            display: block;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            img {
+                width: 9.25rem;
+                height: 9.25rem;
+            }
+            .templateName {
+                @include body-md;
+                color: color(default, subHeader);
+                align-self: center;
+                padding-top: 0.5rem;
+                &.isActive,
+                &.isSelected {
+                    font-weight: bold;
+                    color: color(default, foreground);
+                }
+            }
+            &:disabled {
+                pointer-events: none;
+                opacity: 50%;
+            }
+        }
+    }
+}

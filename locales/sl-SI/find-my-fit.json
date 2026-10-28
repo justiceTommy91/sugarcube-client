@@ -1,0 +1,134 @@
+{
+  "find-my-fit": {
+    "actions": {
+      "takePhoto": "Posnemite fotografijo",
+      "uploadPhoto": "Naložite fotografijo"
+    },
+    "chooseSample": {
+      "scene_0": "Sprostitveni kotiček",
+      "scene_1": "Moody kotiček",
+      "title": "Izberite vzorčni prostor in ga preizkusite"
+    },
+    "csat": {
+      "bad": "Slaba",
+      "cancel": "Prekliči",
+      "describeIt": "Povejte nam več",
+      "dissatisfied": "Nezadovoljni",
+      "good": "Dobro",
+      "goodOrBad": "Hvala! Z veseljem bi izvedeli, zakaj ste izbrali prav to. Kaj je bilo v tej izkušnji dobrega ali slabega?",
+      "neutral": "Nevtralno",
+      "privacyText": "Za zaščito zasebnosti se izogibaj navajanju osebnih podatkov (npr. e-pošta, telefon).",
+      "ratingDescription": "Vaše povratne informacije nam bodo pomagale izboljšati izkušnjo.",
+      "satisfied": "Zadovoljni",
+      "submit": "Pošlji",
+      "title": "Kakšne so vaše izkušnje?"
+    },
+    "hero": {
+      "imageAlt": "Police",
+      "subtitle": "Dodajte fotografijo in pridobite priporočila.",
+      "title": "Poiščite skladiščenje, ki ustreza vašemu prostoru"
+    },
+    "landing": {
+      "actions": {
+        "addPhoto": "Dodaj fotografijo",
+        "takePhoto": "Posnemite fotografijo",
+        "trySampleSpace": "Preizkusi vzorčni prostor",
+        "uploadPhoto": "Naložite fotografijo"
+      },
+      "comingSoon": {
+        "appStoreBadgeAlt": "Prenesi v aplikacijo App Store",
+        "designOnDesktop": "Oblikovanje na namizju",
+        "getApp": "Z aplikacijo IKEA oblikujte prostor",
+        "googlePlayBadgeAlt": "Pridobite ga v storitvi Google Play",
+        "kreativLink": "IKEA Kreativ povezava",
+        "linkCopied": "Kopiranje povezave",
+        "title": "Ta funkcija bo kmalu na voljo!"
+      },
+      "features": {
+        "compare": {
+          "title": "Podrsajte in hitro primerjajte možnosti"
+        },
+        "intro": {
+          "title": "Nakupovanje za shranjevanje je enostavno z aplikacijo Find My Fit"
+        },
+        "save": {
+          "title": "Najljubši predmeti in iskanje \"tistega pravega\""
+        },
+        "setArea": {
+          "title": "Narišite ciljno območje"
+        }
+      },
+      "hero": {
+        "genericCategory": "shranjevanje",
+        "imageAlt": "Slike predmetov za shranjevanje",
+        "privacyNote": "Ne nalagaj slik z osebami, osebnimi podatki ali zasebnimi predmeti. Preberi več v našem <1>pravilniku o zasebnosti</1>.",
+        "subtitle": "Uporabite fotografijo in prelistajte sloge spletne strani {{subject}} , da se prilegajo določenemu območju",
+        "title": "Poiščite skladiščenje, ki ustreza vašemu prostoru",
+        "videoAlt": "Predstavitev funkcije Find My Fit"
+      },
+      "page": {
+        "description": "Naložite fotografijo in poiščite police, ki ste jih med raziskovanjem našli, da boste dobili pravi videz in prileganje brez ugibanj.",
+        "title": "Poišči moj Fit"
+      },
+      "sampleSpaces": {
+        "error": "Prišlo je do napake. Poskusi znova.",
+        "title": "Izberi vzorčni prostor"
+      }
+    },
+    "loginPrompt": {
+      "body": "Če želite dobiti priporočila za shranjevanje za svoj prostor, se prijavite ali ustvarite brezplačen račun IKEA.",
+      "logIn": "Prijavite se",
+      "signUp": "Prijavite se",
+      "title": "Prijavite se, če želite naložiti fotografijo"
+    },
+    "page": {
+      "description": "Z družbo IKEA poiščite popolno opremo za svoj dom",
+      "title": "Poišči moj Fit"
+    },
+    "toasts": {
+      "unableToFavorite": "Žal nam je, vendar vašega izdelka nismo mogli dodati na seznam."
+    },
+    "viewer": {
+      "accessibilityDescription": "Funkcija Find My Fit na podlagi fotografije tvojega prostora predlaga izdelke podjetja IKEA, ki ustrezajo izbranemu območju. Risanje in vizualna interakcija sta lahko izziv za vse, ki imajo okvaro vida ali slabše vidijo. Ob prikazu rezultatov so enostavno dostopne tudi podrobnosti o izdelkih, cenah in možnostih nakupa.",
+      "addToBag": "Dodaj v vrečko",
+      "adjustHeader": "Prilagodite območje iskanja",
+      "clearDrawing": "Jasna risba",
+      "confirmDimension": "Potrdite dimenzijo",
+      "continue": "Nadaljuj",
+      "continueAriaLabel": "Nadaljujte naprej",
+      "decreaseDimension": "Zmanjšanje dimenzije",
+      "dimDepth": "Globina",
+      "dimHeight": "Višina",
+      "dimWidth": "Širina",
+      "done": "Končano",
+      "doneAriaLabel": "Končano urejanje",
+      "drawFocusArea": "Narišite želeno območje osredotočenja",
+      "drawingHeader": "Kje želite imeti shrambo?",
+      "editArea": "Območje urejanja",
+      "fewResultsToast": "Če želite dobiti več rezultatov, poskusite spremeniti velikost območja iskanja.",
+      "goBack": "Nazaj",
+      "goToImage": "Pojdi na sliko {{index}}",
+      "increaseDimension": "Povečanje dimenzije",
+      "magicEraser": "Čarobni brisalec",
+      "noResults": "Za ta prostor ni bilo najdenih nobenih izdelkov.",
+      "noResultsButton": "Ni bilo najdenih rezultatov",
+      "noResultsTitle": "Ni bilo najdenih rezultatov",
+      "removedFromFavorites": "Odstranjeno iz FAVORITov",
+      "removeFavorite": "Odstrani iz FAVORIT",
+      "retrySearch": "Poskusite znova",
+      "savedToFavorites": "Shranjeno v FAVORIT",
+      "saveFavorite": "Shrani med favorite",
+      "search": "Iskanje",
+      "searchError": "Ni bilo najdenih ustreznih izdelkov. Poskusite narisati drugo območje.",
+      "searchErrorToast": "Nekaj je šlo narobe. Poskusi znova.",
+      "searching": "Iskanje...",
+      "seeAllResults": "Oglejte si vse rezultate",
+      "showMoreDetails": "Pokaži več podrobnosti",
+      "swipeForMore": "Podrsnite za več",
+      "tapToSelect": "Tapnite za izbiro elementa",
+      "tryAgain": "Poskusite znova",
+      "viewResults_one": "Oglejte si rezultate na {{count}}",
+      "viewResults_other": "Oglejte si rezultate na {{count}}"
+    }
+  }
+}

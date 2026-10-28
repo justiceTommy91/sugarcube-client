@@ -1,0 +1,43 @@
+@import 'style/colors';
+@import 'style/type';
+@import 'style/screen';
+
+.CampaignPage {
+    max-width: 112rem;
+    margin: 0 auto;
+    padding: 0 3rem;
+
+    @include mob {
+        padding: 0 1.2rem;
+    }
+
+    .brandName {
+        @include body-lg;
+        font-weight: 700;
+        margin-bottom: 1.5rem;
+        padding-left: 0.75rem;
+
+        .paintBrushIcon {
+            margin-right: 0.875rem;
+        }
+    }
+
+    // 1) default spacing on every wrapper
+    > .CampaignPage__section {
+        margin: 3rem 0;
+
+        @include sm {
+            margin: 5.5rem 0;
+        }
+
+        // 2) first wrapper is the brand ⇒ strip all its margin
+        &:first-of-type {
+            margin: 0;
+        }
+
+        // 3) second wrapper ⇒ kill only its top‐margin
+        &:nth-of-type(2) {
+            margin-top: 0;
+        }
+    }
+}

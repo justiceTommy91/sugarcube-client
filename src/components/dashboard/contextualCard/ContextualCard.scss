@@ -1,0 +1,250 @@
+@use 'style/typography' as *;
+
+@import 'style/colors';
+@import 'style/type';
+@import 'style/screen';
+@import 'style/a11y';
+
+.ContextualCard {
+    background-color: color(default, backgroundAlt);
+    margin-top: 3.5rem;
+
+    margin-bottom: 4.5rem;
+
+    @include skapa-l {
+        margin-bottom: 0;
+    }
+
+    .content {
+        max-width: 112rem;
+        margin: 0 auto;
+        float: none;
+        padding-top: 3rem;
+        padding-left: 3rem;
+        padding-right: 3rem;
+        padding-bottom: 6rem;
+    }
+
+    .header {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        column-gap: 2rem;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+
+        .learnMoreButton {
+            display: inline;
+            align-self: center;
+
+            display: none;
+
+            @include skapa-l {
+                display: inline;
+            }
+        }
+
+        .contextualHeader {
+            display: flex;
+            flex-direction: row;
+
+            .images {
+                display: flex;
+                flex-direction: row-reverse;
+
+                .imageContainer {
+                    width: 6.5rem;
+                    height: 6.5rem;
+                    padding: 1rem;
+                    background-color: white;
+                    border: 1px solid color(default, border);
+                    border-radius: 50%;
+                    margin-left: -1.5rem;
+
+                    &:last-child {
+                        margin-left: 0;
+                    }
+
+                    &:first-child {
+                        margin-right: 2rem;
+                    }
+
+                    &.planner {
+                        width: 9.375rem;
+                        border-radius: 0;
+                        padding: 0;
+                        margin-left: 0;
+                        aspect-ratio: 4/3;
+
+                        &:first-child {
+                            margin-right: 2rem;
+                        }
+
+                        .productImage {
+                            object-fit: cover;
+                            width: 9.375rem;
+                        }
+                    }
+                }
+
+                .productImage {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                    padding: 0.25rem;
+                }
+
+                &.planner .productImage {
+                    padding: 0;
+                }
+            }
+
+            .info {
+                display: flex;
+                flex-direction: column;
+                align-content: center;
+                justify-content: center;
+
+                p {
+                    margin-bottom: 0.5rem;
+
+                    color: color(default, info);
+                }
+
+                h2 {
+                    color: color(default, info);
+                    font-weight: 700;
+
+                    &.no-variant-title {
+                        @include heading-xl;
+                    }
+                }
+            }
+
+            &.planner {
+                .info {
+                    p {
+                        @include caption-l;
+                        font-weight: 400;
+                        margin-bottom: 0;
+                    }
+
+                    h2 {
+                        @include heading-l;
+                        margin-top: 0.5rem;
+                    }
+                }
+            }
+        }
+    }
+
+    .cards {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        column-gap: 1.5rem;
+        row-gap: 1.5rem;
+
+        @include md {
+            flex-direction: row;
+        }
+
+        .card {
+            flex-direction: column-reverse;
+            overflow: hidden;
+            flex: 1 1 100%;
+            cursor: pointer;
+            column-gap: 1rem;
+
+            &:has(:focus-visible) {
+                outline: solid 2px color(default, foreground);
+                outline-offset: 2px;
+            }
+
+            .content-card__headers:focus-visible {
+                outline: none;
+            }
+        }
+
+        .content-card__add-on {
+            position: absolute;
+            top: 0.8rem;
+            left: 1rem;
+            z-index: 2;
+            background-color: color(default, background);
+            padding: 0rem 1rem;
+            font-weight: bold;
+            border-radius: 0.25rem;
+            border: 1px solid $color-gray-500;
+            pointer-events: none;
+
+            .tag {
+                background-color: unset;
+                border: none;
+                min-height: none;
+                padding: 0;
+            }
+
+            span {
+                font-size: 0.75rem;
+                color: color(cta, link);
+            }
+        }
+        .compact-card__link {
+            flex-direction: column;
+            align-items: flex-start;
+            font-weight: 500;
+        }
+
+        .content-card {
+            background-color: white;
+
+            .content-card__title {
+                color: color(default, info);
+                text-wrap: auto;
+
+                @media (min-width: 899px) and (max-width: 1198px) {
+                    font-size: 1.125rem;
+                }
+            }
+        }
+
+        .btn__inner {
+            padding: 1rem 1.5rem;
+        }
+
+        .compact-card__text-wrapper {
+            &:hover {
+                text-decoration: none !important;
+            }
+        }
+    }
+
+    .learnMoreButton--not-wide {
+        align-self: center;
+        margin-top: 2rem;
+        --box-shadow: unset;
+        --box-shadow-hover: unset;
+        display: flex;
+        border-radius: unset;
+        border-bottom: 1px solid color(default, border);
+
+        .btn__inner {
+            display: flex;
+            flex-direction: row-reverse;
+            justify-content: space-between;
+            border: unset;
+            border-radius: unset;
+            padding: 0;
+
+            .span {
+                font-size: 0.875rem;
+                color: color(default, info);
+            }
+        }
+
+        @include skapa-l {
+            display: none;
+        }
+    }
+}

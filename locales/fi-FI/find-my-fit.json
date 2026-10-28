@@ -1,0 +1,134 @@
+{
+  "find-my-fit": {
+    "actions": {
+      "takePhoto": "Ota valokuva",
+      "uploadPhoto": "Lataa valokuva"
+    },
+    "chooseSample": {
+      "scene_0": "Rentouttava nurkkaus",
+      "scene_1": "Tunnelmallinen nurkka",
+      "title": "Valitse mallitila ja kokeile sitä"
+    },
+    "csat": {
+      "bad": "Paha",
+      "cancel": "Peruuta",
+      "describeIt": "Kerro meille lisää",
+      "dissatisfied": "Tyytymätön",
+      "good": "Hyvä",
+      "goodOrBad": "Kiitos! Kuulisimme mielellämme, miksi valitsit juuri tämän. Mikä jäi kokemuksesta mieleen, hyvä vai huono?",
+      "neutral": "Neutraali",
+      "privacyText": "Jotta yksityisyytesi pysyy turvassa, älä lisää henkilökohtaisia tietoja (kuten sähköpostiosoitetta tai puhelinnumeroa).",
+      "ratingDescription": "Palautteesi auttaa meitä parantamaan kokemusta.",
+      "satisfied": "Tyytyväinen",
+      "submit": "Lähetä",
+      "title": "Millainen kokemuksesi on?"
+    },
+    "hero": {
+      "imageAlt": "Hyllyt",
+      "subtitle": "Saat suosituksia lisäämällä kuvan.",
+      "title": "Löydä tilaasi sopiva säilytysratkaisu"
+    },
+    "landing": {
+      "actions": {
+        "addPhoto": "Lisää kuva",
+        "takePhoto": "Ota valokuva",
+        "trySampleSpace": "Kokeile mallihuonetta",
+        "uploadPhoto": "Lataa valokuva"
+      },
+      "comingSoon": {
+        "appStoreBadgeAlt": "Lataa App Storesta",
+        "designOnDesktop": "Suunnittelu tietokoneella",
+        "getApp": "Hanki IKEA sovellus tilan suunnitteluun",
+        "googlePlayBadgeAlt": "Hanki se Google Play -palveluun",
+        "kreativLink": "IKEA Kreativ linkki",
+        "linkCopied": "Linkki kopioitu",
+        "title": "Tämä ominaisuus on tulossa pian!"
+      },
+      "features": {
+        "compare": {
+          "title": "Vertaile vaihtoehtoja nopeasti pyyhkäisemällä"
+        },
+        "intro": {
+          "title": "Säilytystilan ostaminen on helppoa Find My Fit -palvelun avulla"
+        },
+        "save": {
+          "title": "Suosikit ja löydä \"se yksi\""
+        },
+        "setArea": {
+          "title": "Piirrä kohdealueesi"
+        }
+      },
+      "hero": {
+        "genericCategory": "Varastointi",
+        "imageAlt": "Kuvia tallennuskohteista",
+        "privacyNote": "Älä lataa kuvia, joissa on ihmisiä, henkilötietoja tai yksityisiä tavaroita. Lue lisää <1>tietosuojakäytännöstämme</1>.",
+        "subtitle": "Käytä valokuvaa ja selaa {{subject}} tyylejä sopimaan tiettyyn alueeseen",
+        "title": "Löydä tilaasi sopiva säilytysratkaisu",
+        "videoAlt": "Find My Fit -ominaisuuden esittely"
+      },
+      "page": {
+        "description": "Lataa valokuva myymälään ja etsi tutkimiasi hyllyjä, jotta saat oikean ilmeen ja istuvuuden ilman arvailua.",
+        "title": "Löydä oma istuvuuteni"
+      },
+      "sampleSpaces": {
+        "error": "Jokin meni vikaan. Yritä uudelleen.",
+        "title": "Valitse mallihuone"
+      }
+    },
+    "loginPrompt": {
+      "body": "Jos haluat saada säilytyssuosituksia tilaasi, kirjaudu sisään tai luo ilmainen IKEA tili.",
+      "logIn": "Kirjaudu sisään",
+      "signUp": "Kiinnittää",
+      "title": "Kirjaudu sisään ladataksesi kuvan"
+    },
+    "page": {
+      "description": "Löydä täydellinen ratkaisu kotiisi IKEA avulla",
+      "title": "Löydä oma istuvuuteni"
+    },
+    "toasts": {
+      "unableToFavorite": "Tuotetta ei voitu lisätä, mutta se ei onnistunut."
+    },
+    "viewer": {
+      "accessibilityDescription": "Etsi My Fit käyttää valokuvaa tilastasi suositellakseen IKEA tuotteet, jotka sopivat valittuun tilaan. Piirtäminen ja visuaalinen vuorovaikutus voivat olla haastavia näkövammaisille tai heikkonäköisille. Tuotetiedot, hinnoittelu ja ostotoimenpiteet ovat täysin saatavilla, kun tulokset näytetään.",
+      "addToBag": "Lisää ostoskoriin",
+      "adjustHeader": "Hakualueen säätäminen",
+      "clearDrawing": "Poista piirustus",
+      "confirmDimension": "Vahvista mitat",
+      "continue": "Jatkaa",
+      "continueAriaLabel": "Jatka seuraava vaiheeseen",
+      "decreaseDimension": "Pienennä ulottuvuutta",
+      "dimDepth": "Syvyys",
+      "dimHeight": "Korkeus",
+      "dimWidth": "Leveys",
+      "done": "Valmis",
+      "doneAriaLabel": "Valmis muokkaus",
+      "drawFocusArea": "Piirrä haluamasi painopistealue",
+      "drawingHeader": "Minne haluat säilytystilaa?",
+      "editArea": "Muokkaa aluetta",
+      "fewResultsToast": "Yritä muuttaa hakualueen kokoa, jotta saat enemmän tuloksia.",
+      "goBack": "Palaa edelliseen",
+      "goToImage": "Siirry kuvaan {{index}}",
+      "increaseDimension": "Suurenna ulottuvuutta",
+      "magicEraser": "Maaginen pyyhekumi",
+      "noResults": "Tähän tilaan ei löytynyt tuotteita.",
+      "noResultsButton": "Tuloksia ei löytynyt",
+      "noResultsTitle": "Tuloksia ei löytynyt",
+      "removedFromFavorites": "Poistettu suosikeista",
+      "removeFavorite": "Poista suosikeista",
+      "retrySearch": "Yritä uudestaan",
+      "savedToFavorites": "Tallennettu suosikkeihin",
+      "saveFavorite": "Tallenna suosikkeihin",
+      "search": "Hae",
+      "searchError": "Vastaavia tuotteita ei löytynyt. Kokeile piirtää toinen alue.",
+      "searchErrorToast": "Jotain meni pieleen. yritä uudelleen.",
+      "searching": "Etsiminen...",
+      "seeAllResults": "Katso kaikki tulokset",
+      "showMoreDetails": "Näytä lisätietoja",
+      "swipeForMore": "Lisää pyyhkäisemällä",
+      "tapToSelect": "Valitse kohde napauttamalla",
+      "tryAgain": "Yritä uudestaan",
+      "viewResults_one": "Näytä {{count}} tulos",
+      "viewResults_other": "Näytä {{count}} tulokset"
+    }
+  }
+}

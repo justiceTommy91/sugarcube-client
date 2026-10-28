@@ -1,0 +1,666 @@
+@import 'style/colors';
+@import 'style/type';
+@import 'style/zed';
+@import 'style/screen';
+
+$cardsLgMaxWidth: 112rem;
+$cardsMdMaxWidth: 112rem;
+$mobileWebRLPadding: 3rem;
+
+.LearnMorePagev2 {
+    @include body-lg;
+    color: color(default, description);
+
+    .headerContainer {
+        outline: none;
+        margin: 0 auto;
+        box-sizing: border-box;
+        background-color: color(brand, secondary);
+
+        .headerWrapper {
+            color: color(brand, secondaryText);
+            font-weight: 700;
+            box-sizing: inherit;
+            outline: none;
+            grid-column-gap: 1.25rem;
+            grid-template-columns: repeat(13, minmax(0, 1fr));
+            max-width: 112rem;
+            padding: 1.5rem;
+
+            margin: auto;
+
+            @include md {
+                display: grid;
+                padding: 1rem 5rem 1rem 1.5rem;
+            }
+
+            .titleWrapper {
+                display: flex;
+                font-size: 1rem;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+                flex-grow: 1;
+                max-width: $cardsLgMaxWidth;
+                font-size: 0.875rem;
+                line-height: 1.571;
+                box-sizing: inherit;
+                outline: none;
+                margin: 0;
+                padding: 0;
+                grid-column: 2/14;
+                grid-row: 1;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+                width: 100%;
+                flex-wrap: nowrap;
+            }
+
+            .iconContainer {
+                border-radius: 100%;
+                border: 1px solid white;
+                padding: 0.5rem 0.6rem;
+                cursor: pointer;
+            }
+        }
+    }
+
+    .wrapper {
+        padding-right: $mobileWebRLPadding;
+        padding-left: $mobileWebRLPadding;
+        max-width: $cardsLgMaxWidth;
+        margin: 0 auto;
+    }
+
+    .keyValuesContainer {
+        display: flex;
+        justify-content: space-between;
+        max-width: $cardsLgMaxWidth;
+        padding-left: 3rem;
+        padding-right: 3rem;
+        margin: 5.25rem auto;
+        .keyValuesCard {
+            margin-right: 6rem;
+            flex: 1;
+            &:last-of-type {
+                margin-right: 0;
+            }
+
+            .cardTitle {
+                @include heading-xl;
+                color: color(default, foreground);
+                font-weight: 700;
+                line-height: 2.75rem;
+                margin-top: 3.125rem;
+                margin-bottom: 1rem;
+            }
+            .cardDescription {
+                color: color(default, description);
+                margin-bottom: 4rem;
+            }
+
+            a {
+                color: color(status, indeterminate);
+                font-weight: 700;
+                text-decoration: underline;
+            }
+            .keyValuesIcon {
+                color: color(default, subHeader);
+                svg {
+                    height: 1.6rem;
+                    width: 1.6rem;
+                }
+            }
+        }
+    }
+
+    .approachableContainer {
+        display: flex;
+        flex-direction: column;
+        max-width: $cardsLgMaxWidth;
+        padding-left: 3rem;
+        padding-right: 3rem;
+        margin: 0 auto;
+        padding: 5rem 0rem;
+
+        .approachableQuoteContainer {
+            display: flex;
+            flex-direction: row;
+
+            @include md {
+                width: 50%;
+            }
+
+            .quoteText {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+
+                .approachableTitle {
+                    @include heading-lg;
+                    color: color(default, foreground);
+                    font-weight: 700;
+                }
+            }
+        }
+    }
+
+    .designYourSpace {
+        .imageTextBanner {
+            margin-bottom: 3.875rem;
+        }
+        .mobileHandoverIcon {
+            margin-right: 0.5rem;
+        }
+
+        .designStepsContainer.cards {
+            padding: 0;
+            .imageTextCard {
+                width: 100%;
+            }
+        }
+    }
+
+    .cardsContainer {
+        display: flex;
+        flex-direction: column;
+        max-width: $cardsLgMaxWidth;
+        margin: 0 auto;
+        margin-top: 5rem;
+
+        .header {
+            @include heading-lg;
+            font-weight: 700;
+            color: color(default, foreground);
+            margin-bottom: 1.5rem;
+
+            @include md {
+                width: 60%;
+            }
+        }
+
+        .subheader {
+            @include body-lg;
+
+            @include md {
+                width: 65%;
+            }
+        }
+    }
+
+    .button {
+        color: color(brand, secondaryText);
+    }
+
+    #saveTimeAndEffort {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .imageTextBanner {
+        display: flex;
+        flex-direction: row;
+        padding-top: 5rem;
+        align-items: center;
+        justify-content: space-between;
+        max-width: $cardsLgMaxWidth;
+        width: 100%;
+
+        &:last-of-type {
+            padding-bottom: 10rem;
+        }
+        .textContainer {
+            display: flex;
+            flex-direction: column;
+            margin-right: 6rem;
+            max-width: 40rem;
+            width: 70%;
+
+            &.rhs {
+                margin-right: 0;
+                margin-left: 6rem;
+            }
+            &.noImage {
+                max-width: 48.25rem;
+                align-items: flex-start;
+            }
+            .title {
+                @include heading-md;
+                color: color(default, foreground);
+                font-weight: 700;
+                margin-bottom: 1.5rem;
+            }
+            .description {
+                @include body-lg;
+                font-weight: 400;
+                margin-bottom: 1.5rem;
+            }
+            .getStartedButton {
+                min-width: 15rem;
+                width: max-content;
+                color: color(brand, secondaryText);
+            }
+        }
+        .imageContainer {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            img {
+                width: 100%;
+            }
+            &.dressTheBed {
+                margin-left: 2rem;
+
+                @include md {
+                    margin-left: 4rem;
+                }
+            }
+
+            .video {
+                width: 100%;
+            }
+        }
+        .shareContainer {
+            display: flex;
+            flex-direction: column;
+            .socialShareIcons {
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+                .iconContainer {
+                    padding: 1rem;
+                    border-radius: 50%;
+                    background-color: color(default, backgroundAlt);
+                    width: 3.5rem;
+                    height: 3.5rem;
+                    margin-right: 1.5rem;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+            }
+        }
+
+        &.chooseYourOptions {
+            padding-bottom: 0;
+        }
+
+        &.leftSpace {
+            margin-right: 2rem;
+        }
+
+        &.rightspace {
+            margin-left: 2rem;
+        }
+    }
+
+    .cards {
+        display: flex;
+        flex-direction: row;
+        align-items: stretch;
+        justify-content: space-between;
+        padding: 4rem 0 5rem 0;
+        max-width: $cardsLgMaxWidth;
+        .imageTextCard {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            flex: 1;
+            @include body-lg;
+            margin-right: 3.3125rem;
+            &:last-of-type {
+                margin-right: 0;
+            }
+            .stepButton {
+                display: flex;
+                flex: 1;
+                align-items: flex-end;
+            }
+            .title {
+                font-weight: 700;
+                color: color(default, foreground);
+            }
+            .description {
+                font-weight: 400;
+                margin-bottom: 1.5rem;
+                margin-top: 0.5rem;
+                color: color(default, description);
+            }
+            .imageContainer {
+                width: 100%;
+                max-width: 100%;
+                touch-action: auto !important;
+                margin-bottom: 1.5rem;
+                img {
+                    width: 100%;
+                    max-width: 100%;
+                }
+            }
+        }
+
+        @include mob {
+            padding: 2rem 0 3.75rem;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: center;
+            .imageTextCard {
+                margin-right: 0;
+                margin-bottom: 1.5rem;
+            }
+        }
+    }
+
+    #createWithConfidence {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: color(default, backgroundAlt);
+        .overlayText {
+            background-image: unset;
+            .title {
+                color: color(default, foreground);
+                margin-right: 10rem;
+            }
+            .quoteContainer {
+                color: color(default, description);
+            }
+        }
+    }
+
+    .AppDownloadQRModal .TheaterModal {
+        position: fixed;
+    }
+
+    @mixin learn-more-small-screen {
+        overflow-x: clip;
+
+        .button {
+            align-self: center;
+            margin-bottom: 1.5rem;
+        }
+
+        .playIcon {
+            margin-right: 0.5938rem;
+        }
+
+        .learnMoreGoals {
+            padding: 1rem;
+        }
+
+        .keyValuesContainer {
+            flex-direction: column;
+            margin: 4.2475rem 2rem 6.1875rem 2rem;
+
+            .keyValuesCard {
+                padding-right: 0;
+                margin-bottom: 4.1669rem;
+                margin-right: 0;
+
+                .cardTitle {
+                    @include heading-xl;
+                    font-weight: 700;
+                    margin-top: 1.9169rem;
+                    margin-bottom: 0.75rem;
+                }
+
+                .cardDescription {
+                    @include body-lg;
+                    line-height: 1.3744rem;
+                    margin-bottom: 1.75rem;
+                }
+                a {
+                    @include body-md;
+                }
+
+                .keyValuesIcon {
+                    svg {
+                        height: 2rem;
+                        width: 2rem;
+                    }
+                }
+            }
+        }
+
+        .approachableContainer {
+            padding: 3.75rem 0 0rem;
+
+            .approachableQuoteContainer {
+                flex-direction: column-reverse;
+
+                .quoteText {
+                    .approachableTitle {
+                        @include heading-xl;
+                        color: color(default, foreground);
+                        font-weight: 700;
+                        margin-bottom: 1.5rem;
+                    }
+                }
+            }
+        }
+
+        .designStepsContainer .imageTextCard .title {
+            font-size: 1.125rem;
+        }
+
+        #saveTimeAndEffort {
+            .imageTextBanner {
+                .title {
+                    font-size: 1.25rem;
+                }
+
+                button {
+                    svg {
+                        margin-right: 0.5rem;
+                    }
+                }
+            }
+        }
+
+        .imageTextBanner {
+            padding-top: 3.75rem;
+            flex-direction: row;
+            align-items: flex-start;
+            justify-content: center;
+
+            @include mob {
+                flex-direction: column;
+
+                &.textRhs {
+                    flex-direction: column-reverse;
+                }
+            }
+            .textContainer {
+                margin-left: 0;
+                margin-right: 0;
+                margin-bottom: 2.5rem;
+                align-items: flex-start;
+                margin-top: 1rem;
+                width: 100%;
+                &.noImage {
+                    margin-bottom: 0;
+                }
+                &.rhs {
+                    margin-left: 0;
+                }
+
+                @include sm {
+                    &.rightSpace {
+                        margin-right: 1rem;
+                    }
+                    &.leftSpace {
+                        margin-left: 1rem;
+                    }
+                }
+            }
+            .imageContainer {
+                max-width: 100%;
+                img {
+                    max-width: 100%;
+                }
+            }
+
+            .shareContainer {
+                .socialShareIcons {
+                    .iconContainer {
+                        padding: 0.75rem;
+                        margin-right: 1rem;
+                        width: 3rem;
+                        height: 3rem;
+                    }
+                }
+            }
+
+            .cabinet img {
+                max-width: 140%;
+            }
+        }
+    }
+
+    &.isMobile {
+        // common styles for mobile devices and small screen widths on desktop
+        @include learn-more-small-screen;
+
+        .button {
+            width: 90vw;
+        }
+        // styles for mobile devices only
+        .imageTextBanner .textContainer a {
+            display: inline-block;
+            width: 100%;
+        }
+        .imageTextBanner .textContainer .getStartedButton,
+        .getStartedButton {
+            width: 100%;
+        }
+
+        .approachableShowrooms {
+            flex-direction: column;
+            margin-top: 3.75rem;
+            justify-content: center;
+
+            .showroomsCards {
+                justify-content: center;
+            }
+
+            .showroomsText {
+                justify-content: center;
+            }
+        }
+    }
+
+    .ikeaForBedroomContainer {
+        display: flex;
+        flex-direction: column;
+        background-image: url('#{$PATH-PREFIX}/images/graphics/learnmore/ikea-kreativ-for-bedroom.jpeg');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        align-content: center;
+        justify-content: flex-end;
+        height: 20rem;
+
+        @include md {
+            height: 48rem;
+        }
+
+        .overlayText {
+            align-self: center;
+
+            @include heading-lg;
+            color: color(brand, foreground);
+            font-weight: 700;
+            align-self: flex-end;
+            margin-bottom: 2rem;
+
+            @include md {
+                @include heading-xxl;
+                margin: 5rem auto;
+            }
+        }
+    }
+
+    .testimonialsContainer {
+        display: flex;
+        flex-direction: column;
+        max-width: $cardsLgMaxWidth;
+        margin: 0 auto;
+
+        @include sm {
+            padding: 0;
+        }
+
+        .content {
+            padding: 0;
+        }
+
+        .header {
+            @include heading-lg;
+            font-weight: 700;
+            color: color(default, foreground);
+            margin: 5rem 0rem 0rem;
+
+            @include lg {
+                width: 60%;
+            }
+        }
+    }
+
+    @media (max-width: 1100px) {
+        // common styles for mobile devices and small screen widths on desktop
+        @include learn-more-small-screen;
+    }
+
+    @media (min-width: 1101px) and (max-width: 1250px) {
+        .keyValuesContainer,
+        .cards {
+            max-width: $cardsMdMaxWidth !important;
+        }
+        .designStepsContainer.cards {
+            .imageTextCard .description {
+                min-height: 4.875rem;
+            }
+        }
+    }
+
+    @media (min-width: 1251px) {
+        .keyValuesContainer,
+        .approachableContainer,
+        .cardsContainer,
+        .testimonialsContainer,
+        .ikeaForBedroomContainer .wrapper .overlayText,
+        .imageTextBanner,
+        .cards {
+            max-width: $cardsLgMaxWidth !important;
+        }
+    }
+
+    @media (min-width: 1101px) and (max-width: 1473px) {
+        .imageContainer.cabinet img {
+            max-width: 100%;
+        }
+    }
+
+    @media (max-width: 575px) {
+        .approachableShowrooms {
+            flex-direction: column;
+            margin-top: 3.75rem;
+            justify-content: center;
+
+            .showroomsCards {
+                justify-content: center;
+            }
+
+            .showroomsText {
+                justify-content: center;
+
+                .button {
+                    align-self: center;
+                }
+            }
+        }
+    }
+}

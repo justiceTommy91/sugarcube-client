@@ -1,0 +1,134 @@
+{
+  "find-my-fit": {
+    "actions": {
+      "takePhoto": "Fotografiši",
+      "uploadPhoto": "Otpremi fotografiju"
+    },
+    "chooseSample": {
+      "scene_0": "Kutak za opuštanje",
+      "scene_1": "Ćošak raspoloženja",
+      "title": "Izaberi uzorak prostora da probaš"
+    },
+    "csat": {
+      "bad": "Loš",
+      "cancel": "Otkaži",
+      "describeIt": "Recite nam više",
+      "dissatisfied": "Nezadovoljan",
+      "good": "Dobro",
+      "goodOrBad": "Hvala! Voleli bismo da saznamo zašto ste to izabrali. Šta vam se posebno dopalo u iskustvu, bilo dobro ili loše?",
+      "neutral": "Neutralno",
+      "privacyText": "Radi zaštitite privatnosti, nemoj unositi lične podatake (npr. imejl, telefon).",
+      "ratingDescription": "Vaše mišljenje će nam pomoći da poboljšamo iskustvo.",
+      "satisfied": "Zadovoljan",
+      "submit": "Pošalji",
+      "title": "Kakvo je tvoje iskustvo?"
+    },
+    "hero": {
+      "imageAlt": "Police",
+      "subtitle": "Dodajte fotografiju da biste dobili preporuke.",
+      "title": "Pronađite odlaganje koje odgovara vašem prostoru"
+    },
+    "landing": {
+      "actions": {
+        "addPhoto": "Dodaj fotografiju",
+        "takePhoto": "Fotografiši",
+        "trySampleSpace": "Isprobaj primer prostora",
+        "uploadPhoto": "Otpremi fotografiju"
+      },
+      "comingSoon": {
+        "appStoreBadgeAlt": "Preuzmite na App Store-u",
+        "designOnDesktop": "Dizajniraj na računaru",
+        "getApp": "Preuzmite IKEA aplikaciju da dizajnirate prostor",
+        "googlePlayBadgeAlt": "Preuzmi na Google Play-u",
+        "kreativLink": "IKEA Kreativ link",
+        "linkCopied": "Link kopiran",
+        "title": "Ova funkcija stiže uskoro!"
+      },
+      "features": {
+        "compare": {
+          "title": "Prevucite da brzo uporedite opcije"
+        },
+        "intro": {
+          "title": "Kupovina opreme za odlaganje je laka uz Pronađi moju veličinu"
+        },
+        "save": {
+          "title": "Omiljeni artikli i pronađi \"pravi\""
+        },
+        "setArea": {
+          "title": "Nacrtaj svoju ciljnu površinu"
+        }
+      },
+      "hero": {
+        "genericCategory": "odlaganje",
+        "imageAlt": "Slike stvari za odlaganje",
+        "privacyNote": "Ne otpremaj slike s ljudima, ličnim podacima ili privatnim predmetima. Saznaj više u našoj <1>politici privatnosti</1>.",
+        "subtitle": "Koristi fotografiju i prelistaj stilove za {{subject}} da odgovara određenom prostoru",
+        "title": "Pronađite odlaganje koje odgovara vašem prostoru",
+        "videoAlt": "Demonstracija funkcije Pronađi svoju veličinu"
+      },
+      "page": {
+        "description": "Otpremite fotografiju da pronađete police koje ste razgledali i dobijete pravi izgled i veličinu, bez nagađanja.",
+        "title": "Pronađi Svoju Veličinu"
+      },
+      "sampleSpaces": {
+        "error": "Došlo je do greške. Pokušaj ponovo.",
+        "title": "Izaberi primer prostora"
+      }
+    },
+    "loginPrompt": {
+      "body": "Da biste dobili preporuke za odlaganje prilagođene vašem prostoru, prijavite se ili napravite besplatan IKEA nalog.",
+      "logIn": "Prijavi se",
+      "signUp": "Prijavite se",
+      "title": "Prijavite se da biste otpremili fotografiju"
+    },
+    "page": {
+      "description": "Pronađite savršeno rešenje za svoj dom sa nama",
+      "title": "Pronađi Svoju Veličinu"
+    },
+    "toasts": {
+      "unableToFavorite": "Žao nam je, ali nismo mogli da dodamo proizvod na spisak."
+    },
+    "viewer": {
+      "accessibilityDescription": "Find My Fit koristi fotografiju prostora da preporuči IKEA proizvode koji odgovaraju izabranom delu. Crtanje i vizuelna interakcija mogu biti teški za osobe s oštećenjem vida ili slabim vidom. Detalji o proizvodima, cene i opcije za kupovinu su dostupni kada se prikažu rezultati.",
+      "addToBag": "Dodaj u torbu",
+      "adjustHeader": "Prilagodi područje pretrage",
+      "clearDrawing": "Jasan crtež",
+      "confirmDimension": "Potvrdi dimenziju",
+      "continue": "Nastavi",
+      "continueAriaLabel": "Nastavi na sledeći korak",
+      "decreaseDimension": "Smanji dimenziju",
+      "dimDepth": "Dubina",
+      "dimHeight": "Visina",
+      "dimWidth": "Širina",
+      "done": "Gotovo",
+      "doneAriaLabel": "Gotovo sa izmenom",
+      "drawFocusArea": "Nacrta{te vašu željenu zonu fokusa",
+      "drawingHeader": "Gde želite vašu ostavu?",
+      "editArea": "Izmeni oblast",
+      "fewResultsToast": "Pokušajte da promenite oblast pretrage kako biste dobili više rezultata.",
+      "goBack": "Vrati se",
+      "goToImage": "Idi na sliku {{index}}",
+      "increaseDimension": "Povećaj dimenziju",
+      "magicEraser": "Magična gumica za brisanje",
+      "noResults": "Nema pronađenih proizvoda za ovaj prostor.",
+      "noResultsButton": "Nisu pronađeni rezultati",
+      "noResultsTitle": "Nisu pronađeni rezultati",
+      "removedFromFavorites": "Uklonjeno iz omiljenih",
+      "removeFavorite": "Ukloni iz omiljenih",
+      "retrySearch": "Pokušaj ponovo",
+      "savedToFavorites": "Sačuvano u omiljene",
+      "saveFavorite": "Sačuvaj u omiljene",
+      "search": "Pretrage",
+      "searchError": "Nije pronađen nijedan proizvod. Pokušajte da nacrtate drugu oblast.",
+      "searchErrorToast": "Došlo je do greške. Molimo pokušajte ponovo.",
+      "searching": "Pretraživanje...",
+      "seeAllResults": "Vidi sve rezultate",
+      "showMoreDetails": "Prikaži više detalja",
+      "swipeForMore": "Prevuci za više",
+      "tapToSelect": "Dodirni da odabereš stavku",
+      "tryAgain": "Pokušaj ponovo",
+      "viewResults_one": "Prikaži {{count}} rezultat",
+      "viewResults_other": "Prikaži {{count}} rezultate"
+    }
+  }
+}

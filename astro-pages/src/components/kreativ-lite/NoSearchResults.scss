@@ -1,0 +1,38 @@
+@use 'style/typography' as *;
+
+.NoSearchResults {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    padding: 2rem 1rem;
+    max-width: 18rem;
+    margin: 0 auto;
+    text-align: center;
+
+    &__announcement {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        overflow: hidden;
+        clip: rect(0 0 0 0);
+        white-space: nowrap;
+    }
+
+    &__image {
+        max-width: 10.3125rem;
+        height: auto;
+    }
+
+    &__headline {
+        @include heading-xs;
+        padding: 1.5rem 0 0.5rem;
+    }
+
+    &__message {
+        @include body-m;
+        display: flex;
+        flex-direction: column;
+        gap: 1.125rem;
+    }
+}

@@ -1,0 +1,93 @@
+@import 'style/colors';
+@import 'style/zed';
+
+$imageSize: 8.3rem;
+$imgOverlaySize: 9.05rem;
+$swapImageSize: 8.5rem;
+$swapImageOverlaySize: 8.5rem;
+$swapImageSizeMobile: 20vh;
+$swapImageMaxSizeMobile: 7.5rem;
+$swapImageOverlaySizeMobile: 5.5rem;
+
+.imageContainer {
+    position: relative;
+
+    .thumbImage {
+        width: $imageSize;
+        height: $imageSize;
+        object-fit: contain;
+        transition: transform 0.2s;
+        position: relative;
+        top: 0;
+        left: 0;
+        display: inline-block;
+        margin: 0.5rem 0.5rem 0;
+        // overrides default max-width: 100% styling from .image (since this now uses <Image />)
+        max-width: unset;
+        &.imgIsLoading {
+            background-color: color(default, backgroundAlt);
+        }
+        &.isInSwap {
+            margin: 0.5rem 0.5rem 0 0.5rem;
+            width: $swapImageSize;
+            height: $swapImageSize;
+            &:not(.mobile) {
+                margin: 0;
+            }
+        }
+        &.mobile {
+            width: $swapImageOverlaySizeMobile;
+            height: $swapImageOverlaySizeMobile;
+        }
+        &.isInSwap.mobile {
+            width: $swapImageSizeMobile;
+            height: $swapImageSizeMobile;
+            max-width: $swapImageMaxSizeMobile;
+            max-height: $swapImageMaxSizeMobile;
+        }
+    }
+    .imgOverlay {
+        position: absolute;
+        width: $imgOverlaySize;
+        height: $imgOverlaySize;
+        &.isInSwap {
+            width: $swapImageOverlaySize;
+            height: $swapImageOverlaySize;
+        }
+        &.mobile {
+            width: $swapImageOverlaySizeMobile;
+            height: $swapImageOverlaySizeMobile;
+        }
+        top: 0;
+        left: 0;
+        z-index: zed(above);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        opacity: 0;
+        visibility: hidden;
+        transition: opacity 0.2s ease, visibility 0.2s ease;
+        pointer-events: none; // Allow hover to pass through
+        .ctaIcon {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            background-color: color(brand, primaryForeground);
+            opacity: 0.75;
+            box-shadow: 0 0 4px rgba(0, 0, 0, 0.2);
+            padding: 1rem;
+
+            svg {
+                color: color(cta, foreground);
+            }
+        }
+    }
+
+    .product-identifier {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0.25rem 0.75rem;
+    }
+}

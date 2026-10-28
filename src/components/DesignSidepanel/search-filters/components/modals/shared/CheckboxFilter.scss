@@ -1,0 +1,9 @@
+@import './FilterBase.scss';
+
+.FilterOption {
+    &--boolean {
+        // Match Ingka's accordion's styling with #dfdfdf
+        border-top: 1px solid #dfdfdf;
+        padding: 0.625rem 0;
+    }
+}

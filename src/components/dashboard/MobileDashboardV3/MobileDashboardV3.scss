@@ -1,0 +1,17 @@
+@use 'style/screen' as *;
+
+#MobileDashboardV3 {
+    color: #111111;
+    --page-frame-padding: 1.5rem;
+    --carousel-slide-spacing: 1.25rem;
+
+    @include skapa-m {
+        --page-frame-padding: 2rem;
+        --carousel-slide-spacing: 1.25rem;
+    }
+
+    @include skapa-l {
+        --page-frame-padding: 2.5rem;
+        --carousel-slide-spacing: 1.5rem;
+    }
+}

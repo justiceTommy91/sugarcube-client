@@ -1,0 +1,9 @@
+@import 'style/colors';
+@import 'style/screen';
+
+#KreativLiteUploadPage {
+    min-height: 100vh;
+    @include skapa-l {
+        background-color: color(default, backgroundAlt);
+    }
+}

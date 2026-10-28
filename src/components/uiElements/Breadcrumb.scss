@@ -1,0 +1,60 @@
+@import 'style/colors';
+@import 'style/screen';
+
+.breadcrumb-container {
+    margin: 0 auto;
+    padding: 0 1.25rem;
+    box-sizing: border-box;
+    max-width: 112rem;
+
+    @include mob {
+        padding: 0 1.25rem;
+    }
+
+    @include sm {
+        padding: 0 2rem;
+    }
+
+    @include md {
+        padding: 0 3rem;
+    }
+
+    @include lg {
+        padding-inline: 1.25rem 2.5rem;
+        display: grid;
+        grid-column-gap: 1.5rem;
+        grid-template-columns: repeat(13, minmax(0, 1fr));
+    }
+
+    .breadcrumb-row {
+        grid-column: 2/14;
+        grid-row: 1;
+
+        .breadcrumb {
+            font-size: 0.875rem;
+            color: $color-black;
+            padding: 1rem 0;
+            border-bottom: 1px solid $color-gray;
+
+            .link {
+                font-weight: bold;
+                text-decoration: none;
+                padding-right: 0.5rem;
+                color: $color-black;
+
+                &:hover {
+                    text-decoration: underline;
+                }
+
+                &.current:hover {
+                    text-decoration: none;
+                }
+            }
+
+            .separator {
+                font-weight: bold;
+                margin-right: 0.5rem;
+            }
+        }
+    }
+}

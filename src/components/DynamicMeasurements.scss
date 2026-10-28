@@ -1,0 +1,17 @@
+@import 'style/zed';
+@import 'style/colors';
+
+.MeasurementLength {
+  border-radius: 0.25rem;
+  padding: 0.25rem 0.3rem;
+  font-size: 0.75rem;
+  line-height: 0.75rem;
+  background-color: color(default-invert, backgroundBlue);
+  color: color(default-invert, foreground);
+  position: absolute;
+  transform: translateX(-50%) translateY(-50%);
+  user-select: none;
+  z-index: zed(above);
+  width: max-content;
+  pointer-events: none;
+}

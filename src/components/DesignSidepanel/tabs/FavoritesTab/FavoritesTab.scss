@@ -1,0 +1,42 @@
+@import 'style/colors';
+@import 'style/type';
+
+.FavoritesTab {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-y: auto;
+
+    &.FavoritesTab_empty {
+        justify-content: center;
+    }
+}
+
+.FavoritesTab__emptyMessageWrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 16rem;
+    text-align: center;
+}
+
+.FavoritesTab__emptyImage {
+    max-width: 12.5rem;
+    height: auto;
+}
+
+.FavoritesTab__emptyTextHeadline {
+    @include body-xl;
+    font-weight: 600;
+}
+
+.FavoritesTab__product {
+    inline-size: 100%;
+    padding-inline: 1.5rem;
+    border-block-start: solid 1px color(default, border);
+
+    &:first-of-type {
+        border-block-start: 0;
+    }
+}

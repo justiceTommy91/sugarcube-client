@@ -1,0 +1,17 @@
+---
+import BaseLayout from '@layouts/BaseLayout.astro'
+import { generateLocaleStaticPaths, type LocalePageProps } from '@lib/static-paths-utils'
+import LoginForm from '../_components/LoginForm'
+
+export async function getStaticPaths() {
+    return generateLocaleStaticPaths()
+}
+
+const { locale, translations } = Astro.props as LocalePageProps
+const { country, lang } = Astro.params
+const market = `${country}/${lang}`
+---
+
+<BaseLayout locale={locale} market={market} allowSeo={false} title="Login" description="Internal login page">
+    <LoginForm client:load locale={locale} market={market} translations={translations} />
+</BaseLayout>

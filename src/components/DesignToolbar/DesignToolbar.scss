@@ -1,0 +1,256 @@
+@import 'style/colors';
+@import 'style/type';
+
+.DesignToolbar {
+    text-align: center;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    margin: 1.5rem 1.5rem 0.5rem 1.5rem;
+    height: 100%;
+    width: 100%;
+    align-self: center;
+    grid-area: footer;
+
+    // Overrides
+    background-color: #cccccc;
+    padding: 0;
+    padding-bottom: 1.5rem;
+    margin: 0;
+
+    &.hideMultiView {
+        visibility: hidden;
+    }
+
+    &.shiftForCookieConsent {
+        transform: translateY(-5rem);
+    }
+
+    .colorPickerTooltipWrapper {
+        position: relative;
+    }
+
+    .newWallColorsPicker {
+        align-self: flex-end;
+        visibility: hidden;
+        pointer-events: all;
+        padding: 1.5rem;
+        width: 22.813rem;
+        max-height: 25rem;
+        z-index: zed(optionsMenu);
+        position: absolute;
+        bottom: 3.5rem;
+        border-radius: 1rem;
+        right: -4rem;
+        background: color(default, background);
+
+        &.visible {
+            visibility: visible;
+        }
+    }
+
+    .buttonBar {
+        background-color: color(default, background);
+        border-radius: 4rem;
+        padding: 0.5rem;
+        display: flex;
+
+        .divider {
+            border-left: 1px solid color(default, border);
+            margin: 0 0.3438rem;
+        }
+
+        .toggleButton {
+            background-color: color(brand, secondaryText);
+            border: 1px solid color(brand, secondaryText);
+            white-space: nowrap;
+            align-self: center;
+            margin: 0 0.25rem;
+
+            .btn__inner {
+                min-height: 2.5rem;
+                padding-left: 1rem;
+                padding-right: 1.5rem;
+            }
+
+            &[disabled] {
+                .Icon {
+                    opacity: 0.25;
+                }
+            }
+
+            &.small {
+                .btn__inner {
+                    padding: 0 0.5rem;
+                }
+                .svg-icon {
+                    margin-right: 0;
+                }
+            }
+
+            &.active {
+                .btn__inner {
+                    background-color: rgb(var(--colour-interactive-subtle-bg-pressed, 223, 223, 223));
+                }
+            }
+
+            &.dollhouse {
+                .button-icon {
+                    transform: rotate(180deg);
+                }
+            }
+
+            .Icon,
+            .svg-icon {
+                margin-right: 0.5rem;
+            }
+            .chevron {
+                margin-right: 0;
+                margin-left: 0.25rem;
+            }
+
+            &.editRoom {
+                color: color(default, foreground);
+                display: flex;
+                align-items: center;
+                font-size: 0.875rem;
+                font-weight: 700;
+                min-height: 2.5rem;
+                padding-left: 1rem;
+                padding-right: 0.625rem;
+                border-radius: 4rem;
+
+                &:hover {
+                    background-color: color(default, backgroundAlt);
+                }
+            }
+        }
+
+        .sideViews {
+            .btn__inner {
+                padding-right: 0.625rem;
+            }
+        }
+
+        .rotateDollhouse {
+            display: flex;
+            position: relative;
+
+            .rotateDollhouseTooltip {
+                position: absolute;
+                top: -3.125rem;
+                left: -3rem;
+                width: 10rem;
+                color: #fff;
+                background: #222;
+                border: 1px solid transparent;
+                border-radius: 3px;
+                display: inline-block;
+                font-size: 13px;
+                padding: 8px 21px;
+                pointer-events: none;
+                transition: opacity 0.3s ease-out;
+                z-index: 999;
+                opacity: 0.9;
+
+                &::before {
+                    border-left: 10px solid transparent;
+                    border-right: 10px solid transparent;
+                    bottom: -8px;
+                    left: 50%;
+                    margin-left: -10px;
+                }
+
+                &::after {
+                    border-left: 8px solid transparent;
+                    border-right: 8px solid transparent;
+                    bottom: -6px;
+                    left: 50%;
+                    margin-left: -8px;
+                    border-top-color: #222;
+                    border-top-style: solid;
+                    border-top-width: 6px;
+                }
+
+                &::before,
+                &::after {
+                    content: '';
+                    width: 0;
+                    height: 0;
+                    position: absolute;
+                }
+            }
+        }
+    }
+
+    .zoomWrapper {
+        display: flex;
+        align-items: center;
+
+        .zoomLevel {
+            @include body-md;
+            font-weight: 600;
+            min-width: 3.5rem;
+            text-align: center;
+        }
+        button {
+            margin: 0 0.25rem;
+        }
+
+        button:disabled {
+            .btn__inner {
+                opacity: 0.2;
+                background: none;
+            }
+        }
+    }
+
+    &.isUpptacka {
+        background: color(default, background);
+        width: fit-content;
+        margin: 1.5rem auto;
+        border-radius: 3rem;
+        padding: 0.75rem;
+        .buttonBar {
+            padding: 0;
+        }
+        .toggleButton,
+        .zoomLevel {
+            @include body-xl;
+            color: color(default, foreground);
+        }
+        .zoomWrapper,
+        .ZoomControls__wrapper {
+            margin-left: 0;
+        }
+    }
+    .UpptackaMultiView__price {
+        margin: 0 1.5rem 0 1rem;
+    }
+    .UpptackaMultiView__divider {
+        border-left: 1px solid color(default, border);
+        margin: 0 0.5rem;
+    }
+    .UpptackaMultiView__price {
+        align-self: center;
+        margin-right: 1rem;
+    }
+    .UpptackaMultiView__summary-button {
+        @include body-xl;
+    }
+
+    &.isOwnRoom {
+        .buttonBar {
+            margin-top: 1.5rem;
+            margin-bottom: 2.5rem;
+            padding: 0;
+            background-color: transparent;
+
+            .toggleButton {
+                margin: 0;
+                border: none;
+                background: none;
+            }
+        }
+    }
+}

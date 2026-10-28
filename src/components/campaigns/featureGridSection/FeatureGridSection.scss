@@ -1,0 +1,38 @@
+@import 'style/colors';
+@import 'style/type';
+@import 'style/screen';
+
+.FeatureGridSection {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: space-between;
+
+    .heading {
+        margin-bottom: 2rem;
+    }
+
+    .content-card {
+        cursor: pointer;
+        .content-card__title {
+            text-decoration: none !important;
+        }
+    }
+
+    .cards {
+        display: grid;
+        gap: 1rem;
+        cursor: pointer;
+
+        // 1 column on mobile
+        grid-template-columns: repeat(1, minmax(0, 1fr));
+
+        @include md {
+            grid-template-columns: repeat(3, minmax(0, 1fr));
+        }
+
+        .image {
+            cursor: pointer;
+        }
+    }
+}

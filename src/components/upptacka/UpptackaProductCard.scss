@@ -1,0 +1,60 @@
+@import 'style/colors';
+@import 'style/type';
+
+.UpptackaProductCard {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    .UpptackaProductCard__button {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        width: 11.875rem;
+        .status__label {
+            text-align: left;
+        }
+    }
+    .UpptackaProductCard__details-button {
+        position: absolute;
+        top: 0rem;
+        right: 1rem;
+        display: flex;
+        padding: 0.5rem;
+    }
+    .UpptackaProductCard__thumbnail {
+        margin: 1rem 0 1.5rem;
+    }
+    .UpptackaProductCard__description {
+        @include body-xl;
+        color: color(default, description);
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 3;
+        line-clamp: 3;
+        margin-bottom: 1rem;
+        max-width: 100%;
+        overflow: hidden;
+        text-align: left;
+        text-overflow: ellipsis;
+        word-wrap: break-word;
+        &::first-letter {
+            text-transform: uppercase;
+        }
+    }
+    .UpptackaProductCard__name {
+        @include body-xl;
+        color: color(default, info);
+        font-weight: bold;
+    }
+    .UpptackaProductCard__divider {
+        width: 6.25rem;
+        height: 0.125rem;
+        background: color(default, border);
+        margin-top: 1.375rem;
+        margin-bottom: 1rem;
+    }
+    .UpptackaProductCard__status {
+        color: color(default, info);
+        font-weight: bold;
+    }
+}

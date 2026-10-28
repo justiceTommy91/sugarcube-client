@@ -1,0 +1,20 @@
+// ─── Kreativ Lite — page-level z-index layers ────────────────────────────────
+//
+// Use these tokens for any element that participates in the global stacking
+// context. Component-internal z-indices (e.g. a button above a slider within
+// the same component) should remain as plain numbers with a comment.
+//
+// Layer order (lowest → highest):
+//   viewer-controls  floating controls anchored to the canvas area
+//   drawer           search drawer / bottom sheets sliding up over the viewer
+//   drawer-overlay   translucent backdrop between the two bottom sheets
+//   drawer-top       elevated bottom sheet (AppPromotionDrawer) above the search drawer
+//   overlay          full-screen modals (search overlay, dialogs)
+//   tooltip          instruction tooltips floating above all content
+
+$z-viewer-controls: 10;
+$z-drawer: 20;
+$z-drawer-overlay: 21;
+$z-drawer-top: 22;
+$z-overlay: 100;
+$z-tooltip: 200;

@@ -1,0 +1,166 @@
+{
+    "en-SE": {
+        "cta": "Try this room",
+        "dimensions": "4.8m x 4.3m",
+        "occupancy": "1-2 person",
+        "rooms": [
+            {
+                "badge": "",
+                "compositionId": "eb8f9e76-6bf7-4d2b-8271-e2f42b63b007",
+                "devCompositionId": "cb919e66-0ecc-4c45-a87a-bad5cd9946b4",
+                "description": "Add different products to see how they look and fit together, so you can get the items that work best for your home.",
+                "imageLocation": "/images/upptacka/se-room-0.png",
+                "name": "Quick starter room"
+            },
+            {
+                "badge": "",
+                "compositionId": "e85ffb21-efe9-40d9-81f6-1c6eb353ff1d",
+                "devCompositionId": "3399db1b-6b88-4e30-84db-1af698aa3010",
+                "description": "A fan of this showroom? Try giving it a personal touch. Adapt and rearrange products, then buy what works for you.",
+                "imageLocation": "/images/upptacka/se-room-1.png",
+                "name": "Calm Japandi bedroom"
+            },
+            {
+                "badge": "Budget friendly",
+                "compositionId": "3cee4f05-2ed6-48b8-838e-09bac6539e60",
+                "devCompositionId": "2b7c24e6-8109-48b8-9798-dc9dc0d169a4",
+                "description": "Dreaming of a comfy bedroom that fits your style and budget? Try adapting this design to find just the right products for you.",
+                "imageLocation": "/images/upptacka/se-room-2.png",
+                "name": "Comfy essentials bedroom"
+            },
+            {
+                "badge": "",
+                "compositionId": "3c800e47-2d6e-4b09-a0dc-4fcb39c60988",
+                "devCompositionId": "434c6806-6cf0-4034-8ccc-b7c16711e87e",
+                "description": "Try a bedroom that pulls double duty for both sleeping and working. Adapt and rearrange this set up to suit your needs.",
+                "imageLocation": "/images/upptacka/se-room-3.png",
+                "name": "Relaxing multi-functional bedroom"
+            }
+        ],
+        "subtitle": "When you’re done, save your design with the IKEA app, and try products in a scan of your own space at home.",
+        "title": "Personalize one of these bedrooms with IKEA Kreativ"
+    },
+    "en-US": {
+        "cta": "Try this room",
+        "dimensions": "13ft x 13.25ft",
+        "occupancy": "1-2 person",
+        "rooms": [
+            {
+                "badge": "",
+                "compositionId": "eb8f9e76-6bf7-4d2b-8271-e2f42b63b007",
+                "devCompositionId": "59bc39bc-c193-4599-97bf-8a81b4244c7f",
+                "description": "Add different products to see how they look and fit together, so you can get the items that work best for your home.",
+                "imageLocation": "/images/upptacka/us-room-0.png",
+                "name": "Quick starter room"
+            },
+            {
+                "badge": "",
+                "compositionId": "eb8f9e76-6bf7-4d2b-8271-e2f42b63b007",
+                "devCompositionId": "e375e1f4-dac5-4b17-808d-6d9ad1aed851",
+                "description": "A fan of this showroom? Try giving it a personal touch. Adapt and rearrange products, then buy what works for you.",
+                "imageLocation": "/images/upptacka/us-room-1.png",
+                "name": "Cozy organized bedroom"
+            },
+            {
+                "badge": "Budget friendly",
+                "compositionId": "2c663783-8502-47a2-ba3f-404dd25b0020",
+                "devCompositionId": "3faaf546-c073-451d-ba27-935d75fc0660",
+                "description": "Dreaming of a comfy bedroom that fits your style and budget? Try adapting this design to find just the right products for you.",
+                "imageLocation": "/images/upptacka/us-room-2.png",
+                "name": "Comfy essentials bedroom"
+            },
+            {
+                "badge": "",
+                "compositionId": "f2c291b3-6f78-4fbd-92a5-02b8ccb905f5",
+                "devCompositionId": "65f75959-1ee2-4c0f-a67f-5944b6bfa8c3",
+                "description": "Try a bedroom that pulls double duty for both sleeping and working. Adapt and rearrange this set up to suit your needs.",
+                "imageLocation": "/images/upptacka/us-room-3.png",
+                "name": "Flexible WFH bedroom"
+            }
+        ],
+        "subtitle": "When you’re done, save your design with the IKEA app, and try products in a scan of your own space at home.",
+        "title": "Personalize one of these bedrooms with IKEA Kreativ"
+    },
+    "es-US": {
+        "cta": "Prueba esta habitación",
+        "dimensions": "13ft x 13.25ft",
+        "occupancy": "1-2 personas",
+        "rooms": [
+            {
+                "badge": "",
+                "compositionId": "eb8f9e76-6bf7-4d2b-8271-e2f42b63b007",
+                "devCompositionId": "59bc39bc-c193-4599-97bf-8a81b4244c7f",
+                "description": "Agregue diferentes productos para ver cómo se ven y encajan, de modo que pueda obtener los artículos que mejor se adapten a su hogar.",
+                "imageLocation": "/images/upptacka/us-room-0.png",
+                "name": "Sala de inicio rápido"
+            },
+            {
+                "badge": "",
+                "compositionId": "11d3cf47-3871-4e7e-a940-0759ee2b340f",
+                "devCompositionId": "e375e1f4-dac5-4b17-808d-6d9ad1aed851",
+                "description": "¿Eres fan de este showroom? Intenta darle un toque personal. Adapte y reorganice los productos, luego compre lo que funcione para usted.",
+                "imageLocation": "/images/upptacka/us-room-1.png",
+                "name": "Dormitorio acogedor y organizado"
+            },
+            {
+                "badge": "Económico",
+                "compositionId": "95e728b3-c524-4547-ac02-333f8d944481",
+                "devCompositionId": "3faaf546-c073-451d-ba27-935d75fc0660",
+                "description": "¿Sueñas con un recámaras cómodo que se adapte a tu estilo y presupuesto? Intenta adaptar este diseño para encontrar los productos adecuados para ti.",
+                "imageLocation": "/images/upptacka/us-room-2.png",
+                "name": "Cómodo dormitorio esencial"
+            },
+            {
+                "badge": "",
+                "compositionId": "3ed98fa4-e874-441c-854a-8c36d23aff6c",
+                "devCompositionId": "65f75959-1ee2-4c0f-a67f-5944b6bfa8c3",
+                "description": "Pruebe un recámaras que tenga una doble función tanto para dormir como para trabajar. Adapte y reorganice esta configuración para que se adapte a sus necesidades.",
+                "imageLocation": "/images/upptacka/us-room-3.png",
+                "name": "Habitación para dormir y trabajar"
+            }
+        ],
+        "subtitle": "Cuando hayas terminado, guarda tu diseño en la app de IKEA y prueba los productos en un escaneo de tu propio espacio en casa.",
+        "title": "Personaliza uno de estos dormitorios con IKEA Kreativ"
+    },
+    "sv-SE": {
+        "cta": "Prova i detta rum​",
+        "dimensions": "4.8m x 4.3m",
+        "occupancy": "1-2 personer",
+        "rooms": [
+            {
+                "badge": "",
+                "compositionId": "eb8f9e76-6bf7-4d2b-8271-e2f42b63b007",
+                "devCompositionId": "cb919e66-0ecc-4c45-a87a-bad5cd9946b4",
+                "description": "Lägg till olika produkter för att se hur de ser ut och passar ihop, så att du kan få de produkter som passar bäst för ditt hem.",
+                "imageLocation": "/images/upptacka/se-room-0.png",
+                "name": "Rum för snabb start"
+            },
+            {
+                "badge": "",
+                "compositionId": "5e009e3b-5c89-4bc3-b89f-93294efaf63e",
+                "devCompositionId": "064766b3-2fb2-4c0e-bccf-e66a0593f6a1",
+                "description": "Är du ett fan av det här showroomet? Försök att ge det en personlig touch. Anpassa och ordna om produkterna och köp sedan det som passar dig.",
+                "imageLocation": "/images/upptacka/se-room-1.png",
+                "name": "Lugnt sovrum i Japandi stil"
+            },
+            {
+                "badge": "Budgetvänlig",
+                "compositionId": "7362a7d7-c8b9-4ea5-b622-831c524ef0d5",
+                "devCompositionId": "ac958961-09e6-41cf-8865-79d32b0f347f",
+                "description": "Drömmer du om ett bekvämt sovrum som passar din stil och budget? Prova att anpassa den här designen för att hitta rätt produkter för dig.",
+                "imageLocation": "/images/upptacka/se-room-2.png",
+                "name": "Mysigt & praktiskt sovrum"
+            },
+            {
+                "badge": "",
+                "compositionId": "135ebf84-bc51-410a-8ae1-c07e5be3afe1",
+                "devCompositionId": "93c13c25-c594-49b6-a476-6aeeb5f68c43",
+                "description": "Prova ett sovrum som fungerar både som sov- och arbetsrum. Anpassa och omorganisera denna uppsättning för att passa dina behov.",
+                "imageLocation": "/images/upptacka/se-room-3.png",
+                "name": "Avkopplande multifunktionellt sovrum"
+            }
+        ],
+        "subtitle": "När du är klar kan du spara din design med IKEA appen och prova produkterna i en skanning av ditt eget utrymme hemma.",
+        "title": "Gör ett av dessa sovrum personligt med IKEA Kreativ"
+    }
+}

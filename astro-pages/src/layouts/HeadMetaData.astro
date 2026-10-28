@@ -1,0 +1,50 @@
+
+---
+/**
+ * HeadMetaData Component for Astro pages
+ * Provides title, description, keywords, canonical link, and robots meta tag for SEO
+ * 
+ * @param title - Page title
+ * @param description - Page description for meta tag
+ * @param keywords - Keywords for meta tag (optional)
+ * @param canonical - Canonical URL for the page (optional)
+ * @param allowSeo - If true, robots="index, follow"; if false, robots="noindex, nofollow" (default: true)
+ * 
+ * @example
+ * // In your .astro page or layout:
+ * import HeadMetaData from '../layouts/HeadMetaData.astro'
+ * 
+ * const title = 'My Page Title'
+ * const description = 'My page description for SEO'
+ * const keywords = 'keyword1, keyword2, keyword3'
+ * const canonical = 'https://www.ikea.com/us/en/my-page/'
+ * const allowSeo = true
+ * 
+ * // In <head>:
+ * <HeadMetaData 
+ *   title={title} 
+ *   description={description} 
+ *   keywords={keywords}
+ *   canonical={canonical}
+ *   allowSeo={allowSeo}
+ * />
+ */
+
+interface Props {
+    title: string
+    description: string
+    keywords?: string
+    canonical?: string
+    allowSeo?: boolean
+}
+
+const { title, description, keywords, canonical, allowSeo = true } = Astro.props
+
+const robotsContent = allowSeo ? 'index, follow' : 'noindex, nofollow'
+---
+
+<title>{title}</title>
+<meta name="description" content={description} />
+{keywords && <meta name="keywords" content={keywords} />}
+<meta name="robots" content={robotsContent} />
+{canonical && <link rel="canonical" href={canonical} />}

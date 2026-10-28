@@ -1,0 +1,70 @@
+@import 'style/colors';
+@import 'style/type';
+@import 'style/screen';
+
+.ProductGrid {
+    background-color: white;
+
+    .content-card {
+        display: flex;
+        flex-wrap: wrap;
+        flex: 1;
+        justify-content: center;
+        background-color: white;
+        padding-left: 0 !important;
+        cursor: pointer;
+
+        @include md {
+            min-width: 40%;
+        }
+        .content-card__container {
+            flex-grow: 0;
+
+            @include md {
+                max-width: 85%;
+            }
+
+            .content-card__headers {
+                text-decoration: none;
+                @include md {
+                    max-width: 80%;
+                }
+
+                .content-card__title {
+                    @include heading-xl;
+
+                    @include sm {
+                        font-size: 3rem;
+                    }
+                }
+
+                @include md {
+                    max-width: unset;
+                }
+            }
+        }
+
+        .content-card__footer {
+            .btn__inner {
+                padding: 0.825rem 2rem;
+            }
+            @include mob {
+                justify-content: center;
+                button {
+                    width: 100%;
+                }
+            }
+        }
+    }
+
+    .card__media {
+        margin-top: 0;
+
+        .image {
+            object-fit: fill;
+            @include md {
+                object-fit: contain;
+            }
+        }
+    }
+}

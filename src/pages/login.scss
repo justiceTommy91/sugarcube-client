@@ -1,0 +1,28 @@
+@import 'style/colors';
+
+.LoginPage {
+    display: flex;
+    height: 100%;
+
+    .accountAccessFormContainer {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        max-width: 60rem;
+        padding: 1.5rem 3rem 0 3rem;
+        overflow: auto;
+
+        .header {
+            img {
+                height: 2.25rem;
+                margin-top: 0.25rem;
+            }
+        }
+        .form {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+}

@@ -1,0 +1,63 @@
+@use 'style/typography' as *;
+@import 'style/colors';
+@import 'style/type';
+
+.ConfigurableProductBanner {
+    background-color: color(default, backgroundAlt);
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+    padding-right: 1.5rem;
+
+    .ConfigurableProductBanner__image {
+        flex-shrink: 0;
+        width: 8.5rem;
+        height: 8.5rem;
+        object-fit: cover;
+    }
+
+    .ConfigurableProductBanner__content {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        min-width: 0;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        flex-grow: 1;
+    }
+
+    .ConfigurableProductBanner__info {
+        display: flex;
+        flex-direction: column;
+        gap: 0.125rem;
+    }
+
+    .ConfigurableProductBanner__title {
+        @include heading-s;
+        font-size: 1rem;
+        color: color(default, info);
+        margin: 0;
+    }
+
+    .ConfigurableProductBanner__subtitle {
+        @include body-s;
+        font-size: 0.75rem;
+        margin: 0;
+        color: color(menu, hoverForeground);
+        line-height: 180%;
+    }
+
+    .ConfigurableProductBanner__actions {
+        display: flex;
+        flex-direction: row;
+        gap: 0.5rem;
+        margin-top: 0.5rem;
+    }
+
+    .ConfigurableProductBanner__expanded {
+        flex-grow: 1;
+    }
+
+    margin-bottom: 1rem;
+}

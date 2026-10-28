@@ -1,0 +1,99 @@
+@import 'style/colors';
+@import 'style/screen';
+@import 'style/type';
+
+.DesignsModal {
+    .theatre {
+        background-color: color(default, backgroundAlt);
+        border-radius: 0.75rem;
+    }
+    .modal-header {
+        background-color: color(default, backgroundAlt);
+    }
+    .modalContainer {
+        background-color: color(default, backgroundAlt);
+        border-radius: inherit;
+        padding: 0 4rem;
+        max-width: 1600px;
+        margin-left: auto;
+        margin-right: auto;
+
+        .modalHeader {
+            display: flex;
+            justify-content: space-between;
+            flex-direction: column;
+            gap: 2rem;
+
+            @include md {
+                display: flex;
+                flex-direction: row;
+            }
+
+            h1 {
+                @include heading-lg;
+                color: #111111;
+            }
+
+            .newDesignButton {
+                background-color: color(default, foreground);
+                color: color(default, background);
+                margin: 1rem 0;
+
+                .newDesignIcon {
+                    margin-right: 0.5rem;
+                }
+                @include md {
+                    margin: 0;
+                }
+            }
+
+            .moreButton {
+                background-color: color(default, background);
+                margin-left: 1rem;
+                .btn__inner {
+                    border: none;
+                    padding: 0 1.25rem 0.5rem 1.25rem;
+                }
+            }
+        }
+        .modalContent {
+            margin: 2rem 0;
+            padding: 2rem 2rem 14rem 2rem;
+            display: grid;
+            gap: 2rem;
+            justify-items: center;
+            grid-template-columns: repeat(1, 1fr);
+
+            @media (min-width: 768px) {
+                grid-template-columns: repeat(2, 1fr);
+                .CompositionThumbnail .MoreActionsDropdown {
+                    left: 0;
+                    right: auto;
+                    margin-right: 1.5rem;
+                }
+
+                .CompositionThumbnail:nth-child(2n) .MoreActionsDropdown {
+                    left: auto;
+                    right: 0;
+                    margin-right: 1.5rem;
+                }
+            }
+
+            @media (min-width: 1280px) {
+                grid-template-columns: repeat(3, 1fr);
+
+                .CompositionThumbnail:nth-child(2n) .MoreActionsDropdown {
+                    left: 0;
+                    right: auto;
+                    margin-right: 0;
+                }
+
+                .CompositionThumbnail:nth-child(3n) .MoreActionsDropdown {
+                    left: auto;
+                    right: 0;
+                    margin-right: 1.5rem;
+                }
+            }
+        }
+    }
+}

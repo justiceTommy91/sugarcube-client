@@ -1,0 +1,134 @@
+{
+  "find-my-fit": {
+    "actions": {
+      "takePhoto": "Prends une photo",
+      "uploadPhoto": "Télécharger une photo"
+    },
+    "chooseSample": {
+      "scene_0": "Coin détente",
+      "scene_1": "Le coin de Moody",
+      "title": "Choisissez un espace d'échantillonnage pour l'essayer"
+    },
+    "csat": {
+      "bad": "Mauvais",
+      "cancel": "Annuler",
+      "describeIt": "Dites-nous-en plus",
+      "dissatisfied": "Insatisfait",
+      "good": "Bien",
+      "goodOrBad": "Merci ! Nous aimerions savoir pourquoi vous avez fait ce choix. Qu'est-ce qui vous a marqué dans cette expérience, que ce soit positif ou négatif ?",
+      "neutral": "Neutre",
+      "privacyText": "Afin de protéger votre vie privée, évitez d'inclure des informations personnelles (par exemple, adresse e-mail, numéro de téléphone).",
+      "ratingDescription": "Vos feedback nous aideront à améliorer votre expérience.",
+      "satisfied": "Satisfait",
+      "submit": "Envoyer",
+      "title": "Comment se passe votre expérience ?"
+    },
+    "hero": {
+      "imageAlt": "Étagères",
+      "subtitle": "Ajoutez une photo pour obtenir des suggestions.",
+      "title": "Trouvez un meuble de rangement adapté à votre espace"
+    },
+    "landing": {
+      "actions": {
+        "addPhoto": "Ajouter une photo",
+        "takePhoto": "Prends une photo",
+        "trySampleSpace": "Essayez un exemple d'espace",
+        "uploadPhoto": "Télécharger une photo"
+      },
+      "comingSoon": {
+        "appStoreBadgeAlt": "Télécharger sur l'App Store",
+        "designOnDesktop": "Conception sur ordinateur",
+        "getApp": "Téléchargez application IKEA pour aménager votre intérieur",
+        "googlePlayBadgeAlt": "Téléchargez-la sur Google Play",
+        "kreativLink": "Lien IKEA Kreativ",
+        "linkCopied": "Lien copié",
+        "title": "Cette fonctionnalité sera bientôt disponible !"
+      },
+      "features": {
+        "compare": {
+          "title": "Faites glisser votre doigt pour comparer rapidement les options"
+        },
+        "intro": {
+          "title": "Trouver un meuble de rangement, c'est facile avec Find My Fit"
+        },
+        "save": {
+          "title": "Ajoutez vos articles préférés à votre panier et trouvez « le bon »"
+        },
+        "setArea": {
+          "title": "Dessinez la zone cible"
+        }
+      },
+      "hero": {
+        "genericCategory": "stockage",
+        "imageAlt": "Photos d'articles de rangement",
+        "privacyNote": "N'importez pas d'images montrant des personnes, des données personnelles ou des objets privés. Pour plus d'infos, consultez notre <1>politique de confidentialité</1>.",
+        "subtitle": "Utilisez une photo et parcourez les styles proposés sur {{subject}} pour trouver celui qui convient à un espace précis",
+        "title": "Trouvez un meuble de rangement adapté à votre espace",
+        "videoAlt": "Démonstration de la fonctionnalité « Find My Fit »"
+      },
+      "page": {
+        "description": "Téléchargez une photo de l'étagère qui vous intéresse pour trouver le modèle et la taille qui vous conviennent, sans avoir à deviner.",
+        "title": "Trouvez le modèle qui vous convient"
+      },
+      "sampleSpaces": {
+        "error": "Un problème est survenu. Veuillez réessayer.",
+        "title": "Choisissez un exemple d'espace"
+      }
+    },
+    "loginPrompt": {
+      "body": "Pour obtenir des conseils de rangement adaptés à votre espace, connectez-vous ou créez un compte IKEA gratuit.",
+      "logIn": "Se connecter",
+      "signUp": "S'inscrire",
+      "title": "Connectez-vous pour télécharger une photo"
+    },
+    "page": {
+      "description": "Trouvez le mobilier idéal pour votre intérieur chez IKEA",
+      "title": "Trouvez le modèle qui vous convient"
+    },
+    "toasts": {
+      "unableToFavorite": "Nous sommes désolés, mais nous n'avons pas pu ajouter votre élément à la liste."
+    },
+    "viewer": {
+      "accessibilityDescription": "Find My Fit utilise une photo de votre pièce pour vous recommander des produits IKEA adaptés à l'espace sélectionné. Le dessin et l'interaction visuelle peuvent s'avérer difficiles pour les personnes malvoyantes ou ayant une déficience visuelle. Les détails des produits, les prix et les options d'achat sont entièrement accessibles une fois les résultats affichés.",
+      "addToBag": "Ajouter au panier",
+      "adjustHeader": "Modifiez votre zone de recherche",
+      "clearDrawing": "Dessin clair",
+      "confirmDimension": "Vérifier les dimensions",
+      "continue": "Continuer",
+      "continueAriaLabel": "Passer à l'étape suivant",
+      "decreaseDimension": "Réduire la dimension",
+      "dimDepth": "Profondeur",
+      "dimHeight": "Hauteur",
+      "dimWidth": "Largeur",
+      "done": "C'est fait",
+      "doneAriaLabel": "Modification terminée",
+      "drawFocusArea": "Dessinez la zone de mise au point souhaitée",
+      "drawingHeader": "Où souhaitez-vous installer votre espace de rangement ?",
+      "editArea": "Zone d'édition",
+      "fewResultsToast": "Essayez de modifier la zone de recherche pour obtenir davantage de résultats.",
+      "goBack": "Retour",
+      "goToImage": "Aller à l'image {{index}}",
+      "increaseDimension": "Augmenter la dimension",
+      "magicEraser": "Gomme magique",
+      "noResults": "Aucun produit trouvé pour cet espace.",
+      "noResultsButton": "Aucun résultat trouvé",
+      "noResultsTitle": "Aucun résultat trouvé",
+      "removedFromFavorites": "Supprimé des favoris",
+      "removeFavorite": "Supprimer des favoris",
+      "retrySearch": "Réessayez",
+      "savedToFavorites": "Ajouté aux favoris",
+      "saveFavorite": "Ajouter aux favoris",
+      "search": "Rechercher",
+      "searchError": "Aucun produit correspondant n'a été trouvé. Essayez de sélectionner une autre zone.",
+      "searchErrorToast": "Une erreur s'est produite. Veuillez réessayer.",
+      "searching": "Recherche en cours...",
+      "seeAllResults": "Voir tous les résultats",
+      "showMoreDetails": "Afficher plus de détails",
+      "swipeForMore": "Faites glisser pour en savoir plus",
+      "tapToSelect": "Appuyez pour sélectionner un élément",
+      "tryAgain": "Réessayez",
+      "viewResults_one": "Consulter les résultats de l' {{count}}",
+      "viewResults_other": "Consulter les résultats de l' {{count}}"
+    }
+  }
+}

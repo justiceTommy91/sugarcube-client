@@ -1,0 +1,92 @@
+@import 'style/colors';
+@import 'style/type';
+@import 'style/zed';
+
+.MultiViewModalViewButton {
+    transition: all 0.25s ease;
+    margin-left: 0.125rem;
+    margin-right: 0.125rem;
+    position: relative;
+
+    .multiViewImage {
+        position: relative;
+        border: 2px solid color(default, background);
+        border-radius: 0.625rem;
+        height: 8rem;
+        max-width: 11.875rem;
+        overflow: hidden;
+        justify-content: center;
+        align-content: center;
+        display: flex;
+        margin: 0.125rem;
+
+        img,
+        canvas {
+            height: 100%;
+            width: auto;
+            display: block;
+            border-radius: 0.5rem;
+        }
+
+        .viewOverlayWrapper {
+            position: absolute;
+            left: 0;
+            top: 0;
+            display: flex;
+            width: 100%;
+            justify-content: center;
+            padding: 0.75rem 1rem 0.5rem 1rem;
+            z-index: zed(above);
+        }
+
+        .viewOverlay {
+            @include body-sm;
+            font-weight: 700;
+            width: fit-content;
+            opacity: 0;
+            color: color(default, foreground);
+            transition: opacity 0.25s ease;
+            background-color: color(brand, secondaryText);
+            border-radius: 2.5rem;
+            padding: 0.25rem 1rem;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            text-align: center;
+            &.alwaysShowLabel {
+                opacity: 1;
+            }
+        }
+
+        &:hover {
+            cursor: pointer;
+
+            .viewOverlay {
+                opacity: 1;
+            }
+        }
+    }
+
+    &.selectedView {
+        cursor: pointer;
+
+        .multiViewImage {
+
+            border-radius: 0.625rem;
+
+            outline: 2px solid #000;
+            outline-offset: 0.5px;
+
+            .viewOverlay {
+                opacity: 1;
+            }
+        }
+    }
+
+    &:first-of-type {
+        margin-left: 0;
+    }
+    &:last-of-type {
+        margin-right: 0;
+    }
+}

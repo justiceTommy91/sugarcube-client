@@ -1,0 +1,98 @@
+@import 'style/colors';
+
+.ColorSwatch {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.75rem;
+    text-align: center;
+
+    &__button {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 0.5rem;
+        cursor: pointer;
+        position: relative;
+        background: none;
+        border: none;
+        padding: 0;
+        font: inherit;
+        color: inherit;
+
+        &[disabled] {
+            opacity: 0.25;
+            pointer-events: none;
+        }
+
+        &:focus {
+            outline: none;
+        }
+        // Focus styling for regular tab navigation (when tabbable=true, e.g., in AllFiltersModal context)
+        &:focus-visible {
+            .ColorSwatch__circle {
+                outline-color: #000000;
+                outline-width: 3px;
+                outline-style: solid;
+                outline-offset: 6px;
+                border: 2px solid #000000;
+            }
+        }
+        // Focus styling for programmatic keyboard navigation (when tabbable=false, e.g., in pill dropdown context)
+        // Applied via JavaScript when navigating with arrow keys
+        &[data-keyboard-focused='true'] {
+            .ColorSwatch__circle {
+                outline-color: #000000;
+                outline-width: 3px;
+                outline-style: solid;
+                outline-offset: 6px;
+                border: 2px solid #000000;
+            }
+        }
+    }
+
+    &__circle {
+        width: 3.75rem;
+        height: 3.75rem;
+        border-radius: 50%;
+        border: 1px solid color(default, border);
+        outline: 2px solid transparent;
+        outline-offset: 2px;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: all 200ms ease-in-out;
+
+        .ColorSwatch__button:hover:not([disabled]) & {
+            outline-color: color(default, border);
+        }
+
+        .ColorSwatch__button[aria-selected='true'] & {
+            outline-color: $color-black;
+        }
+
+        .ColorSwatch__button--multicolor & {
+            background-image: url('#{$PATH-PREFIX}/images/graphics/multicolor.svg');
+        }
+    }
+
+    &__check {
+        width: 1.5rem;
+        height: 1.5rem;
+    }
+
+    &__name {
+        font-size: 0.75rem;
+        color: $color-gray-700;
+        text-align: center;
+        text-transform: capitalize;
+    }
+
+    &__count {
+        font-size: 0.75rem;
+        color: $color-gray-700;
+        text-align: center;
+    }
+}

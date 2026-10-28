@@ -1,0 +1,101 @@
+@use 'style/colors' as *;
+@use 'style/screen' as *;
+@use 'style/typography' as *;
+
+.MobileDesignTipsCarousel {
+    --carousel-x-padding: 1.25rem;
+
+    @include skapa-m {
+        --carousel-x-padding: 1.5rem;
+    }
+
+    @include skapa-l {
+        display: none;
+        --carousel-x-padding: 2rem;
+    }
+
+    padding: 3rem var(--carousel-x-padding);
+    background-color: $color-white;
+
+    &__header {
+        margin-bottom: 1.5rem;
+    }
+
+    &__heading {
+        @include typography-base;
+        @include body-l;
+        color: $color-black;
+        margin-bottom: 0.5rem;
+    }
+
+    &__subheading {
+        @include typography-base;
+        @include heading-m;
+        color: $color-black;
+    }
+
+    &__viewport {
+        overflow: hidden;
+        margin: 0 calc(var(--carousel-x-padding) * -1);
+        padding: 0 var(--carousel-x-padding);
+    }
+
+    &__container {
+        display: flex;
+        touch-action: pan-y pinch-zoom;
+        gap: 1rem;
+    }
+
+    &__slide {
+        flex: 0 0 15rem;
+        min-width: 0;
+    }
+
+    &__image {
+        width: 15rem;
+        height: 9.375rem;
+        border-radius: 0.5rem;
+        overflow: hidden;
+        object-fit: cover;
+        display: block;
+        user-select: none;
+    }
+
+    &__slide-title {
+        @include typography-base;
+        @include heading-xs;
+        color: $color-black;
+        margin-top: 0.75rem;
+        margin-bottom: 0.5rem;
+    }
+
+    &__slide-description {
+        @include typography-base;
+        @include caption-s;
+        color: $color-black;
+    }
+
+    &__progress-track {
+        position: relative;
+        width: 100%;
+        height: 0.125rem;
+        background-color: #e0e0e0;
+        margin-top: 1.25rem;
+        border-radius: 0.25rem;
+        cursor: pointer;
+        user-select: none;
+    }
+
+    &__progress-thumb {
+        position: absolute;
+        top: 0;
+        height: 100%;
+        background-color: $color-black;
+        border-radius: 0.25rem;
+        cursor: grab;
+
+        &:active {
+            cursor: grabbing;
+        }
+    }
+}

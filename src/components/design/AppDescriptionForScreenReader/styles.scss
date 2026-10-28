@@ -1,0 +1,4 @@
+@import 'style/a11y';
+.AppDescriptionForScreenReader {
+    @include screen-reader-only;
+}

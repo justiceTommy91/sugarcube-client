@@ -1,0 +1,40 @@
+@import 'style/colors';
+@import 'style/zed';
+@import 'style/type';
+
+.SaveOptions {
+    z-index: zed(optionsMenu);
+    position: absolute;
+    top: 4rem;
+
+    background-color: color(default, background);
+    border-radius: 1rem;
+    filter: drop-shadow(0 6px 30px rgba(0, 0, 0, 0.1));
+    padding: 1rem;
+
+    .SaveOptions__list {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        gap: 1rem;
+
+        .SaveOptions__list-item {
+            display: flex;
+
+            .SaveOptions__button {
+                // Override parent container's fixed button dimensions with higher specificity
+                width: fit-content;
+                background-color: color(default, background);
+                font-weight: bold;
+                opacity: 0.7;
+                @include body-md;
+                border-radius: unset;
+
+                &:hover {
+                    background-color: color(default, background);
+                    opacity: 1;
+                }
+            }
+        }
+    }
+}

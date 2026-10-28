@@ -1,0 +1,17 @@
+@import 'style/colors';
+
+.AdminProductDetails {
+    border: 1px solid color(brand, secondary);
+    font-size: 0.7rem;
+    margin-top: 1rem;
+    padding: 0.25rem;
+    grid-column: span 2;
+
+    li {
+        white-space: nowrap;
+    }
+    a {
+        text-decoration: underline;
+        margin-left: 0.5rem;
+    }
+}

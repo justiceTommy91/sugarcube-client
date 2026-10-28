@@ -1,0 +1,38 @@
+@import 'style/zed';
+@import 'style/type';
+@import 'style/colors';
+
+.ProductPlaceStackable {
+    .centerContent {
+        display: flex;
+        justify-content: center;
+    }
+
+    .placeOnTheFloorBtn {
+        white-space: nowrap;
+        width: 85%;
+        .btn__inner {
+            min-height: 2rem;
+        }
+        pointer-events: all;
+        z-index: zed(above);
+        font-size: 0.75rem;
+    }
+
+    .stackableTextDescription {
+        @include body-sm;
+        color: color(default, description);
+        text-align: center;
+        margin-bottom: 0;
+        padding-bottom: 0;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    .or {
+        @include body-sm;
+        margin-top: 0.15rem;
+        margin-bottom: 0.3rem;
+        color: color(status, indeterminate);
+    }
+}

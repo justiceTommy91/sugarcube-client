@@ -1,0 +1,97 @@
+@use 'style/colors' as *;
+@use 'style/typography' as *;
+
+#MobileDashboardV3 .RoomTemplateCarousel {
+    width: 100%;
+    position: relative;
+    --slide-spacing: var(--carousel-slide-spacing);
+    --thumbnail-width: clamp(
+        18rem,
+        calc(100vw - 2 * var(--page-frame-padding) - var(--slide-spacing) - 2rem),
+        31.25rem
+    );
+    padding: 1.75rem 0 3.5rem;
+    background-color: #ebedec;
+
+    &__heading {
+        text-align: center;
+        @include typography-base;
+        @include heading-s;
+        margin: 0 var(--page-frame-padding) 1.5rem;
+    }
+
+    &__viewport {
+        padding-left: var(--page-frame-padding);
+        padding-right: var(--page-frame-padding);
+        overflow: hidden;
+        cursor: grab;
+
+        &:active {
+            cursor: grabbing;
+        }
+    }
+
+    &__container {
+        display: flex;
+        touch-action: pan-y pinch-zoom;
+        margin-left: calc(var(--slide-spacing) * -1);
+    }
+
+    &__slide {
+        flex: 0 0 auto;
+        min-width: 0;
+        padding-left: var(--slide-spacing);
+    }
+
+    &__thumbnail {
+        display: block;
+        width: var(--thumbnail-width);
+        aspect-ratio: 8 / 5;
+        background: #fff;
+        overflow: hidden;
+        position: relative;
+        box-shadow: 0 0.125rem 0.5rem rgba(0, 0, 0, 0.1);
+        text-decoration: none;
+        cursor: pointer;
+    }
+
+    &__image {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        display: block;
+    }
+
+    &__badge {
+        position: absolute;
+        top: 0.75rem;
+        right: 0.75rem;
+        .badge__label {
+            @include typography-base;
+            @include caption-s;
+        }
+    }
+
+    &__progress-track {
+        position: relative;
+        height: 2px;
+        background-color: #f5f5f5;
+        margin: 1rem var(--page-frame-padding);
+        border-radius: 0.25rem;
+        cursor: pointer;
+        user-select: none;
+    }
+
+    &__progress-thumb {
+        position: absolute;
+        top: 0;
+        height: 100%;
+        background-color: #111;
+        border-radius: 0.25rem;
+        cursor: grab;
+
+        &:active {
+            cursor: grabbing;
+        }
+    }
+}

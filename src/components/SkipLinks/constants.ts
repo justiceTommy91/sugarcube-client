@@ -1,0 +1,6 @@
+export const NAVIGATION = 'NAVIGATION'
+export const HEADER = 'HEADER'
+export const BROWSE = 'BROWSE'
+export const DESIGN = 'DESIGN'
+export const PRODUCT_FILTER = 'PRODUCT_FILTER'
+export const NEXT_CATEGORY = 'NEXT_CATEGORY'

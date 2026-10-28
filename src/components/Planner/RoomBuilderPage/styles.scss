@@ -1,0 +1,55 @@
+@import 'style/type';
+@import 'style/colors';
+@import 'style/zed';
+
+.RoomBuilder {
+    .plannerViewerContainer {
+        display: grid;
+        grid-template-columns: 34rem auto;
+        height: 100vh;
+        .viewer {
+            width: 100%;
+            height: 100%;
+            background: color(default, backgroundPreview);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-width: 50rem;
+
+            .closeButton {
+                position: absolute;
+                top: 1.5rem;
+                right: 1.5rem;
+                height: 3.5rem;
+                width: 3.5rem;
+                z-index: zed(modalTopLayer);
+                border-radius: 50%;
+            }
+        }
+        .PlannerViewer {
+            .children {
+                pointer-events: none;
+            }
+        }
+    }
+    .Tips,
+    .InfoTip {
+        top: 7rem;
+
+        &.toast--show {
+            transform: translate(-4rem, 0);
+        }
+    }
+
+    .PlannerViewer {
+        width: 85%;
+        justify-content: flex-end;
+    }
+
+    /* Overrides for 1320px and up. */
+    .PlannerViewer {
+        @media (min-width: 1320px) {
+            width: 100%;
+        }
+    }
+}

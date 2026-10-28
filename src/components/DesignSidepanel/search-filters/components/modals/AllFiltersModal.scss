@@ -1,0 +1,40 @@
+@import 'style/colors';
+@import 'style/type';
+
+.AllFiltersModal {
+    // Override sheets--small max-width to match design sidepanel width
+    .sheets--small {
+        max-width: 33.25rem;
+    }
+
+    .modal-header {
+        border-bottom: 1px solid $color-lightGray;
+    }
+    &__content {
+        flex: 1;
+        // Overflow visible to show the focus state borders
+        overflow: visible;
+        padding-bottom: 1rem;
+        ul {
+            li:first-of-type {
+                .accordion-item-header {
+                    border-top: none;
+                }
+            }
+        }
+    }
+
+    &__footer {
+        display: flex;
+        gap: 1rem;
+        padding: 1.5rem;
+        border-top: 1px solid $color-lightGray;
+        background-color: $color-white;
+        position: sticky;
+        bottom: 0;
+
+        button {
+            flex: 1;
+        }
+    }
+}

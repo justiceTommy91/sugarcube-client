@@ -1,0 +1,63 @@
+@import 'style/colors';
+@import 'style/type';
+@import 'style/zed';
+
+$multi-view-sheet-height: 12rem;
+$sidebarBodyWidth: 34rem;
+$upptackaSidebarBodyWidth: 35rem;
+
+.MultiView {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    width: calc(100vw - $sidebarBodyWidth);
+    height: $multi-view-sheet-height;
+    padding: 0 1.5rem;
+
+    background-color: color(default, backgroundAlt);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    z-index: zed(optionsMenu);
+
+    transition: all 200ms ease-in-out;
+
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+    &.upptacka {
+        width: calc(100vw - $upptackaSidebarBodyWidth);
+    }
+
+    &.open {
+        background: color(default, background);
+        transform: translateY(-$multi-view-sheet-height);
+    }
+    .closeButton {
+        align-self: flex-end;
+        margin-top: 0.5rem;
+    }
+    .multiViewCarousel {
+        width: 100%;
+        z-index: zed(optionsMenu);
+
+        .overflow-carousel__content {
+            // These two are to keep the leftmost selected item border
+            // from being clipped by its parent
+            padding: 0.5rem;
+            margin: 0 -0.5rem;
+
+            .carousel__content {
+                padding-top: 0.625rem;
+                padding-bottom: 0.625rem;
+
+                .carousel__body {
+                    align-items: center;
+
+                    button:first-of-type {
+                        left: 0.5rem;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,134 @@
+{
+  "find-my-fit": {
+    "actions": {
+      "takePhoto": "Maak een foto",
+      "uploadPhoto": "Een foto uploaden"
+    },
+    "chooseSample": {
+      "scene_0": "Ontspanningshoekje",
+      "scene_1": "Moody Corner",
+      "title": "Kies een steekproefruimte om het eens uit te proberen"
+    },
+    "csat": {
+      "bad": "Slecht",
+      "cancel": "Annuleren",
+      "describeIt": "Vertel ons er meer over",
+      "dissatisfied": "Ontevreden",
+      "good": "Goed",
+      "goodOrBad": "Bedankt! We zouden graag willen weten waarom je daarvoor hebt gekozen. Wat viel je het meest op tijdens je ervaring, in positieve of negatieve zin?",
+      "neutral": "Neutraal",
+      "privacyText": "Om je privacy te beschermen, verzoeken wij je geen persoonlijke gegevens (zoals e-mailadres of telefoonnummer) te vermelden.",
+      "ratingDescription": "Jouw feedback helpt ons om de ervaring te verbeteren.",
+      "satisfied": "Tevreden",
+      "submit": "Verzenden",
+      "title": "Hoe bevalt het jouw ervaring?"
+    },
+    "hero": {
+      "imageAlt": "Planken",
+      "subtitle": "Voeg een foto toe om aanbevelingen te krijgen.",
+      "title": "Zoek opslagruimte die bij jouw ruimte past"
+    },
+    "landing": {
+      "actions": {
+        "addPhoto": "Een afbeelding toevoegen",
+        "takePhoto": "Maak een foto",
+        "trySampleSpace": "Probeer een voorbeeldruimte",
+        "uploadPhoto": "Een foto uploaden"
+      },
+      "comingSoon": {
+        "appStoreBadgeAlt": "Download in de App Store",
+        "designOnDesktop": "Ontwerp op je computer",
+        "getApp": "Download de IKEA-app om een ruimte in te richten",
+        "googlePlayBadgeAlt": "Download het op Google Play",
+        "kreativLink": "IKEA Kreativ-link",
+        "linkCopied": "Link gekopieerd",
+        "title": "Deze functie komt binnenkort beschikbaar!"
+      },
+      "features": {
+        "compare": {
+          "title": "Veeg om snel de opties te vergelijken"
+        },
+        "intro": {
+          "title": "Op zoek naar opbergruimte? Dat gaat heel makkelijk met Find My Fit"
+        },
+        "save": {
+          "title": "Favoriete items en vind ‘dé perfecte’"
+        },
+        "setArea": {
+          "title": "Teken jouw doelgebied"
+        }
+      },
+      "hero": {
+        "genericCategory": "opslag",
+        "imageAlt": "Foto’s van opslagartikelen",
+        "privacyNote": "Upload geen afbeeldingen met mensen, persoonlijke gegevens of privé-items. Lees meer in ons <1>privacybeleid</1>.",
+        "subtitle": "Gebruik een foto en blader door verschillende stijlen {{subject}} die bij een bepaalde ruimte passen",
+        "title": "Zoek opslagruimte die bij jouw ruimte past",
+        "videoAlt": "Demonstratie van de functie 'Find My Fit'"
+      },
+      "page": {
+        "description": "Upload een foto van de rekken die je aan het onderzoeken was, zodat je precies de juiste stijl en pasvorm kunt vinden, zonder dat je hoeft te gissen.",
+        "title": "Vind wat bij je past"
+      },
+      "sampleSpaces": {
+        "error": "Er is iets fout gegaan. Probeer het nog eens.",
+        "title": "Kies een voorbeeldruimte"
+      }
+    },
+    "loginPrompt": {
+      "body": "Log in of maak een gratis IKEA-account aan om opbergadvies voor jouw ruimte te krijgen.",
+      "logIn": "Inloggen",
+      "signUp": "Meld je aan",
+      "title": "Log in om een foto te uploaden"
+    },
+    "page": {
+      "description": "Vind de perfecte inrichting voor jouw huis bij IKEA",
+      "title": "Vind wat bij je past"
+    },
+    "toasts": {
+      "unableToFavorite": "Het spijt ons, maar we konden jouw item niet aan de lijst toevoegen."
+    },
+    "viewer": {
+      "accessibilityDescription": "Find My Fit gebruikt een foto van je ruimte om IKEA-producten aan te bevelen die bij een gekozen ruimte passen. Het tekenen en de visuele interactie kunnen lastig zijn voor mensen met een visuele beperking of slechtzienden. Productdetails, prijzen en winkelopties zijn volledig toegankelijk zodra de resultaten worden weergegeven.",
+      "addToBag": "In winkelwagen",
+      "adjustHeader": "Pas jouw zoekgebied aan",
+      "clearDrawing": "Duidelijke tekening",
+      "confirmDimension": "Bevestig de afmetingen",
+      "continue": "Ga verder",
+      "continueAriaLabel": "Ga verder naar de volgende stap",
+      "decreaseDimension": "Afmeting verkleinen",
+      "dimDepth": "Diepte",
+      "dimHeight": "Hoogte",
+      "dimWidth": "Breedte",
+      "done": "Klaar",
+      "doneAriaLabel": "Klaar met bewerken",
+      "drawFocusArea": "Teken het gebied dat jij wilt selecteren",
+      "drawingHeader": "Waar wil je jouw opslagruimte hebben?",
+      "editArea": "Bewerkingsgebied",
+      "fewResultsToast": "Probeer jouw zoekgebied aan te passen om meer resultaten te krijgen.",
+      "goBack": "Ga terug",
+      "goToImage": "Ga naar de afbeelding {{index}}",
+      "increaseDimension": "Vergroot de afmeting",
+      "magicEraser": "Magische gum",
+      "noResults": "Er zijn geen producten gevonden voor deze ruimte.",
+      "noResultsButton": "Er zijn geen resultaten gevonden",
+      "noResultsTitle": "Er zijn geen resultaten gevonden",
+      "removedFromFavorites": "Uit favorieten verwijderd",
+      "removeFavorite": "Uit favorieten verwijderen",
+      "retrySearch": "Probeer het nog eens",
+      "savedToFavorites": "Opgeslagen in favorieten",
+      "saveFavorite": "Toevoegen aan FAVORIT",
+      "search": "Zoeken",
+      "searchError": "Er zijn geen passende producten gevonden. Probeer eens een ander gebied te selecteren.",
+      "searchErrorToast": "Er is iets misgegaan. Probeer het nog eens.",
+      "searching": "Zoeken...",
+      "seeAllResults": "Bekijk alle resultaten",
+      "showMoreDetails": "Meer details weergeven",
+      "swipeForMore": "Veeg voor meer",
+      "tapToSelect": "Tik om het item te selecteren",
+      "tryAgain": "Probeer het nog eens",
+      "viewResults_one": "Bekijk {{count}} resultaat",
+      "viewResults_other": "Bekijk {{count}} resultaten"
+    }
+  }
+}

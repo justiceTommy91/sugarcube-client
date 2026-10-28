@@ -1,0 +1,69 @@
+---
+import { ViewerApp } from './_components/ViewerApp'
+import BaseLayout from '@layouts/BaseLayout.astro'
+import { generateLocaleStaticPaths, type LocalePageProps, type Translations } from '@lib/static-paths-utils'
+
+// ⚠️ TEST PAGE - Never deployed to production
+// This page is for testing purposes only and is deployed to:
+// - Cloudflare Pages (all branches)
+// - CTE environment (RELEASE branches)
+// Production deployment is blocked by pipeline configuration
+
+// Generate static pages for all locales at build time
+export async function getStaticPaths() {
+    return generateLocaleStaticPaths(['learnmore', 'common', 'dashboard', 'translation'])
+}
+
+// Typed props from getStaticPaths
+const { locale, translations } = Astro.props as LocalePageProps
+const { country, lang } = Astro.params
+const market = `${country}/${lang}`
+
+// Simple defaults for test page - not user-facing
+const dashboardSeo = translations.translation?.siteMetaData?.dashboard
+const title = dashboardSeo?.title || 'IKEA Home Design'
+const description = dashboardSeo?.description || 'Design your home with IKEA'
+---
+
+<BaseLayout
+    locale={locale}
+    market={market}
+    title={title}
+    description={description}
+    allowSeo={false}
+    showHeader={false}
+    showFooter={false}
+    showPricePackage={false}
+>
+    <!-- Page-specific head content -->
+    <Fragment slot="head">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+        <style>
+            /* Collapse subnav */
+            .hnf-tabs-navigation--collapsed {
+                margin-bottom: 0 !important;
+            }
+
+            /* Hide Syndeo chat */
+            syndeo-chat {
+                display: none;
+            }
+        </style>
+    </Fragment>
+
+    <!-- Single client:only island — all content needs browser APIs (WebGL, WASM) -->
+    <!-- ViewerApp provides i18n + QueryClient; ViewerTest provides demo selector -->
+    <ViewerApp client:only="react" locale={locale} market={market} translations={translations as Translations} />
+    
+</BaseLayout>
+
+<style is:global>
+    /* Full viewport for 3D viewer */
+    html, body {
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        height: 100%;
+        overscroll-behavior: none;
+    }
+</style>

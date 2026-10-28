@@ -1,0 +1,14 @@
+@import 'style/type';
+@import 'style/colors';
+
+.StarRatings {
+    display: flex;
+    align-items: center;
+    .stars {
+        margin-right: 1rem;
+    }
+    .reviewCount {
+        @include body-sm;
+        color: color(default, description);
+    }
+}

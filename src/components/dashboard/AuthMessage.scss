@@ -1,0 +1,44 @@
+@import 'style/colors';
+@import 'style/type';
+@import 'style/screen';
+
+.AuthMessage {
+    margin-block: 4.5rem;
+
+    .sectionHeader {
+        @include body-xxl;
+        margin-bottom: 0.625rem;
+        h3 {
+            @include body-xxl;
+        }
+    }
+
+    button {
+        text-decoration: underline;
+    }
+
+    &:not(.isMorpheusEnabled) {
+        button {
+            @include body-xl;
+
+            &:first-of-type:first-letter {
+                text-transform: capitalize;
+            }
+        }
+    }
+
+    p {
+        @include body-lg;
+        color: color(cta, link);
+        a {
+            text-decoration: underline;
+        }
+        span {
+            @include body-xl;
+        }
+    }
+
+    @include mob {
+        display: none;
+    }
+}

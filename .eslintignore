@@ -1,0 +1,8 @@
+/src/lib
+/coverage
+/e2eTests/**/tests-out
+/plugins
+/serve.js
+.husky
+package.json
+gatsby-config.ts

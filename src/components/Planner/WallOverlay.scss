@@ -1,0 +1,183 @@
+@import 'style/zed';
+@import 'style/colors';
+@import 'style/type';
+
+$measurement-line-color: #929292;
+$measurement-tick-size: 12px;
+$measurement-line-width: 1px;
+
+.WallOverlay {
+    .WallDimensions {
+        position: absolute;
+        border: 1px color(default, foreground) solid;
+        border-radius: 0.25rem;
+        padding: 0.25rem 0.5rem;
+        font-size: small;
+        text-align: center;
+        transform: translateX(-50%) translateY(-50%);
+        user-select: none;
+        z-index: zed(above) + 1;
+        background-color: color(default, background);
+    }
+    .WallLine {
+        position: absolute;
+        background-color: color(default, foreground);
+        height: 0.75rem;
+        transform-origin: center;
+        &:hover {
+            background-color: color(brand, primary);
+        }
+        &:active {
+            background-color: color(brand, primary);
+        }
+        &.selected {
+            background-color: color(brand, primary);
+        }
+    }
+
+    .WallOverlay__measurement {
+        display: flex;
+        align-items: center;
+        position: absolute;
+        inline-size: 100%;
+        white-space: nowrap;
+        padding-block-end: 3rem;
+        z-index: 500;
+        pointer-events: none;
+        user-select: none;
+
+        .WallOverlay__measurementLine {
+            flex: 1;
+            display: flex;
+            align-items: center;
+            height: $measurement-tick-size;
+            margin-inline: 1rem;
+
+            &:first-of-type {
+                border-inline-start: $measurement-line-width solid $measurement-line-color;
+                margin-inline-start: 0;
+            }
+
+            &:last-of-type {
+                border-inline-end: $measurement-line-width solid $measurement-line-color;
+                margin-inline-end: 0;
+            }
+
+            &::after {
+                display: block;
+                content: '';
+                inline-size: 100%;
+                border-block-start: $measurement-line-width solid $measurement-line-color;
+            }
+        }
+
+        .WallOverlay__measurementTooltip {
+            display: none;
+            position: absolute;
+            inset-block-start: 50%;
+            inset-inline-start: 50%;
+            padding: 0.25rem 0.5rem;
+            border-radius: 8px;
+            background: #000000aa;
+            color: #fff;
+            transform: translate(-50%, -50%);
+            &.forceShow {
+                display: block;
+            }
+        }
+
+        &.WallOverlay__measurement_collapsed {
+            .WallOverlay__measurementLine {
+                &:first-of-type,
+                &:last-of-type {
+                    margin-inline: 0;
+                }
+            }
+            .WallOverlay__measurementText {
+                pointer-events: auto;
+                &:hover {
+                    .WallOverlay__measurementTooltip {
+                        display: block;
+                    }
+                }
+            }
+        }
+    }
+
+    &:hover {
+        cursor: pointer;
+        .WallTooltip {
+            visibility: visible;
+            opacity: 1;
+        }
+        .WallOverlay__measurementTooltip {
+            display: block;
+        }
+    }
+    &.isHighlighted {
+        cursor: grabbing;
+        cursor: -webkit-grabbing;
+
+        .WallLine {
+            background-color: color(brand, primary);
+        }
+
+        .WallOverlay__measurementTooltip {
+            display: block;
+        }
+    }
+    &.isInteractive {
+        pointer-events: all;
+    }
+
+    .WallSplitMarker {
+        visibility: hidden;
+        position: absolute;
+        transform: translateX(-50%) translateY(-50%);
+        background-color: #fff;
+        width: 0;
+        height: 0;
+        pointer-events: all;
+        user-select: none;
+        opacity: 1;
+
+        .SplitButton {
+            z-index: zed(above) + 1;
+            background-color: color(actionPanel, background);
+            height: 2.5rem;
+            font-size: 12px;
+            color: color(actionPanel, foreground);
+            width: 7rem;
+            display: flex;
+            align-items: center;
+            border-radius: 1.25rem;
+            padding: 0.625rem;
+            box-sizing: border-box;
+            transform-origin: top left;
+
+            .SplitIcon {
+                fill: color(actionPanel, foreground);
+                pointer-events: all;
+                width: 1.5rem;
+                height: 1.5rem;
+                border-radius: 50%;
+                background-color: color(actionPanel, background);
+                border: none;
+                margin-right: 10px;
+            }
+
+            &:hover {
+                background: color(actionPanel, activeBackground);
+                color: color(actionPanel, activeForeground);
+                .SplitIcon {
+                    fill: color(actionPanel, activeForeground);
+                    background-color: color(actionPanel, activeBackground);
+                }
+            }
+        }
+
+        &.visible {
+            visibility: visible;
+        }
+    }
+}

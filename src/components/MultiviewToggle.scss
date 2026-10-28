@@ -1,0 +1,117 @@
+@import 'style/colors';
+@import 'style/type';
+
+.MultiViewToggle {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    margin: 1.5rem 2rem 0.5rem 2rem;
+    &.hideMultiView {
+        visibility: hidden;
+    }
+
+    &.shiftForCookieConsent {
+        transform: translateY(-5rem);
+    }
+
+    .buttonBar {
+        background-color: color(default, background);
+        border-radius: 4rem;
+        padding: 0.5rem;
+        // Add 8px margin left and right so that there is some spacing when window is incredibly narrow (e.g. ~1220px)
+        margin: 0 0.5rem;
+        display: flex;
+
+        .divider {
+            border-left: 1px solid color(default, border);
+            margin: 0 0.5rem;
+        }
+        &.isSingle {
+            padding: 0;
+        }
+
+        .toggleButton {
+            background-color: color(brand, secondaryText);
+            border: 1px solid color(brand, secondaryText);
+            white-space: nowrap;
+            align-self: center;
+
+            .btn__inner {
+                min-height: 2.5rem;
+                padding-right: 1.5rem;
+            }
+
+            &:hover:not([disabled]) {
+                border: 1px solid color(cta, linkHover);
+            }
+
+            &[disabled] {
+                .Icon {
+                    opacity: 0.25;
+                }
+            }
+
+            .Icon,
+            .svg-icon {
+                margin-right: 0.5rem;
+            }
+        }
+    }
+    .zoomWrapper {
+        display: flex;
+        align-items: center;
+        margin-left: 2rem;
+
+        .zoomLevel {
+            @include body-md;
+            font-weight: 600;
+            min-width: 3.5rem;
+            text-align: center;
+        }
+        button:disabled {
+            .btn__inner {
+                opacity: 0.2;
+                background: none;
+            }
+        }
+    }
+    &.isUpptacka {
+        background: color(default, background);
+        width: fit-content;
+        margin: 1.5rem auto;
+        border-radius: 3rem;
+        padding: 0.75rem;
+        &.shiftForCookieConsent {
+            transform: none;
+        }
+        .buttonBar {
+            padding: 0;
+            .btn__inner {
+                padding-top: 0.8125rem;
+                padding-bottom: 0.8125rem;
+            }
+        }
+        .toggleButton,
+        .zoomLevel {
+            @include body-xl;
+            color: color(default, foreground);
+        }
+        .zoomWrapper {
+            margin-left: 0;
+        }
+    }
+    .UpptackaMultiView__price {
+        margin: 0 1.5rem 0 1rem;
+    }
+    .UpptackaMultiView__divider {
+        border-left: 1px solid color(default, border);
+        margin: 0 0.5rem;
+    }
+    .UpptackaMultiView__price {
+        align-self: center;
+        margin-right: 1rem;
+    }
+    .UpptackaMultiView__summary-button {
+        @include body-xl;
+    }
+}

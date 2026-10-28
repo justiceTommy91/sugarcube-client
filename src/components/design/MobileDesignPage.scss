@@ -1,0 +1,33 @@
+@import 'style/type';
+@import 'style/colors';
+
+.MobileDesignPage {
+    margin: 2.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    h1 {
+        @include docs-heading-md;
+        color: color(default, info);
+        align-self: flex-start;
+        margin-top: 2rem;
+        margin-bottom: 0.75rem;
+    }
+    p {
+        color: color(cta, link);
+        line-height: 1.5em;
+        margin-bottom: 2rem;
+    }
+
+    .cta {
+        margin-bottom: 1.5rem;
+        min-width: 75vw;
+    }
+
+    .learnMoreLink {
+        color: color(cta, link);
+        font-weight: 600;
+        text-decoration: underline;
+    }
+}

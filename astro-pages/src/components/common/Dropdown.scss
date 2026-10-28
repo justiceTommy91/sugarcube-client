@@ -1,0 +1,26 @@
+@import 'style/type';
+@import 'style/colors';
+
+.Dropdown__item {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    width: 100%;
+    padding: 1rem 1.25rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+    text-align: left;
+    @include body-md;
+
+    &:hover,
+    &:active {
+        background-color: color(default, backgroundAlt);
+    }
+
+    svg {
+        width: 1.5rem;
+        height: 1.5rem;
+        flex-shrink: 0;
+    }
+}

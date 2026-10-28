@@ -1,0 +1,116 @@
+@use 'style/colors' as *;
+@use 'style/type' as *;
+
+.BeautifyErrorCard__close {
+    position: absolute;
+    top: 0.5rem;
+    right: 0.5rem;
+    background: transparent;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    padding: 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    z-index: 1;
+    transition: background-color 0.15s ease;
+
+    svg {
+        width: 1.5rem;
+        height: 1.5rem;
+    }
+
+    &:hover {
+        background-color: rgba(0, 0, 0, 0.08);
+    }
+
+    &:active {
+        background-color: rgba(0, 0, 0, 0.12);
+    }
+}
+
+.BeautifyErrorCard__body {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.BeautifyErrorCard__container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.BeautifyErrorCard__image {
+    width: 8.5rem;
+    height: auto;
+    flex-shrink: 0;
+    object-fit: contain;
+}
+
+.BeautifyErrorCard__content {
+    flex: 1;
+    min-width: 0;
+    padding-right: 1.5rem;
+}
+
+.BeautifyErrorCard__title {
+    @include body-md;
+    font-weight: 700;
+    color: $color-black;
+    margin: 0 0 0.5rem;
+}
+
+.BeautifyErrorCard__text {
+    @include body-sm;
+    color: $color-black;
+    margin: 0;
+
+    & + & {
+        margin-top: 0.25rem;
+    }
+}
+
+.BeautifyErrorCard__actions {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 0.75rem;
+    margin-top: 1rem;
+    margin-right: 3rem;
+}
+
+.BeautifyErrorCard__cancel-btn {
+    border: none;
+    box-shadow: none;
+
+    &,
+    &:hover:not([disabled]),
+    &:focus-visible {
+        border: none;
+        box-shadow: none;
+    }
+
+    .btn__inner {
+        border: none;
+        @include body-sm;
+        font-weight: 700;
+        color: $color-black;
+    }
+}
+
+.BeautifyErrorCard__retry-btn {
+    border-radius: 1.5rem;
+
+    .btn__inner {
+        border-radius: 1.5rem;
+        background-color: $color-black;
+        color: $color-ikea-white;
+    }
+
+    &:hover:not([disabled]) .btn__inner {
+        background-color: lighten($color-black, 15%);
+    }
+}

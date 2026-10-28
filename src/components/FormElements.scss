@@ -1,0 +1,45 @@
+@import 'style/type';
+@import 'style/colors';
+
+.Input {
+    background-color: color(default, background);
+
+    input {
+        @include font-body;
+        width: 100%;
+        border: none;
+        outline: none;
+        background-color: transparent;
+
+        &:disabled {
+            opacity: 0.5;
+        }
+        &:-webkit-autofill,
+        &:-webkit-autofill:hover,
+        &:-webkit-autofill:focus {
+            // Remove autofill background in chrome
+            -webkit-box-shadow: 0 0 0 1000px #ffffff inset !important;
+        }
+    }
+
+    .Input__error {
+        line-height: 1;
+        padding-block: 0.25rem;
+        color: color(default, error);
+    }
+}
+
+.Checkbox {
+    display: inline-block;
+    padding-right: 0.25rem;
+
+    .checkboxContents {
+        display: flex;
+        align-items: center;
+
+        .label {
+            padding-left: 0.25rem;
+            display: inline-block;
+        }
+    }
+}

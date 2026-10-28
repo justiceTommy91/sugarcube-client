@@ -1,0 +1,9 @@
+@import 'style/colors';
+
+.SnapLine {
+    position: absolute;
+    border-top: 2px dashed color(brand, information);
+    height: 0;
+    transform-origin: center;
+    pointer-events: none;
+  }

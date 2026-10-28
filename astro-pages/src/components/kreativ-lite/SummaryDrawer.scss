@@ -1,0 +1,97 @@
+@use 'style/typography' as *;
+@import 'style/colors';
+
+.SummaryDrawer {
+    &__promotion {
+        margin: 0rem 1.5rem 1rem;
+    }
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__header {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        padding: 1rem 1.5rem;
+        border-bottom: 0.0625rem solid color(default, border);
+    }
+
+    &__title {
+        @include typography-base;
+        @include heading-s;
+        margin: 0;
+    }
+
+    &__list {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__item {
+        display: flex;
+        flex-direction: row;
+        gap: 1.5rem;
+        align-items: flex-start;
+        padding: 1rem 1.5rem;
+        border-bottom: 0.0625rem solid color(default, border);
+    }
+
+    &__thumb {
+        flex-shrink: 0;
+        width: 5.5rem;
+        height: 5.5rem;
+        object-fit: cover;
+        border-radius: 0.25rem;
+    }
+
+    &__details {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        gap: 0.125rem;
+        min-width: 0;
+    }
+
+    &__name {
+        @include typography-base;
+        @include heading-xs;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+
+    &__description {
+        @include typography-base;
+        @include body-s;
+        color: color(default, subHeader);
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        line-height: 1.5;
+    }
+
+    &__row {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-end;
+        gap: 1rem;
+        margin-top: 0.25rem;
+        .price {
+            font-size: 1.25rem;
+        }
+    }
+
+    &__footer {
+        padding: 0.5rem 1.5rem;
+        border-top: 0.0625rem solid color(default, border);
+    }
+}

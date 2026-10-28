@@ -1,0 +1,239 @@
+@use 'style/colors' as *;
+@use 'style/type' as *;
+
+.BeautifyProgressBar {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.BeautifyProgressBar__close {
+    position: absolute;
+    top: 0.5rem;
+    right: 0.5rem;
+    background: transparent;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    padding: 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    z-index: 1;
+    transition: background-color 0.15s ease;
+
+    svg {
+        width: 1.5rem;
+        height: 1.5rem;
+    }
+
+    &:hover {
+        background-color: rgba(0, 0, 0, 0.08);
+    }
+
+    &:active {
+        background-color: rgba(0, 0, 0, 0.12);
+    }
+
+    &:disabled {
+        cursor: not-allowed;
+        opacity: 0.4;
+
+        &:hover,
+        &:active {
+            background-color: transparent;
+        }
+    }
+}
+
+.BeautifyProgressBar__steps {
+    margin: 0;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    position: relative;
+    align-items: center;
+}
+
+.BeautifyProgressBar__step {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 0.25rem;
+}
+
+.BeautifyProgressBar__line {
+    position: absolute;
+    top: calc(0.75rem - 0.125rem);
+    height: 0.25rem;
+    background-color: #929292;
+    z-index: 0;
+
+    &--active {
+        background-color: $color-black;
+    }
+
+    &--left,
+    &--right {
+        width: calc(50% - 0.75rem - 0.25rem);
+    }
+
+    &--left {
+        right: calc(50% + 0.75rem + 0.25rem);
+    }
+
+    &--right {
+        left: calc(50% + 0.75rem + 0.25rem);
+    }
+}
+
+@keyframes marker-pulse {
+    0%,
+    100% {
+        box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.25);
+    }
+
+    50% {
+        box-shadow: 0 0 0 5px rgba(0, 0, 0, 0.1);
+    }
+}
+
+.BeautifyProgressBar__marker {
+    inline-size: 1.5rem;
+    block-size: 1.5rem;
+    flex-shrink: 0;
+    line-height: 0;
+    border-radius: 50%;
+
+    img {
+        display: block;
+        width: 100%;
+        height: 100%;
+    }
+
+    &--active {
+        animation: marker-pulse 1.5s ease-in-out infinite;
+    }
+}
+
+.BeautifyProgressBar__step-label {
+    @include body-sm;
+    text-align: center;
+    line-height: 125%;
+
+    &--active {
+        color: $color-black;
+        font-weight: 600;
+    }
+
+    &--completed {
+        color: $color-black;
+    }
+
+    &--pending {
+        color: $color-text-lightest;
+    }
+}
+
+// --- Progress bar ---
+
+.BeautifyProgressBar__progress-row {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+.BeautifyProgressBar__progress-bar {
+    flex: 1;
+    height: 0.375rem;
+    background-color: color(default, border);
+    border-radius: 0.1875rem;
+    overflow: hidden;
+}
+
+.BeautifyProgressBar__progress-fill {
+    height: 100%;
+    background-color: $color-black;
+    border-radius: 0.1875rem;
+    transition: width 100ms linear;
+}
+
+.BeautifyProgressBar__progress-percent {
+    @include body-sm;
+    font-weight: 600;
+    color: $color-black;
+    min-width: 2.5rem;
+    text-align: right;
+}
+
+// --- Footer (3-column layout for true centering) ---
+
+.BeautifyProgressBar__footer {
+    display: flex;
+    align-items: center;
+}
+
+.BeautifyProgressBar__footer-left {
+    flex: 1;
+}
+
+.BeautifyProgressBar__footer-center {
+    display: flex;
+    justify-content: center;
+}
+
+.BeautifyProgressBar__footer-right {
+    flex: 1;
+    text-align: right;
+}
+
+// Tertiary pill — matches Beautifier Figma (Tertiary Button, node 540:19906)
+.BeautifyProgressBar__cancel-link {
+    border: none;
+    box-shadow: none;
+
+    &,
+    &:hover:not([disabled]),
+    &:focus-visible {
+        border: none;
+        box-shadow: none;
+    }
+
+    .btn__inner {
+        border: none;
+        @include body-sm;
+        font-weight: 700;
+        color: $color-black;
+    }
+}
+
+.BeautifyProgressBar__status-pill {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    background-color: $color-ikea-white;
+    border: 1px solid color(default, border);
+    border-radius: 1.25rem;
+    font-weight: bold;
+    padding: 0.5rem 1rem;
+
+    img {
+        width: 1.25rem;
+        height: 1.25rem;
+    }
+
+    span {
+        @include body-sm;
+        color: $color-black;
+        white-space: nowrap;
+    }
+}
+
+.BeautifyProgressBar__time-remaining {
+    @include body-sm;
+    color: $color-black;
+    white-space: nowrap;
+}

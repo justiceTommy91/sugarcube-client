@@ -1,0 +1,158 @@
+@import 'style/dimensions';
+@import 'style/colors';
+@import 'style/zed';
+@import 'style/type';
+
+$sidepanel-expanded-width: 33.25rem;
+$sidepanel-contracted-width: 1.5rem;
+$sidepanel-transition: 400ms ease-in-out;
+
+.DesignSidepanel {
+    position: relative;
+    grid-area: sidebar;
+    inline-size: $sidepanel-contracted-width;
+    transition: all $sidepanel-transition;
+    max-block-size: 100vh;
+
+    .DesignSidepanel__content {
+        position: absolute;
+        inset: 0 auto 0 ($sidepanel-contracted-width - $sidepanel-expanded-width);
+        transition: all $sidepanel-transition;
+        background-color: #fff;
+        inline-size: $sidepanel-expanded-width;
+        border-right: 1px solid color(default, border);
+        border-bottom: 1px solid color(default, border);
+        z-index: zed(sidebar) + 10;
+    }
+
+    .DesignSidepanel__panel {
+        position: absolute;
+        inset: 0;
+        display: flex;
+        flex-direction: column;
+        isolation: isolate;
+    }
+
+    .tablistWrapper {
+        position: relative;
+        box-sizing: content-box;
+        block-size: $topbar-height;
+        border-bottom: 1px solid color(default, border);
+        padding-inline: 1.5rem;
+        flex: 0 0 auto;
+    }
+
+    .tablist {
+        display: flex;
+        gap: 1.5rem;
+        height: 100%;
+        .Tooltip {
+            display: flex;
+            flex: 1 1;
+            .tooltip__custom-trigger-wrapper {
+                display: flex;
+                flex: 1 1;
+            }
+        }
+    }
+
+    .tab {
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 1ch;
+        padding-inline: 1rem;
+        color: color(status, indeterminate);
+        border-block: 4px solid transparent;
+        @include heading-sm;
+        height: 100%;
+
+        &[aria-selected='true'] {
+            color: color(default, foreground);
+            border-bottom-color: color(default, foreground);
+        }
+
+        &:focus-visible {
+            outline: 1px solid color(default, foreground);
+            outline-offset: 0;
+        }
+    }
+
+    .DesignSidepanel__pinButton {
+        position: absolute;
+        display: flex;
+        align-items: center;
+        inset: ($topbar-height / 2) auto auto 100%;
+        transform: translate(-50%, -50%);
+        padding: 2rem 0 2rem 0.5rem;
+    }
+
+    .DesignSidepanel__tabpanelWrapper {
+        flex: 1 0 0%;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+        padding-inline-end: $sidepanel-contracted-width;
+        transition: all $sidepanel-transition;
+    }
+
+    .tabpanel {
+        flex: 1 0 0%;
+        overflow: hidden;
+
+        &:not([hidden]) {
+            display: flex;
+            flex-direction: column;
+        }
+
+        &::focus-visible {
+            outline: 1px solid color(default, foreground);
+            outline-offset: -1px;
+        }
+    }
+
+    .overflowMenuWrapper {
+        position: relative;
+        display: flex;
+        align-items: center;
+
+        .overflowMenu {
+            top: 100%;
+            left: 0;
+            position: absolute;
+            inline-size: 8rem;
+            list-style: none;
+            z-index: zed(tooltip);
+            background-color: color(default, background);
+            box-shadow: 0 0 3px 0 rgba(35, 35, 35, 0.3);
+
+            & > li {
+                border-bottom: 1px solid color(default, border);
+            }
+        }
+
+        .overflowMenuItem {
+            display: flex;
+            gap: 0.5rem;
+            inline-size: 100%;
+            white-space: nowrap;
+            padding: 0.5rem;
+        }
+    }
+
+    &.DesignSidepanel_open {
+        .DesignSidepanel__content {
+            inset-inline-start: 0;
+        }
+
+        .DesignSidepanel__tabpanelWrapper {
+            padding-inline-end: 0;
+        }
+    }
+
+    &.DesignSidepanel_pinned {
+        inline-size: $sidepanel-expanded-width;
+    }
+}

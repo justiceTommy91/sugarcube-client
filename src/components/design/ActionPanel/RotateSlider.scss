@@ -1,0 +1,200 @@
+@import 'style/colors';
+
+$thumb-size: 1.5rem;
+$tick-width: 4px;
+
+@mixin thumb() {
+    position: relative;
+    appearance: none;
+    width: $thumb-size;
+    height: $thumb-size;
+    border-radius: 50%;
+    background: color(actionPanel, thumb);
+    cursor: pointer;
+    z-index: 10;
+    pointer-events: auto;
+}
+
+@mixin thumb-focus() {
+    outline-style: solid;
+    outline-color: color(actionPanel, thumbOutline);
+    outline-width: thin;
+    border: solid 1px #111;
+}
+
+.RotateSlider {
+    display: flex;
+    gap: 0.25rem;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 22rem;
+    pointer-events: all;
+
+    .degreeInputWrapper {
+        position: relative;
+        height: 2rem;
+        display: flex;
+        gap: 2px;
+
+        .spinnerButton {
+            visibility: hidden;
+            opacity: 0;
+            background: color(default-invert, background);
+            color: color(default-invert, foreground);
+            border-radius: 4px;
+            width: 1rem;
+
+            .svg-icon {
+                display: block;
+                width: 100%;
+            }
+        }
+
+        &:hover,
+        &:focus-within {
+            .spinnerButton {
+                visibility: visible;
+                opacity: 1;
+            }
+        }
+    }
+
+    .degreeInput {
+        text-align: center;
+        width: 3rem;
+        padding-inline: 0.25rem;
+        border-radius: 0.25rem;
+        border: 1px solid transparent;
+        background-color: color(actionPanel, numericBackground);
+        color: color(actionPanel, numericForeground);
+
+        &::-webkit-outer-spin-button,
+        &::-webkit-inner-spin-button {
+            -webkit-appearance: none;
+        }
+        -moz-appearance: textfield;
+
+        &:hover,
+        &:focus-visible {
+            background-color: #fff;
+            color: unset;
+            border-color: #000;
+        }
+    }
+
+    .sliderWrapper {
+        background-color: color(actionPanel, background);
+        color: color(actionPanel, foreground);
+        border-radius: 5.25rem;
+        box-shadow: 0 6px 30px rgba(0, 0, 0, 0.1);
+        position: relative;
+        width: 100%;
+        height: 20px;
+        padding: 1.25rem 0;
+
+        /* Separating the track from the thumb layers */
+        &::before {
+            position: absolute;
+            left: calc(var(--rs-inset-start, 5%) + #{$thumb-size} / 2);
+            right: calc(var(--rs-inset-end, 5%) + #{$thumb-size} / 2);
+            top: 50%;
+            transform: translateY(-50%);
+            display: block;
+            content: '';
+            width: unset;
+            height: 0.25rem;
+            border-radius: 0.5rem;
+            background-color: color(actionPanel, track);
+            transition: opacity 0.2s;
+        }
+    }
+
+    .customSlider {
+        position: absolute;
+        left: var(--rs-inset-start, 5%);
+        right: var(--rs-inset-end, 5%);
+        width: unset;
+        height: 100%;
+        appearance: none;
+        outline: none;
+        background: none;
+        pointer-events: none;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+    /* NOTE: -webkit and -moz slider pseudo element selectors are very sensitive to formatting, and won't work
+             with selector lists for example. So we have to keep these styles in separate rules. */
+    .customSlider::-webkit-slider-thumb {
+        @include thumb;
+    }
+    .customSlider:focus::-webkit-slider-thumb,
+    .customSlider:hover::-webkit-slider-thumb {
+        @include thumb-focus;
+    }
+    .customSlider:active::-webkit-slider-thumb,
+    .customSlider:hover::-webkit-slider-thumb {
+        @include thumb-focus;
+    }
+    .customSlider::-moz-range-thumb {
+        @include thumb;
+    }
+    .customSlider:focus::-moz-range-thumb,
+    .customSlider:hover::-moz-range-thumb {
+        @include thumb-focus;
+    }
+
+    .sliderSteps {
+        display: flex;
+        align-items: center;
+        position: absolute;
+        top: 50%;
+        left: calc(var(--rs-inset-start, 5%) + #{$thumb-size} / 2);
+        right: calc(var(--rs-inset-end, 5%) + #{$thumb-size} / 2);
+        height: 100%;
+        transform: translateY(-50%);
+        width: unset;
+        pointer-events: none;
+
+        .stepTick,
+        option {
+            flex: 0 0 auto;
+            margin-right: calc(25% - $tick-width);
+            position: relative;
+            display: block;
+            background-color: color(actionPanel, tick);
+            opacity: 1;
+            height: 12px;
+            min-height: 0;
+            width: $tick-width;
+            transform: translate(-50%, 0);
+            padding: 0;
+            border: none;
+            outline: 2px solid color(actionPanel, tickOutline);
+            border-radius: 0.25rem;
+            pointer-events: all;
+            cursor: pointer;
+            transition: all 200ms;
+
+            &:hover {
+                height: 20px;
+            }
+
+            /* Add a slightly larger, invisible hit box so users have an easier time of clicking on it. */
+            &::after {
+                display: block;
+                position: absolute;
+                content: '';
+                width: $thumb-size;
+                height: $thumb-size;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                &:focus-visible {
+                    outline: color(actionPanel, thumbOutline) solid 1px;
+                }
+            }
+        }
+    }
+}

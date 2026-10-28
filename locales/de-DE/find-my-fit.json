@@ -1,0 +1,134 @@
+{
+  "find-my-fit": {
+    "actions": {
+      "takePhoto": "Mach ein Foto",
+      "uploadPhoto": "Foto hochladen"
+    },
+    "chooseSample": {
+      "scene_0": "Gemütliche Rückzugsecke",
+      "scene_1": "Stimmungsvolle Ecke",
+      "title": "Wähle einen Musterraum zum Ausprobieren"
+    },
+    "csat": {
+      "bad": "Badezimmer",
+      "cancel": "Abbrechen",
+      "describeIt": "Bitte erzähle uns mehr",
+      "dissatisfied": "Unzufrieden",
+      "good": "Gut",
+      "goodOrBad": "Danke! Wir würden gerne erfahren, warum du dich dafür entschieden hast. Was ist dir bei der Erfahrung aufgefallen, positiv oder negativ?",
+      "neutral": "Neutral",
+      "privacyText": "Um deine Privatsphäre zu schützen, solltest du persönliche Daten (z. B. E-Mail, Telefon) vermeiden.",
+      "ratingDescription": "Dein Feedback hilft uns, das Erlebnis zu verbessern.",
+      "satisfied": "Zufrieden",
+      "submit": "Senden",
+      "title": "Wie ist deine Erfahrung?"
+    },
+    "hero": {
+      "imageAlt": "Regale",
+      "subtitle": "Füge ein Foto hinzu, um Empfehlungen zu erhalten.",
+      "title": "Finde Aufbewahrung, die zu deinem Raum passt"
+    },
+    "landing": {
+      "actions": {
+        "addPhoto": "Ein Foto hinzufügen",
+        "takePhoto": "Mach ein Foto",
+        "trySampleSpace": "Einen Musterraum ausprobieren",
+        "uploadPhoto": "Foto hochladen"
+      },
+      "comingSoon": {
+        "appStoreBadgeAlt": "Im App Store laden",
+        "designOnDesktop": "Design auf dem Desktop",
+        "getApp": "Hol dir die IKEA App, um einen Raum zu gestalten",
+        "googlePlayBadgeAlt": "Jetzt bei Google Play",
+        "kreativLink": "IKEA Kreativ Link",
+        "linkCopied": "Link kopiert",
+        "title": "Diese Funktion kommt bald!"
+      },
+      "features": {
+        "compare": {
+          "title": "Wischen, um Optionen schnell zu vergleichen"
+        },
+        "intro": {
+          "title": "Einkaufen für Aufbewahrung ist einfach mit Find My Fit"
+        },
+        "save": {
+          "title": "Lieblingsartikel und finde „den Richtigen“"
+        },
+        "setArea": {
+          "title": "Zeichne deinen Zielbereich"
+        }
+      },
+      "hero": {
+        "genericCategory": "Speicher",
+        "imageAlt": "Bilder von Aufbewahrungsartikeln",
+        "privacyNote": "Bitte keine Bilder mit Personen oder privaten Gegenständen und keine personenbezogenen Daten hochladen. Weitere Informationen findest du in unserer <1>Datenschutzrichtlinie</1>.",
+        "subtitle": "Verwende ein Foto und durchstöbere Stile von {{subject}} für einen bestimmten Bereich",
+        "title": "Finde Aufbewahrung, die zu deinem Raum passt",
+        "videoAlt": "Find My Fit Funktionsdemonstration"
+      },
+      "page": {
+        "description": "Lade ein Foto hoch, um nach den Regalen zu suchen, die du dir angeschaut hast – für den richtigen Look und die perfekte Passform, ganz ohne Rätselraten.",
+        "title": "Finde meine Passform"
+      },
+      "sampleSpaces": {
+        "error": "Etwas ist schiefgelaufen. Bitte versuche es erneut.",
+        "title": "Einen Musterraum auswählen"
+      }
+    },
+    "loginPrompt": {
+      "body": "Um Aufbewahrungsempfehlungen für deinen Raum zu erhalten, melde dich an oder erstelle ein kostenloses IKEA Konto.",
+      "logIn": "Anmelden",
+      "signUp": "Registrieren",
+      "title": "Melde dich an, um ein Foto hochzuladen"
+    },
+    "page": {
+      "description": "Finde die perfekte Passform für dein Zuhause mit IKEA",
+      "title": "Finde meine Passform"
+    },
+    "toasts": {
+      "unableToFavorite": "Es tut uns leid, aber wir konnten den Artikel nicht zur Liste hinzufügen."
+    },
+    "viewer": {
+      "accessibilityDescription": "Find My Fit verwendet ein Foto deines Raums, um IKEA Produkte zu empfehlen, die zu einem bestimmten Bereich passen. Die Zeichnung und visuelle Interaktion können für Menschen mit einer Sehbehinderung oder einer Sehschwäche eine Herausforderung sein. Produktdetails, Preise und Einkaufsaktionen sind vollständig zugänglich, sobald die Ergebnisse angezeigt werden.",
+      "addToBag": "In den Einkaufsbeutel legen",
+      "adjustHeader": "Passe deinen Suchbereich an",
+      "clearDrawing": "Klare Zeichnung",
+      "confirmDimension": "Maße bestätigen",
+      "continue": "Weiter",
+      "continueAriaLabel": "Weiter zum nächsten Schritt",
+      "decreaseDimension": "Maße verkleinern",
+      "dimDepth": "Tiefe",
+      "dimHeight": "Höhe",
+      "dimWidth": "Breite",
+      "done": "Fertig",
+      "doneAriaLabel": "Bearbeitung abgeschlossen",
+      "drawFocusArea": "Zeichne deinen gewünschten Fokusbereich",
+      "drawingHeader": "Wo möchtest du deine Aufbewahrung haben?",
+      "editArea": "Bereich bearbeiten",
+      "fewResultsToast": "Versuche, deinen Suchbereich zu vergrößern, um mehr Ergebnisse zu erhalten.",
+      "goBack": "Zurück",
+      "goToImage": "Zum Bild gehen {{index}}",
+      "increaseDimension": "Größe erhöhen",
+      "magicEraser": "Schmutzradierer",
+      "noResults": "Für diesen Bereich wurden keine Waren gefunden.",
+      "noResultsButton": "Keine Ergebnisse gefunden",
+      "noResultsTitle": "Keine Ergebnisse gefunden",
+      "removedFromFavorites": "Aus Favoriten entfernt",
+      "removeFavorite": "Aus Favoriten entfernen",
+      "retrySearch": "Versuche es noch einmal",
+      "savedToFavorites": "Zu Favoriten hinzugefügt",
+      "saveFavorite": "Zu Favoriten hinzufügen",
+      "search": "Suche",
+      "searchError": "Keine passenden Waren gefunden. Versuche, einen anderen Bereich zu zeichnen.",
+      "searchErrorToast": "Etwas ist schiefgelaufen. Bitte versuche es erneut.",
+      "searching": "Suche...",
+      "seeAllResults": "Alle Ergebnisse anzeigen",
+      "showMoreDetails": "Mehr Details anzeigen",
+      "swipeForMore": "Wischen für mehr",
+      "tapToSelect": "Tippen, um Artikel auszuwählen",
+      "tryAgain": "Versuche es noch einmal",
+      "viewResults_one": "Ergebnis {{count}} anzeigen",
+      "viewResults_other": "Ansehen {{count}} Ergebnisse"
+    }
+  }
+}

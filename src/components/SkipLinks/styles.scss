@@ -1,0 +1,47 @@
+@import 'style/colors';
+@import 'style/zed';
+
+.SkipLinks {
+    position: relative;
+
+    button {
+        position: static;
+        width: 1px;
+        height: 1px;
+        overflow: hidden;
+        z-index: 2;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: color(default, background);
+        &:focus,
+        &:focus-visible,
+        &:active {
+            width: auto;
+            height: auto;
+            overflow: visible;
+            left: 2rem;
+            top: 1rem;
+            margin: 1rem 2rem;
+            padding: 0.5rem;
+            outline: solid 2px color(default, foreground);
+        }
+        svg {
+            margin-right: 0.5rem;
+        }
+    }
+    &.positionAbsolute {
+        z-index: zed(skiplinks);
+        button {
+            position: absolute;
+            left: -10000px;
+            &:focus,
+            &:focus-visible,
+            &:active {
+                left: 2rem;
+                top: 1rem;
+                margin: 0;
+            }
+        }
+    }
+}

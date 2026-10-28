@@ -1,0 +1,259 @@
+@import 'style/colors';
+@import 'style/zed';
+@import 'style/type';
+
+$iconSize: 2.6rem;
+
+.ContainerBackground {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: white;
+}
+
+.Preview {
+    position: relative;
+    background-size: cover;
+    background-position: center bottom;
+
+    .sceneContainer {
+        padding-top: 56%;
+        position: relative;
+        user-select: none;
+
+        .renderItemWrapper {
+            position: absolute;
+            top: 0;
+            width: 100%;
+            height: 100%;
+        }
+        .stackableIndicator {
+            display: none;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: zed(above);
+            @include body-md;
+            justify-content: center;
+            align-items: flex-start;
+            border: 0.25rem solid color(brand, secondary);
+            transition: border-width 0.25s ease;
+            pointer-events: none;
+
+            p {
+                padding: 0 0.5rem 0.25rem 0.5rem;
+                color: color(brand, foreground);
+                background-color: color(brand, secondary);
+                border-bottom-left-radius: 0.25rem;
+                border-bottom-right-radius: 0.25rem;
+                pointer-events: all;
+            }
+
+            &.isPlacementMode {
+                display: flex;
+            }
+            &.isStackableDraggingMode {
+                display: flex;
+            }
+            &.isInvalidForStackable {
+                border-color: color(brand, information);
+                border-width: 0.5rem;
+
+                p {
+                    background-color: color(brand, information);
+                }
+            }
+        }
+        .magicEraserHideAllContainer {
+            z-index: zed(above);
+            position: absolute;
+            top: 2rem;
+            right: 2rem;
+
+            button.btn {
+                background-color: color(default, background);
+                margin-left: 0.625rem;
+            }
+        }
+    }
+
+    // Playable dots only appear when the user hovers over the canvas (as long as it's not mobile or upptacka)
+    // disabling this hover toggle for isUpptacka, as Upptacka has a UI switch for pins visibility
+    &:not(.mobile):not(.isUpptacka):hover .dotWrapper {
+        display: flex;
+    }
+
+    canvas {
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        visibility: hidden;
+        width: 100% !important;
+        height: 100% !important;
+
+        // Disable canvas smoothing for sharper images.
+        image-rendering: pixelated;
+
+        &.isItemHovered {
+            cursor: url('#{$PATH-PREFIX}/images/icons/cursor_drag.svg') 21 20, grab;
+        }
+        &.isDragging,
+        &.isPlacementMode {
+            cursor: url('#{$PATH-PREFIX}/images/icons/cursor_dragging.svg') 21 20, grabbing;
+        }
+        &.cannotPlaceStackable {
+            cursor: url('#{$PATH-PREFIX}/images/icons/cursor_dragging_cannot_place.svg') 21 20, grabbing;
+        }
+        &.cameraInOrbitMode {
+            cursor: url('#{$PATH-PREFIX}/images/icons/cursor_orbit.svg') 21 20, grab;
+        }
+        &.cameraInOrbitModeMoving {
+            cursor: -webkit-grabbing;
+            cursor: url('#{$PATH-PREFIX}/images/icons/cursor_orbit_dragging.svg') 21 20, grabbing;
+        }
+    }
+    .debugContainer {
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: flex;
+        flex-direction: column;
+    }
+    .debugText {
+        position: relative;
+        padding-left: 0.5rem;
+        padding-top: 0.25rem;
+        font-size: 0.75rem;
+        color: $color-red;
+    }
+
+    .errorContainer {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        height: 15rem;
+        font-size: 2rem;
+        line-height: 1.5em;
+        a {
+            color: inherit;
+        }
+        button {
+            border-radius: 4px;
+            font-size: 1.5rem;
+            padding: 0.25rem;
+            margin-top: 1.5rem;
+        }
+
+        .errorText {
+            margin-bottom: 1rem;
+        }
+        .dashboardLink {
+            color: color(default, background);
+            @include body-lg;
+        }
+    }
+
+    &.hasRendered {
+        // Safari fix WALL-377
+        canvas {
+            visibility: visible;
+        }
+    }
+
+    &.mobile {
+        &:not(.correctOrientation) {
+            canvas {
+                left: -9999px;
+                right: -9999px;
+                margin: 0 auto;
+                width: initial !important;
+                height: initial !important;
+            }
+        }
+        .dotWrapper {
+            display: flex;
+        }
+    }
+
+    .nextArrow {
+        position: absolute;
+        top: 2rem;
+        right: 2rem;
+        width: $iconSize;
+        height: $iconSize;
+        background-color: color(default, background);
+        border-radius: 50%;
+        border: solid 0.5px color(default, border);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        z-index: zed(previewUI);
+    }
+
+    &.disablePins {
+        .dotWrapper {
+            display: none !important;
+        }
+    }
+}
+
+.RotatePrompt {
+    z-index: zed(header) + 2;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+
+    .RotateBackground {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background-color: white;
+    }
+
+    .RotateMessage {
+        text-align: center;
+        margin: auto;
+        z-index: zed(header) + 3;
+        font-weight: bold;
+        font-size: 18px;
+        line-height: 136%;
+        letter-spacing: -0.0042em;
+
+        .RotateIcon {
+            margin: 0 auto 1rem auto;
+            width: 75%;
+        }
+    }
+    .CloseBtnRoot {
+        position: absolute;
+        top: 2rem;
+        left: 2rem;
+        width: $iconSize;
+        height: $iconSize;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        z-index: zed(previewUI);
+        &.enabled:hover {
+            border: 1px solid color(form, inputBorder);
+        }
+        &.enabled:active {
+            border: 1px solid color(default, foreground);
+        }
+    }
+}

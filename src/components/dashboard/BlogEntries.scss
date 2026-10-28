@@ -1,0 +1,36 @@
+@import 'style/colors';
+@import 'style/type';
+@import 'style/screen';
+
+$header-height: 5.5rem;
+.blogEntries {
+    margin: 4rem 0;
+    .titleRow {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-content: center;
+        margin-bottom: 3.16rem;
+
+        .blogEntriesTitle {
+            @include heading-lg;
+            font-weight: bold;
+            color: color(cta, primary);
+        }
+    }
+
+    .blogEntry {
+        width: 18rem;
+        .title {
+            margin-top: 1.6rem;
+        }
+
+        .image {
+            width: 18rem;
+        }
+    }
+
+    @include mob {
+        display: none;
+    }
+}

@@ -1,0 +1,56 @@
+@import 'style/type';
+@import 'style/colors';
+@import 'style/zed';
+
+.OnboardingModal {
+    // we want the onboarding modal to appear above the page loader
+    z-index: zed(fullPageLoader) + 1;
+    .onboardingHeader {
+        display: flex;
+        align-items: center;
+        padding: 0.5rem 0 1.5rem 0;
+
+        .obTitle {
+            margin-right: 1.5rem;
+            @include heading-md;
+        }
+        span {
+            @include heading-sm;
+            color: color(default, subHeader);
+        }
+    }
+    img {
+        width: 100%;
+        min-height: 50%;
+    }
+    .onboardingFooter {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: center;
+        padding: 1.25rem 0 0.25rem 0;
+
+        button {
+            width: 25rem;
+            max-width: 45%;
+            margin: 0 0.25rem 0 1.25rem;
+        }
+    }
+
+    // Overrides
+    .theatre {
+        padding: 1rem;
+        height: initial;
+        max-height: 95%;
+        max-width: 100vh;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+
+        .modal-header {
+            display: none;
+        }
+    }
+    .modal-wrapper__backdrop--dark {
+        background-color: rgba(0, 0, 0, 0.7);
+    }
+}

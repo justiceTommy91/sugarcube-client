@@ -1,0 +1,19 @@
+@import 'style/colors';
+
+.SubCategoryPills {
+    &__container {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.5rem;
+    }
+
+    &__allCategories {
+        position: relative;
+    }
+
+    // Conditional styling when filter pills are visible
+    &--filtersVisible {
+        padding-bottom: 1.25rem;
+        border-bottom: 1px solid $color-gray;
+    }
+}

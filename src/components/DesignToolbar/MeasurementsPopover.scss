@@ -1,0 +1,132 @@
+@import 'style/colors';
+@import 'style/type';
+@import 'style/zed';
+
+$toolbarHeight: 3.5rem;
+
+.MeasurementsPopover {
+    background-color: color(default, background);
+    border-radius: 1rem;
+    display: flex;
+    padding: 1rem;
+
+    flex-direction: column;
+    justify-content: space-between;
+    z-index: zed(optionsMenu);
+
+    position: absolute;
+    bottom: 5.5rem;
+
+    visibility: hidden;
+
+    &.visible {
+        visibility: visible;
+    }
+
+    .MeasurementsPopover__roomBuilderBridge {
+        display: flex;
+        text-align: left;
+        max-width: 28.75rem;
+
+        .MeasurementsPopover__roomBuilderBridgeImage {
+            img {
+                border-radius: 0.5rem;
+                margin-right: 1rem;
+            }
+        }
+
+        .MeasurementsPopover__roomBuilderBridgeText {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+
+            button {
+                width: fit-content;
+            }
+
+            .MeasurementsPopover__roomBuilderBridgePrompt {
+                font-weight: 700;
+            }
+
+            .MeasurementsPopover__roomBuilderButton {
+                display: flex;
+                align-items: center;
+                font-size: 0.75rem;
+                font-weight: 700;
+                border: 1px solid color(default, foreground);
+                border-radius: 2rem;
+                padding: 0.5rem 1rem 0.5rem 1.5rem;
+                margin: 1px;
+                width: fit-content;
+
+                &:hover {
+                    margin: 0;
+                    border: 2px solid color(default, foreground);
+                }
+
+                svg {
+                    margin-left: 0.5rem;
+                }
+            }
+        }
+    }
+
+    hr {
+        margin: 1rem 0;
+    }
+
+    .MeasurementsPopover__measurementControls {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        min-height: 10rem;
+
+        &.shrinkControls {
+            min-height: 7.5rem;
+        }
+
+        .MeasurementsPopover__controlContainer {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 0.5rem;
+
+            label {
+                color: color(default, info);
+                font-size: 0.875rem;
+                font-weight: 700;
+                margin-right: 1rem;
+
+                &.disabled {
+                    color: color(default, backgroundPreview);
+                }
+            }
+        }
+
+        .MeasurementsPopover__trigger {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            label,
+            .MeasurementsPopover__unitToggleText {
+                color: color(cta, primary);
+                font-size: 0.875rem;
+                line-height: 125%;
+                font-weight: 700;
+            }
+
+            .MeasurementsPopover__unitToggle {
+                width: 50%;
+                :first-child {
+                    width: 50%;
+                    border-radius: 1rem 0rem 0rem 1rem;
+                }
+
+                :last-child {
+                    width: 50%;
+                    border-radius: 0rem 1rem 1rem 0rem;
+                }
+            }
+        }
+    }
+}

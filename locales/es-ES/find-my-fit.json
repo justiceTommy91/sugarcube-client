@@ -1,0 +1,134 @@
+{
+  "find-my-fit": {
+    "actions": {
+      "takePhoto": "Saca una foto",
+      "uploadPhoto": "Subir una foto"
+    },
+    "chooseSample": {
+      "scene_0": "Rincón relajante",
+      "scene_1": "Rincón de mal humor",
+      "title": "Elige un espacio de muestra para probarlo"
+    },
+    "csat": {
+      "bad": "Malo",
+      "cancel": "Cancelar",
+      "describeIt": "Por favor, cuéntanos más",
+      "dissatisfied": "Insatisfechos",
+      "good": "Bien",
+      "goodOrBad": "¡Gracias! Nos encantaría saber por qué lo elegiste. ¿Qué destacó de la experiencia, bien o mal?",
+      "neutral": "Neutro",
+      "privacyText": "Para proteger tu privacidad, evita incluir información personal (por ejemplo, correo electrónico, teléfono).",
+      "ratingDescription": "Tus feedback nos ayudarán a mejorar la experiencia.",
+      "satisfied": "Satisfecho",
+      "submit": "Enviar",
+      "title": "¿Cómo es tu experiencia?"
+    },
+    "hero": {
+      "imageAlt": "Estantes",
+      "subtitle": "Añade una foto para obtener recomendaciones.",
+      "title": "Encuentra almacenaje que se adapte a tu espacio"
+    },
+    "landing": {
+      "actions": {
+        "addPhoto": "Añadir una foto",
+        "takePhoto": "Saca una foto",
+        "trySampleSpace": "Prueba con un espacio de muestra",
+        "uploadPhoto": "Subir una foto"
+      },
+      "comingSoon": {
+        "appStoreBadgeAlt": "Descárgalo en la Aplicación Store",
+        "designOnDesktop": "Diseño en escritorio",
+        "getApp": "Consigue la IKEA aplicación para diseñar un espacio",
+        "googlePlayBadgeAlt": "Descárgala en Google Play",
+        "kreativLink": "Enlace a IKEA Kreativ",
+        "linkCopied": "Enlace copiado",
+        "title": "¡Esta función estará disponible próximamente!"
+      },
+      "features": {
+        "compare": {
+          "title": "Desliza el dedo para comparar rápidamente las opciones"
+        },
+        "intro": {
+          "title": "Comprar almacenaje es fácil con Find My Fit"
+        },
+        "save": {
+          "title": "Tus artículos favoritos y encuentra \"el indicado\""
+        },
+        "setArea": {
+          "title": "Dibuja tu área objetivo"
+        }
+      },
+      "hero": {
+        "genericCategory": "Almacenamiento",
+        "imageAlt": "Imágenes de artículos de almacenaje",
+        "privacyNote": "No subas imágenes en las que haya personas, datos personales o elementos privados. Obtén más información en nuestra <1>política de privacidad</1>.",
+        "subtitle": "Coge una foto y hojea los estilos de {{subject}} para adaptarlos a una zona concreta",
+        "title": "Encuentra almacenaje que se adapte a tu espacio",
+        "videoAlt": "Demostración de la función Find My Fit"
+      },
+      "page": {
+        "description": "Sube una foto para comprar la estantería que estabas explorando para conseguir el aspecto y el ajuste adecuados, sin necesidad de ir probando nada a equivocarte.",
+        "title": "Encontrar mi ajuste"
+      },
+      "sampleSpaces": {
+        "error": "Se ha producido un error. Inténtalo de nuevo.",
+        "title": "Escoge un espacio de muestra"
+      }
+    },
+    "loginPrompt": {
+      "body": "Para obtener recomendaciones de almacenamiento para tu espacio, inicia sesión o crea una cuenta IKEA gratuita.",
+      "logIn": "Inicia sesión",
+      "signUp": "Únete",
+      "title": "Inicia sesión para subir una foto"
+    },
+    "page": {
+      "description": "Encuentra el complemento ideal para tu hogar con IKEA",
+      "title": "Encontrar mi ajuste"
+    },
+    "toasts": {
+      "unableToFavorite": "Lo sentimos, pero no hemos podido añadir tu artículo a la lista."
+    },
+    "viewer": {
+      "accessibilityDescription": "Find My Fit utiliza una foto de tu espacio para recomendar productos de IKEA que se ajusten a la zona elegida. El dibujo y la interacción visual pueden suponer un reto para personas con discapacidad visual o baja visión. Los detalles de los productos, los precios y las acciones de compra son totalmente accesibles una vez que se muestran los resultados.",
+      "addToBag": "Añadir a la bolsa",
+      "adjustHeader": "Ajusta tu área de búsqueda",
+      "clearDrawing": "Dibujo claro",
+      "confirmDimension": "Confirmar dimensión",
+      "continue": "Continuar",
+      "continueAriaLabel": "Continuar con el paso siguiente",
+      "decreaseDimension": "Disminución de dimensión",
+      "dimDepth": "Profundidad",
+      "dimHeight": "Altura",
+      "dimWidth": "Ancho",
+      "done": "Hecho",
+      "doneAriaLabel": "Editado",
+      "drawFocusArea": "Dibuja el espacio de concentración deseado",
+      "drawingHeader": "¿Dónde quieres tu almacenaje?",
+      "editArea": "Área de edición",
+      "fewResultsToast": "Intenta cambiar el tamaño de tu área de búsqueda para obtener más resultados.",
+      "goBack": "Volver",
+      "goToImage": "Ir a la imagen {{index}}",
+      "increaseDimension": "Aumentar dimensión",
+      "magicEraser": "Borrador mágico",
+      "noResults": "No se han encontrado productos para este espacio.",
+      "noResultsButton": "No se han encontrado resultados",
+      "noResultsTitle": "No se han encontrado resultados",
+      "removedFromFavorites": "Eliminado de favoritos",
+      "removeFavorite": "Eliminar de favoritos",
+      "retrySearch": "Vuelve a intentarlo",
+      "savedToFavorites": "Guardado en favoritos",
+      "saveFavorite": "Guardar en favoritos",
+      "search": "Buscar",
+      "searchError": "No se han encontrado productos que coincidan. Prueba a dibujar un área diferente.",
+      "searchErrorToast": "Se ha producido un error. Inténtalo de nuevo.",
+      "searching": "Buscando...",
+      "seeAllResults": "Ver todos los resultados",
+      "showMoreDetails": "Mostrar más detalles",
+      "swipeForMore": "Desliza el dedo para obtener más información",
+      "tapToSelect": "Toque para seleccionar el artículo",
+      "tryAgain": "Vuelve a intentarlo",
+      "viewResults_one": "Ver {{count}} resultado",
+      "viewResults_other": "Ver {{count}} resultados"
+    }
+  }
+}

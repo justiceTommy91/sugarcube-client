@@ -1,0 +1,134 @@
+{
+  "find-my-fit": {
+    "actions": {
+      "takePhoto": "Atera argazki bat",
+      "uploadPhoto": "Argazki bat igo"
+    },
+    "chooseSample": {
+      "scene_0": "Txoko lasaigarria",
+      "scene_1": "Txoko ilunak",
+      "title": "Aukeratu lagin-espazio bat probatzeko"
+    },
+    "csat": {
+      "bad": "Txarra",
+      "cancel": "Utzi",
+      "describeIt": "Mesedez, esan iezaguzu gehiago.",
+      "dissatisfied": "Atsekabetuta",
+      "good": "Ona",
+      "goodOrBad": "Eskerrik asko! Gustatuko litzaiguke jakitea zergatik aukeratu duzun hori. Zer nabarmendu zen esperientzian, ona edo txarra?",
+      "neutral": "Neutroa",
+      "privacyText": "Zure pribatutasuna babesteko, saihestu informazio pertsonala (adibidez, posta elektronikoa, telefonoa) sartzea.",
+      "ratingDescription": "Zure iritziak esperientzia hobetzen lagunduko digu.",
+      "satisfied": "Pozik",
+      "submit": "Bidali",
+      "title": "Nolakoa da zure esperientzia?"
+    },
+    "hero": {
+      "imageAlt": "Apalak",
+      "subtitle": "Gehitu argazki bat gomendioak jasotzeko.",
+      "title": "Aurkitu zure espazioarekin bat datorren biltegiratzea"
+    },
+    "landing": {
+      "actions": {
+        "addPhoto": "Gehitu argazki bat",
+        "takePhoto": "Atera argazki bat",
+        "trySampleSpace": "Saiatu lagin-espazio bat",
+        "uploadPhoto": "Argazki bat igo"
+      },
+      "comingSoon": {
+        "appStoreBadgeAlt": "Deskargatu App Store-n",
+        "designOnDesktop": "Diseinua mahaigainean",
+        "getApp": "Eskuratu IKEA aplikazioa espazio bat diseinatzeko",
+        "googlePlayBadgeAlt": "Eskuratu Google Play-n",
+        "kreativLink": "IKEA Kreativ esteka",
+        "linkCopied": "Esteka kopiatu da",
+        "title": "Ezaugarri hau laster egongo da eskuragarri!"
+      },
+      "features": {
+        "compare": {
+          "title": "Irristatu aukerak azkar alderatzeko"
+        },
+        "intro": {
+          "title": "Biltegiratze-zerbitzua erostea erraza da Find My Fit-ekin"
+        },
+        "save": {
+          "title": "Gogoko elementuak eta aurkitu “perfektua”"
+        },
+        "setArea": {
+          "title": "Marraztu zure helburu-eremua"
+        }
+      },
+      "hero": {
+        "genericCategory": "biltegiratze",
+        "imageAlt": "Biltegiratze elementuen irudiak",
+        "privacyNote": "Ez igo irudirik jendearekin, datu pertsonalekin edo elementu pribatuekin. Informazio gehiago gure <1>pribatutasun-politikan</1>.",
+        "subtitle": "Erabili argazki bat eta arakatu estiloak {{subject}} eremu zehatz batera egokitzeko",
+        "title": "Aurkitu zure espazioarekin bat datorren biltegiratzea",
+        "videoAlt": "Find My Fit funtzioaren erakustaldia"
+      },
+      "page": {
+        "description": "Igo argazki bat aztertzen ari zinen apalategiak erosteko, itxura eta egokitzapen egokia lortzeko, asmatu beharrik gabe.",
+        "title": "Aurkitu Nire Egokia"
+      },
+      "sampleSpaces": {
+        "error": "Arazoren bat izan da. Saiatu berriro.",
+        "title": "Aukeratu lagin-espazio bat"
+      }
+    },
+    "loginPrompt": {
+      "body": "Zure espaziorako biltegiratze gomendioak jasotzeko, hasi saioa edo sortu doako IKEA kontu bat.",
+      "logIn": "Hasi saioa",
+      "signUp": "Izena eman",
+      "title": "Hasi saioa argazki bat igotzeko"
+    },
+    "page": {
+      "description": "Aurkitu zure etxerako egokia den aukera IKEA",
+      "title": "Aurkitu Nire Egokia"
+    },
+    "toasts": {
+      "unableToFavorite": "Barkatu, baina ezin izan dugu zure elementua zerrendara gehitu."
+    },
+    "viewer": {
+      "accessibilityDescription": "Find My Fit-ek zure espazioaren argazki bat erabiltzen du aukeratutako eremu batera egokitzen diren IKEA produktuak gomendatzeko. Marrazketa eta interakzio bisuala zaila izan daiteke ikusmen urritasuna edo ikusmen eskasia dutenentzat. Produktuaren xehetasunak, prezioak eta erosketa ekintzak guztiz eskuragarri daude emaitzak erakusten direnean.",
+      "addToBag": "Gehitu poltsan",
+      "adjustHeader": "Egokitu zure bilaketa-eremua",
+      "clearDrawing": "Marrazki garbia",
+      "confirmDimension": "Berretsi neurria",
+      "continue": "Jarraitu",
+      "continueAriaLabel": "Jarraitu hurrengoa urratsera",
+      "decreaseDimension": "Txikitu dimentsioa",
+      "dimDepth": "Sakonera",
+      "dimHeight": "Altuera",
+      "dimWidth": "Zabalera",
+      "done": "Eginda",
+      "doneAriaLabel": "Editatu dut",
+      "drawFocusArea": "Marraztu nahi duzun foku-eremua",
+      "drawingHeader": "Non nahi duzu zure biltegiratzea?",
+      "editArea": "Editatu eremua",
+      "fewResultsToast": "Saiatu bilaketa-eremuaren tamaina aldatzen emaitza gehiago lortzeko.",
+      "goBack": "Itzuli",
+      "goToImage": "Joan irudira {{index}}",
+      "increaseDimension": "Handitu dimentsioa",
+      "magicEraser": "Ezabagailu magikoa",
+      "noResults": "Ez da produkturik aurkitu espazio honetarako.",
+      "noResultsButton": "Ez da emaitzarik aurkitu",
+      "noResultsTitle": "Ez da emaitzarik aurkitu",
+      "removedFromFavorites": "Gogokoetatik kenduta",
+      "removeFavorite": "Gogokoetatik kendu",
+      "retrySearch": "Saiatu berriro",
+      "savedToFavorites": "Gogokoetan gordeta",
+      "saveFavorite": "Gorde gogokoetan",
+      "search": "Bilatu",
+      "searchError": "Ez da bat datorren produkturik aurkitu. Saiatu beste eremu bat marrazten.",
+      "searchErrorToast": "Zerbait gaizki joan da. Saiatu berriro.",
+      "searching": "Bilatzen...",
+      "seeAllResults": "Ikusi emaitza guztiak",
+      "showMoreDetails": "Xehetasun gehiago erakutsi",
+      "swipeForMore": "Irristatu gehiago ikusteko",
+      "tapToSelect": "Sakatu elementua hautatzeko",
+      "tryAgain": "Saiatu berriro",
+      "viewResults_one": "Ikusi {{count}} emaitza",
+      "viewResults_other": "Ikusi {{count}} emaitzak"
+    }
+  }
+}

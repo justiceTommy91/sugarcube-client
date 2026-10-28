@@ -1,0 +1,24 @@
+@import 'style/type';
+
+.ProductVariantCategoryButton {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .ProductVariantCategoryButton__info {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .ProductVariantCategoryButton__category,
+    .ProductVariantCategoryButton__selectedVariantName {
+        text-transform: capitalize;
+    }
+
+    &.isUpptacka {
+        .ProductVariantCategoryButton__category,
+        .ProductVariantCategoryButton__selectedVariantName {
+            @include body-xl;
+        }
+    }
+}

@@ -1,0 +1,97 @@
+@import 'style/colors';
+@import 'style/type';
+
+$icon-size: 3.5rem;
+
+.ProductSummaryCard {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+
+    // Prevent text selection when drag is enabled
+    &[data-drag-enabled="true"],
+    &.seamless-drag-enabled {
+        user-select: none;
+        -webkit-user-select: none;
+        -webkit-touch-callout: none;
+        -webkit-tap-highlight-color: transparent;
+    }
+
+    .ProductSummaryCard__thumbnailWrapper {
+        position: relative;
+        display: flex;
+        align-items: center;
+        padding: 0.5rem;
+        cursor: pointer;
+
+        .ProductSummaryCard__thumbnail {
+            inline-size: 100%;
+            block-size: auto;
+            aspect-ratio: 1;
+            object-fit: contain;
+        }
+    }
+
+    .ProductSummaryCard__thumbnailOverlay {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        opacity: 0;
+        background: rgba(0, 0, 0, 0.05);
+        transition: all 300ms ease-in-out;
+        position: absolute;
+        inset: 0;
+
+        .ProductSummaryCard__thumbnailOverlayIcon {
+            border-radius: 50%;
+            block-size: $icon-size;
+            inline-size: $icon-size;
+            background: #111;
+            opacity: 0.75;
+            padding: 1rem;
+            color: #fefefe;
+        }
+
+        .ProductSummaryCard__thumbnailOverlayText {
+            @include body-xs;
+            position: absolute;
+            inset-block-start: calc(50% + ($icon-size / 2) + 0.5rem);
+            inset-inline-start: 50%;
+            transform: translateX(-50%);
+            background: #111;
+            padding: 0.5rem 1rem;
+            color: #fefefe;
+            border-radius: 0.5rem;
+            text-wrap: nowrap;
+        }
+    }
+
+    .ProductSummaryCard__thumbnailWrapper:hover,
+    .ProductSummaryCard__thumbnailWrapper:focus-visible {
+        .ProductSummaryCard__thumbnailOverlay {
+            opacity: 1;
+        }
+    }
+
+    .ProductSummaryCard__thumbnailWrapper[disabled] {
+        .ProductSummaryCard__thumbnailOverlay {
+            opacity: 1;
+            background: transparent;
+            cursor: default;
+        }
+
+        .ProductSummaryCard__thumbnail {
+            opacity: 0.5;
+        }
+
+        .ProductSummaryCard__thumbnailOverlayIcon {
+            opacity: 0.5;
+            background: transparent;
+        }
+
+        .ProductSummaryCard__thumbnailOverlayText {
+            display: none;
+        }
+    }
+}

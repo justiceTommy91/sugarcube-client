@@ -1,0 +1,77 @@
+@import 'style/colors';
+@import 'style/type';
+@import 'style/zed';
+
+.CompositionArtItem {
+    .options {
+        display: none;
+        cursor: initial;
+
+        .buttons {
+            padding: 0 0.75rem;
+            font-size: 1rem;
+
+            & > div {
+                overflow: hidden;
+
+                &:not(:first-child) {
+                    margin-top: 0.5rem;
+                }
+                button {
+                    background-color: color(default, background);
+                    border-radius: 50%;
+                    width: 2rem;
+                    height: 2rem;
+                    cursor: pointer;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    padding: 0.2rem;
+
+                    .Icon {
+                        width: 2rem;
+                        opacity: 0.8;
+                        transition: opacity 0.25s ease;
+                    }
+                    &:hover {
+                        .Icon {
+                            opacity: 1;
+                        }
+                    }
+                    &:active {
+                        .Icon {
+                            opacity: 1;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .aoe {
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        z-index: zed(above);
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+        display: flex;
+        justify-content: center;
+    }
+    &.dragging {
+        .aoe {
+            pointer-events: none;
+            z-index: zed(aoe);
+        }
+        .options {
+            display: none !important;
+        }
+    }
+    &.selected {
+        .options {
+            display: block;
+        }
+    }
+}

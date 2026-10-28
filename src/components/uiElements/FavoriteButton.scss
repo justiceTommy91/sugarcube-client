@@ -1,0 +1,9 @@
+@import 'style/type';
+
+.FavoriteButton {
+    &.btn--small.leading-icon .btn__inner {
+        .btn__label {
+            font-size: 0.85rem;
+        }
+    }
+}

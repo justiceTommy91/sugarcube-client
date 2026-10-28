@@ -1,0 +1,230 @@
+/*
+Defines all the colors in the app.
+This file must be variables only.
+ */
+
+// LEGACY - DEPRECATE THESE
+$colorgroup-default-bg1: #fefefe;
+$colorgroup-default-fg1: #222222;
+$colorgroup-default-fg1-secondary: #afafaf;
+$colorgroup-default-bg2: #222222;
+$colorgroup-default-fg2: #fefefe;
+
+// NEW COLORS
+$color-ikeablue: #0058a3;
+$color-ikeablue-darker: #004f93;
+$color-ikeablue-transparent: rgba(0, 88, 163, 0.6);
+$color-ikeayellow: #ffdb00;
+$color-ikeayellow-transparent: rgba(255, 219, 0, 0.6);
+$color-ikea-lightBlue: #4595ff;
+$color-ikeablue-family: #007cc1;
+$color-ikea-white: #ffffff;
+$color-salmon: #ff4e3c;
+$color-blue: #28a7af;
+$color-blue-transparent: rgba(0, 111, 117, 0.6);
+$color-lightBlue: #3bc1c8;
+$color-darkBlue: #0b8890;
+$color-white: #fefefe;
+$color-black: #111111;
+$color-lightGray: #eee;
+$color-lightGray-bg: #ededed;
+$color-neutral-gray-200: #d5d5d5;
+$color-gray: #dfdfdf;
+$color-midDarkGray: #cccccc;
+$color-beautifier-preview-bg: #cbcacb;
+$color-darkGray: #8c8c8c;
+$color-orange: #ffa524;
+$color-green: #0a8a00;
+$color-red: #e00751;
+$color-red-orange: #ca5008;
+$color-gray-100: #b7b7b7;
+$color-gray-500: #929292;
+$color-gray-700: #484848;
+$color-gray-800: #333333;
+$color-gray-900: #232323;
+$color-text-lightest: #767676;
+$color-bg-alt: #f5f5f5;
+$color-pinkishRed: #e00751;
+$color-bluishGrey: #576872;
+$color-greenishGrey: #d0d8d0;
+
+$color-transparentBlack: rgba(0, 0, 0, 0.5);
+$color-transparentDarkGray: rgba(17, 17, 17, 0.2);
+$color-transparentDarkerGray: rgba(17, 17, 17, 0.75);
+$color-transparentDarkestGray: rgba(17, 17, 17, 0.95);
+$color-opaqueDarkestGray: rgba(17, 17, 17, 1);
+$color-transparentWhite: rgba(255, 255, 255, 0.5);
+
+$color-google-red: #ea4335;
+$color-google-white: #fff;
+$color-facebook-blue: #395196;
+$color-pinterest-red: #e60023;
+$color-pinterest-white: #ffffff;
+
+$color-sap-green: #3b654c;
+$color-olive-green: #546047;
+$color-blue-green: #426361;
+$color-blue-gray: #464a57;
+$color-magenta: #753d58;
+$color-maroon: #683538;
+$color-purple: #4d387b;
+$color-light-brown: #6d5132;
+$color-dark-brown: #68503c;
+$color-extended-purple: #6b3d99;
+$color-extended-green: #508020;
+$color-extended-blue: #005980;
+$color-interactive-destructive-bg-pressed: #b80029;
+$color-extended-palette-19: #006658;
+
+$colors: (
+    default: (
+        background: $color-white,
+        background-transparent: $color-transparentWhite,
+        backgroundAlt: $color-bg-alt,
+        backgroundPreview: $color-midDarkGray,
+        foreground: $color-black,
+        placeholder: $color-lightGray,
+        subHeader: $color-text-lightest,
+        link: $color-ikeablue,
+        overlayBackground: $color-transparentBlack,
+        border: $color-gray,
+        warning: $color-orange,
+        info: $color-black,
+        error: $color-pinkishRed,
+        hint: $color-darkGray,
+        description: $color-gray-800,
+        backgroundLightGray: $color-lightGray-bg,
+    ),
+    default-invert: (
+        background: $color-black,
+        backgroundAlt: $color-gray-700,
+        backgroundSelected: $color-darkGray,
+        backgroundBlue: $color-ikeablue-family,
+        foreground: $color-white,
+        border: $color-darkGray,
+    ),
+    brand: (
+        primary: $color-ikeayellow,
+        primaryTransparent: $color-ikeayellow-transparent,
+        secondary: $color-ikeablue,
+        secondaryTransparent: $color-ikeablue-transparent,
+        secondaryText: $color-ikea-white,
+        selected: $color-blue,
+        selectedText: $color-darkBlue,
+        selectionBorder: $color-ikeayellow,
+        foreground: $color-white,
+        primaryForeground: $color-black,
+        information: $color-ikea-lightBlue,
+        ad1: $color-bluishGrey,
+        family: $color-ikeablue-family,
+        primaryCard: $color-greenishGrey,
+    ),
+    cta: (
+        primary: $color-black,
+        secondary: $color-blue,
+        brand: $color-ikeablue,
+        foreground: $color-white,
+        brandDarker: $color-ikeablue-darker,
+        tertiary: $color-bg-alt,
+        tertiaryDarker: $color-gray,
+        link: $color-gray-700,
+        linkHover: $color-black,
+        disabledSecondary: $color-gray,
+    ),
+    form: (
+        inputBorder: $color-gray-500,
+        sliderBackground: $color-darkGray,
+        disabled: $color-gray,
+    ),
+    actionPanel: (
+        background: $color-gray-900,
+        foreground: $color-gray-100,
+        activeBackground: $color-gray-800,
+        activeForeground: $color-white,
+        pressedBackground: $color-black,
+        pressedForeground: $color-white,
+        disabledForeground: #707070,
+        numericBackground: $color-black,
+        numericForeground: $color-white,
+        spacer: $color-darkGray,
+        track: $color-darkGray,
+        thumb: $color-white,
+        thumbOutline: $color-white,
+        tick: $color-white,
+        tickOutline: $color-gray-900,
+    ),
+    modal: (
+        overlay: $color-transparentBlack,
+    ),
+    gradient: (
+        heroRadial: radial-gradient(circle, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.2) 42.01%, rgba(0, 0, 0, 0.1) 100%),
+    ),
+    google: (
+        background: $color-google-red,
+        foreground: $color-google-white,
+    ),
+    facebook: (
+        background: $color-facebook-blue,
+        foreground: $color-white,
+    ),
+    pinterest: (
+        background: $color-pinterest-red,
+        foreground: $color-pinterest-white,
+    ),
+    menu: (
+        foreground: $color-gray-500,
+        selectedForeground: $color-black,
+        hoverForeground: $color-gray-700,
+    ),
+    badges: (
+        new: $color-red-orange,
+    ),
+    dot: (
+        overlayBackground: $color-transparentDarkGray,
+        overlayBorder: $color-transparentWhite,
+    ),
+    status: (
+        available: $color-green,
+        lowAvailability: $color-orange,
+        unavailable: $color-red,
+        indeterminate: $color-gray-500,
+    ),
+    tag: (
+        sapGreen: $color-sap-green,
+        oliveGreen: $color-olive-green,
+        blueGreen: $color-blue-green,
+        blueGray: $color-blue-gray,
+        magenta: $color-magenta,
+        maroon: $color-maroon,
+        purple: $color-purple,
+        lightBrown: $color-light-brown,
+        darkBrown: $color-dark-brown,
+        purple-ext: $color-extended-purple,
+        green-ext: $color-extended-green,
+        blue-ext: $color-extended-blue,
+    ),
+    banner: (
+        festiveRedBackground: $color-interactive-destructive-bg-pressed,
+        extendedPalette19Background: $color-extended-palette-19,
+    ),
+);
+
+@function color($group, $key) {
+    @if map-has-key($colors, $group) {
+        @if map-has-key(map-get($colors, $group), $key) {
+            @return map-get(map-get($colors, $group), $key);
+        }
+        @warn "Unknown `#{$key}` in colorgroup `#{$group}`";
+        @return null;
+    }
+
+    @warn "Unknown `#{$group}` in colors";
+    @return null;
+}
+
+@mixin upptacka-tertiary-button {
+    .btn__inner {
+        background: color(cta, tertiary);
+        color: color(cta, primary);
+    }
+}

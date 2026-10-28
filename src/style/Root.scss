@@ -1,0 +1,187 @@
+// Variables
+@import 'style/colors';
+@import 'style/type';
+
+// Imports
+@import 'style/screen';
+@import 'style/a11y';
+
+@import 'node_modules/@ingka/tooltip/style.scss';
+@import 'node_modules/@ingka/accordion/style';
+@import 'node_modules/@ingka/aspect-ratio-box/style.scss';
+@import 'node_modules/@ingka/avatar/style.scss';
+@import 'node_modules/@ingka/badge/style';
+@import 'node_modules/@ingka/button/style';
+@import 'node_modules/@ingka/card/style.scss';
+@import 'node_modules/@ingka/carousel/style';
+@import 'node_modules/@ingka/choice/style.scss';
+@import 'node_modules/@ingka/compact-card/style.scss';
+@import 'node_modules/@ingka/focus/style.scss';
+@import 'node_modules/@ingka/forms/style';
+@import 'node_modules/@ingka/hyperlink/style';
+@import 'node_modules/@ingka/image/style';
+@import 'node_modules/@ingka/inline-message/style';
+@import 'node_modules/@ingka/list-box/style';
+@import 'node_modules/@ingka/list-view/style';
+@import 'node_modules/@ingka/modal/style';
+@import 'node_modules/@ingka/pill/style';
+@import 'node_modules/@ingka/price/style.scss';
+@import 'node_modules/@ingka/product-identifier/style.scss';
+@import 'node_modules/@ingka/search/style';
+@import 'node_modules/@ingka/simple-video/style';
+@import 'node_modules/@ingka/status/style.scss';
+@import 'node_modules/@ingka/svg-icon/style';
+@import 'node_modules/@ingka/svg-icon/style.scss';
+@import 'node_modules/@ingka/switch/style.scss';
+@import 'node_modules/@ingka/tabs/style.scss';
+@import 'node_modules/@ingka/text-overlay-card/style.scss';
+@import 'node_modules/@ingka/toast/style';
+@import 'node_modules/@ingka/toggle/style';
+@import 'node_modules/@ingka/typography-shared/style.scss';
+@import 'node_modules/@ingka/skeleton/style.scss';
+@import 'node_modules/@ingka/tag/style.scss';
+@import 'node_modules/@ingka/progress-indicator/style.scss';
+
+// Override @ingka/toast z-index to use our z-index system
+// The library uses z-index: 400 but we need toasts above modals (600-700)
+.skapa-toast {
+    z-index: zed(toast) !important; // 750 - above all modals
+
+    &.KreativLiteMergeFailedToast {
+        z-index: zed(fullPageLoader) + 1 !important;
+    }
+}
+
+// Styles that need to apply to actual body element (not scoped by PostCSS)
+// This selector is excluded from prefixwrap via gatsby-config.ts and is applied when skapa theater modals are open with scrollLock=true (by default)
+body.prevent-scroll-y {
+    overflow: hidden !important;
+    position: fixed !important;
+    width: 100% !important;
+}
+
+// Everything gets scoped via a postCss plugin
+body {
+    @include font-body;
+    font-family: 'Noto IKEA', 'Noto Sans JP', 'Noto Sans KR', 'Arial', sans-serif;
+    min-height: 100vh;
+    // use dvh if browser is compatible, to accomodate for mobile/tablet's dynamic nav bar heights
+    min-height: 100dvh;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+    margin: 0;
+    outline: 0;
+}
+
+a,
+a:hover,
+a:visited,
+a:active {
+    text-decoration: none;
+}
+a:focus-visible {
+    outline: solid 2px color(default, foreground);
+}
+
+h1 {
+    @include font-header;
+}
+
+button {
+    font-family: inherit;
+    border: none;
+    background: transparent;
+    padding: 0;
+    cursor: pointer;
+    color: inherit;
+    &:focus-visible {
+        outline: solid 2px color(default, foreground);
+    }
+}
+
+ul {
+    padding: 0;
+    list-style: none;
+}
+
+#Root {
+    height: 100%;
+    background-color: color(default, background);
+    display: flex;
+    flex-direction: column;
+    overflow: auto;
+    position: relative;
+    -webkit-overflow-scrolling: touch;
+}
+
+.modal-wrapper__backdrop--dark {
+    background: rgba(0, 0, 0, 0.3);
+}
+
+.mobileOnly {
+    @include sm {
+        display: none !important;
+    }
+}
+
+.notMobile {
+    @include mob {
+        display: none !important;
+    }
+}
+
+@keyframes fadeInFromNone {
+    0% {
+        display: none;
+        opacity: 0;
+    }
+
+    1% {
+        display: flex;
+        opacity: 0;
+    }
+
+    100% {
+        display: flex;
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInWithDelay {
+    0% {
+        opacity: 0;
+    }
+
+    66% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes spinCCW {
+    100% {
+        transform: rotate(-360deg);
+    }
+}
+
+@keyframes spinCW {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes jump-small {
+    0% {
+        transform: scaleY(0.8);
+    }
+    100% {
+        transform: translateY(-8px);
+    }
+}

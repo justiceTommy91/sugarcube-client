@@ -1,0 +1,134 @@
+{
+  "find-my-fit": {
+    "actions": {
+      "takePhoto": "Scatta una foto",
+      "uploadPhoto": "Carica una foto"
+    },
+    "chooseSample": {
+      "scene_0": "Angolino relax",
+      "scene_1": "Angolo malinconico",
+      "title": "Scegli uno spazio campionario per provarlo"
+    },
+    "csat": {
+      "bad": "Cattivo",
+      "cancel": "Annulla",
+      "describeIt": "Ci dia maggiori dettagli",
+      "dissatisfied": "Insoddisfatto",
+      "good": "Bene",
+      "goodOrBad": "Grazie! Ci piacerebbe sapere perché l'hai scelta. Cosa ti ha colpito di più di questa esperienza, nel bene o nel male?",
+      "neutral": "Neutro",
+      "privacyText": "Per tutelare la tua privacy, ti preghiamo di evitare di inserire dati personali (ad es. indirizzo e-mail, numero di telefono).",
+      "ratingDescription": "Il tuo feedback ci aiuterà a migliorare l'esperienza.",
+      "satisfied": "Soddisfatto",
+      "submit": "Invia",
+      "title": "Come ti sei trovato?"
+    },
+    "hero": {
+      "imageAlt": "Scaffali",
+      "subtitle": "Aggiungi una foto per ricevere dei consigli.",
+      "title": "Trova una soluzione di archiviazione adatta al tuo spazio"
+    },
+    "landing": {
+      "actions": {
+        "addPhoto": "Aggiungi una foto",
+        "takePhoto": "Scatta una foto",
+        "trySampleSpace": "Prova un modello di spazio",
+        "uploadPhoto": "Carica una foto"
+      },
+      "comingSoon": {
+        "appStoreBadgeAlt": "Scarica dall'App Negozio",
+        "designOnDesktop": "Progetta sul computer",
+        "getApp": "Scarica app IKEA per progettare un ambiente",
+        "googlePlayBadgeAlt": "Scaricalo su Google Play",
+        "kreativLink": "Link IKEA Kreativ",
+        "linkCopied": "Link copiato",
+        "title": "Questa funzione sarà disponibile a breve!"
+      },
+      "features": {
+        "compare": {
+          "title": "Scorri per confrontare rapidamente le opzioni"
+        },
+        "intro": {
+          "title": "Trovare lo spazio di archiviazione giusto è facile con Find My Fit"
+        },
+        "save": {
+          "title": "Aggiungi Prodotti preferiti e trova quello giusto"
+        },
+        "setArea": {
+          "title": "Disegna l'area di destinazione"
+        }
+      },
+      "hero": {
+        "genericCategory": "archiviazione",
+        "imageAlt": "Immagini di Prodotti da magazzino",
+        "privacyNote": "Ti preghiamo di non caricare immagini che ritraggano persone, contengano dati personali o mostrino prodotti privati. Scopri di più consultanto la nostra <1>Dichiarazione di protezione dati. </1>",
+        "subtitle": "Usa una foto e sfoglia i modelli {{subject}} per adattarli a una zona specifica",
+        "title": "Trova una soluzione di archiviazione adatta al tuo spazio",
+        "videoAlt": "Dimostrazione della funzione «Trova la mia taglia»"
+      },
+      "page": {
+        "description": "Carica una foto dello scaffale Negozio stavi valutando per trovare il modello giusto che si adatti perfettamente, senza dover tirare a indovinare.",
+        "title": "Trova il modello giusto per te"
+      },
+      "sampleSpaces": {
+        "error": "Si è verificato un problema. Riprova.",
+        "title": "Scegli un modello di spazio"
+      }
+    },
+    "loginPrompt": {
+      "body": "Per ricevere consigli sull'arredamento del tuo spazio, accedi o crea un account IKEA gratuito.",
+      "logIn": "Accedi",
+      "signUp": "Iscriviti",
+      "title": "Accedi per caricare una foto"
+    },
+    "page": {
+      "description": "Trova l'arredamento perfetto per la tua casa con IKEA",
+      "title": "Trova il modello giusto per te"
+    },
+    "toasts": {
+      "unableToFavorite": "Ci dispiace, ma non siamo riusciti ad aggiungere Prodotto tuo articolo all'elenco."
+    },
+    "viewer": {
+      "accessibilityDescription": "Find My Fit utilizza una foto del tuo spazio per consigliarti prodotti IKEA adatti all'area selezionata. Il disegno e l'interazione visiva potrebbero risultare difficili per le persone con disabilità visive o ipovisione. Una volta visualizzati i risultati, i dettagli prodotto, i prezzi e le operazioni di acquisto sono completamente accessibili.",
+      "addToBag": "Aggiungi al carrello",
+      "adjustHeader": "Modifica l'area di ricerca",
+      "clearDrawing": "Disegno Cancella",
+      "confirmDimension": "Conferma le dimensioni",
+      "continue": "Continua",
+      "continueAriaLabel": "Continua alla fase avanti",
+      "decreaseDimension": "Ridurre le dimensioni",
+      "dimDepth": "Profondità",
+      "dimHeight": "Altezza",
+      "dimWidth": "Larghezza",
+      "done": "Fatto",
+      "doneAriaLabel": "Modifiche completate",
+      "drawFocusArea": "Disegna l'area su cui desideri mettere a fuoco",
+      "drawingHeader": "Dove vuoi che venga collocato il tuo spazio di archiviazione?",
+      "editArea": "Area di modifica",
+      "fewResultsToast": "Prova a modificare l'area di ricerca per ottenere più risultati.",
+      "goBack": "Torna indietro",
+      "goToImage": "Vai all'immagine {{index}}",
+      "increaseDimension": "Aumentare le dimensioni",
+      "magicEraser": "Gomma magica",
+      "noResults": "No prodotti trovato per questa sezione.",
+      "noResultsButton": "No risultato trovato",
+      "noResultsTitle": "No risultato trovato",
+      "removedFromFavorites": "Rimosso dai preferiti",
+      "removeFavorite": "Elimina dai preferiti",
+      "retrySearch": "Riprova",
+      "savedToFavorites": "Aggiunto ai preferiti",
+      "saveFavorite": "Salva ai preferiti",
+      "search": "Cerca",
+      "searchError": "No sono stati trovati prodotti corrispondenti. Prova a selezionare un'altra zona.",
+      "searchErrorToast": "Si è verificato un problema. Riprova.",
+      "searching": "Sto cercando...",
+      "seeAllResults": "Visualizza tutti i risultati",
+      "showMoreDetails": "Mostra ulteriori dettagli",
+      "swipeForMore": "Scorri per vedere altro",
+      "tapToSelect": "Tocca per selezionare Prodotto",
+      "tryAgain": "Riprova",
+      "viewResults_one": "Visualizza {{count}} risultato",
+      "viewResults_other": "Visualizza {{count}} i risultati"
+    }
+  }
+}

@@ -1,0 +1,15 @@
+.Rating {
+    display: flex;
+    font-size: 0.75rem;
+    line-height: 1.5;
+
+    .Rating__star {
+        width: 18px;
+        height: 18px;
+        margin-inline: -2px;
+    }
+
+    .Rating__star_empty {
+        fill: rgb(var(--colour-neutral-3, 223, 223, 223));
+    }
+}

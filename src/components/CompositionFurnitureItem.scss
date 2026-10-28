@@ -1,0 +1,52 @@
+@import 'style/colors';
+@import 'style/type';
+@import 'style/zed';
+
+.CompositionFurnitureItem {
+    .hoverInfoContainer {
+        position: absolute;
+        z-index: zed(topLayerDropdown);
+        pointer-events: none;
+        display: flex;
+        justify-content: center;
+        opacity: 0;
+        transition: opacity 0.25s ease;
+
+        .tooltip {
+            position: absolute;
+            bottom: 0rem;
+            background-color: color(default-invert, background);
+            color: color(default-invert, foreground);
+            white-space: nowrap;
+            border-radius: 0.25rem;
+            padding: 0.25rem 0.5rem;
+            font-size: 0.875rem;
+            line-height: 1.375rem;
+            opacity: 0.9;
+        }
+        .dimensionsContainer {
+            position: absolute;
+            bottom: 0rem;
+            background-color: color(brand, primaryTransparent);
+            color: color(brand, primaryForeground);
+            border-radius: 0.25rem;
+            font-size: 0.75rem;
+            line-height: 1.25em;
+            padding: 0.25rem 0.75rem;
+            white-space: nowrap;
+        }
+
+        &.isHovered {
+            opacity: 1;
+        }
+        &.selected,
+        &.isDraggingRenderItem {
+            display: none !important;
+        }
+    }
+    &:hover {
+        .hoverInfoContainer {
+            display: none;
+        }
+    }
+}

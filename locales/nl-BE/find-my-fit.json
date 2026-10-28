@@ -1,0 +1,134 @@
+{
+  "find-my-fit": {
+    "actions": {
+      "takePhoto": "Maak een foto",
+      "uploadPhoto": "Upload een foto"
+    },
+    "chooseSample": {
+      "scene_0": "Ontspannende hoek",
+      "scene_1": "Moody hoek",
+      "title": "Kies een steekproefruimte om het uit te proberen"
+    },
+    "csat": {
+      "bad": "Slecht",
+      "cancel": "Annuleren",
+      "describeIt": "Vertel ons meer",
+      "dissatisfied": "Ontevreden",
+      "good": "Good",
+      "goodOrBad": "Bedankt! We zouden graag willen weten waarom je daarvoor hebt gekozen. Wat viel op in de ervaring, positief of negatief?",
+      "neutral": "Neutraal",
+      "privacyText": "Vermeld geen persoonlijke gegevens (bijv. e-mailadres of telefoonnummer) om je privacy te beschermen.",
+      "ratingDescription": "<think>\nI need to translate \"Your feedback will help us improve the experience.\" from English to Dutch. This is a straightforward sentence with no HTML tags.\n\nThe translation would be:\n- Your feedback = Uw feedback / Je feedback (formal/informal)\n- will help us = zal ons helpen\n- improve = verbeteren\n- the experience = de ervaring\n\nUsing the more common formal form for general audience:\n\"Uw feedback helpt ons de ervaring te verbeteren.\"\n\nOr slightly more natural:\n\"Uw feedback helpt ons om de ervaring te verbeteren.\"\n\nSince there are no HTML tags in the source, I just need to provide the clean translation.\n</think>\n\nUw feedback helpt ons de ervaring te verbeteren.",
+      "satisfied": "Tevreden",
+      "submit": "Submit",
+      "title": "I'm ready to help you translate from English to Dutch while preserving all HTML tags in their correct positions. However, I don't see any source text to translate yet. Could you please provide the English text with HTML tags that you'd like me to translate to Dutch?"
+    },
+    "hero": {
+      "imageAlt": "Planken",
+      "subtitle": "Voeg een foto toe om aanbevelingen te krijgen.",
+      "title": "Vind opbergoplossingen die passen bij jouw ruimte"
+    },
+    "landing": {
+      "actions": {
+        "addPhoto": "Een foto toevoegen",
+        "takePhoto": "Maak een foto",
+        "trySampleSpace": "Een voorbeeldruimte uitproberen",
+        "uploadPhoto": "Upload een foto"
+      },
+      "comingSoon": {
+        "appStoreBadgeAlt": "Download op de App Store",
+        "designOnDesktop": "Ontwerp op desktop",
+        "getApp": "Haal de IKEA app om een ruimte in te richten",
+        "googlePlayBadgeAlt": "Verkrijg het op Google Play",
+        "kreativLink": "IKEA Kreativ link",
+        "linkCopied": "Link gekopieerd",
+        "title": "Deze functie komt binnenkort beschikbaar!"
+      },
+      "features": {
+        "compare": {
+          "title": "Swipe om snel opties te vergelijken"
+        },
+        "intro": {
+          "title": "Winkelen voor opslag is eenvoudig met Find My Fit"
+        },
+        "save": {
+          "title": "Favoriete items en vind \"de ware\""
+        },
+        "setArea": {
+          "title": "Teken uw doelgebied"
+        }
+      },
+      "hero": {
+        "genericCategory": "opslag",
+        "imageAlt": "Afbeeldingen van opslagartikelen",
+        "privacyNote": "Upload geen afbeeldingen met mensen, persoonlijke gegevens of privéartikelen. Meer info in ons <1>privacybeleid</1>.",
+        "subtitle": "Gebruik een foto en blader door stijlen van {{subject}} om bij een specifiek gebied te passen",
+        "title": "Vind opbergoplossingen die passen bij jouw ruimte",
+        "videoAlt": "Demonstratie van de Find My Fit-functie"
+      },
+      "page": {
+        "description": "Upload een foto om te winkelen voor de planken die je aan het bekijken was, om de juiste uitstraling en pasvorm te krijgen, zonder giswerk.",
+        "title": "Vind Mijn Maat"
+      },
+      "sampleSpaces": {
+        "error": "Er is iets fout gegaan. Probeer het nog eens.",
+        "title": "Een kleurenstaal kiezen"
+      }
+    },
+    "loginPrompt": {
+      "body": "Om opslagaanbevelingen voor je ruimte te krijgen, meld je aan of maak een gratis IKEA-account aan.",
+      "logIn": "Inloggen",
+      "signUp": "Aanmelden",
+      "title": "Meld je aan om een foto te uploaden"
+    },
+    "page": {
+      "description": "Vind de perfecte match voor je huis met IKEA",
+      "title": "Vind Mijn Maat"
+    },
+    "toasts": {
+      "unableToFavorite": "Het spijt ons, maar we konden uw artikel niet aan de lijst toevoegen."
+    },
+    "viewer": {
+      "accessibilityDescription": "Find My Fit gebruikt een foto van je ruimte om IKEA-goederen aan te bevelen die passen in een gekozen gebied. Het tekenen en de visuele interactie kunnen uitdagend zijn voor mensen met een visuele beperking of slechtziendheid. Productdetails, prijzen en winkelacties zijn volledig toegankelijk zodra de resultaten worden weergegeven.",
+      "addToBag": "Toevoegen aan winkelwagen",
+      "adjustHeader": "Pas uw zoekgebied aan",
+      "clearDrawing": "Duidelijke tekening",
+      "confirmDimension": "Dimensie bevestigen",
+      "continue": "I notice you've asked me to continue, but I don't see any previous context or source text to translate from English to Dutch. \n\nCould you please provide:\n1. The English source text you'd like translated\n2. Any specific context or instructions about the translation\n3. If there are HTML tags in the source text, I'll make sure to place them correctly in the Dutch translation\n\nPlease share the text you'd like me to translate, and I'll be happy to help!",
+      "continueAriaLabel": "I'm ready to help you translate from English to Dutch while preserving all HTML tags in their correct positions.\n\nPlease provide me with the English text (source segment) that you would like me to translate, and I will return the Dutch translation with all HTML tags properly placed.",
+      "decreaseDimension": "Afmeting verkleinen",
+      "dimDepth": "Diepte",
+      "dimHeight": "Hoogte",
+      "dimWidth": "Breedte",
+      "done": "Klaar",
+      "doneAriaLabel": "Klaar met bewerken",
+      "drawFocusArea": "Teken uw gewenste focusgebied",
+      "drawingHeader": "Waar wilt u uw opslag?",
+      "editArea": "Bewerkingsgebied",
+      "fewResultsToast": "Probeer uw zoekgebied te vergroten om meer resultaten te krijgen.",
+      "goBack": "Ga terug",
+      "goToImage": "Ga naar afbeelding {{index}}",
+      "increaseDimension": "Afmetingen vergroten",
+      "magicEraser": "Magische gum",
+      "noResults": "Geen producten gevonden voor deze ruimte.",
+      "noResultsButton": "Geen resultaten gevonden",
+      "noResultsTitle": "Geen resultaten gevonden",
+      "removedFromFavorites": "Verwijderd uit favorieten",
+      "removeFavorite": "Verwijder uit favorieten",
+      "retrySearch": "I'm ready to translate from English to Dutch while preserving all HTML tags in their correct positions. Please provide the source segment you'd like me to translate.",
+      "savedToFavorites": "Opgeslagen in favorieten",
+      "saveFavorite": "Opslaan bij favorieten",
+      "search": "Zoek op",
+      "searchError": "Geen overeenkomende producten gevonden. Probeer een ander gebied te tekenen.",
+      "searchErrorToast": "Er is iets misgegaan. Probeer het opnieuw.",
+      "searching": "Zoeken...",
+      "seeAllResults": "Bekijk alle resultaten",
+      "showMoreDetails": "Meer details weergeven",
+      "swipeForMore": "Swipe voor meer",
+      "tapToSelect": "Tik om item te selecteren",
+      "tryAgain": "I'm ready to translate from English to Dutch while preserving all HTML tags in their correct positions. Please provide the source segment you'd like me to translate.",
+      "viewResults_one": "Bekijk {{count}} resultaat",
+      "viewResults_other": "Bekijk {{count}} resultaten"
+    }
+  }
+}

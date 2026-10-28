@@ -1,0 +1,154 @@
+@import 'style/colors';
+@import 'style/type';
+@import 'style/zed';
+
+.WallPaintPin {
+    .dotWrapper {
+        pointer-events: auto;
+        display: none;
+        position: absolute;
+        z-index: zed(optionsMenu);
+
+        &.mobile {
+            display: flex;
+        }
+        &.showPins {
+            display: flex;
+        }
+
+        .outerDot {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transform: translate(-50%, -50%);
+            position: absolute;
+            width: 2rem;
+            height: 2rem;
+            border-radius: 50%;
+            background-color: color(dot, overlayBackground);
+
+            &:before {
+                content: '';
+                display: block;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                width: 0.75rem;
+                height: 0.75rem;
+                border-radius: 50%;
+                background-color: color(default, background);
+                transform: translate(-50%, -50%);
+            }
+        }
+        .pickerContainer {
+            position: absolute;
+            top: -1.25rem;
+            left: 0;
+            visibility: hidden;
+            pointer-events: none;
+            padding: 0 0 0 1.5rem;
+
+            &.renderLeft {
+                left: initial;
+                right: -1rem;
+                padding: 0 1.5rem 0 0;
+            }
+            .pickerRoot {
+                flex-direction: row;
+                background-color: color(default, background);
+                border-radius: 1.5rem;
+                display: flex;
+                width: 15.5rem;
+                flex-wrap: wrap;
+                padding: 0 0.25rem;
+
+                .colorPick {
+                    width: 2rem;
+                    height: 2rem;
+                    border-radius: 50%;
+                    margin: 0.5rem 0.25rem 0.5rem 0.25rem;
+
+                    .colorSwatch {
+                        width: 2rem;
+                        height: 2rem;
+                        border-radius: 50%;
+                        border: solid 0 white;
+                        position: absolute;
+                        transition: border 100ms ease-in-out;
+
+                        &.bright {
+                            border: 0.5px solid color(form, inputBorder);
+                        }
+                        &.selected {
+                            border: solid 3px white;
+                        }
+                    }
+
+                    .colorSelect {
+                        position: absolute;
+                        width: 2rem;
+                        height: 2rem;
+                        border-radius: 50%;
+                        border: solid 1px color(form, inputBorder);
+                        opacity: 0;
+                        transition: opacity 100ms ease-in-out, border-color 100ms ease-in-out;
+
+                        &.selected {
+                            border: solid 2px;
+                            border-color: #111;
+                            opacity: 1;
+                        }
+                    }
+                    .colorCheckmark {
+                        position: absolute;
+                        width: 2rem;
+                        height: 2rem;
+                        padding: 0.3125rem 0.625rem;
+                    }
+                    .diagonal {
+                        position: relative;
+                        width: 1.35rem;
+                        height: 0.1rem;
+                        background-color: red;
+                        transform: rotate(45deg);
+                        top: 0.95rem;
+                        left: 0.3rem;
+                    }
+                    &:hover {
+                        .colorSwatch {
+                            border: solid 3px white;
+                        }
+                        .colorSelect {
+                            opacity: 1;
+                            &.selected {
+                                border: solid 2px;
+                                border-color: #959595;
+                                opacity: 1;
+                            }
+                            &.noColor {
+                                border-color: #111;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        &:hover {
+            z-index: zed(onPreviewActions) + 1;
+
+            .outerDot {
+                border: solid 2px color(dot, overlayBorder);
+
+                &:before {
+                    width: 0.5rem;
+                    height: 0.5rem;
+                    transition: width 250ms ease, height 250ms ease;
+                }
+            }
+            .pickerContainer {
+                visibility: visible;
+                pointer-events: all;
+            }
+        }
+    }
+}

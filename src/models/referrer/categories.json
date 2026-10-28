@@ -1,0 +1,1902 @@
+{
+  "10382": {
+    "roomType": "LIVING_ROOM",
+    "isSubcategory": true
+  },
+  "10385": {
+    "roomType": "OFFICE",
+    "isSubcategory": true
+  },
+  "10397": {
+    "roomType": "LIVING_ROOM",
+    "isSubcategory": true
+  },
+  "10398": {
+    "roomType": "LIVING_ROOM",
+    "isSubcategory": true
+  },
+  "10409": {
+    "roomType": "LIVING_ROOM",
+    "isSubcategory": true
+  },
+  "10410": {
+    "roomType": "LIVING_ROOM",
+    "isSubcategory": true
+  },
+  "10412": {
+    "roomType": "DINING_ROOM",
+    "isSubcategory": true
+  },
+  "10451": {
+    "roomType": "BEDROOM",
+    "isSubcategory": true
+  },
+  "10452": {
+    "roomType": "BEDROOM",
+    "isSubcategory": true
+  },
+  "10454": {
+    "roomType": "BEDROOM",
+    "isSubcategory": true
+  },
+  "10455": {
+    "roomType": "BEDROOM",
+    "isSubcategory": true
+  },
+  "10456": {
+    "roomType": "BEDROOM",
+    "isSubcategory": true
+  },
+  "10459": {
+    "roomType": "BEDROOM",
+    "isSubcategory": true
+  },
+  "10471": {
+    "roomType": "DINING_ROOM",
+    "isSubcategory": true
+  },
+  "10475": {
+    "roomType": "LIVING_ROOM",
+    "isSubcategory": true
+  },
+  "10550": {
+    "roomType": "OFFICE",
+    "isSubcategory": true
+  },
+  "10551": {
+    "roomType": "OFFICE",
+    "isSubcategory": true
+  },
+  "10565": {
+    "roomType": "BEDROOM",
+    "isSubcategory": true
+  },
+  "10567": {
+    "roomType": "OFFICE",
+    "isSubcategory": true
+  },
+  "10573": {
+    "roomType": "OFFICE",
+    "isSubcategory": true
+  },
+  "10574": {
+    "roomType": "OFFICE",
+    "isSubcategory": true
+  },
+  "10651": {
+    "roomType": "BEDROOM",
+    "isSubcategory": true
+  },
+  "10653": {
+    "roomType": "LIVING_ROOM",
+    "isSubcategory": true
+  },
+  "10659": {
+    "roomType": "BEDROOM",
+    "isSubcategory": true
+  },
+  "10663": {
+    "roomType": "LIVING_ROOM",
+    "isSubcategory": true
+  },
+  "10668": {
+    "roomType": "LIVING_ROOM",
+    "isSubcategory": true
+  },
+  "10670": {
+    "roomType": "LIVING_ROOM",
+    "isSubcategory": true
+  },
+  "10671": {
+    "roomType": "LIVING_ROOM",
+    "isSubcategory": true
+  },
+  "10680": {
+    "roomType": "BEDROOM",
+    "isSubcategory": true
+  },
+  "10687": {
+    "roomType": "LIVING_ROOM",
+    "isSubcategory": true
+  },
+  "10689": {
+    "roomType": "LIVING_ROOM",
+    "isSubcategory": true
+  },
+  "10692": {
+    "roomType": "BEDROOM",
+    "isSubcategory": true
+  },
+  "10696": {
+    "roomType": "LIVING_ROOM",
+    "isSubcategory": true
+  },
+  "10698": {
+    "roomType": "LIVING_ROOM",
+    "isSubcategory": true
+  },
+  "10699": {
+    "roomType": "LIVING_ROOM",
+    "isSubcategory": true
+  },
+  "10705": {
+    "roomType": "LIVING_ROOM",
+    "isSubcategory": true
+  },
+  "10716": {
+    "roomType": "LIVING_ROOM",
+    "isSubcategory": true
+  },
+  "10717": {
+    "roomType": "LIVING_ROOM",
+    "isSubcategory": true
+  },
+  "10731": {
+    "roomType": "LIVING_ROOM",
+    "isSubcategory": true
+  },
+  "10732": {
+    "roomType": "BEDROOM",
+    "isSubcategory": true
+  },
+  "10757": {
+    "roomType": "LIVING_ROOM",
+    "isSubcategory": true
+  },
+  "10759": {
+    "roomType": "LIVING_ROOM",
+    "isSubcategory": true
+  },
+  "10760": {
+    "roomType": "LIVING_ROOM",
+    "isSubcategory": true
+  },
+  "10769": {
+    "roomType": "LIVING_ROOM",
+    "isSubcategory": true
+  },
+  "10776": {
+    "roomType": "LIVING_ROOM",
+    "isSubcategory": true
+  },
+  "10778": {
+    "roomType": "LIVING_ROOM",
+    "isSubcategory": true
+  },
+  "10782": {
+    "roomType": "LIVING_ROOM",
+    "isSubcategory": true
+  },
+  "10784": {
+    "roomType": "LIVING_ROOM",
+    "isSubcategory": true
+  },
+  "10785": {
+    "roomType": "BEDROOM",
+    "isSubcategory": true
+  },
+  "10786": {
+    "roomType": "BEDROOM",
+    "isSubcategory": true
+  },
+  "10787": {
+    "roomType": "LIVING_ROOM",
+    "isSubcategory": true
+  },
+  "10788": {
+    "roomType": "BEDROOM",
+    "isSubcategory": true
+  },
+  "10789": {
+    "roomType": "LIVING_ROOM",
+    "isSubcategory": true
+  },
+  "10804": {
+    "roomType": "LIVING_ROOM",
+    "isSubcategory": true
+  },
+  "10805": {
+    "roomType": "LIVING_ROOM",
+    "isSubcategory": true
+  },
+  "10810": {
+    "roomType": "LIVING_ROOM",
+    "isSubcategory": true
+  },
+  "11465": {
+    "roomType": "LIVING_ROOM",
+    "isSubcategory": true
+  },
+  "11703": {
+    "roomType": "BEDROOM",
+    "isSubcategory": true
+  },
+  "11704": {
+    "roomType": "BEDROOM",
+    "isSubcategory": true
+  },
+  "11811": {
+    "roomType": "DINING_ROOM",
+    "isSubcategory": true
+  },
+  "11844": {
+    "roomType": "OFFICE",
+    "isSubcategory": true
+  },
+  "11989": {
+    "roomType": "LIVING_ROOM",
+    "isSubcategory": true
+  },
+  "12151": {
+    "roomType": "LIVING_ROOM",
+    "isSubcategory": true
+  },
+  "12152": {
+    "roomType": "LIVING_ROOM",
+    "isSubcategory": true
+  },
+  "12153": {
+    "roomType": "LIVING_ROOM",
+    "isSubcategory": true
+  },
+  "12158": {
+    "roomType": "LIVING_ROOM",
+    "isSubcategory": true
+  },
+  "14317": {
+    "roomType": "LIVING_ROOM",
+    "isSubcategory": true
+  },
+  "14885": {
+    "roomType": "LIVING_ROOM",
+    "isSubcategory": true
+  },
+  "14971": {
+    "roomType": "LIVING_ROOM",
+    "isSubcategory": true
+  },
+  "15908": {
+    "roomType": "LIVING_ROOM",
+    "isSubcategory": true
+  },
+  "15934": {
+    "roomType": "DINING_ROOM",
+    "isSubcategory": true
+  },
+  "15937": {
+    "roomType": "DINING_ROOM",
+    "isSubcategory": true
+  },
+  "15938": {
+    "roomType": "DINING_ROOM",
+    "isSubcategory": true
+  },
+  "15952": {
+    "roomType": "DINING_ROOM",
+    "isSubcategory": true
+  },
+  "16043": {
+    "roomType": "DINING_ROOM",
+    "isSubcategory": true
+  },
+  "16044": {
+    "roomType": "DINING_ROOM",
+    "isSubcategory": true
+  },
+  "16045": {
+    "roomType": "DINING_ROOM",
+    "isSubcategory": true
+  },
+  "16195": {
+    "roomType": "OFFICE",
+    "isSubcategory": true
+  },
+  "16200": {
+    "roomType": "DINING_ROOM",
+    "isSubcategory": true
+  },
+  "16201": {
+    "roomType": "LIVING_ROOM",
+    "isSubcategory": true
+  },
+  "16213": {
+    "roomType": "DINING_ROOM",
+    "isSubcategory": true
+  },
+  "16244": {
+    "roomType": "DINING_ROOM",
+    "isSubcategory": true
+  },
+  "16246": {
+    "roomType": "LIVING_ROOM",
+    "isSubcategory": true
+  },
+  "16280": {
+    "roomType": "LIVING_ROOM",
+    "isSubcategory": true
+  },
+  "16282": {
+    "roomType": "DINING_ROOM",
+    "isSubcategory": true
+  },
+  "16283": {
+    "roomType": "BEDROOM",
+    "isSubcategory": true
+  },
+  "16284": {
+    "roomType": "BEDROOM",
+    "isSubcategory": true
+  },
+  "16285": {
+    "roomType": "BEDROOM",
+    "isSubcategory": true
+  },
+  "16307": {
+    "roomType": "LIVING_ROOM",
+    "isSubcategory": true
+  },
+  "16308": {
+    "roomType": "DINING_ROOM",
+    "isSubcategory": true
+  },
+  "17897": {
+    "roomType": "LIVING_ROOM",
+    "isSubcategory": true
+  },
+  "18623": {
+    "roomType": "OFFICE",
+    "isSubcategory": true
+  },
+  "18699": {
+    "roomType": "BEDROOM",
+    "isSubcategory": true
+  },
+  "18706": {
+    "roomType": "BEDROOM",
+    "isSubcategory": true
+  },
+  "18707": {
+    "roomType": "BEDROOM",
+    "isSubcategory": true
+  },
+  "18708": {
+    "roomType": "BEDROOM",
+    "isSubcategory": true
+  },
+  "18714": {
+    "roomType": "BEDROOM",
+    "isSubcategory": true
+  },
+  "18716": {
+    "roomType": "BEDROOM",
+    "isSubcategory": true
+  },
+  "18723": {
+    "roomType": "BEDROOM",
+    "isSubcategory": true
+  },
+  "18724": {
+    "roomType": "BEDROOM",
+    "isSubcategory": true
+  },
+  "18730": {
+    "roomType": "BEDROOM",
+    "isSubcategory": true
+  },
+  "18734": {
+    "roomType": "BEDROOM",
+    "isSubcategory": true
+  },
+  "18735": {
+    "roomType": "BEDROOM",
+    "isSubcategory": true
+  },
+  "18755": {
+    "roomType": "BEDROOM",
+    "isSubcategory": true
+  },
+  "18767": {
+    "roomType": "BEDROOM",
+    "isSubcategory": true
+  },
+  "18768": {
+    "roomType": "BEDROOM",
+    "isSubcategory": true
+  },
+  "18769": {
+    "roomType": "BEDROOM",
+    "isSubcategory": true
+  },
+  "18773": {
+    "roomType": "BEDROOM",
+    "isSubcategory": true
+  },
+  "18774": {
+    "roomType": "BEDROOM",
+    "isSubcategory": true
+  },
+  "18775": {
+    "roomType": "BEDROOM",
+    "isSubcategory": true
+  },
+  "18776": {
+    "roomType": "BEDROOM",
+    "isSubcategory": true
+  },
+  "18777": {
+    "roomType": "BEDROOM",
+    "isSubcategory": true
+  },
+  "18860": {
+    "roomType": "DINING_ROOM",
+    "isSubcategory": true
+  },
+  "18862": {
+    "roomType": "DINING_ROOM",
+    "isSubcategory": true
+  },
+  "18864": {
+    "roomType": "DINING_ROOM",
+    "isSubcategory": true
+  },
+  "18865": {
+    "roomType": "DINING_ROOM",
+    "isSubcategory": true
+  },
+  "18866": {
+    "roomType": "DINING_ROOM",
+    "isSubcategory": true
+  },
+  "18868": {
+    "roomType": "DINING_ROOM",
+    "isSubcategory": true
+  },
+  "18869": {
+    "roomType": "DINING_ROOM",
+    "isSubcategory": true
+  },
+  "18870": {
+    "roomType": "DINING_ROOM",
+    "isSubcategory": true
+  },
+  "18872": {
+    "roomType": "DINING_ROOM",
+    "isSubcategory": true
+  },
+  "18890": {
+    "roomType": "BEDROOM",
+    "isSubcategory": true
+  },
+  "18902": {
+    "roomType": "LIVING_ROOM",
+    "isSubcategory": true
+  },
+  "18903": {
+    "roomType": "LIVING_ROOM",
+    "isSubcategory": true
+  },
+  "19037": {
+    "roomType": "LIVING_ROOM",
+    "isSubcategory": true
+  },
+  "19039": {
+    "roomType": "BEDROOM",
+    "isSubcategory": true
+  },
+  "19048": {
+    "roomType": "BEDROOM",
+    "isSubcategory": true
+  },
+  "19049": {
+    "roomType": "BEDROOM",
+    "isSubcategory": true
+  },
+  "19053": {
+    "roomType": "BEDROOM",
+    "isSubcategory": true
+  },
+  "19059": {
+    "roomType": "BEDROOM",
+    "isSubcategory": true
+  },
+  "19086": {
+    "roomType": "BEDROOM",
+    "isSubcategory": true
+  },
+  "19106": {
+    "roomType": "BEDROOM",
+    "isSubcategory": true
+  },
+  "19110": {
+    "roomType": "BEDROOM",
+    "isSubcategory": true
+  },
+  "19113": {
+    "roomType": "BEDROOM",
+    "isSubcategory": true
+  },
+  "19141": {
+    "roomType": "DINING_ROOM",
+    "isSubcategory": true
+  },
+  "19143": {
+    "roomType": "DINING_ROOM",
+    "isSubcategory": true
+  },
+  "19144": {
+    "roomType": "DINING_ROOM",
+    "isSubcategory": true
+  },
+  "19145": {
+    "roomType": "DINING_ROOM",
+    "isSubcategory": true
+  },
+  "20087": {
+    "roomType": "BEDROOM",
+    "isSubcategory": true
+  },
+  "20474": {
+    "roomType": "BEDROOM",
+    "isSubcategory": true
+  },
+  "20477": {
+    "roomType": "BEDROOM",
+    "isSubcategory": true
+  },
+  "20479": {
+    "roomType": "BEDROOM",
+    "isSubcategory": true
+  },
+  "20481": {
+    "roomType": "BEDROOM",
+    "isSubcategory": true
+  },
+  "20483": {
+    "roomType": "BEDROOM",
+    "isSubcategory": true
+  },
+  "20489": {
+    "roomType": "BEDROOM",
+    "isSubcategory": true
+  },
+  "20491": {
+    "roomType": "LIVING_ROOM",
+    "isSubcategory": true
+  },
+  "20492": {
+    "roomType": "LIVING_ROOM",
+    "isSubcategory": true
+  },
+  "20494": {
+    "roomType": "LIVING_ROOM",
+    "isSubcategory": true
+  },
+  "20496": {
+    "roomType": "LIVING_ROOM",
+    "isSubcategory": true
+  },
+  "20502": {
+    "roomType": "OFFICE",
+    "isSubcategory": true
+  },
+  "20503": {
+    "roomType": "BEDROOM",
+    "isSubcategory": true
+  },
+  "20504": {
+    "roomType": "BEDROOM",
+    "isSubcategory": true
+  },
+  "20505": {
+    "roomType": "BEDROOM",
+    "isSubcategory": true
+  },
+  "20515": {
+    "roomType": "LIVING_ROOM",
+    "isSubcategory": true
+  },
+  "20516": {
+    "roomType": "LIVING_ROOM",
+    "isSubcategory": true
+  },
+  "20527": {
+    "roomType": "BEDROOM",
+    "isSubcategory": true
+  },
+  "20529": {
+    "roomType": "BEDROOM",
+    "isSubcategory": true
+  },
+  "20530": {
+    "roomType": "BEDROOM",
+    "isSubcategory": true
+  },
+  "20533": {
+    "roomType": "BEDROOM",
+    "isSubcategory": true
+  },
+  "20535": {
+    "roomType": "BEDROOM",
+    "isSubcategory": true
+  },
+  "20538": {
+    "roomType": "DINING_ROOM",
+    "isSubcategory": true
+  },
+  "20543": {
+    "roomType": "LIVING_ROOM",
+    "isSubcategory": true
+  },
+  "20560": {
+    "roomType": "DINING_ROOM",
+    "isSubcategory": true
+  },
+  "20601": {
+    "roomType": "BEDROOM",
+    "isSubcategory": true
+  },
+  "20602": {
+    "roomType": "BEDROOM",
+    "isSubcategory": true
+  },
+  "20611": {
+    "roomType": "BEDROOM",
+    "isSubcategory": true
+  },
+  "20636": {
+    "roomType": "DINING_ROOM",
+    "isSubcategory": true
+  },
+  "20643": {
+    "roomType": "LIVING_ROOM",
+    "isSubcategory": true
+  },
+  "20649": {
+    "roomType": "OFFICE",
+    "isSubcategory": true
+  },
+  "20651": {
+    "roomType": "OFFICE",
+    "isSubcategory": true
+  },
+  "20652": {
+    "roomType": "OFFICE",
+    "isSubcategory": true
+  },
+  "20653": {
+    "roomType": "OFFICE",
+    "isSubcategory": true
+  },
+  "20654": {
+    "roomType": "OFFICE",
+    "isSubcategory": true
+  },
+  "20656": {
+    "roomType": "BEDROOM",
+    "isSubcategory": true
+  },
+  "20657": {
+    "roomType": "BEDROOM",
+    "isSubcategory": true
+  },
+  "20658": {
+    "roomType": "LIVING_ROOM",
+    "isSubcategory": true
+  },
+  "20659": {
+    "roomType": "LIVING_ROOM",
+    "isSubcategory": true
+  },
+  "20660": {
+    "roomType": "LIVING_ROOM",
+    "isSubcategory": true
+  },
+  "20669": {
+    "roomType": "DINING_ROOM",
+    "isSubcategory": true
+  },
+  "20676": {
+    "roomType": "DINING_ROOM",
+    "isSubcategory": true
+  },
+  "20862": {
+    "roomType": "DINING_ROOM",
+    "isSubcategory": true
+  },
+  "20864": {
+    "roomType": "DINING_ROOM",
+    "isSubcategory": true
+  },
+  "20874": {
+    "roomType": "BEDROOM",
+    "isSubcategory": true
+  },
+  "20907": {
+    "roomType": "LIVING_ROOM",
+    "isSubcategory": true
+  },
+  "20926": {
+    "roomType": "LIVING_ROOM",
+    "isSubcategory": true
+  },
+  "20928": {
+    "roomType": "LIVING_ROOM",
+    "isSubcategory": true
+  },
+  "20929": {
+    "roomType": "LIVING_ROOM",
+    "isSubcategory": true
+  },
+  "21825": {
+    "roomType": "DINING_ROOM",
+    "isSubcategory": true
+  },
+  "21826": {
+    "roomType": "DINING_ROOM",
+    "isSubcategory": true
+  },
+  "21827": {
+    "roomType": "DINING_ROOM",
+    "isSubcategory": true
+  },
+  "21828": {
+    "roomType": "DINING_ROOM",
+    "isSubcategory": true
+  },
+  "21829": {
+    "roomType": "DINING_ROOM",
+    "isSubcategory": true
+  },
+  "21958": {
+    "roomType": "OFFICE",
+    "isSubcategory": true
+  },
+  "21960": {
+    "roomType": "LIVING_ROOM",
+    "isSubcategory": true
+  },
+  "21961": {
+    "roomType": "LIVING_ROOM",
+    "isSubcategory": true
+  },
+  "21965": {
+    "roomType": "DINING_ROOM",
+    "isSubcategory": true
+  },
+  "22659": {
+    "roomType": "LIVING_ROOM",
+    "isSubcategory": true
+  },
+  "22663": {
+    "roomType": "DINING_ROOM",
+    "isSubcategory": true
+  },
+  "22957": {
+    "roomType": "DINING_ROOM",
+    "isSubcategory": true
+  },
+  "23615": {
+    "roomType": "LIVING_ROOM",
+    "isSubcategory": true
+  },
+  "24337": {
+    "roomType": "BEDROOM",
+    "isSubcategory": true
+  },
+  "24711": {
+    "roomType": "BEDROOM",
+    "isSubcategory": true
+  },
+  "24714": {
+    "roomType": "BEDROOM",
+    "isSubcategory": true
+  },
+  "24715": {
+    "roomType": "BEDROOM",
+    "isSubcategory": true
+  },
+  "24830": {
+    "roomType": "OFFICE",
+    "isSubcategory": true
+  },
+  "24858": {
+    "roomType": "BEDROOM",
+    "isSubcategory": true
+  },
+  "24859": {
+    "roomType": "BEDROOM",
+    "isSubcategory": true
+  },
+  "24861": {
+    "roomType": "LIVING_ROOM",
+    "isSubcategory": true
+  },
+  "24887": {
+    "roomType": "LIVING_ROOM",
+    "isSubcategory": true
+  },
+  "24924": {
+    "roomType": "LIVING_ROOM",
+    "isSubcategory": true
+  },
+  "25205": {
+    "roomType": "BEDROOM",
+    "isSubcategory": true
+  },
+  "25206": {
+    "roomType": "DINING_ROOM",
+    "isSubcategory": true
+  },
+  "25219": {
+    "roomType": "DINING_ROOM",
+    "isSubcategory": true
+  },
+  "25220": {
+    "roomType": "DINING_ROOM",
+    "isSubcategory": true
+  },
+  "30454": {
+    "roomType": "LIVING_ROOM",
+    "isSubcategory": true
+  },
+  "30572": {
+    "roomType": "DINING_ROOM",
+    "isSubcategory": true
+  },
+  "31772": {
+    "roomType": "BEDROOM",
+    "isSubcategory": true
+  },
+  "31773": {
+    "roomType": "BEDROOM",
+    "isSubcategory": true
+  },
+  "31781": {
+    "roomType": "DINING_ROOM",
+    "isSubcategory": true
+  },
+  "31786": {
+    "roomType": "LIVING_ROOM",
+    "isSubcategory": true
+  },
+  "31787": {
+    "roomType": "LIVING_ROOM",
+    "isSubcategory": true
+  },
+  "34203": {
+    "roomType": "LIVING_ROOM",
+    "isSubcategory": true
+  },
+  "34204": {
+    "roomType": "LIVING_ROOM",
+    "isSubcategory": true
+  },
+  "34470": {
+    "roomType": "OFFICE",
+    "isSubcategory": true
+  },
+  "35766": {
+    "roomType": "BEDROOM",
+    "isSubcategory": true
+  },
+  "35768": {
+    "roomType": "BEDROOM",
+    "isSubcategory": true
+  },
+  "36209": {
+    "roomType": "DINING_ROOM",
+    "isSubcategory": true
+  },
+  "36212": {
+    "roomType": "DINING_ROOM",
+    "isSubcategory": true
+  },
+  "36213": {
+    "roomType": "DINING_ROOM",
+    "isSubcategory": true
+  },
+  "36812": {
+    "roomType": "LIVING_ROOM",
+    "isSubcategory": true
+  },
+  "36814": {
+    "roomType": "LIVING_ROOM",
+    "isSubcategory": true
+  },
+  "37899": {
+    "roomType": "BEDROOM",
+    "isSubcategory": true
+  },
+  "37900": {
+    "roomType": "OFFICE",
+    "isSubcategory": true
+  },
+  "39266": {
+    "roomType": "LIVING_ROOM",
+    "isSubcategory": true
+  },
+  "39267": {
+    "roomType": "LIVING_ROOM",
+    "isSubcategory": true
+  },
+  "39569": {
+    "roomType": "LIVING_ROOM",
+    "isSubcategory": true
+  },
+  "39570": {
+    "roomType": "LIVING_ROOM",
+    "isSubcategory": true
+  },
+  "40842": {
+    "roomType": "LIVING_ROOM",
+    "isSubcategory": true
+  },
+  "40843": {
+    "roomType": "OFFICE",
+    "isSubcategory": true
+  },
+  "40845": {
+    "roomType": "OFFICE",
+    "isSubcategory": true
+  },
+  "41068": {
+    "roomType": "OFFICE",
+    "isSubcategory": true
+  },
+  "42242": {
+    "roomType": "BEDROOM",
+    "isSubcategory": true
+  },
+  "42245": {
+    "roomType": "LIVING_ROOM",
+    "isSubcategory": true
+  },
+  "42246": {
+    "roomType": "LIVING_ROOM",
+    "isSubcategory": true
+  },
+  "42247": {
+    "roomType": "LIVING_ROOM",
+    "isSubcategory": true
+  },
+  "42921": {
+    "roomType": "LIVING_ROOM",
+    "isSubcategory": true
+  },
+  "42925": {
+    "roomType": "BEDROOM",
+    "isSubcategory": true
+  },
+  "42926": {
+    "roomType": "LIVING_ROOM",
+    "isSubcategory": true
+  },
+  "43631": {
+    "roomType": "BEDROOM",
+    "isSubcategory": true
+  },
+  "43633": {
+    "roomType": "BEDROOM",
+    "isSubcategory": true
+  },
+  "43634": {
+    "roomType": "BEDROOM",
+    "isSubcategory": true
+  },
+  "43635": {
+    "roomType": "BEDROOM",
+    "isSubcategory": true
+  },
+  "43636": {
+    "roomType": "BEDROOM",
+    "isSubcategory": true
+  },
+  "45780": {
+    "roomType": "BEDROOM",
+    "isSubcategory": true
+  },
+  "45781": {
+    "roomType": "BEDROOM",
+    "isSubcategory": true
+  },
+  "45782": {
+    "roomType": "DINING_ROOM",
+    "isSubcategory": true
+  },
+  "45815": {
+    "roomType": "DINING_ROOM",
+    "isSubcategory": true
+  },
+  "45816": {
+    "roomType": "BEDROOM",
+    "isSubcategory": true
+  },
+  "45848": {
+    "roomType": "BEDROOM",
+    "isSubcategory": true
+  },
+  "45925": {
+    "roomType": "BEDROOM",
+    "isSubcategory": true
+  },
+  "46052": {
+    "roomType": "LIVING_ROOM",
+    "isSubcategory": true
+  },
+  "46053": {
+    "roomType": "LIVING_ROOM",
+    "isSubcategory": true
+  },
+  "46077": {
+    "roomType": "OFFICE",
+    "isSubcategory": true
+  },
+  "46080": {
+    "roomType": "BEDROOM",
+    "isSubcategory": true
+  },
+  "46081": {
+    "roomType": "LIVING_ROOM",
+    "isSubcategory": true
+  },
+  "46194": {
+    "roomType": "LIVING_ROOM",
+    "isSubcategory": true
+  },
+  "47067": {
+    "roomType": "OFFICE",
+    "isSubcategory": true
+  },
+  "47068": {
+    "roomType": "OFFICE",
+    "isSubcategory": true
+  },
+  "47069": {
+    "roomType": "OFFICE",
+    "isSubcategory": true
+  },
+  "47070": {
+    "roomType": "OFFICE",
+    "isSubcategory": true
+  },
+  "47081": {
+    "roomType": "KITCHEN",
+    "isSubcategory": true
+  },
+  "47084": {
+    "roomType": "OFFICE",
+    "isSubcategory": true
+  },
+  "47360": {
+    "roomType": "DINING_ROOM",
+    "isSubcategory": true
+  },
+  "47388": {
+    "roomType": "LIVING_ROOM",
+    "isSubcategory": true
+  },
+  "47394": {
+    "roomType": "BEDROOM",
+    "isSubcategory": true
+  },
+  "47395": {
+    "roomType": "BEDROOM",
+    "isSubcategory": true
+  },
+  "47396": {
+    "roomType": "BEDROOM",
+    "isSubcategory": true
+  },
+  "47405": {
+    "roomType": "BEDROOM",
+    "isSubcategory": true
+  },
+  "47406": {
+    "roomType": "BEDROOM",
+    "isSubcategory": true
+  },
+  "47407": {
+    "roomType": "BEDROOM",
+    "isSubcategory": true
+  },
+  "47423": {
+    "roomType": "OFFICE",
+    "isSubcategory": true
+  },
+  "47424": {
+    "roomType": "OFFICE",
+    "isSubcategory": true
+  },
+  "47425": {
+    "roomType": "OFFICE",
+    "isSubcategory": true
+  },
+  "47426": {
+    "roomType": "OFFICE",
+    "isSubcategory": true
+  },
+  "47427": {
+    "roomType": "OFFICE",
+    "isSubcategory": true
+  },
+  "47706": {
+    "roomType": "DINING_ROOM",
+    "isSubcategory": true
+  },
+  "47747": {
+    "roomType": "DINING_ROOM",
+    "isSubcategory": true
+  },
+  "48005": {
+    "roomType": "BEDROOM",
+    "isSubcategory": true
+  },
+  "48006": {
+    "roomType": "BEDROOM",
+    "isSubcategory": true
+  },
+  "48007": {
+    "roomType": "LIVING_ROOM",
+    "isSubcategory": true
+  },
+  "48925": {
+    "roomType": "BEDROOM",
+    "isSubcategory": true
+  },
+  "49015": {
+    "roomType": "DINING_ROOM",
+    "isSubcategory": true
+  },
+  "49079": {
+    "roomType": "BEDROOM",
+    "isSubcategory": true
+  },
+  "49081": {
+    "roomType": "BEDROOM",
+    "isSubcategory": true
+  },
+  "49096": {
+    "roomType": "BEDROOM",
+    "isSubcategory": true
+  },
+  "49138": {
+    "roomType": "BEDROOM",
+    "isSubcategory": true
+  },
+  "49139": {
+    "roomType": "BEDROOM",
+    "isSubcategory": true
+  },
+  "49149": {
+    "roomType": "LIVING_ROOM",
+    "isSubcategory": true
+  },
+  "49150": {
+    "roomType": "LIVING_ROOM",
+    "isSubcategory": true
+  },
+  "49151": {
+    "roomType": "LIVING_ROOM",
+    "isSubcategory": true
+  },
+  "49153": {
+    "roomType": "DINING_ROOM",
+    "isSubcategory": true
+  },
+  "49156": {
+    "roomType": "DINING_ROOM",
+    "isSubcategory": true
+  },
+  "49157": {
+    "roomType": "LIVING_ROOM",
+    "isSubcategory": true
+  },
+  "49158": {
+    "roomType": "LIVING_ROOM",
+    "isSubcategory": true
+  },
+  "49159": {
+    "roomType": "LIVING_ROOM",
+    "isSubcategory": true
+  },
+  "49160": {
+    "roomType": "LIVING_ROOM",
+    "isSubcategory": true
+  },
+  "49229": {
+    "roomType": "DINING_ROOM",
+    "isSubcategory": true
+  },
+  "49532": {
+    "roomType": "DINING_ROOM",
+    "isSubcategory": true
+  },
+  "53249": {
+    "roomType": "OFFICE",
+    "isSubcategory": true
+  },
+  "53257": {
+    "roomType": "LIVING_ROOM",
+    "isSubcategory": true
+  },
+  "54173": {
+    "roomType": "OFFICE",
+    "isSubcategory": true
+  },
+  "54941": {
+    "roomType": "LIVING_ROOM",
+    "isSubcategory": true
+  },
+  "54943": {
+    "roomType": "LIVING_ROOM",
+    "isSubcategory": true
+  },
+  "54992": {
+    "roomType": "BEDROOM",
+    "isSubcategory": true
+  },
+  "55002": {
+    "roomType": "OFFICE",
+    "isSubcategory": true
+  },
+  "55008": {
+    "roomType": "OFFICE",
+    "isSubcategory": true
+  },
+  "55012": {
+    "roomType": "LIVING_ROOM",
+    "isSubcategory": true
+  },
+  "55014": {
+    "roomType": "LIVING_ROOM",
+    "isSubcategory": true
+  },
+  "55015": {
+    "roomType": "LIVING_ROOM",
+    "isSubcategory": true
+  },
+  "55022": {
+    "roomType": "LIVING_ROOM",
+    "isSubcategory": true
+  },
+  "55023": {
+    "roomType": "LIVING_ROOM",
+    "isSubcategory": true
+  },
+  "55024": {
+    "roomType": "LIVING_ROOM",
+    "isSubcategory": true
+  },
+  "55026": {
+    "roomType": "LIVING_ROOM",
+    "isSubcategory": true
+  },
+  "55029": {
+    "roomType": "LIVING_ROOM",
+    "isSubcategory": true
+  },
+  "55031": {
+    "roomType": "LIVING_ROOM",
+    "isSubcategory": true
+  },
+  "55032": {
+    "roomType": "LIVING_ROOM",
+    "isSubcategory": true
+  },
+  "55033": {
+    "roomType": "LIVING_ROOM",
+    "isSubcategory": true
+  },
+  "55397": {
+    "roomType": "OFFICE",
+    "isSubcategory": true
+  },
+  "55989": {
+    "roomType": "OFFICE",
+    "isSubcategory": true
+  },
+  "55990": {
+    "roomType": "OFFICE",
+    "isSubcategory": true
+  },
+  "55991": {
+    "roomType": "OFFICE",
+    "isSubcategory": true
+  },
+  "55992": {
+    "roomType": "OFFICE",
+    "isSubcategory": true
+  },
+  "55993": {
+    "roomType": "OFFICE",
+    "isSubcategory": true
+  },
+  "55997": {
+    "roomType": "BEDROOM",
+    "isSubcategory": true
+  },
+  "56472": {
+    "roomType": "LIVING_ROOM",
+    "isSubcategory": true
+  },
+  "56516": {
+    "roomType": "OFFICE",
+    "isSubcategory": true
+  },
+  "57224": {
+    "roomType": "DINING_ROOM",
+    "isSubcategory": true
+  },
+  "57297": {
+    "roomType": "DINING_ROOM",
+    "isSubcategory": true
+  },
+  "57298": {
+    "roomType": "LIVING_ROOM",
+    "isSubcategory": true
+  },
+  "57527": {
+    "roomType": "LIVING_ROOM",
+    "isSubcategory": true
+  },
+  "57536": {
+    "roomType": "LIVING_ROOM",
+    "isSubcategory": true
+  },
+  "57537": {
+    "roomType": "LIVING_ROOM",
+    "isSubcategory": true
+  },
+  "57542": {
+    "roomType": "LIVING_ROOM",
+    "isSubcategory": true
+  },
+  "58285": {
+    "roomType": "LIVING_ROOM",
+    "isSubcategory": true
+  },
+  "58286": {
+    "roomType": "LIVING_ROOM",
+    "isSubcategory": true
+  },
+  "58288": {
+    "roomType": "LIVING_ROOM",
+    "isSubcategory": true
+  },
+  "58290": {
+    "roomType": "LIVING_ROOM",
+    "isSubcategory": true
+  },
+  "58291": {
+    "roomType": "LIVING_ROOM",
+    "isSubcategory": true
+  },
+  "59240": {
+    "roomType": "LIVING_ROOM",
+    "isSubcategory": true
+  },
+  "59244": {
+    "roomType": "DINING_ROOM",
+    "isSubcategory": true
+  },
+  "59245": {
+    "roomType": "DINING_ROOM",
+    "isSubcategory": true
+  },
+  "59246": {
+    "roomType": "LIVING_ROOM",
+    "isSubcategory": true
+  },
+  "59247": {
+    "roomType": "BEDROOM",
+    "isSubcategory": true
+  },
+  "59248": {
+    "roomType": "LIVING_ROOM",
+    "isSubcategory": true
+  },
+  "59249": {
+    "roomType": "DINING_ROOM",
+    "isSubcategory": true
+  },
+  "59250": {
+    "roomType": "DINING_ROOM",
+    "isSubcategory": true
+  },
+  "59251": {
+    "roomType": "DINING_ROOM",
+    "isSubcategory": true
+  },
+  "59282": {
+    "roomType": "BEDROOM",
+    "isSubcategory": true
+  },
+  "59283": {
+    "roomType": "LIVING_ROOM",
+    "isSubcategory": true
+  },
+  "59284": {
+    "roomType": "LIVING_ROOM",
+    "isSubcategory": true
+  },
+  "59285": {
+    "roomType": "LIVING_ROOM",
+    "isSubcategory": true
+  },
+  "59286": {
+    "roomType": "LIVING_ROOM",
+    "isSubcategory": true
+  },
+  "59307": {
+    "roomType": "DINING_ROOM",
+    "isSubcategory": true
+  },
+  "60762": {
+    "roomType": "LIVING_ROOM",
+    "isSubcategory": true
+  },
+  "700171": {
+    "roomType": "DINING_ROOM",
+    "isSubcategory": true
+  },
+  "700172": {
+    "roomType": "DINING_ROOM",
+    "isSubcategory": true
+  },
+  "700173": {
+    "roomType": "DINING_ROOM",
+    "isSubcategory": true
+  },
+  "700174": {
+    "roomType": "DINING_ROOM",
+    "isSubcategory": true
+  },
+  "700177": {
+    "roomType": "LIVING_ROOM",
+    "isSubcategory": true
+  },
+  "700178": {
+    "roomType": "LIVING_ROOM",
+    "isSubcategory": true
+  },
+  "700179": {
+    "roomType": "BEDROOM",
+    "isSubcategory": true
+  },
+  "700191": {
+    "roomType": "DINING_ROOM",
+    "isSubcategory": true
+  },
+  "700192": {
+    "roomType": "LIVING_ROOM",
+    "isSubcategory": true
+  },
+  "700199": {
+    "roomType": "LIVING_ROOM",
+    "isSubcategory": true
+  },
+  "700203": {
+    "roomType": "LIVING_ROOM",
+    "isSubcategory": true
+  },
+  "700220": {
+    "roomType": "LIVING_ROOM",
+    "isSubcategory": true
+  },
+  "700226": {
+    "roomType": "LIVING_ROOM",
+    "isSubcategory": true
+  },
+  "700278": {
+    "roomType": "LIVING_ROOM",
+    "isSubcategory": true
+  },
+  "700292": {
+    "roomType": "DINING_ROOM",
+    "isSubcategory": true
+  },
+  "700313": {
+    "roomType": "LIVING_ROOM",
+    "isSubcategory": true
+  },
+  "700319": {
+    "roomType": "LIVING_ROOM",
+    "isSubcategory": true
+  },
+  "700322": {
+    "roomType": "LIVING_ROOM",
+    "isSubcategory": true
+  },
+  "700325": {
+    "roomType": "LIVING_ROOM",
+    "isSubcategory": true
+  },
+  "700336": {
+    "roomType": "OFFICE",
+    "isSubcategory": true
+  },
+  "700337": {
+    "roomType": "OFFICE",
+    "isSubcategory": true
+  },
+  "700349": {
+    "roomType": "DINING_ROOM",
+    "isSubcategory": true
+  },
+  "700411": {
+    "roomType": "LIVING_ROOM",
+    "isSubcategory": true
+  },
+  "700414": {
+    "roomType": "OFFICE",
+    "isSubcategory": true
+  },
+  "700417": {
+    "roomType": "DINING_ROOM",
+    "isSubcategory": true
+  },
+  "700424": {
+    "roomType": "OFFICE",
+    "isSubcategory": true
+  },
+  "700425": {
+    "roomType": "LIVING_ROOM",
+    "isSubcategory": true
+  },
+  "700439": {
+    "roomType": "BEDROOM",
+    "isSubcategory": true
+  },
+  "700440": {
+    "roomType": "LIVING_ROOM",
+    "isSubcategory": true
+  },
+  "700455": {
+    "roomType": "LIVING_ROOM",
+    "isSubcategory": true
+  },
+  "700467": {
+    "roomType": "BEDROOM",
+    "isSubcategory": true
+  },
+  "700488": {
+    "roomType": "LIVING_ROOM",
+    "isSubcategory": true
+  },
+  "700490": {
+    "roomType": "BEDROOM",
+    "isSubcategory": true
+  },
+  "700492": {
+    "roomType": "BEDROOM",
+    "isSubcategory": true
+  },
+  "700513": {
+    "roomType": "BEDROOM",
+    "isSubcategory": true
+  },
+  "700516": {
+    "roomType": "LIVING_ROOM",
+    "isSubcategory": true
+  },
+  "700517": {
+    "roomType": "LIVING_ROOM",
+    "isSubcategory": true
+  },
+  "700518": {
+    "roomType": "LIVING_ROOM",
+    "isSubcategory": true
+  },
+  "700520": {
+    "roomType": "LIVING_ROOM",
+    "isSubcategory": true
+  },
+  "700521": {
+    "roomType": "OFFICE",
+    "isSubcategory": true
+  },
+  "700522": {
+    "roomType": "LIVING_ROOM",
+    "isSubcategory": true
+  },
+  "700523": {
+    "roomType": "OFFICE",
+    "isSubcategory": true
+  },
+  "700524": {
+    "roomType": "LIVING_ROOM",
+    "isSubcategory": true
+  },
+  "700525": {
+    "roomType": "LIVING_ROOM",
+    "isSubcategory": true
+  },
+  "700527": {
+    "roomType": "LIVING_ROOM",
+    "isSubcategory": true
+  },
+  "700528": {
+    "roomType": "OFFICE",
+    "isSubcategory": true
+  },
+  "700538": {
+    "roomType": "OFFICE",
+    "isSubcategory": true
+  },
+  "700539": {
+    "roomType": "LIVING_ROOM",
+    "isSubcategory": true
+  },
+  "700540": {
+    "roomType": "OFFICE",
+    "isSubcategory": true
+  },
+  "700541": {
+    "roomType": "OFFICE",
+    "isSubcategory": true
+  },
+  "700542": {
+    "roomType": "OFFICE",
+    "isSubcategory": true
+  },
+  "700553": {
+    "roomType": "BEDROOM",
+    "isSubcategory": true
+  },
+  "700560": {
+    "roomType": "BEDROOM",
+    "isSubcategory": true
+  },
+  "700562": {
+    "roomType": "BEDROOM",
+    "isSubcategory": true
+  },
+  "700563": {
+    "roomType": "OFFICE",
+    "isSubcategory": true
+  },
+  "700570": {
+    "roomType": "DINING_ROOM",
+    "isSubcategory": true
+  },
+  "700572": {
+    "roomType": "LIVING_ROOM",
+    "isSubcategory": true
+  },
+  "700596": {
+    "roomType": "DINING_ROOM",
+    "isSubcategory": true
+  },
+  "700609": {
+    "roomType": "BEDROOM",
+    "isSubcategory": true
+  },
+  "700610": {
+    "roomType": "DINING_ROOM",
+    "isSubcategory": true
+  },
+  "700617": {
+    "roomType": "DINING_ROOM",
+    "isSubcategory": true
+  },
+  "700622": {
+    "roomType": "DINING_ROOM",
+    "isSubcategory": true
+  },
+  "700623": {
+    "roomType": "LIVING_ROOM",
+    "isSubcategory": true
+  },
+  "700624": {
+    "roomType": "DINING_ROOM",
+    "isSubcategory": true
+  },
+  "700625": {
+    "roomType": "DINING_ROOM",
+    "isSubcategory": true
+  },
+  "700626": {
+    "roomType": "DINING_ROOM",
+    "isSubcategory": true
+  },
+  "700627": {
+    "roomType": "OFFICE",
+    "isSubcategory": true
+  },
+  "700629": {
+    "roomType": "LIVING_ROOM",
+    "isSubcategory": true
+  },
+  "700630": {
+    "roomType": "LIVING_ROOM",
+    "isSubcategory": true
+  },
+  "700631": {
+    "roomType": "LIVING_ROOM",
+    "isSubcategory": true
+  },
+  "700633": {
+    "roomType": "LIVING_ROOM",
+    "isSubcategory": true
+  },
+  "700640": {
+    "roomType": "LIVING_ROOM",
+    "isSubcategory": true
+  },
+  "700667": {
+    "roomType": "DINING_ROOM",
+    "isSubcategory": true
+  },
+  "700675": {
+    "roomType": "DINING_ROOM",
+    "isSubcategory": true
+  },
+  "700676": {
+    "roomType": "LIVING_ROOM",
+    "isSubcategory": true
+  },
+  "700682": {
+    "roomType": "DINING_ROOM",
+    "isSubcategory": true
+  },
+  "bc001": {
+    "roomType": "BEDROOM",
+    "isSubcategory": false
+  },
+  "bc002": {
+    "roomType": "BEDROOM",
+    "isSubcategory": true
+  },
+  "bc003": {
+    "roomType": "BEDROOM",
+    "isSubcategory": true
+  },
+  "bc004": {
+    "roomType": "BEDROOM",
+    "isSubcategory": true
+  },
+  "bm001": {
+    "roomType": "BEDROOM",
+    "isSubcategory": false
+  },
+  "bm003": {
+    "roomType": "BEDROOM",
+    "isSubcategory": true
+  },
+  "fu002": {
+    "roomType": "DINING_ROOM",
+    "isSubcategory": false
+  },
+  "fu003": {
+    "roomType": "LIVING_ROOM",
+    "isSubcategory": true
+  },
+  "fu004": {
+    "roomType": "OFFICE",
+    "isSubcategory": false
+  },
+  "fu005": {
+    "roomType": "OFFICE",
+    "isSubcategory": true
+  },
+  "fu006": {
+    "roomType": "LIVING_ROOM",
+    "isSubcategory": true
+  },
+  "he001": {
+    "roomType": "OFFICE",
+    "isSubcategory": false
+  },
+  "hs001": {
+    "roomType": "LIVING_ROOM",
+    "isSubcategory": false
+  },
+  "ka001": {
+    "roomType": "DINING_ROOM",
+    "isSubcategory": false
+  },
+  "ka002": {
+    "roomType": "DINING_ROOM",
+    "isSubcategory": true
+  },
+  "ka003": {
+    "roomType": "DINING_ROOM",
+    "isSubcategory": true
+  },
+  "kt001": {
+    "roomType": "DINING_ROOM",
+    "isSubcategory": false
+  },
+  "kt002": {
+    "roomType": "DINING_ROOM",
+    "isSubcategory": true
+  },
+  "kt003": {
+    "roomType": "DINING_ROOM",
+    "isSubcategory": true
+  },
+  "lc001": {
+    "roomType": "BEDROOM",
+    "isSubcategory": false
+  },
+  "li001": {
+    "roomType": "LIVING_ROOM",
+    "isSubcategory": false
+  },
+  "li002": {
+    "roomType": "LIVING_ROOM",
+    "isSubcategory": true
+  },
+  "od001": {
+    "roomType": "LIVING_ROOM",
+    "isSubcategory": false
+  },
+  "od003": {
+    "roomType": "LIVING_ROOM",
+    "isSubcategory": true
+  },
+  "pp003": {
+    "roomType": "LIVING_ROOM",
+    "isSubcategory": true
+  },
+  "pp004": {
+    "roomType": "LIVING_ROOM",
+    "isSubcategory": true
+  },
+  "pt001": {
+    "roomType": "LIVING_ROOM",
+    "isSubcategory": false
+  },
+  "st001": {
+    "roomType": "LIVING_ROOM",
+    "isSubcategory": false
+  },
+  "st002": {
+    "roomType": "LIVING_ROOM",
+    "isSubcategory": true
+  },
+  "st003": {
+    "roomType": "LIVING_ROOM",
+    "isSubcategory": true
+  },
+  "st004": {
+    "roomType": "BEDROOM",
+    "isSubcategory": true
+  },
+  "st006": {
+    "roomType": "LIVING_ROOM",
+    "isSubcategory": true
+  },
+  "st007": {
+    "roomType": "OFFICE",
+    "isSubcategory": false
+  },
+  "tl001": {
+    "roomType": "LIVING_ROOM",
+    "isSubcategory": false
+  },
+  "tl004": {
+    "roomType": "BEDROOM",
+    "isSubcategory": true
+  }
+}

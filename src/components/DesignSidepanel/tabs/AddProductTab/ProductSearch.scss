@@ -1,0 +1,151 @@
+@import 'style/type';
+@import 'style/colors';
+@import 'style/zed';
+
+.ProductSearch {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1rem 1.5rem;
+
+    .ProductSearch__searchArea {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .ProductSearch__headlineWrapper {
+        @include heading-sm;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 1rem;
+
+        .ProductSearch__headline {
+            flex: 1 1 0%;
+            min-inline-size: 0;
+        }
+
+        .ProductSearch__breadcrumbsList {
+            display: flex;
+            flex-wrap: nowrap;
+            align-items: center;
+
+            .breadcrumb {
+                @include body-sm;
+                white-space: nowrap;
+
+                &:last-child {
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    min-inline-size: 0;
+                }
+            }
+
+            button.breadcrumb {
+                text-decoration: underline;
+                color: color(cta, link);
+
+                &:hover {
+                    color: color(cta, linkHover);
+                }
+            }
+        }
+    }
+
+    .ProductSearch__personalized {
+        display: flex;
+        justify-content: flex-end;
+        gap: 1rem;
+    }
+
+    .ProductSearch__resultsText {
+        font-weight: 500;
+    }
+
+    .ProductSearch__featuredToggle {
+        flex: 0 0 auto;
+        @include body-sm;
+        text-decoration: underline;
+        color: color(cta, link);
+        white-space: nowrap;
+
+        &:hover {
+            color: color(cta, linkHover);
+        }
+
+        &:focus-visible {
+            padding: 0.25rem;
+        }
+    }
+
+    .ProductSearch__filters {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 0.5rem;
+    }
+
+    .ProductSearch__availabilityFilters {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+    }
+    .ProductSearch__price-disclaimer {
+        position: absolute;
+        bottom: 1rem;
+        left: 1.5rem;
+        right: 1.5rem;
+        z-index: zed(optionsMenu);
+    }
+
+    &.ProductSearch--scrolled {
+        border-bottom: 1px solid #dfdfdf;
+    }
+
+    &.isUpptacka {
+        padding-inline: 0;
+
+        .ProductSearch__headline,
+        .ProductSearch__resultsText,
+        .search__input {
+            @include body-xl;
+        }
+
+        .ProductSearch__categoryButton,
+        .ProductSearch__availabilityFilters,
+        .ProductSearch__featuredToggle {
+            display: none;
+        }
+        .search__action {
+            max-width: 2.5rem;
+            height: 2.5rem;
+            .btn__inner {
+                height: 100%;
+                // This is the search icon svg which needs to be a bit smaller than the search clear svg
+                svg {
+                    height: 2rem;
+                    width: 2rem;
+                }
+            }
+            &.search__clear .btn__inner svg {
+                height: 2.5rem;
+                width: 2.5rem;
+            }
+        }
+        .search__input {
+            height: 4rem;
+            font-weight: bold;
+        }
+        .ProductSearch__price-disclaimer {
+            display: none;
+            .inline-message__title,
+            .inline-message__body {
+                font-size: 1rem;
+            }
+        }
+        .ProductSearch__headlineWrapper {
+            display: none;
+        }
+    }
+}

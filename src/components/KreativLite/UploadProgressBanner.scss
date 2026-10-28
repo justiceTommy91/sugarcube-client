@@ -1,0 +1,113 @@
+@use 'style/typography' as *;
+@use 'style/colors' as *;
+@use 'style/screen' as *;
+
+.UploadProgressBanner {
+    display: none;
+    width: 100%;
+    padding: 3rem 2rem;
+    background-color: $color-white;
+
+    @include skapa-l {
+        display: block;
+    }
+
+    &__content {
+        max-width: 80.25rem;
+        margin: 0 auto;
+
+        h2 {
+            margin-bottom: 1rem;
+        }
+    }
+
+    &__title {
+        @include typography-base;
+        @include heading-xl;
+        color: $color-black;
+    }
+
+    &__description {
+        @include typography-base;
+        @include body-l;
+        color: $color-black;
+        margin-bottom: 2rem;
+    }
+
+    &__image-container {
+        position: relative;
+        width: 100%;
+        max-width: 80.25rem;
+        margin: 0 auto;
+        aspect-ratio: 1284 / 514;
+        background-color: #dfdfdf;
+
+        &--loaded {
+            background-color: transparent;
+        }
+    }
+
+    &__image {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+
+    &__progress {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        top: 0;
+        background-color: rgb(255 255 255 / 70%);
+        padding: 1rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 0.75rem;
+    }
+
+    &__progress-bar-container {
+        width: 100%;
+        max-width: 12.5rem;
+        background: white;
+        border-radius: 2rem;
+    }
+
+    &__progress-bar {
+        width: 100%;
+        height: 0.5rem;
+        background: black;
+        border-radius: 2rem;
+        transition: width 0.3s ease;
+    }
+
+    &__progress-percentage {
+        @include typography-base;
+        @include heading-l;
+        color: #000;
+        font-weight: 600;
+        text-align: center;
+    }
+
+    &__progress-time,
+    .BouncingBallLoader .subheaderText {
+        @include typography-base;
+        @include body-l;
+        color: #000;
+        text-align: center;
+    }
+    .BouncingBallLoader {
+        // overrides the default BouncingBallLoader styling
+        flex-direction: column-reverse;
+        gap: 1rem;
+        .text {
+            margin-bottom: 0;
+        }
+    }
+}

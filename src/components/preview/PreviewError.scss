@@ -1,0 +1,33 @@
+@import 'style/colors';
+@import 'style/zed';
+@import 'style/type';
+
+.PreviewError {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 15rem;
+    font-size: 2rem;
+    line-height: 1.5em;
+    flex-direction: column;
+    padding: 2rem;
+    a {
+        color: inherit;
+    }
+    button {
+        border-radius: 4px;
+        font-size: 1.5rem;
+        padding: 0.25rem;
+        margin-top: 1.5rem;
+    }
+
+    .errorText {
+        margin-bottom: 1rem;
+    }
+    .dashboardLink {
+        color: color(default, background);
+        @include body-lg;
+    }
+}

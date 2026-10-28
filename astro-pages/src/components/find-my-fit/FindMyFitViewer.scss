@@ -1,0 +1,142 @@
+// Imported by FindMyFitViewerApp.tsx so styles are available before the lazy chunk loads.
+@import 'style/colors';
+
+.FindMyFitViewer {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    height: 100dvh; // Accounts for dynamic browser chrome on iOS Safari.
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    user-select: none;
+
+    // Reserve room on the right when the product sheet is in sidebar mode
+    // (landscape). Scene container shrinks to the remaining width; container
+    // queries re-letterbox the canvas. --fmf-sidebar-w drives both this and
+    // the sidebar's own width so they stay in sync if tuned.
+    --fmf-sidebar-w: clamp(260px, 35vw, 380px);
+    --fmf-popover-h: 0px;
+    &:has(.Popover--sidebar) {
+        padding-right: var(--fmf-sidebar-w);
+    }
+}
+
+.FmfViewer__header {
+    flex: 0 0 auto;
+    display: flex;
+    align-items: center;
+    padding: 1rem 0.5rem 0.5rem 0.5rem;
+    font-weight: 700;
+
+    p {
+        margin: 0 0 0 1rem;
+        font-size: 1.25rem;
+    }
+}
+
+.FmfViewer__scene-container {
+    flex: 1 1 0;
+    min-height: 0;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    container-type: size;
+
+    .FmfViewer__scene {
+        --scene-aspect: 1;
+        position: relative;
+        aspect-ratio: var(--scene-aspect);
+        width: min(100cqw, calc(100cqh * var(--scene-aspect)));
+        height: min(100cqh, calc(100cqw / var(--scene-aspect)));
+        overflow: hidden;
+    }
+}
+
+.FmfViewer__overlay-top {
+    position: absolute;
+    top: 1rem;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 2;
+    pointer-events: auto;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.FmfViewer__toggle-bar {
+    display: flex;
+    align-items: center;
+    min-height: 2.5rem;
+    padding: 0.25rem;
+    gap: 0.25rem;
+    background: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(25px);
+    border-radius: 4rem;
+}
+
+// Nested under .FmfViewer__toggle-bar so the 2-class specificity beats Ingka's
+// single-class selectors without needing !important.
+.FmfViewer__toggle-bar .FmfViewer__toggle-btn {
+    flex: 1 0 0;
+    align-self: stretch;
+    min-width: 5.5rem;
+    border-radius: 4rem;
+    transition: background-color 0.2s ease;
+
+    .btn__inner {
+        border-radius: 4rem;
+        min-width: auto;
+        min-height: 2rem;
+        height: 100%;
+        padding: 0.25rem 0.75rem;
+        background: transparent;
+    }
+
+    &.FmfViewer__toggle-btn--active .btn__inner {
+        background: color(default, foreground);
+        color: color(default-invert, foreground);
+    }
+}
+
+.FmfViewer__clear-btn {
+    position: absolute;
+    z-index: 10;
+    transform: translate(-50%, -50%);
+    pointer-events: auto;
+}
+
+.FmfViewer__loading-overlay {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0, 0, 0, 0.3);
+    z-index: 10000;
+    pointer-events: auto;
+}
+
+.FmfViewer__actions {
+    flex: 0 0 auto;
+    padding: 1rem;
+
+    .btn {
+        width: 100%;
+    }
+}
+
+.FmfViewer__search-error {
+    text-align: center;
+    color: color(default, error);
+    font-size: 0.875rem;
+    margin-bottom: 0.5rem;
+}

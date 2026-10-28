@@ -1,0 +1,93 @@
+@use 'style/typography' as *;
+@import 'style/type';
+@import 'style/colors';
+
+.MaterialSelect {
+    &.isEnabledNewWallColors {
+        padding-inline: 2rem;
+    }
+
+    h3 {
+        @include heading-md;
+    }
+    h4 {
+        @include body-lg;
+    }
+    section {
+        padding: 2rem 0;
+    }
+    .selectedItem {
+        height: 1rem;
+        @include body-sm;
+        color: color(default, description);
+        margin-bottom: 0.5rem;
+    }
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        gap: 1rem;
+
+        .tooltip__custom-trigger-wrapper {
+            width: 100%;
+        }
+
+        &.gridWallColors {
+            grid-template-columns: 1fr;
+        }
+
+        .gridItem {
+            border-radius: 0.25rem;
+            width: 100%;
+            border: 3px solid transparent;
+            margin: 0.25rem;
+            transition: all 0.2s ease-in-out;
+            &:hover {
+                transform: scale(1.2);
+            }
+
+            div {
+                width: 100%;
+                padding-top: 100%;
+                border-radius: 0.25rem;
+                background-size: contain;
+            }
+            &.isSelected {
+                outline: 3px solid color(default, foreground);
+                border-radius: 0.5rem;
+                transition: all 0.2s ease-in-out;
+                &:hover {
+                    transform: scale(1.2);
+                }
+            }
+        }
+    }
+    .materials {
+        border-top: 1px solid color(default, border);
+        padding-top: 2rem;
+    }
+    .colors {
+        h4 {
+            margin-bottom: 0.5rem;
+            @include typography-base;
+            @include heading-s;
+            color: color(default, foreground);
+        }
+        .color {
+            position: relative;
+            overflow: hidden;
+            &.noColor {
+                display: none;
+                outline: 1px solid color(default, foreground);
+                div:before {
+                    content: '';
+                    border: 1px solid red;
+                    width: 100%;
+                    position: absolute;
+                    transform: rotate(-45deg);
+                    display: block;
+                    top: 50%;
+                }
+            }
+        }
+    }
+}

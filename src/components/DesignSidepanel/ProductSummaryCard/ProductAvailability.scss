@@ -1,0 +1,64 @@
+@import 'style/colors';
+@import 'style/type';
+
+ul.ProductAvailability {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    
+    li.statusLine {
+        display: flex;
+        align-items: center;
+        margin-bottom: 0.25rem;
+
+        svg,
+        .description {
+            display: none;
+            text-align: left;
+        }
+        .description:hover {
+            text-decoration: underline;
+        }
+        .indicator {
+            display: inline-block;
+            margin-right: 0.25rem;
+            border-radius: 50%;
+            background-color: color(status, indeterminate);
+            width: 0.5rem;
+            height: 0.5rem;
+
+            &.HIGH_IN_STOCK,
+            &.canPickup {
+                background-color: color(status, available);
+            }
+            &.LOW_IN_STOCK {
+                background-color: transparent;
+                border: 2px solid color(status, lowAvailability);
+                overflow: hidden;
+
+                &:before {
+                    display: block;
+                    content: '';
+                    background-color: color(status, lowAvailability);
+                    width: 1rem;
+                    height: 1rem;
+                    position: relative;
+                    top: 50%;
+                }
+            }
+            &.OUT_OF_STOCK,
+            &.noPickup {
+                background-color: transparent;
+                border: 2px solid color(status, unavailable);
+            }
+        }
+        .availability {
+            @include body-sm;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            color: color(default, description);
+            flex: 1;
+        }
+    }
+}

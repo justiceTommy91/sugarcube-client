@@ -1,0 +1,34 @@
+$zeds: (
+    hidden: -1,
+    above: 1,
+    aoe: 2,
+    header: 3,
+    productPin: 3,
+    sidepanel: 4,
+    dragArea: 4,
+    designTip: 5,
+    dropdown: 5,
+    onPreviewActions: 6,
+    optionsMenu: 8,
+    previewUI: 9,
+    dragAreaDragging: 7,
+    topLayerDropdown: 500,
+    // Allows for opening up to three modals on top of each other
+    modalBaseLayer: 600,
+    modalMidLayer: 650,
+    modalTopLayer: 700,
+    toast: 750,
+    tooltip: 800,
+    skiplinks: 850,
+    fullPageLoader: 900,
+    adminWidgets: 999,
+    topLayer: 3000,
+);
+
+@function zed($key) {
+    @if map-has-key($zeds, $key) {
+        @return map-get($zeds, $key);
+    }
+    @warn "Unknown key `#{$key}` in zeds";
+    @return null;
+}

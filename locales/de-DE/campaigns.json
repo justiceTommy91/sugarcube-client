@@ -1,0 +1,281 @@
+{
+  "campaigns": {
+    "btc": {
+      "cards": {
+        "cards": {
+          "0": {
+            "alt": "In IKEA Kreativ zugeschnittener virtueller Raum mit blauen Wänden, Bodenbelag und einem Fenster. Oben an den Wänden sind die Maße zu sehen.",
+            "subtitle": "Gestalte es wie dein Wohnheim, definiere Raumform und -größe. Passe Türen, Fenster und den Bodenstil an.",
+            "title": "Gestalte deinen Raum"
+          },
+          "1": {
+            "alt": "Leerer virtueller Studierendenraum in IKEA Kreativ mit hellem Bodenbelag, geröteten Wänden und einer weißen Hängeleuchte, die von der Decke hängt.",
+            "subtitle": "Visualisieren Sie schnell Ihre Lieblingswohnheimutensilien und andere IKEA Waren gemeinsam in diesem leeren Raum.",
+            "title": "Probier mal einen Starterraum aus"
+          },
+          "2": {
+            "alt": "Leerer virtueller Studierendenraum in IKEA Kreativ mit hellgrauem Bodenbelag, weißen Wänden bis auf eine blassblaue Akzentwand und einem Fenster, durch das natürliches Licht einfällt.",
+            "subtitle": "Hier findest du deine gespeicherten Scans und Designs. Oder erkunde andere Räume in unserer Galerie.",
+            "title": "Entdecken Sie weitere Zimmer"
+          }
+        },
+        "title": "Andere Möglichkeiten, Ihr Studentenwohnheimzimmer zu gestalten"
+      },
+      "designOnYourComputer": {
+        "alt": "Eine Hand, die ein Mobilgerät hält, das einen gescannten Raum mit zusätzlicher IKEA Studentenwohnheimdekoration und Möbeln in IKEA Kreativ zeigt. Der tatsächliche Raum ist teilweise im Hintergrund sichtbar.",
+        "body": "Wenn du dein Studierendenzimmer lieber auf einem größeren Bildschirm gestalten möchtest, probiere IKEA Kreativ auf ikea.com.",
+        "title": "Design auf dem Computer"
+      },
+      "dorms": {
+        "cards": {
+          "0": {
+            "alt": "Puppenhausansicht des Designs eines virtuellen Studierendenheims in IKEA Kreativ. Das Zimmer verfügt über ein MALM Bett, einen Nachttisch, eine Kommode, einen Schreibtisch, einen Kleiderschrank, einen Couchtisch und ein Sofa.",
+            "label": "Modernes, skurriles Studierendenzimmer"
+          },
+          "1": {
+            "alt": "Blick in ein Puppenhaus auf einen virtuellen Studierendenraum in Blau, Rosa, Gelb und Orange in IKEA Kreativ. Das Zimmer besteht aus einem MALM Bett, einem Nachttisch, einer Kommode, einem Schreibtisch, einem Kleiderschrank, einem Stuhl und einem Tisch.",
+            "label": "Schlafzimmer mit kreativer Energie"
+          }
+        },
+        "subtitle": "Tausche, verschiebe und drehe Schreibtische, Stühle, Kommoden und andere wichtige Einrichtungen im Wohnheim, bis du ein Layout gefunden hast, das zu deinem Stil und deinem Raum passt.",
+        "title": "Verleihe deinem möblierten Studierendenzimmer deinen Touch"
+      },
+      "downloadAppMobileButton": {
+        "text": "Probiere IKEA Kreativ im IKEA App"
+      },
+      "hero-dorm-1": {
+        "alt": "Videodemonstration, die zeigt, wie man mit IKEA Kreativ farbenfrohe Studierendenzimmer virtuell gestalten kann. Das Video zeigt den Austausch und die Einrichtung von Wohnheimen Produkt Empfehlungen.",
+        "body": "Verwandle dein Studierendenzimmer in wenigen Minuten von „Oh nein 😖\" in oh yeah 😍.",
+        "cta": {
+          "mobile": "Probiere IKEA Kreativ im IKEA App",
+          "web": "Loslegen"
+        },
+        "title": "Lass deine Wohnheimträume wahr werden"
+      },
+      "mixAndMatch": {
+        "alt": "Stilvolle und farbenfrohe IKEA Wohnheimdekor-Produktempfehlungen, einschließlich Bettzeug, Aufbewahrung, Schreibtischorganisation und Beleuchtung.",
+        "body": "Finden Sie alle Ihre College-Must-Haves an einem Ort. Probiere verschiedene Produktkombinationen in einem virtuellen Raum aus, um den perfekten Look zu finden. Lass den Spaß beginnen!",
+        "cta": {
+          "mobile": "Probiere IKEA Kreativ im IKEA App",
+          "web": "Einen leeren Raum öffnen"
+        },
+        "title": "Wohnheimutensilien zum Mischen und Kombinieren"
+      },
+      "scanPromo": {
+        "alt": "Eine Hand, die ein Mobilgerät hält, das einen gescannten Raum mit zusätzlicher IKEA Studentenwohnheimdekoration und Möbeln in IKEA Kreativ zeigt. Der tatsächliche Raum ist teilweise im Hintergrund sichtbar.",
+        "body": "Bring dein Studierendenzimmer auf die Weitere Stufe. Scanne dein Zimmer mit dem IKEA App. Lösche Dinge, die du nicht möchtest, und gestalte einen Raum, den du liebst.",
+        "cta": {
+          "mobile": "Probiere IKEA Kreativ im IKEA App",
+          "web": "Holen Sie sich die IKEA App"
+        },
+        "title": "Scanne deinen Raum für eine optimale Passform"
+      },
+      "seo": {
+        "description": "Verwandle mit IKEA Kreativ ein Studierendenzimmer. Dieser Designer für virtuelle Wohnheime macht Spaß, ist schnell und einfach. Entdecken Sie die Inspirationen für Wohnheimzimmer und die Must-Haves für die Einrichtung des Wohnheims.",
+        "keywords": "Wohnheim-Raum-Ideen, Studentenwohnheim-Raum, Wohnheim-Design-Ideen, Studentenwohnheim-Design, Wohnheim-Dekor, Wohnheim-Deko-Ideen, Wohnheim-Raumdesign, Wohnheim-Design, Wohnheim-Raumplaner, Wohnheim-Raumplaner, Wohnheim-Raum-Visualizer, Virtueller Wohnheim-Designer, Wohnheim-Dekoration, Wohnheim-Raum-Dekoration, College-Raum-Designs",
+        "title": "Ideen für die Gestaltung von Wohnheimen und Essentials für Wohnheime"
+      },
+      "social": {
+        "posts": {
+          "0": {
+            "alt": "Ein virtuelles Studierendenzimmer in IKEA Kreativ mit einem MALM Bett, einem kleinen Nachttisch, einem bunt gestreiften Teppich und einem gelben Einkaufswagen. Übergroße Kunstwerke und eine Notiztafel hängen an den Wänden.",
+            "cta": {
+              "mobile": "Probiere diesen Raum aus",
+              "web": "Probiere diesen Raum aus"
+            },
+            "username": "@fun2bme"
+          },
+          "1": {
+            "alt": "Einrichtung eines virtuellen Studierendenzimmers in IKEA Kreativ mit grünem Beistellstuhl, rotem Drehstuhl, weißen Möbeln und einem gestreiften Teppich. Eine Lochplatte und eine Einheit hängen an den Wänden.",
+            "cta": {
+              "mobile": "Probiere diesen Raum aus",
+              "web": "Probiere diesen Raum aus"
+            },
+            "username": "@anudhagat"
+          },
+          "2": {
+            "alt": "Ein virtuelles Studierendenzimmer in IKEA Kreativ mit einem Bett mit gestreifter Bettdecke und einem blauen Kissen. Ein Patchwork-Teppich, Kunst an den Wänden und ein blauer Stuhl Weiter neben einem Beistelltisch.",
+            "cta": {
+              "mobile": "Probiere diesen Raum aus",
+              "web": "Probiere diesen Raum aus"
+            },
+            "username": "@tonyrovello"
+          },
+          "3": {
+            "alt": "Es ist ein virtuelles Uni-Zimmer in IKEA Kreativ mit einem schwarzen Stuhl und Beistelltisch Weiter einem Fenster zu sehen. Minimalistische weiße Kommode und Kleiderschrank neben einem Bett mit geblümter Bettdecke.",
+            "cta": {
+              "mobile": "Probiere diesen Raum aus",
+              "web": "Probiere diesen Raum aus"
+            },
+            "username": "@pinatasbyd"
+          },
+          "4": {
+            "alt": "Eine Idee für ein virtuelles Mehrbettzimmer in IKEA Kreativ mit einem Schreibtisch und einem Stuhl neben einem Fenster. Ein Loungesessel und ein Teppich liegen vor einem MALM Bettgestell mit blauer Bettdecke.",
+            "cta": {
+              "mobile": "Probiere diesen Raum aus",
+              "web": "Probiere diesen Raum aus"
+            },
+            "username": "@she_is_mor"
+          }
+        },
+        "subtitle": "Lass dich inspirieren! Stürze dich in die Designs anderer Leute und ändere den Look passend zu deinem eigenen Stil. Zeig deine Kreativität, indem du dein Projekt auf Instagram teilst. Nutzen Sie #MyIKEAKreativDorm, um hier vorgestellt zu werden.",
+        "title": "Wie auf Instagram gesehen"
+      },
+      "tips": {
+        "cta": {
+          "mobile": "Weiterlesen",
+          "web": "Weiterlesen"
+        },
+        "firstCard": {
+          "alt": "Es ist ein virtueller Sitzbereich in einem Studierendenzimmer in IKEA Kreativ mit gelbem Zweisitzer, schwarzem Beistelltisch und grünem Couchtisch zu sehen. Die Tischplatte wird angehoben, um verborgenen Stauraum freizulegen.",
+          "body": "Die Zimmer in den Studentenwohnheimen sind notorisch klein. Wähle Möbel und Dekoartikel, die dir etwas zusätzlichen Stauraum bieten, wie den GRIMSARBO Beistelltisch. Hinter dem GRANVÅG Wandspiegel befindet sich auch versteckter Stauraum.",
+          "title": "Denke bei der Aufbewahrung über den Tellerrand hinaus"
+        },
+        "secondCard": {
+          "alt": "Ein virtueller Sitzbereich in einem Studierendenzimmer in IKEA Kreativ mit grünen, beweglichen Möbeln und bunten Textilien. Ein grüner Einkaufswagen mit Rollen ist mit Küchenutensilien bestückt.",
+          "body": "In den Schlafsälen finden viele verschiedene Aktivitäten statt, darunter Schlafen, Lernen, Filmabende und spontane Tanzpartys mit Freunden. Davon abgesehen kannst du mit Möbeln auf Rädern deinen Raum ganz einfach umgestalten, ohne dabei ins Schwitzen zu kommen.",
+          "title": "In Möbel mit Rollen investieren"
+        },
+        "title": "Design-Tipps"
+      }
+    },
+    "winter-holiday": {
+      "cards": {
+        "cards": {
+          "0": {
+            "alt": "Zugeschnittenes Bild eines virtuellen Raums, der in IKEA Kreativ mit blauen Wänden, Holzboden und einem Fenster konfiguriert wurde. Die Oberkanten der Wände sind mit Maßangaben versehen.",
+            "subtitle": "Definiere Raumform und -größe. Passe Türen, Fenster und Bodenstil an.",
+            "title": "Gestalte deinen Raum"
+          },
+          "1": {
+            "alt": "Eine Hand hält ein Mobilgerät, auf dem ein gescannter Raum mit IKEA Wohnheimdekor und Möbeln in IKEA Kreativ zu sehen ist. Der eigentliche Raum ist teilweise im Hintergrund sichtbar.",
+            "subtitle": "Sieh dir an, wie Waren in deinem eigenen Zuhause aussehen und passen. Scanne in der IKEA App. Design in der App oder im Web.",
+            "title": "Scanne deinen Raum"
+          },
+          "2": {
+            "alt": "Puppenhausansichten von drei leeren virtuellen Räumen in IKEA Kreativ, jeder mit unterschiedlicher Tür- und Fensteranordnung, Wandfarbe und Holzboden.",
+            "subtitle": "Hier findest du deine gespeicherten Scans und Designs. Oder erkunde andere Räume in unserer Galerie.",
+            "title": "Mehr Zimmer entdecken"
+          }
+        },
+        "title": "Andere Möglichkeiten zum Starten"
+      },
+      "designOnYourComputer": {
+        "alt": "Eine Person sitzt an einem Tisch und nutzt Laptop und Smartphone. Auf den Bildschirmen ist eine virtuelle Raumaufteilung zu sehen, die mit dem IKEA Kreativ Raumdesigner erstellt wurde.",
+        "body": "Wenn du deinen Raum lieber auf einem größeren Bildschirm gestalten möchtest, versuche es mit IKEA Kreativ auf IKEA.de.",
+        "title": "Gestalten am Computer"
+      },
+      "downloadAppMobileButton": {
+        "text": "Probiere IKEA Kreativ in der IKEA App"
+      },
+      "hero-dorm-1": {
+        "alt": "Videodemonstration, die zeigt, wie man mit IKEA Kreativ ein festliches Wohnzimmer und Esszimmer virtuell gestaltet. Im Video werden Empfehlungen für Weihnachtsdekoration vorgestellt.",
+        "body": "Verwandle dein Zuhause mit dem IKEA Kreativ Raumdesigner in ein verträumtes Winterwunderland. Kombiniere Möbel und Dekoration.",
+        "cta": {
+          "mobile": "Probiere IKEA Kreativ in der IKEA App",
+          "web": "Loslegen"
+        },
+        "title": "Begrüß deine Gäste in dieser Weihnachtszeit mit Stil"
+      },
+      "mixAndMatch": {
+        "alt": "Festliche und farbenfrohe IKEA-Weihnachtsdekorationsempfehlungen, darunter Produkte wie ein Weihnachtsbaum, ein Esszimmerstuhl, ein Tisch, Geschirr, ein Teppich und andere Weihnachtsaccessoires.",
+        "body": "Fang mit einem leeren, virtuellen Raum an und probiere verschiedene Kombinationen aus Möbeln, Aufbewahrung und Dekoration aus.",
+        "cta": {
+          "mobile": "Probiere IKEA Kreativ in der IKEA App",
+          "web": "Probier es aus"
+        },
+        "title": "Weihnachtsdekoration zum Kombinieren"
+      },
+      "rooms": {
+        "cards": {
+          "0": {
+            "alt": "Virtueller Wohnraum mit IKEA-Weihnachtsdekor, bestehend aus zwei Sesseln, einem Schlafsofa, einem Esstisch mit blauen und roten Stühlen und einem VINTERFINT-Weihnachtsbaum am Fenster.",
+            "label": "Festliche Wärme im Zuhause"
+          },
+          "1": {
+            "alt": "Virtueller Essbereich mit Holztisch, Stühlen und gemustertem Teppich neben einer modernen Küche. In der Ecke steht ein geschmückter VINTERFINT-Weihnachtsbaum vor hellblauen Wänden und Schränken.",
+            "label": "Fröhlich, gemütlicher Essbereich"
+          }
+        },
+        "title": "Gib deinem möblierten Zimmer eine eigene Note"
+      },
+      "scanPromo": {
+        "alt": "Eine Person hält ein Smartphone, auf dem ein fotografischer Raumscan in IKEA Kreativ angezeigt wird, wobei das echte Schlafzimmer unscharf und teilweise im Hintergrund sichtbar ist.",
+        "body": "Entwirf die Weihnachtsdekoration für dein Zuhause. Scanne dein Zimmer mit der IKEA App. Lösche Dinge, die du nicht möchtest, und gestalte einen Raum, den du liebst.",
+        "cta": {
+          "mobile": "Probiere IKEA Kreativ in der IKEA App",
+          "web": "Hol dir die IKEA App"
+        },
+        "title": "Scanne deinen Raum"
+      },
+      "seo": {
+        "description": "Schmücke die Flure deines Zuhauses mit festlicher Weihnachtsdeko mit IKEA Kreativ – dem virtuellen Raumdesigner, mit dem Weihnachtsdeko Spaß macht und schnell und einfach ist.",
+        "keywords": "Weihnachtsdekoration, Weihnachtsdekorationsideen, Weihnachtsdekorideen, Weihnachtsdekoration, Weihnachtsdekorationsideen, Weihnachtseinkäufe, Weihnachtsdekoration, Weihnachtsdekoration, moderne Weihnachtsdekoration, Weihnachtshausdekoration, SCANDINAVIAN Weihnachtsdekoration",
+        "title": "Festliche Feiertagsdekoration und gemütliche Weihnachtsdekorationsideen"
+      },
+      "social": {
+        "posts": {
+          "0": {
+            "alt": "Ein mit IKEA Kreativ gestaltetes Ferienschlafzimmer mit einem marineblauen Bett mit blau-weißer Bettwäsche, grünen Akzentkissen und einem beigen Teppich. Drei dekorative Kränze hängen über dem Kopfteil, eingerahmt von passenden Nachttischen und Wandleuchten.",
+            "cta": {
+              "mobile": "Probiere diesen Raum aus",
+              "web": "Probiere diesen Raum aus"
+            },
+            "username": "@fun2bme"
+          },
+          "1": {
+            "alt": "Ein festliches virtuelles Spielzimmer, gestaltet mit IKEA Kreativ, mit einem grünen Sofa, einem schwarzen Couchtisch und einem rot gemusterten Teppich. Helle Holzvertäfelungen bilden eine warme Kulisse für Weihnachtsbaum, Weihnachtskranz und buntes Kinderspielzeug.",
+            "cta": {
+              "mobile": "Probiere diesen Raum aus",
+              "web": "Probiere diesen Raum aus"
+            },
+            "username": "@anudhagat"
+          },
+          "2": {
+            "alt": "Ein virtuelles Feiertagswohnzimmer in IKEA Kreativ mit einem weißen Sofa, einem Loungesessel und einem runden Couchtisch aus Holz auf einem gemusterten Teppich mit grüner Wandvertäfelung, Kranz und festlicher Dekoration.",
+            "cta": {
+              "mobile": "Probiere diesen Raum aus",
+              "web": "Probiere diesen Raum aus"
+            },
+            "username": "@tonyrovello"
+          },
+          "3": {
+            "alt": "Ein virtuelles festliches Esszimmer in IKEA Kreativ mit roten Stühlen, einem weißen runden Tisch und einem schwarzen Sideboard mit Weihnachtsdeko.",
+            "cta": {
+              "mobile": "Probiere diesen Raum aus",
+              "web": "Probiere diesen Raum aus"
+            },
+            "username": "@pinatasbyd"
+          },
+          "4": {
+            "alt": "Ein virtueller, weihnachtlicher Wohnraum im IKEA Kreativ mit grünen Wänden, einem roten Sofa, einem Schreibtischbereich und einem Weihnachtsbaum. Schwarze Akzente und festliche Dekoration schaffen eine gemütliche, moderne Atmosphäre zum Arbeiten und Feiern.",
+            "cta": {
+              "mobile": "Probiere diesen Raum aus",
+              "web": "Probiere diesen Raum aus"
+            },
+            "username": "@she_is_mor"
+          }
+        },
+        "subtitle": "Es ist wieder soweit! Lass dich von diesen Kundenzimmer-Designs inspirieren und passe den Look deinem eigenen Urlaubsstil an. Zeige deine Kreativität und teile dein Projekt auf Instagram. Verwende den Hashtag #IKEAKreativHolidays, um hier vorgestellt zu werden.",
+        "title": "Auf Instagram gesehen"
+      },
+      "tips": {
+        "cta": {
+          "mobile": "Weiterlesen",
+          "web": "Weiterlesen"
+        },
+        "firstCard": {
+          "alt": "Festliches Esszimmer mit einem Tisch und nicht zusammenpassenden Stühlen. Rechts: Virtuelles Festliches Esszimmer in IKEA Kreativ mit einem Tisch, Stühlen und einem gemusterten Teppich, umgeben von blauen Küchenschränken.",
+          "body": "Wenn du deiner Dinnerparty den letzten Schliff geben möchtest, verwendest du verschiedene Stühle um den Tisch. Eine Vielzahl von Farben, Materialien und Silhouetten ergibt einen Stil, der sowohl interessant als auch vor Persönlichkeit strotzt.",
+          "title": "Kombinier deine Esszimmerstühle"
+        },
+        "secondCard": {
+          "alt": "Ausgeklapptes Schlafsofa mit blau-weiß karierter Bettwäsche. Rechts: Virtuelles Urlaubswohnzimmer im IKEA Kreativ mit Schlafsofa und Sesseln auf einem gemusterten Teppich, mit einem Weihnachtsbaum am Fenster.",
+          "body": "Kein Gästezimmer? Kein Problem. Hol dir ein stilvolles Sofa, das sich schnell und einfach in ein Bett verwandeln lässt. Sobald du den perfekten Look gefunden hast, kannst du deine Fähigkeiten als Gastgeber oder dein Schlafsofa mit einem Set aus weichen Kissen und gemütlicher Bettwäsche auf die weitere Ebene bringen.",
+          "title": "Investiere in ein Sofa, das mehr bietet, als man auf den ersten Blick sieht"
+        },
+        "title": "Design-Tipps"
+      }
+    }
+  }
+}

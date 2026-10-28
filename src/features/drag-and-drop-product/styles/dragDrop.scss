@@ -1,0 +1,217 @@
+/**
+ * Drag and Drop Visual Styles
+ */
+
+// Draggable Product Wrapper
+.draggable-product-wrapper {
+  position: relative;
+  transition: opacity 0.2s ease, transform 0.2s ease;
+  
+  // Drag enabled state
+  &.drag-enabled {
+    cursor: grab;
+    user-select: none;
+    
+    &:hover {
+      transform: translateY(-1px);
+    }
+    
+    &:active {
+      cursor: grabbing;
+      transform: scale(0.98);
+    }
+  }
+  
+  // Touch disabled state
+  &.touch-disabled {
+    cursor: default;
+  }
+  
+  // Dragging state (applied during drag)
+  &.dragging {
+    opacity: 0.7;
+    transform: scale(0.95) rotate(1deg);
+    filter: brightness(1.1);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  }
+}
+
+// Drop Zone Wrapper
+.drop-zone-wrapper {
+  position: relative;
+  transition: all 0.3s ease;
+  
+  // Drag over state
+  &.drag-over {
+    position: relative;
+    
+    // Subtle background highlight
+    &::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: rgba(0, 88, 163, 0.08);
+      border: 2px dashed rgba(0, 88, 163, 0.3);
+      border-radius: 8px;
+      z-index: 1;
+      pointer-events: none;
+      animation: dragOverPulse 2s ease-in-out infinite;
+    }
+  }
+}
+
+// Drop Zone Overlay
+.drop-zone-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 88, 163, 0.15);
+  backdrop-filter: blur(2px);
+  z-index: 999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  pointer-events: none;
+  animation: fadeIn 0.2s ease-out;
+}
+
+// Drop Zone Message
+.drop-zone-message {
+  background: rgba(0, 88, 163, 0.95);
+  color: white;
+  padding: 16px 32px;
+  border-radius: 8px;
+  font-size: 18px;
+  font-weight: 500;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+  transform: scale(0.9);
+  animation: dropMessageAppear 0.3s ease-out forwards;
+  
+  // Icon before text
+  &::before {
+    content: '⤵';
+    margin-right: 8px;
+    font-size: 20px;
+  }
+}
+
+// Animations
+@keyframes dragOverPulse {
+  0%, 100% {
+    opacity: 0.3;
+    border-color: rgba(0, 88, 163, 0.3);
+  }
+  50% {
+    opacity: 0.6;
+    border-color: rgba(0, 88, 163, 0.6);
+  }
+}
+
+@keyframes dropZonePulse {
+  0%, 100% {
+    background-color: rgba(0, 88, 163, 0.1);
+    border-color: rgba(0, 88, 163, 0.6);
+    transform: scale(1);
+  }
+  50% {
+    background-color: rgba(0, 88, 163, 0.2);
+    border-color: rgba(0, 88, 163, 0.8);
+    transform: scale(1.002);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes dropMessageAppear {
+  from {
+    transform: scale(0.8) translateY(20px);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1) translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes dropMessageBounce {
+  0% {
+    transform: scale(0.9) translateY(10px);
+    opacity: 0;
+  }
+  60% {
+    transform: scale(1.05) translateY(-2px);
+    opacity: 0.9;
+  }
+  100% {
+    transform: scale(1) translateY(0);
+    opacity: 1;
+  }
+}
+
+// Mobile/Touch specific styles
+@media (max-width: 768px) {
+  .draggable-product-wrapper {
+    &.drag-enabled {
+      // Disable hover effects on touch devices
+      &:hover {
+        transform: none;
+      }
+    }
+  }
+  
+  .drop-zone-message {
+    font-size: 16px;
+    padding: 12px 24px;
+  }
+}
+
+// High contrast mode support
+@media (prefers-contrast: high) {
+  .drop-zone-wrapper.drag-over::before {
+    border-color: #000;
+    background: rgba(255, 255, 255, 0.8);
+  }
+  
+  .drop-zone-message {
+    background: #000;
+    color: #fff;
+    border: 2px solid #fff;
+  }
+}
+
+// Reduced motion support
+@media (prefers-reduced-motion: reduce) {
+  .draggable-product-wrapper,
+  .drop-zone-wrapper {
+    transition: none;
+  }
+  
+  .drop-zone-overlay,
+  .drop-zone-message {
+    animation: none;
+  }
+  
+  @keyframes dragOverPulse {
+    0%, 100% {
+      opacity: 0.5;
+    }
+  }
+}
+
+// Focus styles for accessibility
+.draggable-product-wrapper.drag-enabled:focus-within {
+  outline: 2px solid #0058a3;
+  outline-offset: 2px;
+}

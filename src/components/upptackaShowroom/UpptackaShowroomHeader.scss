@@ -1,0 +1,49 @@
+@import 'style/colors';
+@import 'style/type';
+
+.UpptackaShowroomHeader {
+    padding: 2.75rem 4rem 0;
+    .UpptackaShowroomHeader__back-button span {
+        background-color: color(default, backgroundAlt);
+    }
+
+    .UpptackaShowroomHeader__heading-container {
+        margin-top: 2.75rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .UpptackaShowroomHeader__title-container {
+            display: flex;
+            flex-direction: column;
+            h1 {
+                @include heading-lg;
+            }
+            span {
+                @include body-xl;
+                margin-top: 0.375rem;
+            }
+        }
+        .UpptackaShowroomHeader__badges-container {
+            margin-top: 1rem;
+            display: flex;
+            gap: 1.875rem;
+            span {
+                position: relative;
+                display: flex;
+                align-items: center;
+                gap: 0.5rem;
+                background-color: color(default, backgroundAlt);
+                padding: 0.25rem 0.625rem;
+                border-radius: 4px;
+            }
+            span:not(:last-child)::after {
+                // a middle bullet point to separate the 'badges' spans
+                content: '\2022';
+                position: absolute;
+                right: -1.25rem;
+                top: 0rem;
+                font-size: 1.5rem;
+            }
+        }
+    }
+}

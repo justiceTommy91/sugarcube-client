@@ -1,0 +1,117 @@
+@import 'style/zed';
+@import 'style/colors';
+@import 'style/type';
+
+.DebugConsole {
+    position: absolute;
+    background: color(default-invert, background);
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+    bottom: 1rem;
+    right: 1rem;
+    height: 20rem;
+    width: 35rem;
+    z-index: zed(adminWidgets);
+    display: flex;
+    flex-direction: column;
+    @include body-sm;
+    font-family: monospace;
+    color: color(default-invert, foreground);
+
+    &.expanded {
+        width: 60rem;
+        height: 35rem;
+    }
+    .nav {
+        display: flex;
+        justify-content: space-between;
+
+        .buttons {
+            display: flex;
+            gap: 0.25rem;
+            margin-top: -0.5rem;
+
+            .svg-icon {
+                width: 1.25rem;
+                height: 1.25rem;
+            }
+        }
+        .tabs {
+            ul {
+                display: flex;
+
+                li {
+                    border-top: 1px solid color(default-invert, border);
+                    border-right: 1px solid color(default-invert, border);
+                    padding: 0.15rem 0.5rem;
+                    cursor: pointer;
+
+                    &.selected {
+                        background-color: color(default-invert, backgroundSelected);
+                        text-shadow: 1px 1px 2px #333;
+                    }
+                    &:first-child {
+                        border-top-left-radius: 0.25rem;
+                        border-left: 1px solid color(default-invert, border);
+                    }
+                    &:last-child {
+                        border-top-right-radius: 0.25rem;
+                    }
+                }
+            }
+        }
+    }
+    .contentWrapper {
+        flex: 1;
+        overflow-y: auto;
+        border: 1px solid color(default-invert, border);
+        border-radius: 0 0.25rem 0.25rem 0.25rem;
+        padding-right: 0.25rem;
+
+        .log {
+            ul {
+                display: grid;
+                grid-template-columns: auto 1fr;
+
+                li {
+                    display: contents;
+
+                    span {
+                        padding: 0.125rem 0.25rem;
+                        white-space: pre-wrap;
+                        overflow-wrap: anywhere;
+
+                        &.tag {
+                            position: sticky;
+                            top: 0;
+                            background-color: color(default-invert, backgroundAlt);
+                        }
+                    }
+                    &:not(:last-child) .message {
+                        border-bottom: 1px solid color(default-invert, border);
+                    }
+                }
+            }
+        }
+        .flags {
+            padding: 0.25rem;
+        }
+        input {
+            @include body-sm;
+            font-family: monospace;
+            color: color(default-invert, foreground);
+            background-color: color(default-invert, background);
+            border: 1px solid color(default-invert, foreground);
+            padding: 0.25rem;
+        }
+        button {
+            @include body-sm;
+            border: 1px solid color(default-invert, foreground);
+            padding: 0.25rem 0.5rem;
+
+            &:hover {
+                background-color: rgba(255, 255, 255, 0.15)
+            }
+        }
+    }
+}

@@ -1,0 +1,134 @@
+@import 'style/type';
+@import 'style/colors';
+@import 'style/zed';
+
+.KioskShare {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: color(default, backgroundAlt);
+    z-index: zed(modalBaseLayer);
+    overflow-y: auto;
+    padding: 7rem;
+    .columnsContainer {
+        display: flex;
+        justify-content: center;
+        .stepsColumn {
+            margin-right: 4rem;
+            display: flex;
+            flex-direction: column;
+            flex-basis: 46rem;
+            .backButton {
+                @include heading-md;
+                width: fit-content;
+                background-color: color(default, background);
+                margin-bottom: 4rem;
+            }
+            .qrContainer {
+                position: relative;
+                .yellowCircle {
+                    position: absolute;
+                    top: -19%;
+                    left: -76%;
+                    width: 46rem;
+                }
+                .qrCode {
+                    position: absolute;
+                    top: -1rem;
+                    left: 0;
+                    padding: 2rem;
+                    background-image: url('#{$PATH-PREFIX}/images/kiosk/whiteCircle.svg');
+                    background-repeat: no-repeat;
+                    background-position: right;
+                    background-size: contain;
+                    .qrCodeImage {
+                        width: 14rem;
+                        padding: 0.5rem;
+                    }
+                }
+                .qrStepsWrapper {
+                    height: 43rem;
+                    background-image: url('#{$PATH-PREFIX}/images/kiosk/yellowCircle.svg');
+                    background-repeat: no-repeat;
+                    background-position: right;
+                    background-size: cover;
+                }
+                .qrSteps {
+                    position: absolute;
+                    top: 10%;
+                    left: 41%;
+                    width: 17rem;
+
+                    .swigglyArrow {
+                        width: 6.75rem;
+                    }
+                    color: color(default, description);
+                    .stepsTitle {
+                        @include heading-md;
+                        width: 15rem;
+                        font-weight: 700;
+                        color: color(cta, brandDarker);
+                        margin-bottom: 3rem;
+                    }
+                    .stepHeader {
+                        @include body-lg;
+                        font-weight: 700;
+                        margin-bottom: 0.75rem;
+                        svg {
+                            margin-right: 1rem;
+                        }
+                    }
+                    .stepDescription {
+                        @include body-sm;
+                        margin-bottom: 1.5rem;
+                    }
+                }
+            }
+        }
+        .previewColumn {
+            .ctas {
+                display: flex;
+                align-items: center;
+                justify-content: flex-end;
+                button {
+                    min-width: 23rem;
+
+                    span {
+                        padding: 0.75rem;
+                    }
+                }
+            }
+            .compositionImageContainer {
+                width: 54rem;
+                margin-bottom: 2.5rem;
+                img.compositionImage {
+                    width: 100%;
+                }
+            }
+            .title {
+                @include heading-lg;
+                font-weight: 600;
+            }
+            .description {
+                @include body-xl;
+                margin-bottom: 2.5rem;
+            }
+        }
+    }
+
+    button {
+        @include heading-md;
+        background-color: color(default, background);
+
+        // override skapa black border
+        .btn__inner {
+            border: none;
+        }
+        &.backButton {
+            margin-bottom: 10rem;
+            width: fit-content;
+        }
+    }
+}

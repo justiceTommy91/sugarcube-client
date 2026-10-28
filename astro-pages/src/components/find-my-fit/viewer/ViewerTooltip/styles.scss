@@ -1,0 +1,104 @@
+@import 'style/zed';
+
+.ViewerTooltip {
+    position: absolute;
+    pointer-events: none;
+    z-index: zed(sidepanel);
+
+    // Force Skapa tooltip bubble visible while mounted (same pattern as CarouselDots)
+    .Tooltip .tooltip__body {
+        visibility: visible;
+        opacity: 1;
+        margin-top: 1rem;
+    }
+
+    // Swipe tooltip: centered, just above CarouselDots
+    &--swipe-horizontal {
+        bottom: 8.5rem;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    // Tap tooltip: centered in viewer
+    &--tap {
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    // Draw tooltip: centered in viewer
+    &--draw {
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+
+        .Tooltip .tooltip__body {
+            margin-top: 2.75rem;
+        }
+    }
+
+    &__icon {
+        display: block;
+        width: 3.5rem;
+        height: 3.5rem;
+        color: white;
+        filter: drop-shadow(0 1px 3px rgba(0, 0, 0, 0.4));
+    }
+}
+
+// Swipe: icon translates left ↔ right
+.ViewerTooltip--swipe-horizontal .ViewerTooltip__icon {
+    animation: viewerTooltipSwipe 1.6s ease-in-out infinite;
+}
+
+@keyframes viewerTooltipSwipe {
+    0% {
+        transform: translateX(1.5rem);
+    }
+    30% {
+        transform: translateX(-1.5rem);
+    }
+    100% {
+        transform: translateX(1.5rem);
+    }
+}
+
+// Draw: icon moves in a slow circle
+.ViewerTooltip--draw .ViewerTooltip__icon {
+    animation: viewerTooltipDraw 2s linear infinite;
+}
+
+@keyframes viewerTooltipDraw {
+    0%    { transform: translate(0, -1.75rem); }
+    12.5% { transform: translate(1.25rem, -1.25rem); }
+    25%   { transform: translate(1.75rem, 0); }
+    37.5% { transform: translate(1.25rem, 1.25rem); }
+    50%   { transform: translate(0, 1.75rem); }
+    62.5% { transform: translate(-1.25rem, 1.25rem); }
+    75%   { transform: translate(-1.75rem, 0); }
+    87.5% { transform: translate(-1.25rem, -1.25rem); }
+    100%  { transform: translate(0, -1.75rem); }
+}
+
+// Tap: icon scale-presses down and bounces back
+.ViewerTooltip--tap .ViewerTooltip__icon {
+    animation: viewerTooltipTap 1.6s ease-in-out infinite;
+}
+
+@keyframes viewerTooltipTap {
+    0% {
+        transform: scale(1);
+    }
+    30% {
+        transform: scale(0.75);
+    }
+    60% {
+        transform: scale(0.75);
+    }
+    85% {
+        transform: scale(1.05);
+    }
+    100% {
+        transform: scale(1);
+    }
+}

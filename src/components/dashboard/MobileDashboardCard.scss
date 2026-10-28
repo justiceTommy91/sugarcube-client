@@ -1,0 +1,112 @@
+@import 'style/colors';
+@import 'style/type';
+@import 'style/screen';
+
+.dashboardHeader {
+    margin-top: 1rem;
+    display: none;
+
+    @include mob-landscape {
+        display: block;
+    }
+}
+
+.MobileDashboardCard {
+    @include lg {
+        display: none;
+    }
+
+    // hide the button in the footer
+    // cta's are in the body of the card
+    .content-card__footer {
+        display: none;
+    }
+
+    .cardCtaContainer {
+        .btn {
+            width: 100%;
+        }
+        .btn--primary {
+            margin: 0 0 0.8rem 0;
+        }
+
+        @include lg {
+            flex-direction: row;
+            align-items: flex-end;
+
+            .btn {
+                margin: 0 1rem 0 0;
+            }
+        }
+
+        .ctaLearnMore {
+            margin-right: 0;
+            &:active {
+                background-color: transparent;
+            }
+            @include mob-landscape {
+                svg {
+                    display: none;
+                }
+            }
+        }
+
+        @include mob-landscape {
+            display: unset;
+
+            .btn--primary {
+                border: 0;
+                &:active {
+                    background-color: transparent;
+                }
+            }
+        }
+    }
+
+    .card.card--trailing-media {
+        flex-direction: column;
+    }
+
+    .card__title {
+        text-align: center;
+        margin-bottom: 0.5rem;
+        .dashboardCtaTitle {
+            @include body-xxl;
+        }
+    }
+
+    .mobileDashboardCtas {
+        &.noImage {
+            background-color: transparent;
+            padding: 0 2rem 2rem 2rem;
+            align-items: center;
+        }
+    }
+
+    .content-card__title {
+        text-align: center;
+    }
+
+    .content-card__subtitle {
+        margin-bottom: 1rem;
+        text-align: center;
+        @include body-lg;
+        font-weight: normal;
+    }
+
+    .no-card-title {
+        font-weight: bold;
+        text-align: center;
+        @include body-xxl;
+    }
+
+    .no-card-label {
+        padding: 1rem;
+        text-align: center;
+        @include body-lg;
+    }
+
+    @include mob-landscape {
+        display: unset;
+    }
+}

@@ -1,0 +1,23 @@
+// Import @ingka component styles from local node_modules
+// Use CSS versions to avoid SCSS variable conflicts
+// Import dependencies first
+
+@import '@ingka/typography-shared/dist/style.css';
+@import '@ingka/focus/dist/style.css';
+@import '@ingka/svg-icon/dist/style.css';
+@import '@ingka/text/dist/style.css';
+@import '@ingka/button/dist/style.css';
+@import '@ingka/modal/dist/style.css';
+@import '@ingka/search/dist/style.css';
+@import '@ingka/toggle/dist/style.css';
+@import '@ingka/choice/dist/style.css';
+@import '@ingka/image/dist/style.css';
+@import '@ingka/simple-video/dist/style.css';
+@import '@ingka/aspect-ratio-box/dist/style.css';
+@import '@ingka/price/dist/style.css';
+@import '@ingka/toast/dist/style.css';
+@import '@ingka/skeleton/dist/style.css';
+@import '@ingka/tooltip/dist/style.css';
+@import '@ingka/pill/dist/style.css';
+@import '@ingka/forms/dist/style.css';
+@import '@ingka/inline-message/dist/style.css';

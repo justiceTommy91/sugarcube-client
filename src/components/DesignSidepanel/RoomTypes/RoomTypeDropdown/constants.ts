@@ -1,0 +1,1 @@
+export const COMPLETE_ROOM_SELECTED_SESSION_STORAGE_KEY = 'hasSelectedCompleteMyRoomOption'

@@ -1,0 +1,50 @@
+@import 'style/type';
+
+.ProductVariantCategorySection {
+    .ProductVariantCategorySection__category {
+        text-transform: capitalize;
+    }
+    .ProductVariantCategorySection__highlightedVariantName {
+        block-size: 1lh;
+        text-transform: capitalize;
+    }
+
+    .ProductVariantCategorySection__variantList {
+        padding-block-start: 1rem;
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        gap: 0.5rem;
+    }
+
+    .ProductVariantCategorySection__variant {
+        border: 2px solid transparent;
+        border-radius: 0.25rem;
+        padding: 0.5rem;
+        width: 100%;
+
+        .ProductVariantCategorySection__variantImage {
+            display: block;
+            inline-size: 100%;
+            block-size: auto;
+            aspect-ratio: 1;
+            object-fit: contain;
+        }
+
+        &.ProductVariantCategorySection__variant_selected {
+            border-color: #111;
+        }
+        
+        // Accessibility: Clear focus indicators for keyboard navigation
+        // Maintains rounded corners to match the button design
+        &:focus {
+            outline-offset: 2px;
+            border-radius: 0.25rem;
+        }
+    }
+    &.isUpptacka {
+        .ProductVariantCategorySection__highlightedVariantName,
+        .ProductVariantCategorySection__category {
+            @include body-xl;
+        }
+    }
+}

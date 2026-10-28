@@ -1,0 +1,85 @@
+// ===== Ingka Skapa Breakpoints =====
+// Based on Ingka Skapa modules design system
+// sm (Small/Mobile): < 600px (< 37.5em)
+// md (Medium/Tablet): ≥ 600px (≥ 37.5em)
+// lg (Large/Desktop): ≥ 900px (≥ 56.25em)
+// xl (Extra Large): ≥ 1200px (≥ 75em)
+
+$breakpoint-md: 37.5em; // 600px
+$breakpoint-lg: 56.25em; // 900px
+$breakpoint-xl: 75em; // 1200px
+$breakpoint-2xl: 100rem; // 1600px
+
+// Ingka Skapa breakpoint mixins
+@mixin skapa-s {
+    @media (max-width: #{$breakpoint-md - 0.0625em}) {
+        @content;
+    }
+}
+
+@mixin skapa-m {
+    @media (min-width: $breakpoint-md) {
+        @content;
+    }
+}
+
+@mixin skapa-l {
+    @media (min-width: $breakpoint-lg) {
+        @content;
+    }
+}
+
+@mixin skapa-xl {
+    @media (min-width: $breakpoint-xl) {
+        @content;
+    }
+}
+
+@mixin skapa-2xl {
+    @media (min-width: $breakpoint-2xl) {
+        @content;
+    }
+}
+
+// ===== Legacy Breakpoints (for backward compatibility) =====
+// Mobile
+@mixin mob {
+    @media (max-width: 576px) {
+        @content;
+    }
+}
+
+// Mobile landscape
+@mixin mob-landscape {
+    @media (max-width: 768px) and (orientation: portrait), (max-height: 768px) and (orientation: landscape) {
+        @content;
+    }
+}
+
+// Small devices
+@mixin sm {
+    @media (min-width: 576px) {
+        @content;
+    }
+}
+
+// Medium devices
+@mixin md {
+    @media (min-width: 896px) {
+        @content;
+    }
+}
+
+// Large devices
+@mixin lg {
+    @media (min-width: 1216px) {
+        @content;
+    }
+}
+
+// Custom devices
+@mixin custom-size($screen) {
+    @media (min-width: $screen) {
+        @content;
+    }
+}

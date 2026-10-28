@@ -1,0 +1,10 @@
+@import 'style/colors';
+
+.StarRating {
+    color: color(brand, secondary);
+
+    .star {
+        display: inline-block;
+        font-size: 1.2rem;
+    }
+}

@@ -1,0 +1,28 @@
+@import 'style/colors';
+@import 'style/type';
+@import 'style/zed';
+
+.DesignSummarySavePopup {
+    z-index: zed(topLayer);
+
+    .modalContent {
+        p {
+            @include body-lg;
+            color: color(default, description);
+            font-size: 0.875rem;
+            line-height: 1.625rem;
+            margin-top: -0.5rem;
+        }
+    }
+
+    .modalFooter {
+        padding: 1.5rem 2rem;
+        display: flex;
+        justify-content: space-around;
+        button {
+            span {
+                padding: 0.5rem 1.5rem;
+            }
+        }
+    }
+}

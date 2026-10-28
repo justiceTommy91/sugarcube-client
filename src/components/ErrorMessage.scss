@@ -1,0 +1,41 @@
+@import 'style/colors';
+@import 'style/type';
+
+.ErrorMessage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    min-height: 50vh;
+
+    .errorContainer {
+        width: 31rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 2rem;
+    }
+    .errorHeader {
+        @include heading-md;
+        font-weight: 600;
+        padding-bottom: 1rem;
+    }
+    .errorSubheader {
+        @include body-md;
+        padding-bottom: 2.5rem;
+        color: color(default, description);
+    }
+    .errorCta {
+        @include body-md;
+        text-transform: capitalize;
+        font-weight: bold;
+        background-color: color(cta, primary);
+        color: color(cta, foreground);
+        border-radius: 2rem;
+        height: 3.5rem;
+        width: 28rem;
+        @include body-md;
+    }
+}

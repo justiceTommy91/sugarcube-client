@@ -1,0 +1,134 @@
+{
+  "find-my-fit": {
+    "actions": {
+      "takePhoto": "Odfoťte ju",
+      "uploadPhoto": "Nahrať fotografiu"
+    },
+    "chooseSample": {
+      "scene_0": "Kútik na oddychovanie",
+      "scene_1": "Atmosférický kútik",
+      "title": "Vyberte si priestor na ukážku"
+    },
+    "csat": {
+      "bad": "Zle",
+      "cancel": "Zrušiť",
+      "describeIt": "Povedzte nám o tom viac",
+      "dissatisfied": "Nespokojný/á",
+      "good": "Dobrá",
+      "goodOrBad": "Ďakujeme! Radi by sme sa dozvedeli, prečo si si vybral(a) práve túto možnosť. Čo ťa na tejto skúsenosti zaujalo, či už pozitívne alebo negatívne?",
+      "neutral": "Neutrálne",
+      "privacyText": "Aby sme ochránili vaše súkromie, vyhnite sa uvádzaniu osobných údajov (napr. e-mail, telefón).",
+      "ratingDescription": "Tvoja spätná väzba nám pomôže zlepšiť zákaznícku skúsenosť.",
+      "satisfied": "Spokojný/á",
+      "submit": "Odoslať",
+      "title": "Aké sú vaše skúsenosti?"
+    },
+    "hero": {
+      "imageAlt": "Police a police",
+      "subtitle": "Pridajte fotografiu a získajte odporúčania.",
+      "title": "Nájdite úložné riešenie, ktoré sa hodí do vášho priestoru"
+    },
+    "landing": {
+      "actions": {
+        "addPhoto": "Pridať fotografiu",
+        "takePhoto": "Odfoťte ju",
+        "trySampleSpace": "Vyskúšajte si vzorový priestor",
+        "uploadPhoto": "Nahrať fotografiu"
+      },
+      "comingSoon": {
+        "appStoreBadgeAlt": "Stiahnite si ju v obchode App Store",
+        "designOnDesktop": "Návrh na počítači",
+        "getApp": "Stiahnite si aplikáciu IKEA a navrhnite si priestor",
+        "googlePlayBadgeAlt": "Stiahnite si ju z obchodu Google Play",
+        "kreativLink": "Odkaz na IKEA Kreativ",
+        "linkCopied": "Odkaz bol skopírovaný",
+        "title": "Táto funkcia bude čoskoro dostupná!"
+      },
+      "features": {
+        "compare": {
+          "title": "Potiahnutím rýchlo porovnajte možnosti"
+        },
+        "intro": {
+          "title": "Nákup úložných riešení je s Find My Fit jednoduchý"
+        },
+        "save": {
+          "title": "Obľúbené položky a nájdite \"toho pravého\""
+        },
+        "setArea": {
+          "title": "Nakreslite cieľovú oblasť"
+        }
+      },
+      "hero": {
+        "genericCategory": "úložné riešenia",
+        "imageAlt": "Obrázky úložných riešení",
+        "privacyNote": "Neodosielajte obrázky s ľuďmi, osobnými údajmi alebo súkromnými predmetmi. Viac sa dozviete v našich <1>zásadách ochrany osobných údajov</1>.",
+        "subtitle": "Použite fotografiu a prelistujte štýly {{subject}} aby sa hodili do konkrétnej oblasti",
+        "title": "Nájdite úložné riešenie, ktoré sa hodí do vášho priestoru",
+        "videoAlt": "Ukážka funkcie Nájdi svoju veľkosť"
+      },
+      "page": {
+        "description": "Nahrajte fotografiu a vyberte si z ponuky políc, ktoré ste si prezerali, aby ste získali správny vzhľad a veľkosť bez hádania.",
+        "title": "Nájsť vhodnú veľkosť"
+      },
+      "sampleSpaces": {
+        "error": "Niečo sa pokazilo. Skúste to znova.",
+        "title": "Vyberte priestor na vzorky"
+      }
+    },
+    "loginPrompt": {
+      "body": "Ak chcete získať odporúčania na úložné riešenia pre svoj priestor, prihláste sa alebo si vytvorte bezplatný účet IKEA.",
+      "logIn": "Prihlásiť sa",
+      "signUp": "Prihlásiť sa",
+      "title": "Prihláste sa a nahrajte fotografiu"
+    },
+    "page": {
+      "description": "Nájdite si s IKEA dokonalé riešenie pre svoj domov",
+      "title": "Nájsť vhodnú veľkosť"
+    },
+    "toasts": {
+      "unableToFavorite": "Ospravedlňujeme sa, ale položku sa nepodarilo pridať do zoznamu."
+    },
+    "viewer": {
+      "accessibilityDescription": "Nástroj My Fit využíva fotku vašej miestnosti na odporúčanie výrobkov IKEA, ktoré sa hodia do vybraného priestoru. Vizuálna interakcia a kreslenie môžu byť náročné pre ľudí so zrakovým postihnutím alebo slabším zrakom. Podrobnosti o výrobkoch, ceny a nákupné akcie sú úplne prístupné po zobrazení výsledkov.",
+      "addToBag": "Pridať do tašky",
+      "adjustHeader": "Upravte oblasť vyhľadávania",
+      "clearDrawing": "Jasný nákres",
+      "confirmDimension": "Potvrdiť rozmery",
+      "continue": "Pokračovať",
+      "continueAriaLabel": "Pokračovať na ďalší krok",
+      "decreaseDimension": "Zmenšiť rozmery",
+      "dimDepth": "Hĺbka",
+      "dimHeight": "Výška",
+      "dimWidth": "Šírka",
+      "done": "Hotovo",
+      "doneAriaLabel": "Ukončiť úpravy",
+      "drawFocusArea": "Nakreslite požadovanú oblasť zamerania",
+      "drawingHeader": "Kde chcete mať úložný priestor?",
+      "editArea": "Upraviť oblasť",
+      "fewResultsToast": "Skúste zmeniť veľkosť vyhľadávacej oblasti, aby ste získali viac výsledkov.",
+      "goBack": "Vráť sa",
+      "goToImage": "Prejsť na obrázok {{index}}",
+      "increaseDimension": "Zväčšiť rozmery",
+      "magicEraser": "Magická guma",
+      "noResults": "Pre tento priestor sa nenašli žiadne výrobky.",
+      "noResultsButton": "Nenašli sa žiadne výsledky",
+      "noResultsTitle": "Nenašli sa žiadne výsledky",
+      "removedFromFavorites": "Odstránené z obľúbených položiek",
+      "removeFavorite": "Odstrániť z obľúbených",
+      "retrySearch": "Skús to znova",
+      "savedToFavorites": "Uložené do obľúbených",
+      "saveFavorite": "Pridať do obľúbených",
+      "search": "Hľadať",
+      "searchError": "Nenašli sa žiadne zodpovedajúce výrobky. Skúste vyznačiť inú oblasť.",
+      "searchErrorToast": "Niečo sa pokazilo. Skúste to znova.",
+      "searching": "Prebieha vyhľadávanie...",
+      "seeAllResults": "Zobraziť všetky výsledky",
+      "showMoreDetails": "Zobraziť viac podrobností",
+      "swipeForMore": "Potiahnite prstom a dozviete sa viac",
+      "tapToSelect": "Ťuknutím vyberte položku",
+      "tryAgain": "Skús to znova",
+      "viewResults_one": "Zobraziť {{count}} výsledok",
+      "viewResults_other": "Zobraziť {{count}} výsledky"
+    }
+  }
+}

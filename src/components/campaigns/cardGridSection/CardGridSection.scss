@@ -1,0 +1,53 @@
+@import 'style/colors';
+@import 'style/type';
+@import 'style/screen';
+
+.CardGridSection {
+    .header {
+        @include md {
+            max-width: 50%;
+        }
+
+        .title {
+            margin-bottom: 1rem;
+        }
+        .subtitle {
+            margin-bottom: 2rem;
+        }
+    }
+
+    .cards {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1rem;
+        justify-content: space-between;
+
+        @include md {
+            flex-direction: row;
+        }
+        .cardGrid {
+            flex-direction: row;
+            overflow: hidden;
+            flex: 1 1 100%;
+            max-width: 100%;
+            cursor: pointer;
+            @include md {
+                flex: 1 1 calc(50% - 1rem);
+                max-width: calc(50% - 1rem);
+            }
+
+            .compact-card__text-wrapper {
+                &:hover {
+                    text-decoration: none !important;
+                }
+            }
+        }
+        .cardGrid__card {
+            &.extendedPalette19Background .compact-card__link {
+                background-color: color(banner, extendedPalette19Background);
+                color: color(default-invert, foreground);
+                padding: 2rem;
+            }
+        }
+    }
+}

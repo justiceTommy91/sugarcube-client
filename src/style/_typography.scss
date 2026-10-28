@@ -1,0 +1,4 @@
+// Re-export typography mixins from @ingka/typography-shared for easy access
+// Usage: @import 'style/typography';
+
+@forward '@ingka/typography-shared/_mixins.scss';

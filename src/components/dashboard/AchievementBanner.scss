@@ -1,0 +1,104 @@
+@import 'style/colors';
+@import 'style/type';
+@import 'style/screen';
+
+.AchievementBanner {
+    display: flex;
+    @include body-lg;
+
+    .achievementCard {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border-width: 1px;
+        border-style: solid;
+        border-color: transparent #cccccc transparent transparent;
+        width: 100%;
+        justify-content: space-between;
+        margin-left: 1.5rem;
+        padding-right: 1.5rem;
+
+        @include mob {
+            font-size: 0.875rem;
+            text-align: center;
+        }
+
+        @media screen and (max-width: 627px) {
+            margin-left: 1rem;
+            padding-right: 1rem;
+        }
+
+        .achievementTitle {
+            font-weight: 400;
+            width: max-content;
+
+            @media screen and (max-width: 1110px) {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .achievementIcon {
+                margin-right: 0.75rem;
+            }
+        }
+        .numberAchieved {
+            @include heading-lg;
+            align-self: center;
+            min-height: 3rem;
+            min-width: 4rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            @include mob {
+                display: flex;
+                align-items: center;
+            }
+
+            .BouncingBallLoader {
+                // overrides skapa
+                min-height: 0 !important;
+                max-height: 3rem;
+                height: 3rem !important;
+                width: 2rem;
+                padding-top: 1.25rem;
+
+                .ball {
+                    width: 0.75rem;
+                    height: 0.75rem;
+                }
+            }
+
+            .plusCircle {
+                color: color(default, subHeader);
+                margin-left: 2rem;
+
+                @media screen and (max-width: 1110px) {
+                    margin-left: 1rem;
+                }
+            }
+        }
+    }
+
+    .lastCard {
+        padding-right: 0;
+        border-right: none;
+
+        @include mob {
+            padding-right: 3.125rem;
+        }
+    }
+    &.hasLongString {
+        width: 100%;
+        .achievementTitle {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+        .achievementIcon {
+            margin-right: 0;
+        }
+    }
+}

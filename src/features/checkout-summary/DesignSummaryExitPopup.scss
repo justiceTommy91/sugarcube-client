@@ -1,0 +1,55 @@
+@import 'style/type';
+@import 'style/colors';
+@import 'style/zed';
+
+.DesignSummaryExitPopup {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    height: 50vh;
+    background: color(brand, secondary);
+    border-top-left-radius: 0.5rem;
+    border-top-right-radius: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    z-index: zed(modalMidLayer);
+    padding: 1.5rem;
+    color: color(brand, secondaryText);
+    &.landscape {
+        width: 50vw;
+        height: inherit;
+        top: 0;
+        right: 0;
+        left: 50%;
+        border-top-right-radius: unset;
+        border-bottom-left-radius: 0.5rem;
+    }
+    .exitPopupClose {
+        border-radius: 50%;
+        background-color: color(brand, secondaryText);
+        color: color(cta, primary);
+        padding: 0.5rem;
+        align-self: flex-end;
+        margin-bottom: 2rem;
+    }
+    .popupHeader {
+        @include body-xl;
+        margin-bottom: 0.5rem;
+    }
+    .popupSubheader {
+        @include body-md;
+        margin-bottom: 2.25rem;
+    }
+    .checkout {
+        margin-bottom: 1.75rem;
+        align-self: center;
+        button {
+            background-color: color(brand, secondaryText);
+            color: color(cta, primary);
+        }
+    }
+    .backIkeaBtn {
+        text-decoration: underline;
+    }
+}

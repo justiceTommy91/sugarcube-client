@@ -1,0 +1,90 @@
+@import 'style/colors';
+@import 'style/type';
+@import 'style/zed';
+
+.CarouselSlideshow {
+    padding-top: 3.5rem;
+
+    .ikeaKreativ {
+        @include heading-md;
+        display: flex;
+        font-weight: 700;
+        align-items: center;
+        margin-bottom: 1em;
+        color: color(cta, primary);
+
+        @include md {
+            @include heading-md;
+        }
+
+        .paintBrushIcon {
+            height: 2rem;
+            width: 2rem;
+            margin-right: 0.875rem;
+        }
+    }
+
+    .carousel__button {
+        left: -1rem;
+    }
+
+    .carousel__button--right {
+        left: unset;
+        right: -1rem;
+    }
+
+    .carousel-slide {
+        padding: 0;
+
+        .card {
+            display: flex;
+            justify-content: space-between;
+
+            .media {
+                width: 100%;
+            }
+
+            .card__media {
+                position: relative;
+            }
+
+            .content-card {
+                padding: 3rem;
+                padding-right: 3.5rem;
+                padding-top: 2rem;
+                cursor: pointer !important;
+
+                @include lg {
+                    justify-content: center;
+                    width: 50%;
+                }
+
+                .content-card__container {
+                    .content-card__headers {
+                        text-align: left;
+                    }
+
+                    .content-card__body {
+                        @include body-lg;
+                        text-align: left;
+                        font-weight: 400;
+                        margin-bottom: 2rem;
+                    }
+                }
+                .content-card__footer {
+                    @include lg {
+                        margin-top: 0rem;
+                    }
+                }
+            }
+        }
+    }
+
+    .simple-video__video-action {
+        display: block;
+    }
+
+    .scroll-indicator {
+        padding: 0;
+    }
+}

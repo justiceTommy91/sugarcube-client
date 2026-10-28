@@ -1,0 +1,132 @@
+---
+/**
+ * Base Layout for all astro pages
+ * Provides common structure, ESI includes, and tracking initialization
+ */
+import HeadMetaData from './HeadMetaData.astro'
+import { getEsiHeaderFooterPath, getEsiProductPath, generateEsiInclude } from '@lib/esi-utils'
+
+// Import global styles
+import '../styles/ingka-imports.scss'
+
+interface Props {
+    locale: string
+    market: string
+    title: string
+    description: string
+    keywords?: string
+    canonical?: string
+    allowSeo?: boolean
+    showHeader?: boolean
+    showFooter?: boolean
+    showPricePackage?: boolean
+    /** Load the IKEA script fragment (window.ikea, auth) independently of showFooter. Defaults to showFooter. */
+    showScripts?: boolean
+    /** Load the style fragment (OneTrust cookie consent) independently of showHeader. Use on pages with showHeader={false} that need Mixpanel tracking. */
+    showConsentScripts?: boolean
+    /** Mixpanel event name for page visit tracking. Omit for test/ routes. */
+    mixpanelPageName?: string
+    /** GA action string for page visit tracking. */
+    gaPageVisitAction?: string
+}
+
+const { locale, market, title, description, keywords, canonical, allowSeo = true, showHeader = true, showFooter = true, showPricePackage = true, showScripts = showFooter, showConsentScripts = false, mixpanelPageName, gaPageVisitAction } = Astro.props
+
+// Build time for meta tags
+const buildTime = new Date().toISOString()
+
+// ESI includes for header/footer
+const styleFragmentEsi = generateEsiInclude(getEsiHeaderFooterPath(market, 'style-fragment-recursive.html'))
+const headerEsi = generateEsiInclude(getEsiHeaderFooterPath(market, 'header-collapsed-fragment-recursive.html'))
+const footerEsi = generateEsiInclude(getEsiHeaderFooterPath(market, 'footer-fragment-recursive.html'))
+const scriptFragmentEsi = generateEsiInclude(getEsiHeaderFooterPath(market, 'script-fragment-recursive.html'))
+const pricePackageStylesEsi = generateEsiInclude(getEsiProductPath(market, 'price-package-styles.html'))
+const pricePackageScriptsEsi = generateEsiInclude(getEsiProductPath(market, 'price-package-scripts.html'))
+---
+
+<!doctype html>
+<html lang={locale}>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="kreativ-buildTime" content={buildTime} />
+        
+        <!-- SEO Meta Tags -->
+        <HeadMetaData 
+            title={title} 
+            description={description} 
+            keywords={keywords}
+            canonical={canonical}
+            allowSeo={allowSeo}
+        />
+        
+        <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+        
+        <!-- ESI: Header styles (also loaded when showConsentScripts=true for pages that need OneTrust without a visible header) -->
+        {(showHeader || showConsentScripts) && <Fragment set:html={styleFragmentEsi} />}
+        
+        <style>
+            /* Collapse subnav */
+            .hnf-tabs-navigation--collapsed {
+                margin-bottom: 0 !important;
+            }
+            
+            /* Hide Syndeo chat */
+            syndeo-chat {
+                display: none;
+            }
+        </style>
+        
+        <!-- Allow pages to inject additional head content -->
+        <slot name="head" />
+    </head>
+    <body data-page-name={mixpanelPageName} data-ga-action={gaPageVisitAction}>
+        <!-- ESI: Header -->
+        {showHeader && <Fragment set:html={headerEsi} />}
+        
+        <!-- ESI: Price package styles -->
+        {showPricePackage && <Fragment set:html={pricePackageStylesEsi} />}
+        
+        <!-- Main content slot -->
+        <slot />
+        
+        <!-- ESI: Footer -->
+        {showFooter && <Fragment set:html={footerEsi} />}
+        
+        <!-- ESI: Footer scripts -->
+        {showScripts && <Fragment set:html={scriptFragmentEsi} />}
+        
+        <!-- ESI: Price package scripts -->
+        {showPricePackage && <Fragment set:html={pricePackageScriptsEsi} />}
+        
+        <!-- Initialize experiments and tracking -->
+        <script>
+            import '@lib/experiments/init'
+            import '@lib/tracking/init'
+            import '@lib/tracking/pageVisit'
+        </script>
+    </body>
+</html>
+
+<style is:global>
+    /* Reset and ensure full width */
+    html,
+    body {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        overflow-x: hidden;
+    }
+
+    * {
+        box-sizing: border-box;
+    }
+
+    body {
+        font-family: 'Noto Sans', 'Noto IKEA', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+            Ubuntu, Cantarell, sans-serif;
+    }
+</style>

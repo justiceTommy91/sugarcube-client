@@ -1,0 +1,2 @@
+export const ART_PORTRAIT = 'ART_PORTRAIT'
+export const ART_LANDSCAPE = 'ART_LANDSCAPE'

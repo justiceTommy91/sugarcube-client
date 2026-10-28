@@ -1,0 +1,108 @@
+@import 'style/colors';
+@import 'style/type';
+@import 'style/screen';
+@import 'style/zed';
+@import 'style/a11y';
+
+.VideoHero {
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-y: top;
+
+    a {
+        text-decoration: none;
+    }
+
+    @include mob {
+        background: transparent;
+    }
+
+    .heroContainer {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        flex-direction: column;
+        height: 70vh;
+        min-height: fit-content;
+        // Required to keep color tone of slightly translucent video.
+        background-color: #444;
+        position: relative;
+        font-weight: 700;
+        color: color(brand, secondaryText);
+
+        .heroVideo {
+            opacity: 0.8;
+            background-color: rgba(0, 0, 0, 0.5);
+        }
+
+        .heroTextContainer {
+            flex-grow: 1;
+            display: flex;
+            justify-content: center;
+        }
+
+        .heroText {
+            z-index: zed(above);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            align-self: center;
+            position: sticky;
+            top: 0;
+
+            .ikeaKreativ {
+                @include heading-md;
+                color: color(brand, secondaryText);
+                display: flex;
+                font-weight: 700;
+                align-items: center;
+                margin-bottom: 1.875rem;
+
+                @include md {
+                    @include heading-lg;
+                }
+
+                @include lg {
+                    @include body-xl;
+                    margin-bottom: 1rem;
+                }
+
+                .paintBrushIcon {
+                    height: 2rem;
+                    width: 2rem;
+                    margin-right: 0.875rem;
+                }
+            }
+            .heroTagline {
+                color: color(brand, secondaryText);
+                font-weight: 700;
+                font-size: 2rem;
+                margin: inherit 2rem;
+                margin-bottom: 2.25rem;
+                line-height: 3rem;
+
+                @include md {
+                    font-size: 3rem;
+                }
+
+                @include lg {
+                    font-size: 3.125rem;
+                    line-height: 5.25rem;
+                    margin-bottom: 2.25rem;
+                }
+            }
+        }
+        .videoHeroCta {
+            padding: 0 0.5rem;
+            margin-bottom: 2rem;
+            margin-right: 2rem;
+            align-self: flex-end;
+
+            .btn__inner {
+                padding: 0 3rem;
+            }
+        }
+    }
+}

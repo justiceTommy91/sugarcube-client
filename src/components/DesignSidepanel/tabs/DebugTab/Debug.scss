@@ -1,0 +1,204 @@
+@import 'style/type';
+@import 'style/colors';
+@import 'style/zed';
+
+.Debug {
+    overflow: auto;
+    height: 100%;
+
+    section {
+        padding: 1rem 1.5rem;
+
+        h2 {
+            font-size: 1.25rem;
+            border-bottom: 1px solid #aaa;
+            padding-bottom: 0.5rem;
+            display: flex;
+
+            .text {
+                flex: 1;
+            }
+            svg {
+                font-size: 1rem;
+            }
+            &:not(:first-child) {
+                padding-top: 2rem;
+            }
+        }
+        .infoRow,
+        .switchRow,
+        .dropRow,
+        .toolRow {
+            display: flex;
+            padding: 0.75rem 0 0 0;
+        }
+        .infoRow {
+            .rowTitle {
+                width: 15rem;
+                @include body-md;
+
+                &:after {
+                    content: ':';
+                }
+            }
+            .rowContent {
+                flex: 1;
+                display: flex;
+                align-items: center;
+                @include body-md;
+
+                .dataPreview {
+                    cursor: default;
+                }
+                .imagePreview {
+                    position: relative;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    cursor: default;
+
+                    .imagePreviewThumb {
+                        display: none;
+                        position: absolute;
+                        background-color: #fefefe;
+                        box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+                        pointer-events: none;
+                        z-index: zed(above);
+
+                        img {
+                            display: none;
+                            width: 25rem;
+                        }
+                    }
+                    &:hover {
+                        .imagePreviewThumb {
+                            display: block;
+
+                            img {
+                                display: block;
+                            }
+                        }
+                    }
+                }
+                input {
+                    flex: 1;
+                    width: 3rem;
+                }
+                span {
+                    margin-left: 1rem;
+                    color: #aaa;
+                    font-size: 0.9rem;
+                }
+                a {
+                    text-decoration: underline;
+                }
+                .err {
+                    color: red;
+                }
+                .warn {
+                    color: orange;
+                }
+                & > *:not(:first-child) {
+                    margin-left: 1rem;
+                }
+            }
+            &.uuid {
+                .rowTitle {
+                    width: 8rem;
+                }
+                .rowContent {
+                    font-family: monospace;
+                    text-transform: uppercase;
+                }
+            }
+            &.url {
+                .rowTitle {
+                    width: 8rem;
+                }
+                .rowContent {
+                    overflow: hidden;
+
+                    a {
+                        display: inline-block;
+                        width: 100%;
+                        white-space: nowrap;
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                    }
+                }
+            }
+        }
+        .switchRow,
+        .dropRow,
+        .toolRow {
+            align-items: center;
+
+            p {
+                flex: 1;
+                @include body-md;
+
+                span {
+                    display: inline-block;
+                    padding-left: 0.75rem;
+                    color: #aaa;
+                    @include body-sm;
+
+                    &:before {
+                        content: '(';
+                    }
+                    &:after {
+                        content: ')';
+                    }
+                }
+            }
+        }
+        .switchRow {
+            .switch {
+                display: inline-block;
+                width: calc(2rem + 4px);
+                border: 1px solid #bbb;
+                border-radius: 1rem;
+                position: relative;
+                padding: 2px;
+                transition: all 0.25s ease;
+                cursor: pointer;
+
+                &:before {
+                    content: '';
+                    display: block;
+                    width: 1rem;
+                    height: 1rem;
+                    box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.3);
+                    position: relative;
+                    left: 0;
+                    border-radius: 1rem;
+                    background-color: #fff;
+                    transition: left 0.25s ease;
+                }
+                &.on {
+                    background-color: #06db06;
+                    border-color: #06db06;
+
+                    &:before {
+                        left: calc(1rem - 2px);
+                    }
+                }
+            }
+            .Range {
+                .indicator {
+                    overflow: hidden;
+                    width: 4rem;
+                }
+            }
+        }
+        .dropRow {
+            p {
+                flex: 2;
+            }
+            .LegacyDropdown {
+                flex: 1;
+                border: 1px solid color(default, border);
+            }
+        }
+    }
+}

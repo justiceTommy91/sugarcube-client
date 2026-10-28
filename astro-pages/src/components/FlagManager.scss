@@ -1,0 +1,38 @@
+@import 'style/zed';
+
+.FlagsManagerContainer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    z-index: zed(adminWidgets);
+
+    .FlagsManagerButton {
+        opacity: 1;
+    }
+}
+
+.FlagsManagerPrompt {
+    .prompt__content-wrapper {
+        min-width: min(31rem, 100vw);
+    }
+}
+
+.dimensionsContainer {
+    margin-top: 0.5rem;
+
+    .dimensionRow {
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        margin-top: 0.25rem;
+
+        .dimensionLabel {
+            width: 3.5rem;
+            text-transform: capitalize;
+        }
+
+        .dimensionInput {
+            width: 5rem;
+        }
+    }
+}

@@ -1,0 +1,61 @@
+@use 'style/typography' as *;
+@import 'style/colors';
+@import './z-indices';
+
+.SummaryPillButton {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    z-index: $z-viewer-controls;
+    display: flex;
+    align-items: center;
+    padding: 0.25rem 0.25rem 0.25rem 0.5rem;
+    border: none;
+    cursor: pointer;
+    border-radius: 6.25rem;
+    background: color(default, background);
+    color: color(default, foreground);
+
+    &:disabled {
+        pointer-events: none;
+
+        .SummaryPillButton__arrow {
+            background-color: color(default, backgroundPreview);
+            color: color(menu, foreground);
+
+            .svg-icon {
+                color: color(menu, foreground);
+            }
+        }
+    }
+
+    &__price {
+        white-space: nowrap;
+        color: color(default, foreground);
+    }
+    &__divider {
+        flex-shrink: 0;
+        width: 0.0625rem;
+        align-self: stretch;
+        background-color: color(default, border);
+        margin: 0 0.5rem;
+    }
+
+    &__arrow {
+        flex-shrink: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 2rem;
+        height: 2rem;
+        border-radius: 50%;
+        background-color: color(cta, brand);
+        color: color(cta, foreground);
+
+        .svg-icon {
+            width: 1.125rem;
+            height: 1.125rem;
+            color: color(cta, foreground);
+        }
+    }
+}

@@ -1,0 +1,75 @@
+@use 'style/typography' as *;
+@import 'style/colors';
+
+.SearchDrawer {
+    // Search-specific styles only. The sheet shell (position, handle, scroll area)
+    // is provided by BottomSheet.
+
+    &__search-btn {
+        position: sticky;
+        top: 0;
+        z-index: 1;
+        height: 3rem;
+        margin: 0 1.25rem 0.5rem;
+        background: color(cta, tertiary);
+        border-radius: 4rem;
+    }
+
+    &__search-trigger {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        padding: 0 1rem;
+        gap: 0.5rem;
+        border: none;
+        background: transparent;
+        border-radius: inherit;
+        text-align: left;
+        cursor: pointer;
+
+        .SearchDrawer__search-btn--has-query & {
+            padding: 0 1rem 0 1.5rem;
+        }
+    }
+
+    &__search-icon {
+        flex-shrink: 0;
+
+        .svg-icon {
+            width: 1.25rem;
+            height: 1.25rem;
+        }
+    }
+
+    &__search-text {
+        flex: 1;
+        @include typography-base;
+        @include body-l;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    &__clear-btn {
+        position: absolute;
+        top: 0.25rem;
+        right: 0.75rem;
+        padding: 0.5rem;
+        border: none;
+        background: transparent;
+        cursor: pointer;
+
+        &:focus-visible {
+            outline: 2px solid currentColor;
+            border-radius: 50%;
+        }
+    }
+
+    &__clear-icon {
+        .svg-icon {
+            width: 1.25rem;
+            height: 1.25rem;
+        }
+    }
+}

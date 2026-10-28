@@ -1,0 +1,36 @@
+[
+    {
+        "id": "offline-001",
+        "name": "Offline IKEA Store",
+        "lat": "0",
+        "lng": "0",
+        "address": {
+            "street": "1 Offline Way",
+            "zipCode": "00000",
+            "city": "Localhost",
+            "timezone": "UTC",
+            "stateProvinceCode": "NA",
+            "displayAddress": "1 Offline Way, Localhost"
+        },
+        "buClassification": {
+            "code": "STO",
+            "name": "Store"
+        },
+        "displayName": "Offline Store",
+        "hours": {
+            "normal": [],
+            "closed": [],
+            "exceptions": [],
+            "restaurant": [],
+            "bistro": [],
+            "swedishFoodMarket": [],
+            "smaland": [],
+            "cafe": [],
+            "clickncollect": []
+        },
+        "storePageUrl": "http://localhost:1080/",
+        "placeId": "offline-place",
+        "extras": {},
+        "displayNameAlternate": "Offline Store"
+    }
+]

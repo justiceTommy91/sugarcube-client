@@ -1,0 +1,107 @@
+@import 'style/colors';
+
+$bar-bottom: 1.5rem; // 24px — accounts for drawer overlap
+$button-size: 2.5rem;
+$transition-duration: 200ms;
+
+.ItemActionBar {
+    position: absolute;
+    bottom: $bar-bottom;
+    left: $bar-bottom;
+    right: $bar-bottom;
+    height: $button-size;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    pointer-events: none;
+
+    &__pill-button {
+        flex: 0 0 $button-size;
+        width: $button-size;
+        height: $button-size;
+        border-radius: 50%;
+        background-color: rgba(0, 0, 0, 0.6);
+        color: color(cta, foreground);
+        border: none;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        pointer-events: all;
+        position: relative;
+        z-index: 2; // within ItemActionBar's own stacking context (above slider wrapper)
+        transition: background-color $transition-duration ease, opacity $transition-duration ease;
+
+        &:hover,
+        &:focus-visible {
+            background-color: rgba(0, 0, 0, 0.8);
+        }
+
+        &:focus-visible {
+            outline: 2px solid color(cta, foreground);
+            outline-offset: 2px;
+        }
+
+        .svg-icon {
+            width: 1.25rem;
+            height: 1.25rem;
+        }
+
+        &--hidden {
+            opacity: 0;
+            pointer-events: none;
+        }
+
+        &--delete-only {
+            margin-left: auto;
+        }
+    }
+
+    // Full-width slider, absolutely layered behind the buttons
+    &__slider-wrapper {
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        z-index: 1; // within ItemActionBar's own stacking context (behind pill buttons)
+        opacity: 0;
+        visibility: hidden;
+        pointer-events: none;
+        transition: opacity $transition-duration ease, visibility $transition-duration ease;
+
+        // Push the slider's usable area to start after the rotate button on the left.
+        --rs-inset-start: calc(#{$button-size} + 0.375rem);
+        --rs-inset-end: 0.75rem;
+
+        &--visible {
+            opacity: 1;
+            visibility: visible;
+            pointer-events: all;
+        }
+
+        // Stretch RotateSlider to fill the bar — it defaults to 22rem as a standalone widget.
+        .RotateSlider {
+            width: 100%;
+
+            // Degree input floats absolutely above the pill center rather than sitting inline.
+            // This keeps the bar's fixed height intact.
+            .degreeInputWrapper {
+                position: absolute;
+                bottom: 100%;
+                left: calc((var(--rs-inset-start, 5%) + 100% - var(--rs-inset-end, 5%)) / 2);
+                transform: translateX(-50%);
+                margin-bottom: 0.25rem;
+                z-index: 3; // within ItemActionBar's own stacking context (above pill buttons)
+                pointer-events: all;
+
+                .spinnerButton {
+                    width: 2rem;
+                    border: none;
+                    visibility: visible;
+                    opacity: 1;
+                }
+            }
+        }
+    }
+}

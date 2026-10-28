@@ -1,0 +1,61 @@
+@import 'style/colors';
+@import 'style/zed';
+@import 'style/type';
+
+.ViewerTest {
+    position: fixed;
+    inset: 0;
+    display: flex;
+    flex-direction: column;
+    background: $color-gray-900;
+    overscroll-behavior: none;
+    user-select: none;
+    -webkit-user-select: none;
+
+    &__top-bar {
+        flex-shrink: 0;
+        z-index: zed(topLayer);
+        background: $color-transparentDarkerGray;
+        padding: 8px 16px;
+        display: flex;
+        align-items: center;
+        gap: 6px 10px;
+        flex-wrap: wrap;
+    }
+
+    &__label {
+        color: $color-darkGray;
+        @include body-sm;
+        font-weight: 600;
+    }
+
+    &__select {
+        background: $color-gray-800;
+        color: color(default-invert, foreground);
+        border: 1px solid $color-darkGray;
+        border-radius: 3px;
+        padding: 4px 8px;
+        @include body-sm;
+        cursor: pointer;
+        min-width: 0;
+        max-width: 100%;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    &__demo-area {
+        flex: 1;
+        min-height: 0;
+        position: relative;
+    }
+
+    &__loading {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: $color-gray-900;
+        color: color(default-invert, foreground);
+    }
+}

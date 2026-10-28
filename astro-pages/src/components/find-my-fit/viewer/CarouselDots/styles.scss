@@ -1,0 +1,146 @@
+@import 'style/colors';
+@import 'style/zed';
+
+// Design-specific frosted-glass overlay colors not in the global palette
+$carousel-dot-indicator-bg: rgba(191, 191, 191, 0.8);
+$carousel-dot-bg: rgba(0, 0, 0, 0.3);
+$carousel-dot-hover-bg: rgba(255, 255, 255, 0.7);
+$carousel-counter-bg: rgba(194, 194, 194, 0.8);
+
+// Slot = the fixed-width space each dot occupies in the strip layout.
+// Keeping slot width constant means translateX math stays exact regardless of dot visual size.
+$dot-slot-width: 0.5rem;
+$dot-gap: 0.5rem;
+$max-visible-dots: 8;
+$dot-indicator-h-padding: 1rem;
+$active-dot-size: 0.625rem;
+// Half the amount the active dot overhangs its slot — needed as clip padding so the active dot
+// isn't clipped when it sits at the first or last visible position.
+$dot-half-overhang: ($active-dot-size - $dot-slot-width) / 2; // 0.0625rem
+// Clip width: 8 slots + 7 gaps + overhang breathing room on each side (border-box).
+// The overhang is < 1 slot, so no extra dot bleeds through.
+$dot-clip-width: $max-visible-dots * $dot-slot-width + ($max-visible-dots - 1) * $dot-gap + $dot-half-overhang * 2;
+
+.CarouselDots {
+    position: absolute;
+    // Sit above the popover: --fmf-popover-h is published by Popover so dots
+    // track the popover top edge.
+    bottom: calc(var(--fmf-popover-h, 0px) + 1rem);
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: zed(aoe);
+    pointer-events: none;
+
+    &__container,
+    &__dot-indicators,
+    &__counter {
+        pointer-events: auto;
+    }
+
+    .Tooltip .tooltip__body {
+        visibility: visible;
+        opacity: 1;
+    }
+
+    &__container {
+        display: flex;
+        gap: 1.5rem;
+        padding: 1rem;
+    }
+
+    &__dot-indicators {
+        display: flex;
+        align-items: center;
+        padding: 0.5rem $dot-indicator-h-padding;
+        backdrop-filter: blur(2.5rem);
+        border-radius: 62.4375rem;
+        background-color: $carousel-dot-indicator-bg;
+    }
+
+    // Separate clip element so overflow:hidden boundary sits at the dot content edge,
+    // not the pill's padding edge (which would let an extra dot bleed through).
+    &__dot-clip {
+        flex-shrink: 0;
+
+        &--scrolling {
+            overflow: hidden;
+            width: $dot-clip-width;
+            padding: 0 $dot-half-overhang;
+        }
+    }
+
+    &__dot-strip {
+        display: flex;
+        align-items: center;
+        gap: $dot-gap;
+        transform: translateX(var(--dot-strip-offset, 0rem));
+        transition: transform 0.3s ease;
+        flex-shrink: 0;
+    }
+
+    // Fixed-width slot: keeps layout stable so translateX = windowStart × 1rem always holds.
+    // The inner __dot can change size without affecting slot positions.
+    &__dot-slot {
+        width: $dot-slot-width;
+        flex-shrink: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+    }
+
+    &__dot {
+        width: $dot-slot-width;
+        height: $dot-slot-width;
+        border-radius: 50%;
+        background-color: $carousel-dot-bg;
+        border: none;
+        padding: 0;
+        // Prevent flex-shrink from collapsing width while height stays tall → oval shape
+        flex-shrink: 0;
+        transition: width 0.2s ease, height 0.2s ease, background-color 0.2s ease, opacity 0.2s ease;
+
+        &:hover {
+            background-color: $carousel-dot-hover-bg;
+        }
+
+        &--active {
+            width: 0.625rem;
+            height: 0.625rem;
+            background-color: $color-ikea-white;
+        }
+
+        &--overflow-near {
+            width: 0.3rem;
+            height: 0.3rem;
+            opacity: 0.7;
+        }
+
+        &--overflow-far {
+            width: 0.175rem;
+            height: 0.175rem;
+            opacity: 0.5;
+        }
+    }
+
+    &__counter {
+        padding: 0.25rem 0.75rem;
+        background-color: $carousel-counter-bg;
+        backdrop-filter: blur(0.625rem);
+        border-radius: 62.4375rem;
+    }
+
+    &__counter-text {
+        font-size: 0.8125rem;
+        font-weight: 600;
+        color: $color-ikea-white;
+    }
+
+    &__counter-separator {
+        opacity: 0.7;
+        margin: 0 0.0625rem;
+    }
+}

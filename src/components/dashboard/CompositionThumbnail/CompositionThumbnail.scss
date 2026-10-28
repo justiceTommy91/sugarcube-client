@@ -1,0 +1,168 @@
+@import 'style/colors';
+@import 'style/type';
+@import 'style/screen';
+@import 'style/zed';
+
+.CompositionThumbnail {
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 0.35rem 1rem color(default, border);
+    background-color: #fff;
+    border-radius: 0.5rem;
+    transition: all 0.25s ease;
+    // KLUDGE: fixes a bug in chrome where scaling causes text to blur slightly (see https://stackoverflow.com/a/43138551)
+    filter: blur(0px);
+
+    &:hover {
+        box-shadow: 0 0.35rem 1rem color(default, hint);
+        // Required to prevent tiny white borders showing up around the image due to subpixel rendering.
+        transform-style: preserve-3d;
+        transform: scale(1.02);
+    }
+
+    &.active {
+        z-index: zed(header);
+    }
+
+    &.failed {
+        cursor: not-allowed;
+    }
+
+    .thumbnailArea {
+        display: block;
+        position: relative;
+    }
+
+    .thumbnail {
+        border-radius: 0.25rem 0.25rem 0 0;
+        aspect-ratio: 16/10;
+        width: 100%;
+        object-fit: cover;
+
+        &.image--fallback {
+            padding-bottom: 0;
+            background-color: color(default, placeholder);
+        }
+
+        .image__icon {
+            width: 40px;
+            height: 40px;
+        }
+    }
+
+    .stateOverlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-color: #f6f6f6d4;
+        border-radius: 0.25rem 0.25rem 0 0;
+        gap: 0.5rem;
+
+        .BouncingBallLoader {
+            // overrides skapa
+            min-height: 0 !important;
+            height: 2rem !important;
+            width: 2rem;
+        }
+
+        .stateText {
+            @include body-md;
+            font-weight: 600;
+            color: $color-black;
+            text-align: center;
+        }
+    }
+
+    .numberOfDesigns {
+        @include body-sm;
+        font-weight: 600;
+        background-color: color(brand, secondaryText);
+        border-radius: 4px;
+        text-transform: lowercase;
+
+        position: absolute;
+        padding: 0.25rem 0.5rem;
+        top: 1rem;
+        right: 1rem;
+        z-index: zed(above);
+
+        svg {
+            margin-right: 0.375rem;
+            max-height: 1.25rem;
+        }
+    }
+
+    .contentArea {
+        display: flex;
+    }
+
+    .descriptionArea {
+        padding: 1rem 0 1rem 1rem;
+        flex: 1;
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        flex-direction: column;
+        width: 100%;
+
+        p {
+            @include body-md;
+            color: color(cta, primary);
+            font-weight: bold;
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            text-align: left;
+            margin-bottom: 0.5rem;
+
+            @include mob {
+                max-width: 8rem;
+            }
+
+            @include sm {
+                max-width: 8rem;
+            }
+
+            @include md {
+                max-width: 10rem;
+            }
+
+            @include lg {
+                max-width: 15rem;
+            }
+        }
+
+        .date,
+        .errorMessage {
+            @include font-caption;
+            display: flex;
+            align-items: center;
+            color: $color-gray-700;
+            font-weight: bold;
+        }
+        .errorMessage {
+            text-align: start;
+        }
+        .errorTriangle {
+            fill: color(default, error);
+        }
+    }
+
+    .actionArea {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 1rem;
+        border-left: 1px solid rgba(0, 0, 0, 0.02);
+        cursor: auto;
+        position: relative;
+    }
+}

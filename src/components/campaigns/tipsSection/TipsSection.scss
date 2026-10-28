@@ -1,0 +1,64 @@
+@import 'style/colors';
+@import 'style/type';
+@import 'style/screen';
+
+.TipsSection {
+    .header {
+        margin-bottom: 2rem;
+    }
+
+    .card {
+        margin-bottom: 2rem;
+        display: flex;
+        justify-content: space-between;
+        column-gap: 4rem;
+
+        @include md {
+            &:nth-child(2n) {
+                flex-direction: row;
+            }
+
+            &:nth-child(2n + 1) {
+                flex-direction: row-reverse;
+            }
+        }
+
+        .content-card {
+            background-color: white;
+            padding: 1rem 0;
+            padding-left: 0 !important;
+            justify-content: center;
+
+            .content-card__title {
+                text-decoration: none !important;
+
+                @include lg {
+                    max-width: 65%;
+                }
+            }
+
+            @include sm {
+                padding: 2rem;
+            }
+
+            @include md {
+                width: 49%;
+            }
+
+            .content-card__container {
+                max-width: unset;
+            }
+        }
+
+        .card__media {
+            @include md {
+                width: 49%;
+            }
+        }
+    }
+    &.isNonUSMarket {
+        .content-card__footer {
+            display: none;
+        }
+    }
+}

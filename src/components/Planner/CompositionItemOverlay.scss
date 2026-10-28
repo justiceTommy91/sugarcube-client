@@ -1,0 +1,21 @@
+@import 'style/colors';
+@import 'style/type';
+@import 'style/zed';
+
+.DeleteIcon {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  pointer-events: all;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #333;
+  border: none;
+  transform: translate(-50%, -50%);
+}
+
+.TrashCanIcon {
+  fill: #b7b7b7;
+}

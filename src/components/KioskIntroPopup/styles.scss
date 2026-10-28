@@ -1,0 +1,104 @@
+@import 'style/colors';
+@import 'style/type';
+
+.KioskIntroPopup {
+    .kioskPromptBody {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        .prompt__content-wrapper {
+            width: 71.25rem;
+            max-width: 71.25rem;
+            height: 52.5rem;
+            max-height: 52.5rem;
+            padding: 4.75rem 0;
+            text-align: center;
+            background-color: color(cta, brandDarker);
+            background-image: url('#{$PATH-PREFIX}/images/kiosk/blueAndYellow.svg');
+            background-repeat: no-repeat;
+            background-position: right;
+            color: color(brand, secondaryText);
+            h2 {
+                @include heading-xl;
+                font-weight: 700;
+            }
+            p {
+                @include heading-sm;
+                font-weight: normal;
+            }
+            .kioskIntroFooter {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                button.dismissButton {
+                    @include heading-md;
+                    font-weight: 700;
+                    background-color: color(brand, secondaryText);
+                    color: color(brand, primaryForeground);
+                    max-width: 30rem;
+                    .btn__inner {
+                        border: none;
+                        padding: 1rem 0;
+                    }
+                }
+            }
+            .steps {
+                position: relative;
+                padding: 3rem;
+                .iconWrapper {
+                    background-color: color(brand, secondaryText);
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    border-radius: 50%;
+                    width: 6rem;
+                    height: 6rem;
+                    .Icon {
+                        background-color: color(brand, secondaryText);
+                        border: solid 6px color(cta, brandDarker);
+                        border-radius: 50%;
+                        padding: 0.75rem !important;
+                        svg {
+                            width: 2rem;
+                            height: 2rem;
+                            fill: color(default, foreground);
+                        }
+                    }
+                }
+                .stepText {
+                    margin-top: 0.5rem;
+                }
+                .stepOne {
+                    position: absolute;
+                    left: 30rem;
+                    top: 2rem;
+                }
+                .stepTwo {
+                    position: absolute;
+                    left: 39rem;
+                    top: 12.5rem;
+                    .iconWrapper .Icon {
+                        padding: 1.1rem;
+                    }
+                }
+                .stepThree {
+                    position: absolute;
+                    left: 19.5rem;
+                    top: 17.5rem;
+                }
+                .arcOne {
+                    position: absolute;
+                    left: 36.5rem;
+                    top: 4.5rem;
+                }
+                .arcTwo {
+                    position: absolute;
+                    top: 16rem;
+                    left: 25rem;
+                }
+            }
+        }
+    }
+}

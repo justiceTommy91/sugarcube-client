@@ -1,0 +1,35 @@
+@import 'style/colors';
+@import 'style/type';
+
+.UpptackaSummaryPanelItem {
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid $color-gray;
+    border-radius: 0.5rem;
+    padding: 2rem;
+
+    .UpptackaSummaryPanelItem__info {
+        display: flex;
+        flex-direction: column;
+        .UpptackaSummaryPanelItem__name {
+            font-weight: bold;
+            font-size: 1.25rem;
+            line-height: 1;
+            margin-bottom: 0.25rem;
+        }
+        .UpptackaSummaryPanelItem__description {
+            font-size: 1.25rem;
+            line-height: 1.75rem;
+            width: 20.5625rem;
+        }
+        .UpptackaSummaryPanelItem__price {
+            margin-top: 0.75rem;
+        }
+    }
+    .UpptackaSummaryPanelItem__checkbox {
+        .checkbox__symbol {
+            transform-origin: top;
+            transform: scale(1.5);
+        }
+    }
+}

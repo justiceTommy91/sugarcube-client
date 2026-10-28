@@ -1,0 +1,36 @@
+@import 'style/colors';
+@import './z-indices';
+
+.KreativLiteViewer__page {
+    // Full-viewport flex column — canvas takes its natural height, bottom area fills the rest.
+    height: 100dvh;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    color: color(default, foreground);
+}
+
+// Zero-specificity color reset scoped to the kreativ-lite page.
+//
+// iOS Safari's UA stylesheet sets color: -webkit-link (blue) on <button> and <a>, which
+// overrides inherited color. `color: inherit` beats the UA (author origin always wins) but
+// must not conflict with Skapa component class selectors like .btn--primary { color: white }.
+//
+// Wrapping the scope in :where() zeroes its specificity contribution (0,0,0), so any Skapa
+// class selector (0,1,0) wins. Without :where(), the compiled selector
+// `.KreativLiteViewer__page *` has specificity (0,1,0) — a tie with Skapa's classes — and
+// our later-loaded stylesheet would incorrectly override their colors.
+:where(.KreativLiteViewer__page) {
+    *,
+    *::before,
+    *::after {
+        color: inherit;
+    }
+}
+
+.KreativLiteViewer__menu-btn {
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    z-index: $z-viewer-controls;
+}

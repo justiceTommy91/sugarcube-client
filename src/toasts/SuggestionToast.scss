@@ -1,0 +1,5 @@
+@import 'style/zed';
+
+.SuggestionToast {
+    z-index: zed(toast);
+}

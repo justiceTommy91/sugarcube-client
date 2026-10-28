@@ -1,0 +1,134 @@
+{
+  "find-my-fit": {
+    "actions": {
+      "takePhoto": "Ta ett foto",
+      "uploadPhoto": "Ladda upp ett foto"
+    },
+    "chooseSample": {
+      "scene_0": "Avkopplande skrymslen",
+      "scene_1": "Stämningsfull hörna",
+      "title": "Välj ett utfallsrum för att prova"
+    },
+    "csat": {
+      "bad": "Dålig",
+      "cancel": "Avbryt",
+      "describeIt": "Vänligen berätta mer",
+      "dissatisfied": "Missnöjd",
+      "good": "Bra",
+      "goodOrBad": "Tack! Vi vill gärna veta varför du valde det. Vad utmärkte sig i upplevelsen, positivt eller negativt?",
+      "neutral": "Neutral",
+      "privacyText": "Värna om din integritet genom att inte inkludera personlig information (t.ex. e-post, telefon).",
+      "ratingDescription": "Din feedback kommer att hjälpa oss att förbättra upplevelsen.",
+      "satisfied": "Nöjd",
+      "submit": "Skicka",
+      "title": "Hur är din upplevelse?"
+    },
+    "hero": {
+      "imageAlt": "Hylla",
+      "subtitle": "Lägg till ett foto för att få rekommendationer.",
+      "title": "Hitta förvaring som passar ditt utrymme"
+    },
+    "landing": {
+      "actions": {
+        "addPhoto": "Lägg till ett foto",
+        "takePhoto": "Ta ett foto",
+        "trySampleSpace": "Prova ett exempelrum",
+        "uploadPhoto": "Ladda upp ett foto"
+      },
+      "comingSoon": {
+        "appStoreBadgeAlt": "Ladda ner på App Store",
+        "designOnDesktop": "Design på skrivbord",
+        "getApp": "Skaffa IKEA appen för att designa ett utrymme",
+        "googlePlayBadgeAlt": "Hämta den på Google Play",
+        "kreativLink": "IKEA Kreativ länk",
+        "linkCopied": "Länk kopierad",
+        "title": "Den här funktionen kommer snart!"
+      },
+      "features": {
+        "compare": {
+          "title": "Svep för att snabbt jämföra alternativ"
+        },
+        "intro": {
+          "title": "Att handla förvaring är enkelt med Find My Fit"
+        },
+        "save": {
+          "title": "Favoritmarkera artiklar och hitta “den rätta”"
+        },
+        "setArea": {
+          "title": "Rita ditt målområde"
+        }
+      },
+      "hero": {
+        "genericCategory": "lagring",
+        "imageAlt": "Bilder på förvaringsartiklar",
+        "privacyNote": "Ladda inte upp bilder med personer, personuppgifter eller privata föremål. Läs mer i vår <1>integritetspolicy</1>.",
+        "subtitle": "Använd ett foto och bläddra igenom stilar för {{subject}} för att passa ett specifikt område",
+        "title": "Hitta förvaring som passar ditt utrymme",
+        "videoAlt": "Demonstration av funktionen Hitta min storlek"
+      },
+      "page": {
+        "description": "Ladda upp ett foto för att handla hyllor du har tittat på, så att du får rätt utseende och passform utan gissningar.",
+        "title": "Hitta min passform"
+      },
+      "sampleSpaces": {
+        "error": "Något gick fel. Försök igen.",
+        "title": "Välj ett exempelrum"
+      }
+    },
+    "loginPrompt": {
+      "body": "För att få lagringsrekommendationer för ditt utrymme, logga in eller skapa ett gratis IKEA-konto.",
+      "logIn": "Logga in",
+      "signUp": "Registrera dig",
+      "title": "Logga in för att ladda upp ett foto"
+    },
+    "page": {
+      "description": "Hitta den perfekta passformen för ditt hem med IKEA",
+      "title": "Hitta min passform"
+    },
+    "toasts": {
+      "unableToFavorite": "Vi är ledsna, men vi kunde inte lägga till din artikel på listan."
+    },
+    "viewer": {
+      "accessibilityDescription": "Find My Fit använder ett foto av ditt utrymme för att rekommendera IKEA-produkter som passar det valda området. Ritning och visuell interaktion kan vara utmanande för personer med synnedsättning eller låg vision. Produktinformation, priser och köpåtgärder är fullt tillgängliga när resultaten visas.",
+      "addToBag": "Lägg till i väskan",
+      "adjustHeader": "Justera ditt sökområde",
+      "clearDrawing": "Rensa ritning",
+      "confirmDimension": "Bekräfta dimension",
+      "continue": "Fortsätt",
+      "continueAriaLabel": "Fortsätt till nästa steg",
+      "decreaseDimension": "Minska dimension",
+      "dimDepth": "Djup",
+      "dimHeight": "Höjd",
+      "dimWidth": "Bredd",
+      "done": "Gjort",
+      "doneAriaLabel": "Redigering klar",
+      "drawFocusArea": "Rita ditt önskade fokusområde",
+      "drawingHeader": "Var vill du ha ditt förråd?",
+      "editArea": "Redigeringsområde",
+      "fewResultsToast": "Försök att ändra storleken på ditt sökområde för att få fler resultat.",
+      "goBack": "Gå tillbaka",
+      "goToImage": "Gå till bilden {{index}}",
+      "increaseDimension": "Öka dimension",
+      "magicEraser": "Magisk suddgummi",
+      "noResults": "Inga produkter hittades för detta utrymme.",
+      "noResultsButton": "Inga resultat hittades",
+      "noResultsTitle": "Inga resultat hittades",
+      "removedFromFavorites": "Borttagen från favoriter",
+      "removeFavorite": "Ta bort från favoriter",
+      "retrySearch": "Försök igen",
+      "savedToFavorites": "Sparad i favoriter",
+      "saveFavorite": "Spara som favorit",
+      "search": "Sök",
+      "searchError": "Inga matchande produkter hittades. Försök att rita ett annat område.",
+      "searchErrorToast": "Något gick fel. Försök igen.",
+      "searching": "Söker...",
+      "seeAllResults": "Visa alla resultat",
+      "showMoreDetails": "Visa fler detaljer",
+      "swipeForMore": "Svep för mer",
+      "tapToSelect": "Tryck för att välja objekt",
+      "tryAgain": "Försök igen",
+      "viewResults_one": "Visa {{count}} resultat",
+      "viewResults_other": "Visa {{count}} resultat"
+    }
+  }
+}

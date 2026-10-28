@@ -1,0 +1,247 @@
+@import 'style/colors';
+@import 'style/type';
+@import 'style/zed';
+@import 'style/screen';
+
+$hero-height: 70vh;
+$header-height: 5.5rem;
+
+.Hero {
+    .heroContainer {
+        min-height: $hero-height;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        position: relative;
+        overflow-x: clip;
+        background-image: url('#{$PATH-PREFIX}/images/aboutPageAssets/hero.jpg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+
+        @include mob {
+            background-image: none;
+        }
+
+        .heroImage {
+            display: none;
+
+            @include mob {
+                width: 100vw;
+                display: inline;
+                position: relative;
+                margin-top: 0;
+            }
+        }
+
+        .heroText {
+            z-index: zed(above);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+
+            .ikeaKreativ {
+                @include heading-md;
+                color: color(brand, secondaryText);
+                display: flex;
+                font-weight: 700;
+                align-items: center;
+                margin-bottom: 1.875rem;
+
+                @include md {
+                    @include heading-lg;
+                }
+
+                @include lg {
+                    margin-bottom: 1rem;
+                }
+
+                .paintBrushIcon {
+                    height: 2rem;
+                    width: 2rem;
+                    margin-right: 0.875rem;
+                }
+            }
+
+            .heroTagline {
+                color: color(brand, secondaryText);
+                font-weight: 700;
+                font-size: 2rem;
+                margin: inherit 2rem;
+                margin-bottom: 2.25rem;
+                line-height: 3rem;
+
+                @include md {
+                    font-size: 3rem;
+                }
+
+                @include lg {
+                    font-size: 4rem;
+                    line-height: 5.25rem;
+                    margin-bottom: 2.25rem;
+                }
+            }
+
+            .heroPlayIcon {
+                margin-right: 0.5rem;
+            }
+        }
+
+        @include mob {
+            justify-content: flex-start;
+            min-height: 0;
+
+            .heroImage {
+                position: relative;
+                margin-top: 0;
+            }
+
+            .heroText {
+                z-index: zed(above);
+                color: color(cta, primary);
+                margin-top: 2.5rem;
+                margin-bottom: 3.75rem;
+
+                .ikeaKreativ {
+                    @include heading-sm;
+                    align-items: center;
+                    margin-bottom: 0;
+                }
+
+                .heroTagline {
+                    font-weight: 700;
+                    font-size: 1.5rem;
+                    line-height: 2.175rem;
+                    text-align: center;
+                    margin: 1.5rem 5rem;
+                }
+
+                .paintBrushIcon,
+                .heroPlayIcon {
+                    margin-right: 0.5938rem;
+                }
+
+                button {
+                    border: 1px solid color(default, foreground);
+                }
+            }
+        }
+    }
+
+    .videoModal {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .theatreModal {
+            background-color: color(default, foreground);
+            align-self: center;
+            justify-self: center;
+            position: relative;
+            padding: 0 4rem 4.5rem 4rem;
+            overflow-x: clip;
+            top: 0;
+
+            @include mob {
+                padding: 0 1rem 1.5rem 1rem;
+            }
+
+            .learnMoreVideo {
+                display: flex;
+                justify-content: center;
+                max-height: 90vh;
+                video {
+                    width: 100%;
+                    height: auto;
+                }
+            }
+
+            // Overrides
+            .modal-header {
+                background-color: color(default, foreground);
+                height: $header-height;
+                padding: 1rem;
+
+                @include mob {
+                    background-color: transparent;
+                }
+            }
+
+            .theatre__content-wrapper {
+                overflow-x: clip;
+            }
+        }
+    }
+
+    &.isMobile {
+        .heroImage {
+            position: relative;
+            margin-top: 0;
+        }
+
+        .heroText {
+            z-index: zed(above);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            color: color(cta, primary);
+            margin-top: 2.5rem;
+            margin-bottom: 3.75rem;
+
+            .ikeaKreativ {
+                @include heading-sm;
+                color: color(cta, primary);
+                display: flex;
+                font-weight: 700;
+                font-size: 1.25rem;
+                align-items: center;
+                margin-bottom: 0;
+
+                .paintBrushIcon {
+                    height: 2rem;
+                    width: 2rem;
+                    margin-right: 0.875rem;
+                }
+
+                &.morpheusHeroText {
+                    color: color(brand, secondaryText);
+                }
+            }
+
+            .heroTagline {
+                color: color(cta, primary);
+                font-weight: 700;
+                font-size: 1.75rem;
+                line-height: 2.175rem;
+                text-align: center;
+                margin: 1.5rem 4rem;
+
+                &.morpheusHeroText {
+                    color: color(brand, secondaryText);
+                }
+            }
+
+            .paintBrushIcon,
+            .heroPlayIcon {
+                margin-right: 0.5938rem;
+            }
+
+            button {
+                width: 85vw;
+            }
+
+            @media screen and (min-width: 320px) and (max-width: 1000px) and (orientation: landscape) {
+                .ikeaKreativ,
+                .heroTagline {
+                    color: color(brand, secondaryText);
+                }
+            }
+        }
+        .videoModal div:nth-child(3) {
+            height: 100%;
+        }
+    }
+}

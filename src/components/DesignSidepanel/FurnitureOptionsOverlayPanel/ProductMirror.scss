@@ -1,0 +1,61 @@
+@import 'style/type';
+@import 'style/colors';
+
+.ProductMirror {
+    display: flex;
+    justify-content: space-between;
+    padding-inline: 1.5rem;
+
+    &.hasLongStrings {
+        flex-direction: column;
+    }
+
+    .ProductMirror__header {
+        @include body-lg;
+        font-weight: 600;
+        display: flex;
+        align-items: center;
+    }
+
+    .ProductMirror__choices {
+        display: flex;
+    }
+}
+
+.SegmentedButton {
+    @include body-lg;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    padding: 0.25rem;
+    border: solid 1px color(default, border);
+    position: relative;
+
+    & > input[type='radio'] {
+        position: absolute;
+        opacity: 0;
+        inset: 0;
+        cursor: pointer;
+
+        &:checked {
+            cursor: default;
+        }
+    }
+
+    &:first-of-type {
+        border-start-start-radius: 0.25rem;
+        border-end-start-radius: 0.25rem;
+        margin-inline-end: -0.5px;
+    }
+
+    &:last-of-type {
+        border-start-end-radius: 0.25rem;
+        border-end-end-radius: 0.25rem;
+        margin-inline-start: -0.5px;
+    }
+
+    &:has(> :checked) {
+        border: solid 1px color(default, info);
+        z-index: 1;
+    }
+}

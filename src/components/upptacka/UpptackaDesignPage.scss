@@ -1,0 +1,33 @@
+@import 'style/colors';
+
+.UpptackaDesignPage {
+    position: relative;
+    max-height: 100vh;
+    overflow: hidden;
+    display: flex;
+    height: 100vh;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    // hide cookies banner as anonymous sessions on IKEA kiosks don't require consent
+    // hide chatbot button that is injected by markets
+    #onetrust-consent-sdk,
+    #onetrust-banner-sdk,
+    #syndeo-chatbot-start-chat-button {
+        display: none;
+    }
+    .UpptackaDesignPage__PreviewContainer {
+        flex-grow: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-color: color(default, backgroundPreview);
+    }
+    .PreviewContainer {
+        width: 100%;
+        flex-grow: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+}

@@ -1,0 +1,21 @@
+.ProductList {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+
+    .ProductList__product {
+        min-inline-size: 0;
+    }
+
+    &.ProductList_empty {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 20rem;
+    }
+
+    &.isUpptacka {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 4rem 1rem;
+    }
+}

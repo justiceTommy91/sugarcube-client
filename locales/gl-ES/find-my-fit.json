@@ -1,0 +1,134 @@
+{
+  "find-my-fit": {
+    "actions": {
+      "takePhoto": "Fai unha foto",
+      "uploadPhoto": "Subir unha foto"
+    },
+    "chooseSample": {
+      "scene_0": "Recuncho relaxante",
+      "scene_1": "Rincón malhumorado",
+      "title": "Escolle un espazo de mostra para probalo"
+    },
+    "csat": {
+      "bad": "Malo",
+      "cancel": "Cancelar",
+      "describeIt": "Por favor, cóntanos máis.",
+      "dissatisfied": "Insatisfeito/a",
+      "good": "Bo",
+      "goodOrBad": "Grazas! Encantaríanos saber por que escolliches iso. Que foi o que máis destacaches da experiencia, o bo ou o malo?",
+      "neutral": "Neutro",
+      "privacyText": "Para protexer a túa privacidade, evita incluír información persoal (por exemplo, o teu correo electrónico ou teléfono).",
+      "ratingDescription": "Os teus comentarios axudaranos a mellorar a experiencia.",
+      "satisfied": "Satisfeito/a",
+      "submit": "Enviar",
+      "title": "Como é a túa experiencia?"
+    },
+    "hero": {
+      "imageAlt": "Estantes",
+      "subtitle": "Engade unha foto para obter recomendacións.",
+      "title": "Atopa almacenamento que se adapte ao teu espazo"
+    },
+    "landing": {
+      "actions": {
+        "addPhoto": "Engadir unha foto",
+        "takePhoto": "Fai unha foto",
+        "trySampleSpace": "Probar un espazo de mostras",
+        "uploadPhoto": "Subir unha foto"
+      },
+      "comingSoon": {
+        "appStoreBadgeAlt": "Descargar na App Store",
+        "designOnDesktop": "Deseño no escritorio",
+        "getApp": "Obtén a aplicación IKEA para deseñar un espazo",
+        "googlePlayBadgeAlt": "Conségueo en Google Play",
+        "kreativLink": "Ligazón de IKEA Kreativ",
+        "linkCopied": "Ligazón copiada",
+        "title": "Esta función estará dispoñible en breve!"
+      },
+      "features": {
+        "compare": {
+          "title": "Desliza o dedo para comparar rapidamente as opcións"
+        },
+        "intro": {
+          "title": "Mercar espazo de almacenamento é doado con Find My Fit"
+        },
+        "save": {
+          "title": "Elementos favoritos e atopa \"o ideal\""
+        },
+        "setArea": {
+          "title": "Debuxa a túa área obxectivo"
+        }
+      },
+      "hero": {
+        "genericCategory": "almacenamento",
+        "imageAlt": "Imaxes de elementos de almacenamento",
+        "privacyNote": "Non cargues imaxes con persoas, datos persoais ou artigos privados. Atoparás máis información na nosa <1>política de privacidade</1>.",
+        "subtitle": "Usa unha foto e percorre os estilos de {{subject}} para adaptarse a unha área específica",
+        "title": "Atopa almacenamento que se adapte ao teu espazo",
+        "videoAlt": "Demostración da función Atopar o meu axuste"
+      },
+      "page": {
+        "description": "Sube unha foto para mercar as estanterías que estabas a explorar, para conseguir o aspecto e o axuste axeitados, sen ter que adiviñar.",
+        "title": "Atopa a miña talla"
+      },
+      "sampleSpaces": {
+        "error": "Algo foi mal. Téntao de novo.",
+        "title": "Escolle un espazo de mostras"
+      }
+    },
+    "loginPrompt": {
+      "body": "Para obter recomendacións de almacenamento para o teu espazo, inicia sesión ou crea unha conta IKEA gratuíta.",
+      "logIn": "Iniciar sesión",
+      "signUp": "Rexístrate",
+      "title": "Inicia sesión para subir unha foto"
+    },
+    "page": {
+      "description": "Atopa o axuste perfecto para a túa casa con IKEA",
+      "title": "Atopa a miña talla"
+    },
+    "toasts": {
+      "unableToFavorite": "Sentímolo, pero non puidemos engadir o teu elemento á lista."
+    },
+    "viewer": {
+      "accessibilityDescription": "Find My Fit usa unha foto do teu espazo para recomendar produtos IKEA que se axusten á zona escollida. O debuxo e a interacción visual poden resultar complicados para as persoas con discapacidade visual ou baixa visión. Os detalles do produto, os prezos e as accións de compra son totalmente accesibles unha vez que se mostran os resultados.",
+      "addToBag": "Engadir á cesta",
+      "adjustHeader": "Axusta a túa área de busca",
+      "clearDrawing": "Debuxo claro",
+      "confirmDimension": "Confirmar dimensión",
+      "continue": "Continuar",
+      "continueAriaLabel": "Continuar ao seguinte paso",
+      "decreaseDimension": "Reducir dimensión",
+      "dimDepth": "Profundidade",
+      "dimHeight": "Altura",
+      "dimWidth": "Largura",
+      "done": "Feito",
+      "doneAriaLabel": "Rematada a edición",
+      "drawFocusArea": "Debuxa a área de enfoque desexada",
+      "drawingHeader": "Onde queres o teu almacenamento?",
+      "editArea": "Editar área",
+      "fewResultsToast": "Tenta cambiar o tamaño da túa área de busca para obter máis resultados.",
+      "goBack": "Volver atrás",
+      "goToImage": "Ir á imaxe {{index}}",
+      "increaseDimension": "Aumentar dimensión",
+      "magicEraser": "Borrador máxico",
+      "noResults": "Non se atoparon produtos para este espazo.",
+      "noResultsButton": "Non se atoparon resultados",
+      "noResultsTitle": "Non se atoparon resultados",
+      "removedFromFavorites": "Eliminado dos favoritos",
+      "removeFavorite": "Eliminar dos favoritos",
+      "retrySearch": "Téntao de novo",
+      "savedToFavorites": "Gardado nos favoritos",
+      "saveFavorite": "Gardar en favoritos",
+      "search": "Buscar",
+      "searchError": "Non se atoparon produtos coincidentes. Tenta debuxar unha área diferente.",
+      "searchErrorToast": "Algo fallou. Téntao de novo.",
+      "searching": "Buscando...",
+      "seeAllResults": "Ver todos os resultados",
+      "showMoreDetails": "Mostrar máis detalles",
+      "swipeForMore": "Desliza para ver máis",
+      "tapToSelect": "Toca para seleccionar o elemento",
+      "tryAgain": "Téntao de novo",
+      "viewResults_one": "Vista {{count}} resultado",
+      "viewResults_other": "Vista {{count}} resultados"
+    }
+  }
+}

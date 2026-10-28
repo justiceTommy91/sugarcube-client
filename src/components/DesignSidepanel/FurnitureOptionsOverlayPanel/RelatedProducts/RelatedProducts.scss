@@ -1,0 +1,93 @@
+@import 'style/dimensions';
+@import 'style/colors';
+@import 'style/type';
+
+.RelatedProducts {
+    position: relative;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    // Ensure that scrolling the sidepanel can keep the related products in full-view.
+    min-block-size: calc(100vh - $topbar-height);
+    gap: 2rem;
+    padding: 1rem 1.5rem;
+
+    // When there's no content, don't take up vertical space
+    &.RelatedProducts--no-content {
+        min-block-size: 0;
+        padding: 0;
+        flex: 0;
+    }
+
+    .RelatedProducts__headline {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        padding-inline: 0;
+        min-block-size: 3rem;
+    }
+
+    [role='tabpanel'] {
+        &:not([hidden]) {
+            display: block;
+        }
+
+        &::focus-visible {
+            outline: 1px solid color(default, foreground);
+            outline-offset: -1px;
+        }
+    }
+
+    .RelatedProducts__undoSwapButton {
+        inline-size: fit-content;
+        position: sticky;
+        inset: auto auto 1rem 100%;
+        color: #fff;
+
+        & > span > span > button {
+            cursor: pointer;
+            position: relative;
+
+            svg {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                position: absolute;
+                top: -1rem;
+                right: -1rem;
+                padding: 0.375rem;
+                width: 2rem;
+                height: 2rem;
+                color: color(default, background);
+                background-color: #111111bf;
+                border-radius: 50%;
+            }
+
+            & > img {
+                background-color: color(default, background);
+                width: 4.375rem;
+                height: 4.375rem;
+                padding: 0.25rem;
+                border: 2px solid color(default, border);
+                border-radius: 0.25rem;
+                box-shadow: 0px 4px 16px 0px rgba(0, 0, 0, 0.1);
+            }
+        }
+    }
+
+    &.isUpptacka {
+        border: none;
+        padding: 0;
+        min-block-size: unset;
+        .RelatedProducts__headline {
+            @include body-xl;
+        }
+
+        .RelatedProducts__undoSwapButton {
+            position: sticky;
+            width: fit-content;
+            left: 100%;
+            bottom: 0;
+        }
+    }
+}

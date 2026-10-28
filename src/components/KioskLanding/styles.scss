@@ -1,0 +1,72 @@
+@import 'style/colors';
+@import 'style/type';
+@import 'style/zed';
+
+.KioskLanding {
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    position: relative;
+    .compSelectionModal {
+        position: relative;
+        top: 0;
+        left: 0;
+        z-index: zed(above);
+    }
+    .pickRoomType {
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        &:first-of-type {
+            margin-right: 4rem;
+        }
+        .roomImage {
+            position: relative;
+            width: 100%;
+            top: 0;
+            left: 0;
+        }
+        .textSection {
+            position: absolute;
+            bottom: 1.5rem;
+            left: 1rem;
+            padding: 4rem;
+            background-color: transparent;
+            color: color(default-invert, foreground);
+            width: 35.5rem;
+            .smallText {
+                @include heading-sm;
+                font-weight: 700;
+                margin-bottom: 0.5rem;
+            }
+            .heading {
+                @include heading-xxl;
+                font-weight: 700;
+                margin-bottom: 0.5rem;
+            }
+            .subheading {
+                @include heading-md;
+                margin-bottom: 1.5rem;
+            }
+            .cta {
+                @include heading-md;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-weight: 700;
+                width: 20rem;
+                background-color: color(default, background);
+                color: color(default, foreground);
+                border-radius: 3.125rem;
+                padding: 1rem 0;
+                border: solid 0.5px color(default, border);
+                svg {
+                    margin-left: 1rem;
+                }
+            }
+        }
+    }
+}

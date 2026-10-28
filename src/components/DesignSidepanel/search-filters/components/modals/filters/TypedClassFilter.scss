@@ -1,0 +1,23 @@
+@import 'style/colors';
+
+.TypedClassFilter {
+    &__typeGroup {
+        &:not(:last-child) {
+            margin-bottom: 1rem;
+        }
+    }
+
+    &__typeHeader {
+        padding: 0.5rem 0;
+        margin-bottom: 0.5rem;
+        font-weight: 600;
+        font-size: 0.875rem;
+        color: $color-black;
+    }
+
+    &__typeValues {
+        display: flex;
+        flex-direction: column;
+        gap: 0.25rem;
+    }
+}

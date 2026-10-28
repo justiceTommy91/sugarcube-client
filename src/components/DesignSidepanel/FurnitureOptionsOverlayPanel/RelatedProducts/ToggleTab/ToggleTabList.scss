@@ -1,0 +1,11 @@
+@import 'style/colors';
+
+.ToggleTabList {
+    display: flex;
+    justify-content: center;
+    inline-size: fit-content;
+    margin-inline: auto;
+    padding: 0.25rem;
+    background-color: color(default, backgroundAlt);
+    border-radius: 2rem;
+}

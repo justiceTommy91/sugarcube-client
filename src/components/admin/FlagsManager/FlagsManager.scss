@@ -1,0 +1,93 @@
+@import 'style/type';
+@import 'style/colors';
+@import 'style/zed';
+
+.FlagsManagerButton {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    z-index: zed(adminWidgets);
+    opacity: 0;
+    transition: opacity 0.25s ease;
+    background-color: color(default, background);
+    &:hover {
+        opacity: 1;
+        pointer-events: auto;
+    }
+}
+
+.FlagsManagerPrompt {
+    .prompt__content-wrapper {
+        max-width: none;
+        min-width: 31rem;
+
+        .prompt__content {
+            padding: 0 2rem 2rem;
+
+            .prompt__heading {
+                display: none;
+            }
+
+            .title {
+                font-size: 1.25rem;
+                border-bottom: 1px solid #aaa;
+                margin-top: 1rem;
+                margin-bottom: 0.5rem;
+                padding-bottom: 0.5rem;
+                display: flex;
+
+                .text {
+                    flex: 1;
+                }
+                svg {
+                    font-size: 1rem;
+                }
+            }
+
+            .feature,
+            .experiment {
+                @include body-lg;
+            }
+
+            .flagsRow {
+                display: flex;
+                flex-direction: row;
+                margin-top: 1rem;
+                align-items: center;
+            }
+
+            .experimentsRow {
+                display: flex;
+                flex-direction: column;
+                margin-top: 1rem;
+            }
+
+            .toggle {
+                margin-right: 2rem;
+            }
+
+            .experimentItem {
+                @include body-lg;
+            }
+
+            .resetFlags,
+            .resetExperiments {
+                margin-top: 1rem;
+            }
+
+            .referrerContainer {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                margin-top: 0.5rem;
+
+                .updateButton {
+                    margin-top: 0.5rem;
+                }
+                .referrerInput {
+                    width: 100%;
+                }
+            }
+        }
+    }
+}

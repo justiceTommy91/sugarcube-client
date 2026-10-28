@@ -1,0 +1,20 @@
+.UpptackaDesignTipsHeader {
+    display: flex;
+    justify-content: space-between;
+    padding: 2.75rem 4rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    .UpptackaDesignTipsHeader__slide-buttons {
+        display: flex;
+        gap: 1rem;
+    }
+    span {
+        font-size: 1.25rem;
+    }
+    .btn__inner {
+        height: 100%;
+    }
+}

@@ -1,0 +1,75 @@
+@import 'style/type';
+@import 'style/colors';
+@import 'style/zed';
+
+.ExpertCheckSidePanel {
+    // needs to be above toast to cover the 'design saved' modal
+    z-index: zed(toast) + 1;
+    .sheets--small {
+        max-width: 33.25rem;
+    }
+    .modal-body {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 100%;
+        padding: 0 2.25rem;
+        .image {
+            width: 100%;
+            aspect-ratio: 460 / 312;
+            margin-bottom: 1.5rem;
+        }
+        .header {
+            @include heading-md;
+            color: color(default, info);
+            margin-bottom: 1.25rem;
+        }
+        .text {
+            @include body-lg;
+            color: color(default, info);
+            margin-bottom: 2rem;
+        }
+        .text-login-prompt {
+            @include body-lg;
+            color: color(default, info);
+            margin-bottom: 1rem;
+        }
+        .text-disclaimer {
+            @include body-sm;
+            color: color(default, description);
+            margin-top: 1.5rem;
+            margin-bottom: 2.5rem;
+        }
+        .text-warning {
+            @include body-sm;
+            line-height: 1.75;
+            color: color(default, error);
+        }
+        .consent-reminder {
+            display: flex;
+            align-items: flex-start;
+            gap: 0.5rem;
+            margin-bottom: 0.5rem;
+
+            svg {
+                width: 1.875rem;
+                height: 1.875rem;
+                margin-left: 0.125rem;
+            }
+            visibility: hidden;
+            &.visible {
+                visibility: visible;
+            }
+        }
+        .checkbox {
+            margin-bottom: 0.5rem;
+            .checkbox__label {
+                @include body-sm;
+                color: color(default, description);
+            }
+            .checkbox__symbol {
+                margin-top: 0.25rem;
+            }
+        }
+    }
+}

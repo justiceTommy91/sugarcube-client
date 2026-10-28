@@ -1,0 +1,49 @@
+@import 'style/type';
+@import 'style/colors';
+@import 'style/screen';
+
+.ChooseSampleSpace {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    padding: 3rem 0;
+    gap: 0.5rem;
+    h3.chooseSampleTitle {
+        @include heading-md;
+        margin-bottom: 1.5rem;
+        text-align: left;
+    }
+    .sceneOpenButton {
+        display: flex;
+        width: 100%;
+        border: 1px solid color(default, border);
+        border-radius: 0.25rem;
+        padding: 0.5rem;
+        cursor: pointer;
+        color: color(default, foreground);
+        .sceneImage {
+            width: 7.75rem;
+            padding: 0.5rem;
+            border-radius: 0.25rem;
+        }
+        .sceneName {
+            @include heading-sm;
+            margin-left: 1rem;
+            align-self: center;
+        }
+    }
+
+    @include skapa-l {
+        flex-direction: row;
+        flex-wrap: wrap;
+
+        h3.chooseSampleTitle {
+            width: 100%;
+        }
+        .sceneOpenButton {
+            flex: 1 1 calc(50% - 0.25rem);
+        }
+    }
+}

@@ -1,0 +1,117 @@
+@import 'style/colors';
+@import 'style/type';
+@import 'style/screen';
+
+.CsatSurvey {
+    &__modal {
+        // Mobile: slide up from bottom, no backdrop dimming.
+        &.modal-wrapper {
+            align-items: flex-end;
+            justify-content: center;
+            padding: 0;
+            overflow: hidden;
+        }
+
+        .modal-wrapper__backdrop--dark {
+            background: none;
+        }
+
+        .modal-wrapper__container {
+            width: 100%;
+            padding: 0;
+            margin: 0;
+        }
+
+        .prompt {
+            width: 100vw;
+            max-width: 100%;
+            margin: 0;
+            // The white background is on .prompt__content-wrapper, not .prompt.
+            // We must set it here too so the padding-bottom area is opaque.
+            background: rgb(var(--colour-elevation-2, 255, 255, 255));
+            // Extra bottom padding extends the drawer background over the
+            // product popover handle area that peeks out below.
+            padding-bottom: 4rem;
+            border-radius: 1rem 1rem 0 0;
+            box-shadow: 0 -4px 20px 0 rgba(0, 0, 0, 0.12);
+        }
+
+        .prompt__content-wrapper {
+            // Override Skapa's 31.5rem max-width so content fills the full width.
+            max-width: 100%;
+        }
+
+        // Desktop: anchor to bottom-right corner.
+        @include skapa-m {
+            &.modal-wrapper {
+                justify-content: flex-end;
+                padding-right: 2rem;
+                padding-bottom: 2rem;
+            }
+
+            .prompt {
+                width: auto;
+                max-width: 29.1875rem;
+                box-shadow: 0 6px 30px 0 rgba(0, 0, 0, 0.1);
+                border-radius: 1rem;
+            }
+        }
+    }
+
+    &__rating {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 1rem;
+    }
+
+    &__rating-item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 0.5rem;
+    }
+
+    &__rating-label {
+        @include body-sm;
+        color: color(default, description);
+    }
+
+    &__rating-instruction {
+        @include body-sm;
+        color: color(default, description);
+        margin-top: 0.5rem;
+        margin-bottom: 2rem;
+    }
+
+    .icon-pill--active {
+        color: color(brand, secondaryText);
+        background: color(default, foreground);
+    }
+
+    &__anything-else {
+        @include body-md;
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+        margin-top: 1.5rem;
+        margin-bottom: 0.75rem;
+    }
+
+    &__char-count {
+        @include body-sm;
+        text-align: right;
+        color: color(default, description);
+        margin-top: 0.25rem;
+    }
+
+    .modal-footer {
+        display: flex;
+        justify-content: center;
+        padding-top: 0;
+
+        .btn {
+            max-width: 20rem;
+            width: 100%;
+        }
+    }
+}

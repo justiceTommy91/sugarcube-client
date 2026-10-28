@@ -1,0 +1,57 @@
+@import 'style/colors';
+@import 'style/type';
+@import 'style/zed';
+
+.ProductPin {
+    display: none;
+    position: absolute;
+    z-index: zed(productPin);
+    justify-content: center;
+    align-items: center;
+    pointer-events: all;
+    .outerDot {
+        position: absolute;
+        width: 2rem;
+        height: 2rem;
+        border-radius: 50%;
+        background-color: color(dot, overlayBackground);
+        .innerDot {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 0.75rem;
+            height: 0.75rem;
+            border-radius: 50%;
+            background-color: color(default, background);
+            transform: translate(-50%, -50%);
+        }
+    }
+    &:not(.mobileDot):hover,
+    &.revealDots {
+        z-index: zed(optionsMenu) + 1;
+
+        .outerDot {
+            border: solid 2px color(dot, overlayBorder);
+        }
+        .innerDot {
+            width: 0.5rem;
+            height: 0.5rem;
+            transition: width 250ms ease-in-out, height 250ms ease-in-out;
+        }
+    }
+    &.mobileDot {
+        display: flex;
+
+        // styles for pins for mobile web so that pin target is larger
+        .outerDotContainerForMobile {
+            height: 2rem;
+            width: 2rem;
+            position: absolute;
+            margin: 1rem;
+            background-color: transparent;
+        }
+    }
+    &.showPins {
+        display: flex;
+    }
+}

@@ -1,0 +1,87 @@
+@use 'style/typography' as *;
+@import 'style/colors';
+@import 'style/zed';
+@import 'style/type';
+
+.PAXCodeTooltip {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    z-index: zed(tooltip);
+
+    .btn__inner {
+        background-color: color(default, backgroundAlt);
+        margin-left: 0.5rem;
+    }
+}
+
+.PAXCodeTooltip__popover {
+    position: absolute;
+    top: calc(100% + 0.5rem);
+    right: calc(100% - 9rem);
+    z-index: zed(tooltip);
+    background-color: $color-black;
+    color: $color-white;
+    border-radius: 0.25rem;
+    padding: 1rem;
+    width: 16rem;
+    box-shadow: 0 0.25rem 1rem rgba(0, 0, 0, 0.24);
+}
+
+.PAXCodeTooltip__title {
+    @include heading-xs;
+    font-weight: bold;
+    margin: 0 0 1rem;
+    color: $color-white;
+}
+
+.PAXCodeTooltip__optionLabel {
+    font-weight: normal;
+    margin: 0 0 1rem;
+    color: $color-white;
+}
+
+.PAXCodeTooltip__optionBody {
+    @include caption-s;
+    margin: 0 0 1.25rem;
+    color: $color-white;
+
+    strong {
+        @include heading-xs;
+    }
+}
+
+.PAXCodeTooltip__steps {
+    @include caption-s;
+    list-style: decimal;
+    padding-left: 1.25rem;
+    margin: 0;
+    color: $color-white;
+    font-weight: normal;
+
+    li {
+        display: list-item;
+        padding: 0.375rem 0;
+
+        strong {
+            @include heading-xs;
+        }
+
+        .PAXCodeTooltip__stepRow {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 0.5rem;
+        }
+    }
+}
+
+.PAXCodeTooltip__icon {
+    width: 1.25rem;
+    height: 1.25rem;
+    flex-shrink: 0;
+
+    path {
+        fill: $color-white;
+    }
+}

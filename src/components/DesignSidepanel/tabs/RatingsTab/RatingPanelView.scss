@@ -1,0 +1,143 @@
+@import 'style/colors';
+@import 'style/zed';
+
+.RatingPanel {
+    height: 100%;
+    position: relative;
+
+    .ratingsHeader {
+        border-bottom: 2px solid rgb(226, 226, 226);
+        margin-bottom: 0.5rem;
+        align-items: baseline;
+        position: absolute;
+        top: 0;
+        left: 2rem;
+        right: 2rem;
+        padding-top: 1.5rem;
+        background-color: #fff;
+        z-index: zed(above);
+
+        h3 {
+            display: flex;
+            align-items: center;
+
+            svg {
+                margin-left: 1rem;
+            }
+        }
+        h5 {
+            flex: 1;
+            font-weight: 300;
+            font-size: 0.75rem;
+            color: #464646;
+        }
+        .loading {
+            height: 1rem;
+            width: 1rem;
+            animation: spinCW 2s linear infinite;
+        }
+        .autoDecorate {
+            position: absolute;
+            right: 0;
+            top: 2rem;
+            font-size: 2rem;
+        }
+    }
+    .ratings {
+        overflow: auto;
+        height: 100%;
+        padding: 4.5rem 2rem 0;
+
+        .loading {
+            padding-top: 8rem;
+            text-align: center;
+        }
+        .rating {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            font-size: 0.9rem;
+
+            .optionName {
+                display: block;
+                width: 18rem;
+                color: color(default, description);
+                flex: 1.5;
+            }
+            textarea {
+                width: 100%;
+                border-radius: 0.5rem;
+                border: 1px solid #8c8c8c;
+                margin-top: 0.25rem;
+                padding: 0.5rem;
+                font-family: sans-serif;
+                height: 6rem;
+            }
+            &.RATING {
+                padding-top: 1.5rem;
+
+                .optionName {
+                    font-weight: 600;
+                }
+                .StarRating .star {
+                    font-size: 1.3rem;
+                }
+            }
+            &.SEVERITY {
+                padding-bottom: 0.2rem;
+
+                .StarRating {
+                    .star {
+                        span {
+                            display: inline-block;
+                            padding: 0.15rem 0.5rem;
+                            margin-right: 0.5rem;
+                            font-size: 0.7rem;
+                            border: 1px solid #8c8c8c;
+                            border-radius: 0.25rem;
+                            color: #8c8c8c;
+                            line-height: 1.25em;
+                        }
+                        &.num-1 {
+                            span:before {
+                                content: 'Low';
+                            }
+                            &.checked span {
+                                background-color: #79bd00;
+                            }
+                        }
+                        &.num-2 {
+                            span:before {
+                                content: 'Med';
+                            }
+                            &.checked span {
+                                background-color: #ffbf00;
+                            }
+                        }
+                        &.num-3 {
+                            span:before {
+                                content: 'High';
+                            }
+                            &.checked span {
+                                background-color: #b30303;
+                            }
+                        }
+                        &.checked span {
+                            color: #fff;
+                        }
+                    }
+                }
+            }
+            &.NOTE {
+                display: block;
+                padding-top: 1.5rem;
+                padding-bottom: 1rem;
+
+                .optionName {
+                    font-weight: 600;
+                    display: block;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,44 @@
+@import 'style/colors';
+
+.PinButton {
+    background-color: #fff;
+    font-size: 1rem;
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    border: 1px solid color(default, border);
+    transition: background-color 0.25s ease;
+    overflow: hidden;
+
+    .PinButton__pinIcon {
+        display: none;
+    }
+
+    &:hover {
+        background-color: color(brand, primary);
+
+        .PinButton__icon {
+            display: none;
+        }
+
+        .PinButton__pinIcon {
+            display: block;
+        }
+    }
+
+    &.PinButton_pinned {
+        &:hover {
+            .PinButton__icon {
+                display: block;
+            }
+
+            .PinButton__pinIcon {
+                display: none;
+            }
+        }
+    }
+}

@@ -1,0 +1,124 @@
+@use 'style/colors' as *;
+@use 'style/typography' as *;
+@use 'style/screen' as *;
+
+#MobileDashboardV3 .FullExperienceCarousel {
+    background-color: color(default, backgroundAlt);
+    padding: 3.5rem var(--page-frame-padding);
+    &__description-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        gap: 0.25rem;
+        margin-bottom: 1.75rem;
+    }
+    &__cards {
+        display: flex;
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+        gap: var(--carousel-slide-spacing);
+        // centers when cards fit, falls back to flex-start when overflowing (so scroll still starts from the left)
+        justify-content: safe center;
+        margin: 0 calc(var(--page-frame-padding) * -1);
+        padding: 0 var(--page-frame-padding);
+        scroll-padding: 0 var(--page-frame-padding);
+        scrollbar-width: none;
+        &::-webkit-scrollbar {
+            display: none;
+        }
+    }
+    &__card--app {
+        .FullExperienceCarousel__card-media {
+            &::after {
+                content: '';
+                position: absolute;
+                inset: 0;
+                box-shadow: inset 0px -1.5rem 1.5rem -1rem rgb(0 0 0 / 75%);
+                z-index: 1;
+                pointer-events: none;
+            }
+        }
+    }
+    &__card-media {
+        position: relative;
+        aspect-ratio: 4 / 3;
+        width: 100%;
+        height: 100%;
+    }
+    &__card-image {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+    &__card-badge {
+        position: absolute;
+        top: 0.5rem;
+        left: 0.5rem;
+        z-index: 1;
+    }
+    &__card {
+        flex: 1 0 17.5rem;
+        max-width: 25rem;
+        scroll-snap-align: start;
+        border-radius: 0.5rem;
+        overflow: hidden;
+        ul {
+            list-style: disc;
+            margin-bottom: 2.5rem;
+            li {
+                @include typography-base;
+                @include body-s;
+            }
+        }
+        .content-card {
+            padding: 1.5rem;
+            height: 100%;
+
+            @include skapa-l {
+                padding: 2rem 2.5rem;
+            }
+        }
+        .content-card__container {
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+        }
+        .content-card__title {
+            color: color(default, foreground);
+            &:hover {
+                text-decoration: none;
+            }
+        }
+        .content-card__footer {
+            // The built-in footer button doesn't support label + icon; hide it in favour of our custom Button in children
+            display: none;
+        }
+    }
+    &__card-content {
+        &--app {
+            background-color: #d7c7a2;
+        }
+        &--desktop {
+            background-color: #c1cfd4;
+        }
+    }
+    &__card-disclaimer {
+        color: color(brand, secondaryText);
+        @include typography-base;
+        @include body-s;
+        position: absolute;
+        bottom: 0;
+        right: 0.5rem;
+        z-index: 2;
+    }
+    &__card-button {
+        margin-top: auto;
+    }
+}

@@ -1,0 +1,63 @@
+@import 'style/colors';
+
+.FilterOptions {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    padding: 1rem 0;
+}
+
+.FilterOption {
+    font-size: 0.875rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem 0.5rem 1rem 0;
+    cursor: pointer;
+
+    .checkbox__symbol {
+        width: 1.125rem;
+        height: 1.125rem;
+    }
+
+    &[aria-disabled='true'] {
+        opacity: 0.5;
+        pointer-events: none;
+
+        span {
+            color: $color-gray-500;
+        }
+
+        &:hover {
+            text-decoration: none;
+        }
+    }
+
+    &__name {
+        font-weight: bold;
+        color: $color-black;
+
+        .FilterOption[role='button']:hover & {
+            text-decoration: underline;
+        }
+    }
+
+    &__count {
+        font-size: 0.75rem;
+        color: $color-gray-700;
+        margin-left: auto;
+    }
+
+    &--disabled {
+        opacity: 0.5;
+        pointer-events: none;
+
+        span {
+            color: $color-gray-500;
+        }
+
+        &:hover {
+            text-decoration: none;
+        }
+    }
+}

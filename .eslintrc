@@ -1,0 +1,485 @@
+{
+    "parser": "@typescript-eslint/parser",
+    "parserOptions": {
+        "project": "./tsconfig.json",
+        "ecmaFeatures": {
+            "jsx": true
+        }
+    },
+    "settings": {
+        "import/resolver": {
+            "typescript": {
+                "project": "tsconfig.json"
+            },
+            "node": {
+                "extensions": [".test.js", ".test.mjs"]
+            }
+        }
+    },
+    "root": true,
+    "extends": [
+        "eslint-config-airbnb",
+        "airbnb-typescript",
+        "plugin:jest/recommended",
+        "plugin:@typescript-eslint/recommended",
+        "plugin:i18n-json/recommended",
+        "eslint-config-prettier"
+    ],
+    "plugins": ["@typescript-eslint", "react-hooks", "jest", "i18next", "playwright"],
+    "env": {
+        // Allow things like window object
+        "browser": true,
+        "jest": true
+    },
+    "rules": {
+        "indent": "off",
+        "react/jsx-indent": "off",
+        "react/jsx-indent-props": "off",
+        "react/jsx-curly-newline": "off",
+        "function-paren-newline": [0, "multiline"],
+        "import/extensions": 0,
+        "no-return-assign": [2, "except-parens"],
+        "jsx-a11y/anchor-is-valid": [
+            "error",
+            {
+                // Don't trigger on default 'link' component
+                "components": ["a"]
+            }
+        ],
+        "react/no-did-update-set-state": [0],
+        "prefer-destructuring": [
+            "error",
+            {
+                "VariableDeclarator": {
+                    "array": false
+                },
+                "AssignmentExpression": {
+                    "array": false
+                }
+            }
+        ],
+        "react-hooks/rules-of-hooks": "error",
+        "default-param-last": "off",
+        "react/function-component-definition": [
+            2,
+            {
+                "namedComponents": "arrow-function"
+            }
+        ],
+        "@typescript-eslint/default-param-last": "off",
+        "import/prefer-default-export": "off",
+        "no-nested-ternary": "off",
+        // Investigate these
+        "react/jsx-one-expression-per-line": 0,
+        "react/destructuring-assignment": 0,
+        "import/no-named-as-default": 0,
+        // Fix soon!
+        "jsx-a11y/control-has-associated-label": 0,
+        "react/jsx-props-no-spreading": 0,
+        "react/no-unused-class-component-methods": 0,
+        "@typescript-eslint/no-array-constructor": 0,
+        // Make just warnings
+        "react/no-array-index-key": 1,
+        "no-unused-vars": 1,
+        "arrow-body-style": 1,
+        "react/prefer-stateless-function": 1,
+        "no-debugger": 1,
+        "space-infix-ops": 1,
+        "comma-spacing": 1,
+        "class-methods-use-this": 1,
+        "react/no-unused-prop-types": 1,
+        "spaced-comment": 1,
+        // Enable the following for accessibility linting
+        "jsx-a11y/click-events-have-key-events": 0,
+        "jsx-a11y/no-static-element-interactions": 0,
+        "jsx-a11y/no-noninteractive-element-interactions": 0,
+        "jsx-a11y/no-autofocus": 0,
+        "react/button-has-type": 0,
+        // Translations
+        "i18n-json/valid-message-syntax": 0,
+        "i18n-json/sorted-keys": 0,
+        // check for missing keys
+        "i18n-json/identical-keys": [
+            2,
+            {
+                "filePath": {
+                    "translation.json": "../../../../locales/en/translation.json",
+                    "dashboard.json": "../../../../locales/en/dashboard.json",
+                    "common.json": "../../../../locales/en/common.json",
+                    "learnmore.json": "../../../../locales/en/learnmore.json",
+                    "find-my-fit.json": "../../../../locales/en/find-my-fit.json"
+                }
+            }
+        ],
+        // Ignore test files
+        "import/no-extraneous-dependencies": [
+            "error",
+            {
+                "devDependencies": [
+                    "**/*.test.js",
+                    "**/*.spec.js",
+                    "**/*.test.ts",
+                    "testUtils/*.js",
+                    "**/__tests__/**/*",
+                    "**/__utils__/**/*"
+                ]
+            }
+        ],
+        "no-restricted-syntax": [
+            "warn",
+            {
+                "selector": "CallExpression[callee.name='useEffect'][arguments.0.type='ArrowFunctionExpression'][arguments.0.body.type='BlockStatement'][arguments.0.body.body.length=1][arguments.0.body.body.0.type='ReturnStatement'][arguments.0.body.body.0.argument.type='ArrowFunctionExpression']",
+                "message": "useEffect that only returns a cleanup must use a concise arrow body: useEffect(() => () => { ... }, []). Don't disable arrow-body-style to keep the block form."
+            },
+            {
+                "selector": "JSXExpressionContainer > MemberExpression[property.name='price']",
+                "message": "Render prices through useGetPriceString() so UNAVAILABLE_PRICE is translated. If this is not a product price, destructure or rename to bypass."
+            }
+        ],
+        "i18next/no-literal-string": [
+            "error",
+            {
+                "ignoreAttribute": [
+                    "code",
+                    "to",
+                    "name",
+                    "path",
+                    "place",
+                    "feature",
+                    "data-testid",
+                    "data-for",
+                    "data-drop-zone",
+                    "data-drag-enabled",
+                    "describedById",
+                    "boundaryContainerID",
+                    "aria-label",
+                    "aria-hidden",
+                    "politeness",
+                    "listLayout",
+                    "iconPosition",
+                    "blockId",
+                    "size",
+                    "controlBtnType",
+                    "target",
+                    "backgroundColor",
+                    "imagePosition",
+                    "href",
+                    "rel",
+                    "keyboard",
+                    "itemClass",
+                    "alignment",
+                    "seoMetaDataPage",
+                    "page",
+                    "poster",
+                    "descriptionId",
+                    "src",
+                    "loading",
+                    "layout",
+                    "htmlType",
+                    "pageName",
+                    "prefix",
+                    "currencyPosition",
+                    "currencyVerticalAlignment",
+                    "currencySpacing",
+                    "statusDotPosition",
+                    "control",
+                    "side",
+                    "align",
+                    "tabPanelId",
+                    "defaultActiveTab",
+                    "titleId",
+                    "aria-labelledby",
+                    "mediaPosition",
+                    "buttonType",
+                    "ratio",
+                    "theme",
+                    "titleHeadingTag",
+                    "contentVerticalAlign",
+                    "label",
+                    "playAriaLabel",
+                    "pauseAriaLabel",
+                    "innerElementType",
+                    "zLayer",
+                    "preload",
+                    "imagePrefix",
+                    "thumbnailLoading",
+                    "aria-haspopup",
+                    "aria-describedby",
+                    "role",
+                    "aria-modal",
+                    "aria-expanded",
+                    "initialFocus",
+                    "aria-describedby",
+                    "className",
+                    "tagName",
+                    "additionalControls",
+                    "imageAlignment",
+                    "aria-busy",
+                    "aria-live",
+                    "colour",
+                    "animation",
+                    "triggerId",
+                    "dismissMode"
+                ],
+                "ignoreProperty": [
+                    "params",
+                    "id",
+                    "name",
+                    "action",
+                    "label",
+                    "dsn",
+                    "tracingOrigins",
+                    "day",
+                    "month",
+                    "year",
+                    "sizes",
+                    "decoding",
+                    "className",
+                    "htmlType",
+                    "pageName",
+                    "Page",
+                    "Section",
+                    "preload",
+                    "iconPosition"
+                ],
+                "ignoreCallee": [
+                    "click",
+                    "visit",
+                    "error",
+                    "workflow",
+                    "track",
+                    "format",
+                    "remove",
+                    "on",
+                    "off",
+                    "useEmblaCarousel",
+                    "add",
+                    "trackGoogleAnalytics",
+                    "contains",
+                    "withTranslation",
+                    "trackShareClick",
+                    "getAttribute",
+                    "createElement",
+                    "getContext",
+                    "scrollIntoView",
+                    "scrollToItem",
+                    "Error",
+                    "useTranslation",
+                    "useState",
+                    "clickEvent",
+                    "open",
+                    "doAction",
+                    "navigate",
+                    "withPrefix",
+                    "querySelectorAll",
+                    "setAttribute",
+                    "classNames",
+                    "useExperiments",
+                    "useFlags",
+                    "withTrackingBoundary",
+                    "useDropdownManager",
+                    "Sentry.captureMessage",
+                    "console.warn",
+                    "console.error",
+                    "warn",
+                    "appendChild",
+                    "removeChild",
+                    "preventDefault",
+                    "closest",
+                    "querySelector",
+                    "cloneElement",
+                    "parse",
+                    "stringify",
+                    "getData",
+                    "join",
+                    "captureMessage",
+                    "captureException",
+                    "JSON.parse",
+                    "JSON.stringify",
+                    "generateRoomLink"
+                ]
+            }
+        ]
+    },
+    "overrides": [
+        {
+            "files": ["locales/**/*.json"],
+            "rules": {
+                "no-irregular-whitespace": 0
+            }
+        },
+        {
+            "files": [
+                "**/utils/*.js",
+                "**/utils/*.ts",
+                "**/services/*.*",
+                "**/models/**/*.js",
+                "**/models/**/*.ts",
+                "**/privacyPolicies/**/*.jsx",
+                "**/Renderer/*.js",
+                "i18n.js",
+                "**/__tests__/*.*",
+                "jest*.ts",
+                "**/*.jsx",
+                "**/Debug*.js*",
+                "**/__fixtures__/**/*",
+                "**/__mocks__/*.js",
+                "*.config.js",
+                "*.config.ts",
+                "webpack.*.js",
+                "gatsby-*.ts",
+                "**/e2eTests/**/*.*",
+                "plugins/**/*.*"
+            ],
+            "rules": {
+                "i18next/no-literal-string": 0,
+                "jest/no-standalone-expect": 0,
+                "no-empty-pattern": 0
+            }
+        },
+        {
+            "files": ["**/*.jsx"]
+        },
+        {
+            "files": ["**/*.tsx"],
+            "rules": {
+                "react/require-default-props": 0
+            }
+        },
+        {
+            "files": ["**/__tests__/*.*", "**/*.test.ts", "**/*.test.tsx", "**/*.test.js", "**/*.test.jsx"],
+            "rules": {
+                "no-loss-of-precision": 0,
+                "@typescript-eslint/no-loss-of-precision": 0,
+                "no-import-assign": 0,
+                "jest/valid-title": 0,
+                "import/no-unresolved": [
+                    2,
+                    {
+                        "ignore": ["testUtils"]
+                    }
+                ],
+                "jest/no-disabled-tests": 0,
+                "@typescript-eslint/no-explicit-any": 0,
+                "i18next/no-literal-string": 0
+            }
+        },
+        {
+            "files": ["**/e2eTests/**/*.js", "**/e2eTests/**/*.ts", "playwright.config.ts"],
+            "parserOptions": {
+                "project": "./tsconfig-e2e.json"
+            },
+            "rules": {
+                "import/no-extraneous-dependencies": 0,
+                "no-await-in-loop": 0,
+                "no-restricted-syntax": 0,
+                "playwright/missing-playwright-await": 2,
+                "playwright/no-element-handle": 2,
+                "playwright/no-focused-test": 2,
+                "playwright/no-wait-for-timeout": 2,
+                "playwright/no-page-pause": 2,
+                "jest/valid-title": 0,
+                "jest/no-done-callback": 0,
+                "jest/no-disabled-tests": 0,
+                "jest/no-commented-out-tests": 0,
+                "jest/valid-expect": 0,
+                "jest/no-conditional-expect": 0,
+                "jest/expect-expect": 0
+            }
+        },
+        {
+            "files": ["src/Renderer/**/*.ts", "src/Planner/**/*.ts"],
+            "rules": {
+                "max-len": [
+                    2,
+                    {
+                        "code": 120,
+                        "tabWidth": 2,
+                        "ignoreUrls": true
+                    }
+                ],
+                "no-param-reassign": [
+                    "error",
+                    {
+                        "props": false
+                    }
+                ],
+                "max-classes-per-file": [
+                    "error",
+                    {
+                        "max": 2
+                    }
+                ],
+                "no-continue": "warn",
+                "no-undef-init": "off",
+                "no-restricted-syntax": [
+                    "error",
+                    {
+                        "selector": "ForInStatement",
+                        "message": "Iterating with for (... in ...) is error prone (Google style guide)."
+                    }
+                ],
+                "@typescript-eslint/lines-between-class-members": [
+                    "error",
+                    "always",
+                    {
+                        "exceptAfterSingleLine": true
+                    }
+                ]
+            }
+        },
+        {
+            // Primary: Patrick Rutkowski (patrick@geomagical.com)
+            "files": ["src/Renderer/WallSnap.js", "src/utils/stackablesUX.ts"],
+            "rules": {
+                "no-continue": 0,
+                "no-plusplus": 0,
+                "no-else-return": 0,
+                "space-infix-ops": 0,
+                "arrow-body-style": 0,
+                "no-param-reassign": 0,
+                "no-constant-condition": 0,
+                "@typescript-eslint/no-explicit-any": 0
+            }
+        },
+        {
+            "files": ["src/models/**/reducers.ts"],
+            "rules": {
+                "no-param-reassign": [
+                    "error",
+                    {
+                        "props": true,
+                        "ignorePropertyModificationsFor": ["state"]
+                    }
+                ]
+            }
+        },
+        {
+            "files": ["src/models/**/slice.ts"],
+            "rules": {
+                "no-param-reassign": "off"
+            }
+        },
+        {
+            "files": ["src/services/**/*", "src/hooks/**/*"],
+            "rules": {
+                "i18next/no-literal-string": "off",
+                "no-param-reassign": "off"
+            }
+        },
+        {
+            "files": ["*.d.ts"],
+            "rules": {
+                "no-var": "off",
+                "vars-on-top": "off"
+            }
+        },
+        {
+            // ATM we only have 3 locales for campaigns.json
+            "files": ["**/campaigns.json"],
+            "rules": {
+                "i18n-json/identical-keys": 0
+            }
+        }
+    ]
+}

@@ -1,0 +1,23 @@
+@import 'style/type';
+
+.LoginPromptModal {
+    .modalContent {
+        padding: 2.5rem 2rem;
+
+        .modalHeader {
+            @include heading-md;
+        }
+        .modalBody {
+            @include body-md;
+            padding: 1rem 0 2.5rem;
+        }
+        .modalCTA {
+            display: flex;
+            column-gap: 2rem;
+
+            button {
+                flex: 1;
+            }
+        }
+    }
+}

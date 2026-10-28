@@ -1,0 +1,11 @@
+@import 'style/colors';
+
+.DesignSidepanelOverlay__add-to-bag-button {
+    background-color: color(default, backgroundAlt);
+    color: $color-gray-700;
+
+    &:hover,
+    &:focus-visible {
+        color: color(default, foreground);
+    }
+}

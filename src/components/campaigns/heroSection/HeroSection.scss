@@ -1,0 +1,58 @@
+@import 'style/colors';
+@import 'style/screen';
+
+.HeroSection {
+    // Keep it vertical (column-reverse) at the default 800px breakpoint
+    @media (min-width: 50rem) {
+        .card {
+            flex-direction: column-reverse !important;
+        }
+    }
+
+    // Allow it to switch to horizontal (row-reverse) at 1100px
+    @media (min-width: 68.75em) {
+        // 1100px = 68.75em
+        .card {
+            flex-direction: row-reverse !important;
+        }
+    }
+    .content-card {
+        display: flex;
+        flex-wrap: wrap;
+        flex: 1;
+        justify-content: center;
+        cursor: pointer;
+
+        --content-card-background: rgb(var(--colour-extended-palette-04, 0, 150, 210)) !important;
+
+        &.hero-content-card {
+            &.festiveRedBackground {
+                background-color: #{color(banner, festiveRedBackground)} !important;
+            }
+        }
+
+        @include md {
+            min-width: 30%;
+        }
+
+        .content-card__container {
+            flex-grow: 0;
+            text-wrap: wrap;
+
+            .content-card__body {
+                font-size: 1rem;
+            }
+        }
+    }
+    &.hideCta {
+        .content-card__footer {
+            display: none;
+        }
+        .content-card__headers:hover .content-card__title {
+            text-decoration: none;
+        }
+        .content-card {
+            cursor: default;
+        }
+    }
+}

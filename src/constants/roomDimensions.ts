@@ -1,0 +1,26 @@
+const LIST_OF_UNSUPPORTED_SHOWROOMS_DEV = [
+    '11f1b7d0-4745-4c68-b98b-65aab3d6508c',
+    '6f23a67f-4203-406c-a6c6-50f1ae6d5f3f',
+    '3ed4cbb3-9fed-4c24-a4cf-d681ed61429b',
+    '6f04296f-13f7-47a1-8ef6-2de99fa3cf2d',
+    '48860a86-4500-4754-a02f-e35f228ecc06',
+    'c739299f-0646-43cd-84d7-bd8e7d91d5a5',
+    '3d47ce40-8ca9-4e12-93b8-cf9cf8feb143',
+    '863a68a1-8151-4a80-a7d0-1d2223026774',
+]
+
+const LIST_OF_UNSUPPORTED_SHOWROOMS_PROD = [
+    'ade06d96-a2aa-4fe2-9521-30cf8ef7d4b2',
+    '89928373-7d43-432c-9c08-b0a5e8055cbc',
+    '882214fa-b864-4221-918d-30ce997fb4de',
+    'f308da9d-7e98-4d07-a90b-7f5a02cfd51e',
+    'c36f959d-e5b6-45ed-ac59-02656a464be0',
+    '96f27314-52d2-408b-87ba-f1db5c6b082d',
+    'c54d4d7e-1d59-4818-a91e-4a178e93cb83',
+    'e4765270-5de5-476c-acaa-87035f340c31',
+]
+
+export const LIST_OF_UNSUPPORTED_SHOWROOMS = [
+    ...LIST_OF_UNSUPPORTED_SHOWROOMS_DEV,
+    ...LIST_OF_UNSUPPORTED_SHOWROOMS_PROD,
+]

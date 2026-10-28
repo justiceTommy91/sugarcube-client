@@ -1,0 +1,20 @@
+@import 'style/colors';
+
+.FurnitureOptions {
+    border-block-end: solid 1px color(default, border);
+
+    .FurnitureOptions__loader {
+        block-size: 650px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .FurnitureOptions__section {
+        padding-block: 1.5rem;
+
+        &:not(:first-of-type) {
+            border-block-start: solid 1px color(default, border);
+        }
+    }
+}

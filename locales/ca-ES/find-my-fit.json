@@ -1,0 +1,134 @@
+{
+  "find-my-fit": {
+    "actions": {
+      "takePhoto": "Fes una foto",
+      "uploadPhoto": "Penja una foto"
+    },
+    "chooseSample": {
+      "scene_0": "Racó on es relaxa",
+      "scene_1": "Racó malhumorat",
+      "title": "Tria un espai de mostra per provar-lo"
+    },
+    "csat": {
+      "bad": "Dolent",
+      "cancel": "Cancel·la",
+      "describeIt": "Explica'ns més coses",
+      "dissatisfied": "Insatisfet",
+      "good": "Bé",
+      "goodOrBad": "Gràcies! Ens agradaria saber per què ho has triat. Què va destacar de l'experiència, què és bo o dolent?",
+      "neutral": "Neutre",
+      "privacyText": "Per protegir la teva privadesa, evita incloure informació personal (p. ex. correu electrònic, telèfon).",
+      "ratingDescription": "Els teus comentaris ens ajudaran a millorar l'experiència.",
+      "satisfied": "Satisfet",
+      "submit": "Envia'l",
+      "title": "Com és la teva experiència?"
+    },
+    "hero": {
+      "imageAlt": "Prestatges",
+      "subtitle": "Afegeix una foto per rebre recomanacions.",
+      "title": "Troba l'emmagatzematge que s'adapti al teu espai"
+    },
+    "landing": {
+      "actions": {
+        "addPhoto": "Afegeix una foto",
+        "takePhoto": "Fes una foto",
+        "trySampleSpace": "Prova un espai de mostra",
+        "uploadPhoto": "Penja una foto"
+      },
+      "comingSoon": {
+        "appStoreBadgeAlt": "Descarrega'l a l'App Store",
+        "designOnDesktop": "Dissenya a l'escriptori",
+        "getApp": "Baixa l' aplicació IKEA per dissenyar un espai",
+        "googlePlayBadgeAlt": "Descarrega'l a Google Play",
+        "kreativLink": "Enllaç IKEA Kreativ",
+        "linkCopied": "S'ha copiat l'enllaç",
+        "title": "Aquesta funció estarà disponible aviat!"
+      },
+      "features": {
+        "compare": {
+          "title": "Fes lliscar el dit per comparar les opcions ràpidament"
+        },
+        "intro": {
+          "title": "Amb Find My Fit, és molt fàcil comprar espai"
+        },
+        "save": {
+          "title": "Fes servir el producte preferit i troba \"l'únic\""
+        },
+        "setArea": {
+          "title": "Dibuixa la teva zona objectiu"
+        }
+      },
+      "hero": {
+        "genericCategory": "emmagatzematge",
+        "imageAlt": "Imatges dels objectes d'emmagatzematge",
+        "privacyNote": "No pengis imatges amb persones, dades personals o elements privats. Més informació a la nostra <1>política de privadesa</1>.",
+        "subtitle": "Fes servir una fotografia i mira els estils {{subject}} per adaptar-lo a una zona concreta",
+        "title": "Troba l'emmagatzematge que s'adapti al teu espai",
+        "videoAlt": "Demostració de la funció Troba la meva forma"
+      },
+      "page": {
+        "description": "Penja una foto per comprar les prestatgeries que estàves explorant, per aconseguir l'aspecte i l'adaptació adequats, sense conjectures.",
+        "title": "Troba la meva forma"
+      },
+      "sampleSpaces": {
+        "error": "S'ha produït un error. Torna-ho a provar.",
+        "title": "Tria un espai de mostra"
+      }
+    },
+    "loginPrompt": {
+      "body": "Per obtenir recomanacions d'emmagatzematge per al teu espai, inicia la sessió o crea un compte a IKEA .",
+      "logIn": "Inicia la sessió",
+      "signUp": "Registra't",
+      "title": "Inicia la sessió per penjar una foto"
+    },
+    "page": {
+      "description": "Troba el producte perfecte per a casa teva amb IKEA",
+      "title": "Troba la meva forma"
+    },
+    "toasts": {
+      "unableToFavorite": "No hem pogut afegir el teu article a la llista."
+    },
+    "viewer": {
+      "accessibilityDescription": "Find My Fit utilitza una foto del teu espai per recomanar productes d'IKEA que s'ajustin a la zona triada. El dibuix i la interacció visual poden ser un repte per a persones amb discapacitat visual o baixa visió. Els detalls dels productes, els preus i les accions de compra són totalment accessibles un cop es mostren els resultats.",
+      "addToBag": "Afegeix-ho a la bossa",
+      "adjustHeader": "Ajusta l'àrea de cerca",
+      "clearDrawing": "Dibuix clar",
+      "confirmDimension": "Confirmar la mida",
+      "continue": "Continua",
+      "continueAriaLabel": "Continua amb el pas següent",
+      "decreaseDimension": "Disminueix la mida",
+      "dimDepth": "profunditat",
+      "dimHeight": "Altura",
+      "dimWidth": "Amplària",
+      "done": "Fet",
+      "doneAriaLabel": "S'ha acabat l'edició",
+      "drawFocusArea": "Dibuixa l'àrea d'enfocament que vulguis",
+      "drawingHeader": "On vols l'emmagatzematge?",
+      "editArea": "Zona d'edició",
+      "fewResultsToast": "Prova de canviar la mida de l'àrea de cerca per obtenir més resultats.",
+      "goBack": "Torna enrere",
+      "goToImage": "Vés a la imatge {{index}}",
+      "increaseDimension": "Augmenta la mida",
+      "magicEraser": "Goma d'esborrar màgica",
+      "noResults": "No s'ha trobat cap producte per a aquest espai.",
+      "noResultsButton": "No s'han trobat resultats",
+      "noResultsTitle": "No s'han trobat resultats",
+      "removedFromFavorites": "S'ha eliminat dels preferits",
+      "removeFavorite": "Elimina'l dels preferits",
+      "retrySearch": "Torna-ho a provar",
+      "savedToFavorites": "S'ha desat a favorits",
+      "saveFavorite": "Desa el contingut a preferits",
+      "search": "Cerca",
+      "searchError": "No s'ha trobat cap producte que coincideixi. Prova de dibuixar una àrea diferent.",
+      "searchErrorToast": "S'ha produït un error. Torna-ho a provar.",
+      "searching": "S'està cercant...",
+      "seeAllResults": "Consulta tots els resultats",
+      "showMoreDetails": "Mostra'n més detalls",
+      "swipeForMore": "Fes lliscar el dit per veure'n més",
+      "tapToSelect": "Toca per seleccionar l'element",
+      "tryAgain": "Torna-ho a provar",
+      "viewResults_one": "Veure {{count}} resultat",
+      "viewResults_other": "Veure {{count}} resultats"
+    }
+  }
+}

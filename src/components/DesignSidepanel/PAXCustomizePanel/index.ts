@@ -1,0 +1,1 @@
+export { PAXCustomizePanel } from './PAXCustomizePanel'

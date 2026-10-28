@@ -1,0 +1,97 @@
+@import 'style/colors';
+@import 'style/type';
+@import 'style/zed';
+
+.KioskCompositionSelector {
+    width: 100vw;
+    height: 100vh;
+    padding: 3rem 0;
+    position: relative;
+    .dismissButton {
+        margin-bottom: 2rem;
+        margin-left: 6rem;
+    }
+    .filterSection {
+        padding: 0 6rem 2.5rem 6rem;
+        .filterHeader {
+            @include body-lg;
+            font-weight: 700;
+            margin-bottom: 1.5rem;
+        }
+        .filterButton {
+            margin-right: 0.625rem;
+            &.isActive .btn__inner {
+                background-color: color(default-invert, background);
+                color: color(default-invert, foreground);
+            }
+        }
+    }
+    .compositionsGrid {
+        overflow: hidden;
+        .gridInner {
+            overflow: auto;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            padding: 0 6rem;
+        }
+        .compositionImageWrapper {
+            width: 49%;
+            max-width: 49rem;
+            margin-right: 4.5rem;
+            margin-bottom: 4.5rem;
+            position: relative;
+            &:nth-child(2n) {
+                margin-right: 0;
+            }
+            .compositionImage {
+                width: 100%;
+                border-radius: 1.5rem;
+                box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: cover;
+                height: 37.5rem;
+            }
+            .ctaSection {
+                @include heading-md;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                font-weight: 700;
+                background-color: color(default, background);
+                color: color(default, foreground);
+                padding: 2rem 0 1rem 0;
+                width: 100%;
+                .startDesign {
+                    @include heading-md;
+                    .btn__inner {
+                        outline: solid 2px transparent;
+                        padding: 1.5rem 3rem;
+                    }
+                }
+            }
+        }
+    }
+    .prevNextOverlay {
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        top: 50%;
+        z-index: zed(above);
+        padding: 0 2rem;
+        pointer-events: none;
+        button {
+            background-color: color(default, background);
+            pointer-events: auto;
+        }
+        &.atEnd {
+            justify-content: flex-start;
+        }
+        &.atBeginning {
+            justify-content: flex-end;
+        }
+    }
+}

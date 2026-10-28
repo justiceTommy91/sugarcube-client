@@ -1,0 +1,134 @@
+{
+  "find-my-fit": {
+    "actions": {
+      "takePhoto": "Mach ein Foto",
+      "uploadPhoto": "Ein Foto hochladen"
+    },
+    "chooseSample": {
+      "scene_0": "Entspannende Leseecke",
+      "scene_1": "Stimmungsvolle Ecke",
+      "title": "Wähle einen Musterraum aus, um es auszuprobieren"
+    },
+    "csat": {
+      "bad": "Schlecht",
+      "cancel": "Abbrechen",
+      "describeIt": "Bitte erzähle uns mehr",
+      "dissatisfied": "Unzufrieden",
+      "good": "Gut",
+      "goodOrBad": "Danke! Wir würden gerne erfahren, warum du dich dafür entschieden hast. Was ist dir an der Erfahrung aufgefallen, gut oder schlecht?",
+      "neutral": "Neutral",
+      "privacyText": "Um deine Privatsphäre zu schützen, solltest du persönliche Daten (z. B. E-Mail, Telefon) vermeiden.",
+      "ratingDescription": "Dein Feedback hilft uns, das Erlebnis zu verbessern.",
+      "satisfied": "Zufriedenstellend",
+      "submit": "Absenden",
+      "title": "Wie ist deine Erfahrung?"
+    },
+    "hero": {
+      "imageAlt": "Regale",
+      "subtitle": "Füge ein Foto hinzu, um Empfehlungen zu erhalten.",
+      "title": "Finde eine Aufbewahrungslösung, die zu deinem Raum passt"
+    },
+    "landing": {
+      "actions": {
+        "addPhoto": "Ein Foto hinzufügen",
+        "takePhoto": "Mach ein Foto",
+        "trySampleSpace": "Probiere einen Musterraum aus",
+        "uploadPhoto": "Ein Foto hochladen"
+      },
+      "comingSoon": {
+        "appStoreBadgeAlt": "Im App Store herunterladen",
+        "designOnDesktop": "Design auf dem Desktop",
+        "getApp": "Lade dir die IKEA App herunter, um einen Raum zu gestalten",
+        "googlePlayBadgeAlt": "Im Google Play Store herunterladen",
+        "kreativLink": "Link zu IKEA Kreativ",
+        "linkCopied": "Link kopiert",
+        "title": "Diese Funktion wird bald verfügbar sein!"
+      },
+      "features": {
+        "compare": {
+          "title": "Wische, um Optionen schnell zu vergleichen"
+        },
+        "intro": {
+          "title": "Mit \"Find My Fit\" ist die Suche nach Aufbewahrungslösungen ganz einfach"
+        },
+        "save": {
+          "title": "Lieblingsartikel und „den einen“ finden"
+        },
+        "setArea": {
+          "title": "Zeichne deinen Zielbereich"
+        }
+      },
+      "hero": {
+        "genericCategory": "Aufbewahrungslösungen",
+        "imageAlt": "Bilder von Aufbewahrungsgegenständen",
+        "privacyNote": "Bitte lade keine Bilder mit Personen, personenbezogenen Daten oder privaten Gegenständen hoch. Weitere Informationen findest du in unserer <1>Datenschutzrichtlinie</1>.",
+        "subtitle": "Verwende ein Foto und blättere durch Stile von {{subject}} , um einen bestimmten Bereich zu gestalten",
+        "title": "Finde eine Aufbewahrungslösung, die zu deinem Raum passt",
+        "videoAlt": "Demonstration der \"Find My Fit\"-Funktion"
+      },
+      "page": {
+        "description": "Lade ein Foto hoch, um Regale zu kaufen, die du erkundest, um den richtigen Look und die richtige Passform zu erhalten, ohne zu raten.",
+        "title": "Finde meine passende Lösung"
+      },
+      "sampleSpaces": {
+        "error": "Etwas ist schiefgelaufen. Bitte versuche es erneut.",
+        "title": "Wähle einen Musterraum aus"
+      }
+    },
+    "loginPrompt": {
+      "body": "Um Aufbewahrungslösungen für deinen Raum zu erhalten, melde dich an oder erstelle ein kostenloses IKEA Konto.",
+      "logIn": "Melde dich an",
+      "signUp": "Melde dich an",
+      "title": "Melde dich an, um ein Foto hochzuladen"
+    },
+    "page": {
+      "description": "Finde mit IKEA die perfekte Lösung für dein Zuhause",
+      "title": "Finde meine passende Lösung"
+    },
+    "toasts": {
+      "unableToFavorite": "Es tut uns leid, aber wir konnten dein Element nicht zur Liste hinzufügen."
+    },
+    "viewer": {
+      "accessibilityDescription": "Find My Fit verwendet ein Foto deines Raums, um IKEA Produkte zu empfehlen, die zu einem bestimmten Bereich passen. Die Zeichnung und visuelle Interaktion kann für Menschen mit Sehbehinderung oder Sehschwäche eine Herausforderung darstellen. Produktdetails, Preise und Einkaufsaktionen sind vollständig zugänglich, sobald die Ergebnisse angezeigt werden.",
+      "addToBag": "In den Warenkorb legen",
+      "adjustHeader": "Passe deinen Suchbereich an",
+      "clearDrawing": "Klare Zeichnung",
+      "confirmDimension": "Bestätige die Abmessung",
+      "continue": "Weiter",
+      "continueAriaLabel": "Weiter zum nächsten Schritt",
+      "decreaseDimension": "Abmessung verringern",
+      "dimDepth": "Tiefe",
+      "dimHeight": "Höhe",
+      "dimWidth": "Breite",
+      "done": "Fertig",
+      "doneAriaLabel": "Bearbeitung abgeschlossen",
+      "drawFocusArea": "Zeichne deinen gewünschten Fokusbereich",
+      "drawingHeader": "Wo möchtest du deine Aufbewahrungslösung haben?",
+      "editArea": "Bearbeitungsbereich",
+      "fewResultsToast": "Versuche, deinen Suchbereich zu vergrößern, um mehr Ergebnisse zu erhalten.",
+      "goBack": "Zurück zur vorherigen Seite",
+      "goToImage": "Gehe zu Bild {{index}}",
+      "increaseDimension": "Erhöhen der Dimension",
+      "magicEraser": "Magischer Radiergummi",
+      "noResults": "Für diesen Bereich wurden keine Produkte gefunden.",
+      "noResultsButton": "Keine Ergebnisse gefunden",
+      "noResultsTitle": "Keine Ergebnisse gefunden",
+      "removedFromFavorites": "Aus den Favoriten entfernt",
+      "removeFavorite": "Aus Favoriten entfernen",
+      "retrySearch": "Versuche es noch einmal",
+      "savedToFavorites": "Zu den Favoriten gespeichert",
+      "saveFavorite": "Zu den Favoriten speichern",
+      "search": "Suche",
+      "searchError": "Keine passenden Produkte gefunden. Versuche, einen anderen Bereich zu zeichnen.",
+      "searchErrorToast": "Etwas ist schiefgelaufen. Bitte versuche es erneut.",
+      "searching": "Suche wird ausgeführt ...",
+      "seeAllResults": "Alle Ergebnisse anzeigen",
+      "showMoreDetails": "Weitere Details anzeigen",
+      "swipeForMore": "Wische für mehr",
+      "tapToSelect": "Tippe, um den Artikel auszuwählen",
+      "tryAgain": "Versuche es noch einmal",
+      "viewResults_one": "Ergebnis anzeigen {{count}}",
+      "viewResults_other": "Ergebnisse anzeigen {{count}}"
+    }
+  }
+}

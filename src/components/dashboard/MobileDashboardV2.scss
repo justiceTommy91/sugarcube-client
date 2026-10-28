@@ -1,0 +1,115 @@
+@import 'style/colors';
+@import 'style/type';
+@import 'style/screen';
+$header-height: 5.5rem;
+
+.MobileDashboardV2 {
+    margin: 3rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .headerContainer {
+        margin: 0 auto;
+        float: none;
+        padding: 0 2rem;
+        color: color(default, foreground);
+        width: 100%;
+
+        .cardContainer {
+            display: flex;
+            flex-direction: column;
+            gap: 2.5rem;
+            video {
+                border-radius: 0.5rem;
+            }
+            .MobileDashboardCard {
+                .content-card__headers {
+                    margin: 0;
+                }
+                .content-card__body {
+                    margin: 0;
+                }
+                .cardCtaContainer .btn--primary {
+                    margin: 0 0 0.5rem 0;
+                }
+                .mobileDashboardCtas.noImage {
+                    padding: 0 2rem 4rem 2rem;
+                }
+                .no-card-label {
+                    padding: 0.5rem 1rem 1.5rem 1rem;
+                }
+            }
+        }
+        .kreativIconText {
+            @include heading-sm;
+            margin-bottom: 1rem;
+            .label {
+                margin-left: 0.25rem;
+            }
+        }
+    }
+    .fullWidthCard {
+        width: 100%;
+        color: color(brand, secondaryText);
+
+        &.purple {
+            background-color: color(tag, purple-ext);
+        }
+        &.blue {
+            background-color: color(tag, blue-ext);
+            .content.hasLandscapeOrientation {
+                flex-direction: row-reverse;
+                .textAndCta {
+                    padding: 2rem 2rem 0.5rem 0rem;
+                }
+            }
+        }
+        &.green {
+            background-color: color(tag, green-ext);
+        }
+        .content {
+            padding: 4rem 2rem;
+            display: flex;
+            flex-direction: column;
+            &.hasLandscapeOrientation {
+                flex-direction: row;
+
+                .aspect-ratio-box {
+                    flex-basis: 40%;
+                    padding-bottom: 40%;
+                }
+
+                .textAndCta {
+                    display: flex;
+                    flex: 1;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    align-items: center;
+                    align-content: center;
+                    padding: 2rem 0rem 2rem 2rem;
+                }
+            }
+            .title {
+                font-weight: bold;
+                text-align: center;
+                @include body-xxl;
+                margin-top: 1.5rem;
+            }
+            .description {
+                padding: 0.5rem 0.9rem 0rem 0.9rem;
+                text-align: center;
+                @include body-lg;
+            }
+            .getAppButton {
+                margin-top: 1.5rem;
+                text-align: center;
+                width: 100%;
+                padding: 0 1rem;
+            }
+        }
+        video {
+            border-radius: 0.5rem;
+        }
+    }
+}

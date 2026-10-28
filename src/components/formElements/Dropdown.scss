@@ -1,0 +1,41 @@
+@import 'style/colors';
+@import 'style/zed';
+
+.LegacyDropdown {
+    position: relative;
+    cursor: pointer;
+
+    .selectedItem {
+        display: flex;
+        align-items: center;
+        padding: 0 0.5rem;
+
+        .value {
+            flex: 1;
+        }
+    }
+    .items {
+        position: absolute;
+        top: 100%;
+        left: -1px;
+        right: -1px;
+        z-index: zed(dropdown);
+        background-color: color(default, background);
+        border: solid color(default, border);
+        border-width: 0 1px 1px 1px;
+        display: none;
+
+        .item {
+            padding: 0.25rem 0.5rem;
+            cursor: pointer;
+
+            &.selected,
+            &:hover {
+                background-color: #ddd;
+            }
+        }
+        &.open {
+            display: block;
+        }
+    }
+}

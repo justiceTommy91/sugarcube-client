@@ -1,0 +1,20 @@
+@import 'style/colors';
+
+.SmartaTab {
+    padding: 0.25rem;
+    display: flex;
+    flex-direction: column;
+
+    .title {
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 0.25rem;
+    }
+    .log p {
+        margin-top: 0.5rem;
+        border-top: 1px solid color(default-invert, border);
+        padding-top: 0.5rem;
+        white-space: pre-wrap;
+        overflow-wrap: anywhere;
+    }
+}

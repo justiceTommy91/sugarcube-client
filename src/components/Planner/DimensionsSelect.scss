@@ -1,0 +1,31 @@
+@import 'style/type';
+@import 'style/colors';
+
+.DimensionsSelect {
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .DimensionsSelect__text {
+        color: colors(default, description);
+        text-align: left;
+        line-height: 150%;
+
+        p {
+            margin-bottom: 1rem;
+        }
+    }
+    .DimensionsSelect__unitToggle {
+        width: 100%;
+        :first-child {
+            width: 100%;
+            border-radius: 1rem 0rem 0rem 1rem;
+        }
+
+        :last-child {
+            width: 100%;
+            border-radius: 0rem 1rem 1rem 0rem;
+        }
+    }
+}

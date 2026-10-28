@@ -1,0 +1,58 @@
+@import 'style/colors';
+
+.UpptackaDesignTipsDescription {
+    position: absolute;
+    bottom: 0;
+    background: white;
+    width: 40rem;
+    padding: 1.75rem;
+    display: flex;
+    flex-direction: column;
+    right: 2rem;
+    &.leftAligned {
+        left: 2rem;
+        right: unset;
+    }
+    h4 {
+        font-size: 1.5rem;
+    }
+    span {
+        font-size: 1.25rem;
+        line-height: 1.75rem;
+    }
+    .UpptackaDesignTipsDescription__header {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 1.25rem;
+        .UpptackaDesignTipsDescription__slide-indicator {
+            font-size: 1rem;
+        }
+        .UpptackaDesignTipsDescription__badge {
+            display: flex;
+            align-items: center;
+            gap: 0.25rem;
+            background-color: color(cta, tertiaryDarker);
+            width: fit-content;
+            padding: 0 0.75rem 0 0.5rem;
+            border-radius: 1.25rem;
+            min-height: 2rem;
+            min-width: 2rem;
+            span {
+                font-weight: bold;
+                font-size: 1rem;
+            }
+        }
+    }
+    .UpptackaDesignTipsDescription__gallery {
+        display: flex;
+        gap: 0.75rem;
+        margin-top: 1.5rem;
+        overflow-x: scroll;
+        scrollbar-width: none;
+        img {
+            width: 14.125rem;
+            height: 17.5rem;
+            object-fit: cover;
+        }
+    }
+}

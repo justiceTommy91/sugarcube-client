@@ -1,0 +1,120 @@
+@import 'style/colors';
+@import 'style/type';
+
+// Screen reader only utility class for accessibility
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}
+
+// Button group container for availability actions
+// Refactored from list to button group for semantic correctness
+div.ProductAvailabilityFull {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem; // Consistent spacing between action buttons
+
+    // Individual availability action buttons
+    button.statusLine {
+        display: flex;
+        align-items: center;
+        padding: 0.5rem;
+        border: none;
+        background: none;
+        cursor: pointer;
+        text-align: left;
+        border-radius: 0.25rem;
+        min-height: 3rem; // Consistent height even with wrapping text
+        margin-bottom: 0.25rem;
+        @include body-md;
+
+        // Accessibility: Proper focus indicators with rounded corners
+        &:focus {
+            outline-offset: 2px;
+            border-radius: 0.25rem;
+        }
+
+        &:hover {
+            text-decoration: underline;
+        }
+
+        // Icon styling - prevent shrinking and maintain spacing
+        svg {
+            display: inline-block;
+            margin-right: 0.75rem;
+            flex-shrink: 0;
+        }
+
+        // Label text styling - prevent wrapping
+        .label {
+            margin-right: 0.5rem;
+            white-space: nowrap;
+        }
+
+        // Status text (hidden on mobile/compact views)
+        .availability {
+            display: none;
+        }
+
+        // Visual status indicator (colored dot)
+        .indicator {
+            width: 0.75rem;
+            height: 0.75rem;
+            margin-right: 0.25rem;
+            flex-shrink: 0; // Prevent indicator from shrinking
+        }
+
+        // Specific styling for pickup button if needed
+        &.pickup {
+            // Reserved for pickup-specific styles
+        }
+        .indicator {
+            display: inline-block;
+            margin-right: 0.25rem;
+            border-radius: 50%;
+            background-color: color(status, indeterminate);
+            width: 0.5rem;
+            height: 0.5rem;
+
+            &.HIGH_IN_STOCK,
+            &.canPickup {
+                background-color: color(status, available);
+            }
+            &.LOW_IN_STOCK {
+                background-color: transparent;
+                border: 2px solid color(status, lowAvailability);
+                overflow: hidden;
+
+                &:before {
+                    display: block;
+                    content: '';
+                    background-color: color(status, lowAvailability);
+                    width: 1rem;
+                    height: 1rem;
+                    position: relative;
+                    top: 50%;
+                }
+            }
+            &.OUT_OF_STOCK,
+            &.noPickup {
+                background-color: transparent;
+                border: 2px solid color(status, unavailable);
+            }
+        }
+        .availability {
+            @include body-sm;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            color: color(default, description);
+            flex: 1;
+        }
+    }
+}

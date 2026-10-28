@@ -1,0 +1,21 @@
+@import 'style/colors';
+@import 'style/type';
+@import 'style/colors';
+
+.BasePill {
+    @include font-caption;
+    min-block-size: 2.25rem;
+    padding-inline: 1rem;
+
+    &[aria-expanded='true'] {
+        border: 1px solid $color-black;
+    }
+    &.pill--leading-icon {
+        // less space on the left when icon is leading, so spacing is equal on both sides
+        padding-inline-start: 0.5rem;
+    }
+    &.pill--trailing-icon {
+        // less space on the right when icon is trailing, so spacing is equal on both sides
+        padding-inline-end: 0.5rem;
+    }
+}

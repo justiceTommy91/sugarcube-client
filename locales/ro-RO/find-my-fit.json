@@ -1,0 +1,134 @@
+{
+  "find-my-fit": {
+    "actions": {
+      "takePhoto": "Fă o fotografie",
+      "uploadPhoto": "Încarcă o fotografie"
+    },
+    "chooseSample": {
+      "scene_0": "Colț de relaxare",
+      "scene_1": "Colțul capricios",
+      "title": "Alege un spațiu de eșantionare pentru a încerca"
+    },
+    "csat": {
+      "bad": "Rău",
+      "cancel": "Anulează",
+      "describeIt": "Te rugăm să ne spui mai multe",
+      "dissatisfied": "Nemulțumit",
+      "good": "Bun",
+      "goodOrBad": "Mulțumim! Am vrea să aflăm de ce ai ales asta. Ce ți-a atras atenția în experiență, în bine sau în rău?",
+      "neutral": "Neutru",
+      "privacyText": "Pentru a-ți proteja confidențialitatea, evită să incluzi informații personale (de ex., e-mail, telefon).",
+      "ratingDescription": "Feedbackul tău ne va ajuta să îmbunătățim experiența.",
+      "satisfied": "Satisfăcător",
+      "submit": "Trimite",
+      "title": "Cum este experiența ta?"
+    },
+    "hero": {
+      "imageAlt": "Rafturi",
+      "subtitle": "Adaugă o fotografie pentru a primi recomandări.",
+      "title": "Găsește soluții de depozitare care se potrivesc spațiului tău"
+    },
+    "landing": {
+      "actions": {
+        "addPhoto": "Adaugă o fotografie",
+        "takePhoto": "Fă o fotografie",
+        "trySampleSpace": "Încearcă un spațiu de probă",
+        "uploadPhoto": "Încarcă o fotografie"
+      },
+      "comingSoon": {
+        "appStoreBadgeAlt": "Descarcă din App Store",
+        "designOnDesktop": "Proiectare pe desktop",
+        "getApp": "Descarcă aplicaţia IKEA pentru a proiecta un spaţiu",
+        "googlePlayBadgeAlt": "Descarcă-l din Google Play",
+        "kreativLink": "Linkul IKEA Kreativ",
+        "linkCopied": "Link copiat",
+        "title": "Această funcție va fi disponibilă în curând!"
+      },
+      "features": {
+        "compare": {
+          "title": "Glisează pentru a compara rapid opțiunile"
+        },
+        "intro": {
+          "title": "Cumpărăturile pentru depozitare sunt ușoare cu Find My Fit"
+        },
+        "save": {
+          "title": "Articole favorite și găsește \"cel potrivit\""
+        },
+        "setArea": {
+          "title": "Desenează zona țintă"
+        }
+      },
+      "hero": {
+        "genericCategory": "de stocare",
+        "imageAlt": "Imagini cu articole de depozitare",
+        "privacyNote": "Te rugăm să nu încarci imagini cu persoane, date cu caracter personal sau obiecte private. Află mai multe în <1>politica noastră de confidențialitate</1>.",
+        "subtitle": "Folosește o fotografie și răsfoiește stilurile de {{subject}} pentru a se potrivi unei anumite zone",
+        "title": "Găsește soluții de depozitare care se potrivesc spațiului tău",
+        "videoAlt": "Demonstrație a funcției Găsește potrivirea perfectă"
+      },
+      "page": {
+        "description": "Încarcă o fotografie pentru a cumpăra polițe pe care le-ai explorat, pentru a obține aspectul și potrivirea corectă, fără să fie nevoie să ghicești.",
+        "title": "Găsește potrivirea perfectă"
+      },
+      "sampleSpaces": {
+        "error": "A apărut o eroare. Încearcă din nou.",
+        "title": "Alege un spațiu de probă"
+      }
+    },
+    "loginPrompt": {
+      "body": "Pentru a primi recomandări de depozitare pentru spațiul tău, conectează-te sau creează un cont IKEA gratuit.",
+      "logIn": "Autentificare",
+      "signUp": "Înregistrează-te",
+      "title": "Conectează-te pentru a încărca o fotografie"
+    },
+    "page": {
+      "description": "Găsește soluția perfectă pentru casa ta cu IKEA",
+      "title": "Găsește potrivirea perfectă"
+    },
+    "toasts": {
+      "unableToFavorite": "Ne pare rău, dar nu am putut adăuga articolul la listă."
+    },
+    "viewer": {
+      "accessibilityDescription": "My Fit folosește o fotografie a spațiului tău pentru a recomanda produse IKEA care se potrivesc într-o anumită zonă. Desenul și interacțiunea vizuală pot fi dificile pentru persoanele cu deficiențe de vedere sau cu vedere slabă. Detaliile produselor, prețurile și acțiunile de cumpărare sunt complet accesibile odată ce sunt afișate rezultatele.",
+      "addToBag": "Adaugă în Pungă",
+      "adjustHeader": "Reglează zona de căutare",
+      "clearDrawing": "Desen clar",
+      "confirmDimension": "Confirmă dimensiunea",
+      "continue": "Continuă",
+      "continueAriaLabel": "Continuă la pasul următor",
+      "decreaseDimension": "Diminuare dimensiune",
+      "dimDepth": "Adâncime",
+      "dimHeight": "Înălțime",
+      "dimWidth": "Lățime",
+      "done": "Acțiune finalizată",
+      "doneAriaLabel": "Editare finalizată",
+      "drawFocusArea": "Desenează zona de focalizare dorită",
+      "drawingHeader": "Unde vrei să fie depozitarea?",
+      "editArea": "Editare zonă",
+      "fewResultsToast": "Încearcă să redimensionezi zona de căutare pentru a obține mai multe rezultate.",
+      "goBack": "Revenire",
+      "goToImage": "Mergi la imagine {{index}}",
+      "increaseDimension": "Mărește dimensiunea",
+      "magicEraser": "Radieră magică",
+      "noResults": "Nu s-au găsit produse pentru acest spațiu.",
+      "noResultsButton": "Nu au fost găsite rezultate",
+      "noResultsTitle": "Nu au fost găsite rezultate",
+      "removedFromFavorites": "Eliminat din favorite",
+      "removeFavorite": "Elimină din favorite",
+      "retrySearch": "Încearcă din nou",
+      "savedToFavorites": "Salvat la favorite",
+      "saveFavorite": "Salvează la favorite",
+      "search": "Căutare",
+      "searchError": "Nu s-au găsit produse corespunzătoare. Încearcă să trasezi o altă zonă.",
+      "searchErrorToast": "Ceva nu a mers bine. Încearcă din nou.",
+      "searching": "Căutare...",
+      "seeAllResults": "Vezi toate rezultatele",
+      "showMoreDetails": "Afișează mai multe detalii",
+      "swipeForMore": "Glisează pentru a vedea mai multe",
+      "tapToSelect": "Atinge pentru a selecta elementul",
+      "tryAgain": "Încearcă din nou",
+      "viewResults_one": "Vizualizează {{count}} rezultate",
+      "viewResults_other": "Vizualizează {{count}} rezultate"
+    }
+  }
+}

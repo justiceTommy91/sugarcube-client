@@ -1,0 +1,37 @@
+@import 'style/colors';
+
+.UpptackaSaveModal {
+    .UpptackaSaveModal__theatre {
+        width: 80rem;
+        height: max-content;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        // not possible to use Ingka modal without rendering their default modal-header
+        .modal-header {
+            display: none;
+        }
+        .UpptackaSaveModal__close {
+            position: absolute;
+            top: 2rem;
+            right: 2.5rem;
+        }
+        .UpptackaSaveModal__content {
+            height: 100%;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            img {
+                height: 100%;
+                object-fit: cover;
+            }
+            .UpptackaSaveModal__save-wrapper {
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: flex-start;
+                background: color(default, backgroundAlt);
+                padding-top: 7.5rem;
+            }
+        }
+    }
+}

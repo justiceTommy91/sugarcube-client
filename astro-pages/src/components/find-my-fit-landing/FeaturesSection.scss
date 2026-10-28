@@ -1,0 +1,37 @@
+@import 'style/type';
+@import 'style/colors';
+@import 'style/screen';
+
+.FeaturesSection {
+    background-color: color(default, background);
+
+    &__intro {
+        text-align: center;
+        padding: 0 1.5rem;
+        margin-bottom: 1.75rem;
+    }
+
+    &__title {
+        @include body-xxl;
+        font-weight: 700;
+        margin-top: 3.75rem;
+        margin-bottom: 0.75rem;
+    }
+
+    &__grid {
+        display: flex;
+        flex-direction: column;
+        gap: 2.5rem;
+        padding: 0 3rem;
+    }
+
+    @include skapa-l {
+        max-width: 56rem;
+        margin: 0 auto;
+
+        &__grid {
+            flex-direction: row;
+            align-items: flex-start;
+        }
+    }
+}

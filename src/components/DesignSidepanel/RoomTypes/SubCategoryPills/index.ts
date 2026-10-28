@@ -1,0 +1,1 @@
+export { SubCategoryPills } from './SubCategoryPills'

@@ -1,0 +1,63 @@
+@import 'style/colors';
+@import 'style/type';
+@import 'style/zed';
+
+.WallElementOverlay {
+    .Marker {
+        position: absolute;
+        justify-content: center;
+        align-items: center;
+        pointer-events: all;
+        cursor: -webkit-grab;
+        cursor: url('#{$PATH-PREFIX}/images/icons/cursor_drag.svg') 21 20, grab;
+        .outerDot {
+            transform: translate(-50%, -50%);
+            position: absolute;
+            width: 2rem;
+            height: 2rem;
+            border-radius: 50%;
+            background-color: color(dot, overlayBackground);
+            border: solid 2px color(dot, overlayBorder);
+            .innerDot {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                width: 0.75rem;
+                height: 0.75rem;
+                border-radius: 50%;
+                background-color: color(default, background);
+                transform: translate(-50%, -50%);
+                width: 0.5rem;
+                height: 0.5rem;
+            }
+        }
+    }
+
+    .DeleteIcon {
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        pointer-events: all;
+        transform: translate(-50%, -50%);
+    }
+
+    .WallElementOverlay__measurement {
+        position: absolute;
+        width: 3rem;
+        background-color: #111111;
+        color: white;
+        border: 1px #929292 solid;
+        border-radius: 4px;
+        padding: 0.2rem;
+        font-size: small;
+        text-align: center;
+        transform: translateX(-50%) translateY(-50%);
+        pointer-events: all;
+        user-select: none;
+    }
+
+    .invisible {
+        visibility: hidden;
+    }
+}

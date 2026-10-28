@@ -1,0 +1,5 @@
+@import 'style/zed';
+
+.BeautifyRemainingToast {
+    z-index: zed(toast) !important;
+}

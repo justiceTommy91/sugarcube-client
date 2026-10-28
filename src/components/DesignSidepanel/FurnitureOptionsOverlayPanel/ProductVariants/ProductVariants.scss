@@ -1,0 +1,36 @@
+@import 'style/colors';
+@import 'style/type';
+
+.ProductVariants {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding-inline: 1.5rem;
+    position: relative;
+
+    .ProductVariants__skeleton {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .ProductVariants__skeletonText {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    .ProductVariants__skeletonThumbnails {
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        gap: 0.5rem;
+    }
+
+    &.isUpptacka {
+        padding: 1.5rem 0;
+
+        .ProductVariantCategorySection__variantList {
+            padding: 1rem 0;
+        }
+    }
+}

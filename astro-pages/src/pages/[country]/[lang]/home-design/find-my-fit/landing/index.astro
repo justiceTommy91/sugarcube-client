@@ -1,0 +1,50 @@
+---
+import { HeroIsland, FeaturesSection } from '@astro-components/find-my-fit-landing'
+import BaseLayout from '@layouts/BaseLayout.astro'
+import { generateLocaleStaticPaths, type LocalePageProps, type Translations } from '@lib/static-paths-utils'
+import { GA_ACTION_FMFLANDING_PAGE_VISIT } from '@lib/tracking/constants'
+
+export async function getStaticPaths() {
+    return generateLocaleStaticPaths()
+}
+
+const { locale, translations } = Astro.props as LocalePageProps
+const { country, lang } = Astro.params
+const market = `${country}/${lang}`
+
+const fmfCopy = translations['find-my-fit']?.['find-my-fit']
+const pageTitle = fmfCopy?.landing?.page?.title ?? ''
+const description = fmfCopy?.landing?.page?.description ?? ''
+---
+
+<BaseLayout
+    locale={locale}
+    market={market}
+    allowSeo={false}
+    title={pageTitle}
+    description={description}
+    mixpanelPageName="FMFLanding"
+    gaPageVisitAction={GA_ACTION_FMFLANDING_PAGE_VISIT}
+>
+    <div class="FindMyFitLanding">
+        <HeroIsland
+            client:load
+            locale={locale}
+            market={market}
+            translations={translations as Translations}
+        />
+
+        <FeaturesSection
+            client:load
+            locale={locale}
+            market={market}
+            translations={translations as Translations}
+        />
+    </div>
+</BaseLayout>
+
+<style is:global>
+    section.hnf-voc-cta.hnf-voc-cta--footer {
+        display: none;
+    }
+</style>

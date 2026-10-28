@@ -1,0 +1,110 @@
+@import 'style/colors';
+@import 'style/type';
+@import 'style/zed';
+@import 'style/screen';
+
+.LivingRoomPage {
+    max-width: 112rem;
+    margin: 4rem auto;
+    float: none;
+    padding-left: 3rem;
+    padding-right: 3rem;
+
+    .content-card__footer,
+    .content-card__headers {
+        cursor: pointer;
+    }
+
+    .headerContainer {
+        margin-bottom: 4rem;
+    }
+
+    section {
+        margin-top: 4rem;
+        .heading {
+            h2 {
+                margin-bottom: 0.625rem;
+            }
+            margin-bottom: 1.5rem;
+        }
+    }
+
+    .headerCard {
+        .content-card__label {
+            @include heading-sm;
+            font-size: 1.5rem;
+            font-weight: normal;
+        }
+
+        .content-card__title {
+            font-size: 2.5rem;
+        }
+
+        .content-card__headers:hover .content-card__title,
+        .content-card__headers:focus .content-card__title {
+            text-decoration: unset !important;
+        }
+    }
+    .categoryCards {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 1rem;
+        @include sm {
+            grid-template-columns: repeat(2, 1fr);
+        }
+        @include md {
+            grid-template-columns: repeat(3, 1fr);
+        }
+    }
+    .waysContainer {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 1rem;
+
+        @include sm {
+            grid-template-columns: repeat(2, 1fr);
+        }
+        @include md {
+            grid-template-columns: repeat(3, 1fr);
+        }
+
+        .content-card__footer {
+            visibility: hidden;
+        }
+
+        .learnMore {
+            grid-column: 1 / -1;
+
+            @include md {
+                grid-column: auto;
+            }
+            .content-card__footer {
+                visibility: visible;
+            }
+        }
+
+        .image {
+            cursor: pointer;
+        }
+    }
+    .roomEntry {
+        display: flex;
+        justify-content: center;
+        position: relative;
+        width: 18rem;
+        .title {
+            position: absolute;
+            bottom: 1rem;
+            width: 10rem;
+            padding: 0.5rem 1rem;
+            border-radius: 4rem;
+            text-align: center;
+            background-color: color(default, background);
+            font-weight: bold;
+        }
+
+        .image {
+            width: 18rem;
+        }
+    }
+}

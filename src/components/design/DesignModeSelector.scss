@@ -1,0 +1,28 @@
+@import 'style/type';
+@import 'style/colors';
+
+.DesignModeSelector {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .modeSelector {
+        background-color: color(default, backgroundAlt);
+        display: flex;
+        border-radius: 2rem;
+        border: solid 1px color(default, border);
+
+        button.magicEraserButton {
+            @include body-sm;
+            font-weight: 600;
+            padding: 0.75rem 1.5rem;
+            text-transform: capitalize;
+            &.selected {
+                background-color: color(default, background);
+                box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+                border-radius: 2rem;
+            }
+        }
+    }
+}

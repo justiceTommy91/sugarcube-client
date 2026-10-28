@@ -1,0 +1,46 @@
+@import 'style/colors';
+@import 'style/type';
+@import 'style/screen';
+
+.BannerPromoSection {
+    &.hideCta {
+        .content-card__footer {
+            display: none;
+        }
+    }
+
+    .card {
+        flex-direction: column-reverse;
+
+        @include lg {
+            flex-direction: row-reverse;
+        }
+
+        .content-card {
+            display: flex;
+            flex-wrap: wrap;
+            flex: 1;
+            justify-content: center;
+            cursor: pointer;
+
+            @include md {
+                padding: 3rem;
+                min-width: 25%;
+            }
+
+            .content-card__container {
+                flex-grow: 0;
+
+                .content-card__title {
+                    @include sm {
+                        font-size: 2.5rem;
+                    }
+                }
+            }
+            .content-card__headers:hover .content-card__title,
+            .content-card__headers:focus .content-card__title {
+                text-decoration: none;
+            }
+        }
+    }
+}

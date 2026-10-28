@@ -1,0 +1,130 @@
+@use 'style/typography' as *;
+@use 'style/colors' as *;
+@use 'style/screen' as *;
+
+.UploadProgressBannerMobile {
+    width: 100%;
+    background-color: $color-white;
+    display: flex;
+    flex-direction: column;
+    color: $color-black;
+
+    @include skapa-l {
+        display: none;
+    }
+
+    &__header {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        padding: 0.125rem 0.5rem;
+        background-color: $color-white;
+    }
+
+    &__time-remaining {
+        @include typography-base;
+        @include body-s;
+        color: $color-black;
+        text-align: right;
+    }
+
+    &__progress-bar-container {
+        position: relative;
+        overflow: hidden;
+        width: 100%;
+        height: 0.3125rem;
+        background-color: $color-gray-500;
+
+        &--indeterminate {
+            .UploadProgressBannerMobile__progress-bar {
+                position: absolute;
+                width: 40%;
+                animation: uploadProgressIndeterminate 1.6s ease-in-out infinite;
+            }
+        }
+    }
+
+    &__progress-bar {
+        height: 100%;
+        background-color: $color-ikeablue;
+        transition: width 0.3s ease;
+        border-radius: 0 2rem 2rem 0;
+    }
+
+    &__image-container {
+        position: relative;
+        width: 100%;
+        aspect-ratio: 375 / 309;
+        background-color: $color-gray;
+
+        &--loaded {
+            background-color: transparent;
+            .UploadProgressBannerMobile__overlay {
+                background-color: rgba(255, 255, 255, 0.7);
+            }
+        }
+    }
+
+    &__image {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+
+    &__overlay {
+        position: absolute;
+        inset: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 0.75rem;
+        padding: 1.25rem;
+        text-align: center;
+    }
+
+    &__loader {
+        // Override BouncingBallLoader default sizing — show only the ball
+        width: auto;
+        height: auto;
+
+        .ball {
+            background-color: $color-ikeablue;
+        }
+    }
+
+    &__title {
+        @include typography-base;
+        @include heading-m;
+        margin: 0;
+    }
+
+    &__description {
+        @include typography-base;
+        @include body-s;
+        margin: 0;
+    }
+
+    &__percentage {
+        @include typography-base;
+        @include heading-s;
+    }
+
+    &__redirect {
+        @include typography-base;
+        @include body-s;
+    }
+}
+
+@keyframes uploadProgressIndeterminate {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(350%);
+    }
+}

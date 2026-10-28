@@ -1,0 +1,65 @@
+@import 'style/colors';
+
+.SignupForm {
+    .Input {
+        border-bottom: 1px solid color(form, inputBorder);
+        padding: 0.5rem;
+        margin-bottom: 2rem;
+
+        &.error {
+            border-color: #990000;
+        }
+    }
+    .forgot {
+        display: block;
+        text-align: right;
+        text-decoration: underline;
+        font-size: 0.75rem;
+        color: color(default, link);
+    }
+    .Checkbox {
+        .label {
+            color: rgb(140, 140, 140);
+            font-size: 0.8rem;
+        }
+    }
+    .slMessage {
+        text-align: center;
+        font-size: 0.9rem;
+
+        &.error {
+            color: color(default, error);
+        }
+        &.reqs {
+            font-size: 0.75rem;
+            color: color(default, hint);
+        }
+    }
+    .legaleese {
+        color: rgb(140, 140, 140);
+        font-size: 0.75rem;
+        padding: 1rem 0;
+
+        a {
+            color: inherit;
+            text-decoration: underline;
+        }
+    }
+    .buttonContainer {
+        padding-bottom: 3rem;
+
+        button {
+            width: 100%;
+        }
+    }
+    .dashLink {
+        text-decoration: underline;
+    }
+    .currentAccount {
+        margin-top: 3rem;
+
+        .logout {
+            text-decoration: underline;
+        }
+    }
+}

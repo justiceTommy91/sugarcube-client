@@ -1,0 +1,67 @@
+@import 'style/colors';
+@import 'style/zed';
+
+.Popover {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: color(default, background);
+    border-radius: 1.5rem 1.5rem 0 0;
+    box-shadow: 0 -0.25rem 1.25rem rgba(0, 0, 0, 0.15);
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    z-index: zed(dropdown);
+    touch-action: none;
+    pointer-events: auto !important;
+
+    // Right-anchored full-height panel used in landscape. Drag/handle disabled
+    // in the component; the whole panel stays at viewport height and scrolls
+    // its content.
+    &--sidebar {
+        top: 0;
+        bottom: 0;
+        left: auto;
+        right: 0;
+        width: var(--fmf-sidebar-w, clamp(260px, 35vw, 380px));
+        height: auto;
+        border-radius: 0;
+        box-shadow: -0.25rem 0 1.25rem rgba(0, 0, 0, 0.15);
+        touch-action: auto;
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__handle {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0.75rem 0;
+        cursor: pointer;
+        pointer-events: auto;
+        user-select: none;
+        &:active {
+            background: color(default, backgroundAlt);
+        }
+    }
+
+    &__handle-bar {
+        width: 2.5rem;
+        height: 0.3125rem;
+        background: color(default, border);
+        border-radius: 0.125rem;
+        margin-bottom: 0.5rem;
+        pointer-events: none;
+    }
+
+    &__content {
+        padding: 0 1.5rem 1.5rem;
+        overflow-y: auto;
+        overflow-x: hidden;
+        flex: 1;
+        pointer-events: auto;
+    }
+
+    &--sidebar &__content {
+        padding-top: 1.5rem;
+    }
+}

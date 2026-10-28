@@ -1,0 +1,195 @@
+@import 'style/colors';
+@import 'style/type';
+@import 'style/screen';
+
+.Testimonials {
+    align-self: center;
+
+    .content {
+        max-width: 112rem;
+        flex-wrap: wrap;
+        margin: 0 auto;
+        padding: 4rem 2rem;
+
+        @include lg {
+            min-width: 90rem;
+            padding: 4rem 0;
+        }
+
+        .title {
+            @include heading-lg;
+            font-weight: bold;
+            margin: 0 0 1rem 0;
+            color: color(cta, primary);
+        }
+
+        .description {
+            margin: 0 0 2rem 0;
+            color: color(cta, link);
+            font-size: 1.2rem;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column-reverse;
+            margin-top: 3.5rem;
+
+            @include lg {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-content: center;
+            }
+
+            .choiceContainer {
+                margin-top: 2rem;
+
+                @include lg {
+                    max-width: 32rem;
+                    margin-right: 2rem;
+                }
+
+                *:focus {
+                    outline: 0 !important;
+                }
+
+                .choices {
+                    width: 100%;
+                    .choice {
+                        width: 100%;
+                        margin-bottom: 1.25rem;
+
+                        .choice-item__title {
+                            color: color(form, inputBorder);
+                        }
+
+                        button.choice-item__action {
+                            background: color(default, background);
+                            opacity: 0.5;
+                        }
+
+                        .choice-item__border {
+                            border-color: color(form, inputBorder);
+                            opacity: 0.5;
+                            border-width: 1px;
+                        }
+
+                        .choice-item__icon {
+                            color: color(form, inputBorder);
+                        }
+
+                        &.selected {
+                            .choice-item__border {
+                                border-color: color(default, foreground);
+                                opacity: 0.9;
+                                border-width: 2px;
+                            }
+                            .choice-item__action {
+                                background: color(default, background);
+                                opacity: 1;
+                                transition: opacity 0.5s ease-in-out;
+                            }
+                            .choice-item__title {
+                                color: color(default, foreground);
+                            }
+                        }
+                    }
+                }
+            }
+
+            .testimonialContainer {
+                border: 2px solid color(default, border);
+                border-radius: 5px;
+
+                @include lg {
+                    min-width: 51.25rem;
+                    max-width: 51.52rem;
+                }
+
+                .imageContainer {
+                    position: relative;
+
+                    .room {
+                        background-position: center;
+                        background-size: contain;
+                        background-repeat: no-repeat;
+                        z-index: inherit;
+                        border-top-left-radius: 4px;
+                        border-top-right-radius: 4px;
+                        width: 100%;
+                    }
+                }
+
+                .row {
+                    display: flex;
+                    flex-direction: row;
+                    border-bottom-left-radius: 2px;
+                    border-bottom-right-radius: 2px;
+                    background-color: color(default, background);
+
+                    .avatar {
+                        margin: 1rem 1rem;
+                        width: 5rem;
+                    }
+
+                    .info {
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        margin-right: 1rem;
+                        .infoTitle {
+                            font-size: 0.75rem;
+                            font-weight: 700;
+                        }
+
+                        .infoSubtitle {
+                            font-size: 0.75rem;
+                        }
+                    }
+
+                    .morpheusInfo {
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: space-between;
+                        margin-right: 1rem;
+                        padding: 2rem;
+                        padding-right: 0rem;
+
+                        @include mob {
+                            flex-direction: column;
+                        }
+
+                        .infoTitle {
+                            font-size: 0.75rem;
+                            width: 65%;
+
+                            @include mob {
+                                width: 100%;
+                            }
+                        }
+
+                        .infoSubtitle {
+                            font-size: 0.75rem;
+                        }
+
+                        .actions {
+                            display: flex;
+                            flex-grow: 1;
+                            flex-direction: row;
+                            justify-content: flex-end;
+                            font-size: 0.75rem;
+
+                            button:nth-child(1) {
+                                margin-right: 1.25rem;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    @include mob {
+        display: unset;
+    }
+}

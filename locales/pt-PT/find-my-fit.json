@@ -1,0 +1,134 @@
+{
+  "find-my-fit": {
+    "actions": {
+      "takePhoto": "Tirar uma fotografia",
+      "uploadPhoto": "Carregar uma fotografia"
+    },
+    "chooseSample": {
+      "scene_0": "Recanto para descontrair",
+      "scene_1": "Canto de bom humor",
+      "title": "Escolha um espaço de amostra para experimentar"
+    },
+    "csat": {
+      "bad": "Mau",
+      "cancel": "Cancelar",
+      "describeIt": "Diga-nos mais sobre isso",
+      "dissatisfied": "Insatisfeito(a)",
+      "good": "Bom",
+      "goodOrBad": "Obrigado! Gostaríamos de saber o motivo da sua escolha. O que se destacou na experiência, bom ou mau?",
+      "neutral": "neutro",
+      "privacyText": "Para proteger a sua privacidade, evite incluir informações pessoais (por exemplo, e-mail, telefone).",
+      "ratingDescription": "O seu feedback vai ajudar-nos a melhorar a experiência.",
+      "satisfied": "Satisfeito",
+      "submit": "Submeter",
+      "title": "Como está a ser a sua experiência?"
+    },
+    "hero": {
+      "imageAlt": "Prateleiras",
+      "subtitle": "Adicione uma fotografia para obter recomendações.",
+      "title": "Encontre arrumação que combine com o seu espaço"
+    },
+    "landing": {
+      "actions": {
+        "addPhoto": "Adicionar uma fotografia",
+        "takePhoto": "Tirar uma fotografia",
+        "trySampleSpace": "Experimente um espaço de amostra",
+        "uploadPhoto": "Carregar uma fotografia"
+      },
+      "comingSoon": {
+        "appStoreBadgeAlt": "Descarregue na App Store",
+        "designOnDesktop": "Planificar no computador",
+        "getApp": "Obtenha a aplicação IKEA para planificar um espaço",
+        "googlePlayBadgeAlt": "Obtenha na Google Play",
+        "kreativLink": "Link IKEA Kreativ",
+        "linkCopied": "Link copiado para a área de transferência",
+        "title": "Esta funcionalidade estará disponível em breve."
+      },
+      "features": {
+        "compare": {
+          "title": "Deslize para comparar rapidamente as opções"
+        },
+        "intro": {
+          "title": "Comprar arrumação é fácil com a ferramenta Find My Fit"
+        },
+        "save": {
+          "title": "Artigos favoritos e encontre \"o ideal\""
+        },
+        "setArea": {
+          "title": "Desenhe a sua área alvo"
+        }
+      },
+      "hero": {
+        "genericCategory": "arrumação",
+        "imageAlt": "Imagens de artigos de arrumação",
+        "privacyNote": "Não carregue imagens com pessoas, dados pessoais ou objetos privados. Saiba mais na nossa <1>política de privacidade</1>.",
+        "subtitle": "Utilize uma fotografia e explore estilos de {{subject}} para se adequar a uma área específica",
+        "title": "Encontre arrumação que combine com o seu espaço",
+        "videoAlt": "Demonstração da funcionalidade \"Find My Fit\""
+      },
+      "page": {
+        "description": "Carregue uma fotografia para comprar a estante que estava a explorar, para obter o estilo e o ajuste certos, sem ter de adivinhar.",
+        "title": "Encontre o seu ajuste"
+      },
+      "sampleSpaces": {
+        "error": "Ocorreu um erro. Tente novamente.",
+        "title": "Escolha um espaço de amostra"
+      }
+    },
+    "loginPrompt": {
+      "body": "Para obter recomendações de arrumação para o seu espaço, inicie sessão ou crie uma conta IKEA gratuita.",
+      "logIn": "Iniciar sessão",
+      "signUp": "Registe-se",
+      "title": "Inicie sessão para carregar uma fotografia"
+    },
+    "page": {
+      "description": "Encontre a solução perfeita para a sua casa com a IKEA",
+      "title": "Encontre o seu ajuste"
+    },
+    "toasts": {
+      "unableToFavorite": "Lamentamos, mas não foi possível adicionar o seu artigo à lista."
+    },
+    "viewer": {
+      "accessibilityDescription": "A aplicação Find My Fit utiliza uma fotografia do seu espaço para recomendar produtos IKEA que se adaptem a uma área escolhida. O desenho e a interação visual podem ser desafiantes para pessoas com deficiência visual ou baixa visão. Os detalhes do produto, preços e ações de compra são totalmente acessíveis quando os resultados são apresentados.",
+      "addToBag": "Adicionar ao saco",
+      "adjustHeader": "Ajuste a sua área de pesquisa",
+      "clearDrawing": "Desenho claro",
+      "confirmDimension": "Confirmar dimensão",
+      "continue": "Continuar",
+      "continueAriaLabel": "Continuar para o próximo passo",
+      "decreaseDimension": "Dimensão de diminuição",
+      "dimDepth": "Profundidade",
+      "dimHeight": "Altura",
+      "dimWidth": "Largura",
+      "done": "Feito",
+      "doneAriaLabel": "Edição concluída",
+      "drawFocusArea": "Desenhe a área de foco pretendida",
+      "drawingHeader": "Onde quer a sua arrumação?",
+      "editArea": "Editar área",
+      "fewResultsToast": "Tente aumentar a área de pesquisa para obter mais resultados.",
+      "goBack": "Voltar",
+      "goToImage": "Ir para a imagem {{index}}",
+      "increaseDimension": "Aumentar a dimensão",
+      "magicEraser": "Borracha mágica",
+      "noResults": "Não foram encontrados artigos para este espaço.",
+      "noResultsButton": "Não foram encontrados resultados",
+      "noResultsTitle": "Não foram encontrados resultados",
+      "removedFromFavorites": "Removido dos favoritos",
+      "removeFavorite": "Remover dos favoritos",
+      "retrySearch": "Tenta novamente",
+      "savedToFavorites": "Guardado nos favoritos",
+      "saveFavorite": "Guardar nos favoritos",
+      "search": "Pesquisar",
+      "searchError": "Não foram encontrados artigos correspondentes. Tente desenhar uma área diferente.",
+      "searchErrorToast": "Ocorreu um erro. Tente novamente.",
+      "searching": "A pesquisar...",
+      "seeAllResults": "Ver todos os resultados",
+      "showMoreDetails": "Mostrar mais detalhes",
+      "swipeForMore": "Deslize para ver mais",
+      "tapToSelect": "Toque para selecionar o artigo",
+      "tryAgain": "Tenta novamente",
+      "viewResults_one": "Ver {{count}} resultados",
+      "viewResults_other": "Ver {{count}} resultados"
+    }
+  }
+}

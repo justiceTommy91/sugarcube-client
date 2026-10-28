@@ -1,0 +1,99 @@
+@import 'style/colors';
+
+.Carousel {
+    .carouselWrapper {
+        display: flex;
+        align-items: center;
+        position: relative;
+
+        .carrow {
+            background-color: color(default-invert, background);
+            height: 2rem;
+            width: 2rem;
+            border-radius: 50%;
+            position: absolute;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            opacity: 0;
+            transition: opacity 0.25s ease;
+
+            .Icon {
+                filter: invert(1);
+            }
+            &.left {
+                left: -0.25rem;
+            }
+            &.right {
+                right: -0.25rem;
+            }
+        }
+        .carouselContent {
+            flex: 1;
+            overflow: hidden;
+            white-space: nowrap;
+        }
+    }
+    .carouselScrollContainer {
+        margin-top: 1.25rem;
+        position: relative;
+        height: 0.5rem;
+        display: flex;
+        align-items: center;
+
+        .scrollBar {
+            background-color: color(default, border);
+            height: 0.12rem;
+            position: absolute;
+            left: 0;
+            right: 0;
+            display: flex;
+            align-items: center;
+            border-radius: 2px;
+
+            .scrollHandle {
+                position: absolute;
+                left: 0;
+                background-color: color(default, foreground);
+                height: 100%;
+                transition: height 0.1s ease;
+                border-radius: 4px;
+                cursor: grab;
+            }
+        }
+        &:hover {
+            .scrollBar {
+                height: 0.25rem;
+            }
+        }
+    }
+    &:hover {
+        .carouselWrapper {
+            .carrow {
+                opacity: 1;
+            }
+        }
+    }
+    &.dragging {
+        cursor: grabbing;
+
+        .carouselWrapper {
+            .carrow {
+                opacity: 0;
+            }
+            .carouselContent {
+                pointer-events: none;
+            }
+        }
+        .carouselScrollContainer {
+            .scrollBar {
+                height: 0.25rem;
+
+                .scrollHandle {
+                    height: 0.5rem;
+                    cursor: grabbing;
+                }
+            }
+        }
+    }
+}

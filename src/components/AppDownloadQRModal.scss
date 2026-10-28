@@ -1,0 +1,163 @@
+@import 'style/type';
+@import 'style/colors';
+
+.AppDownloadQRModal {
+    border-radius: 0.5rem;
+    display: flex;
+    margin: auto;
+
+    .modalContentContainer {
+        display: flex;
+        justify-content: space-between;
+        border-radius: inherit;
+    }
+
+    .ikeaLogo {
+        margin-bottom: 1.75rem;
+    }
+
+    .heroImage {
+        width: 45rem;
+        background-image: url('#{$PATH-PREFIX}/images/graphics/table_and_couch_blurred.jpg');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .qrCode {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            filter: drop-shadow(0 6px 30px rgba(0, 0, 0, 0.1));
+            img {
+                width: 20rem;
+                height: 20rem;
+                border-radius: 8px;
+            }
+            .scan {
+                @include body-xs;
+                background-color: color(brand, secondary);
+                color: color(brand, secondaryText);
+                border-radius: 4px;
+                padding: 0.5rem 0.75rem 0.75rem 0.75rem;
+                font-weight: 600;
+                font-size: 1rem;
+                margin-top: -0.125rem;
+            }
+        }
+    }
+    .modalBody {
+        background-color: color(default, background);
+        padding: 13.25rem 13rem 16.25rem 7.5rem;
+        border-radius: inherit;
+        flex-basis: 53%;
+
+        .flexContainer {
+            display: flex;
+            margin-bottom: 2rem;
+            .modalBodyHeaderContainer {
+                width: 26rem;
+                margin-right: 2rem;
+                text-align: center;
+            }
+        }
+
+        .storeContainer {
+            display: flex;
+            align-items: center;
+
+            .storeCta {
+                margin-right: 0.5rem;
+                margin-top: 0.75rem;
+                margin-bottom: 2rem;
+                height: inherit;
+
+                a {
+                    display: inline-block;
+                    height: inherit;
+                    color: color(brand, secondaryText);
+                }
+
+                img {
+                    width: 8.75rem;
+                    height: inherit;
+                    padding: 1rem 0 1rem 1rem; // playStore png badges have a 1rem padding built in
+                }
+                &.playStore img {
+                    padding: 0;
+                }
+            }
+        }
+
+        .modalBodyHeader {
+            @include heading-md;
+            font-weight: 700;
+            margin-bottom: 0.75rem;
+        }
+        .modalBodySubheader {
+            @include body-md;
+            color: color(default, description);
+        }
+    }
+
+    // Overrides
+    .theatre {
+        height: initial;
+        max-width: 93.5rem;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        overflow: auto;
+        height: 75vh;
+        max-height: 54.1563rem;
+        border-radius: 0.5rem;
+    }
+    .modal-wrapper__backdrop--dark {
+        background-color: rgba(0, 0, 0, 0.7);
+    }
+
+    .modalContentContainer,
+    .theatre {
+        flex-direction: column-reverse;
+        max-width: 75vw;
+        justify-content: center;
+
+        .modalBody {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 1rem;
+
+            .ikeaLogo {
+                width: 4rem;
+            }
+
+            .flexContainer {
+                margin-bottom: 0.5rem;
+            }
+
+            .storeContainer {
+                transform: translateX(-1.5%);
+
+                .storeCta {
+                    margin-bottom: 0;
+                }
+            }
+        }
+
+        .heroImage {
+            width: auto;
+            padding: 2rem;
+
+            .qrCode {
+                img {
+                    max-height: 10rem;
+                    max-width: 10rem;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,256 @@
+@import 'style/colors';
+@import 'style/type';
+@import 'style/zed';
+
+.Showrooms {
+    .showroomFilters {
+        display: flex;
+        flex-direction: column;
+        .filterFurnishType {
+            flex: 1;
+            flex-direction: column;
+            justify-content: space-between;
+            flex-wrap: wrap;
+
+            @include lg {
+                flex-direction: row;
+            }
+        }
+        .roomTypes,
+        .furnishTypes,
+        .roomFilterBlock {
+            display: flex;
+            margin-bottom: 0.5rem;
+            row-gap: 1.53rem;
+            column-gap: 1.53rem;
+            flex-wrap: wrap;
+
+            @include lg {
+                margin-bottom: 2rem;
+                align-items: center;
+            }
+
+            .toggle__button-label {
+                &::first-letter {
+                    text-transform: uppercase;
+                }
+            }
+
+            .filterButton {
+                @include body-sm;
+                font-weight: 700;
+                background-color: color(default, backgroundAlt);
+                border-radius: 15rem;
+                border-width: 1px;
+                border-style: solid;
+                border-color: transparent;
+                padding: 0.5rem 1.5rem;
+
+                display: flex;
+                align-items: center;
+
+                span::first-letter {
+                    text-transform: uppercase;
+                    color: blue;
+                }
+
+                p::first-letter {
+                    text-transform: capitalize;
+                }
+
+                &:hover {
+                    border-color: color(menu, hoverForeground);
+                }
+
+                &.selected {
+                    border-color: color(menu, hoverForeground);
+                }
+
+                &.reset {
+                    background-color: inherit;
+                    border: none;
+                }
+
+                &.disabled {
+                    pointer-events: none;
+                    color: color(brand, primaryCard);
+                }
+
+                &.hidden {
+                    display: none;
+                }
+
+                .showroomIcon {
+                    margin-right: 0.5rem;
+
+                    &.BEDROOM {
+                        transform: translateY(-0.25rem);
+                    }
+                }
+            }
+        }
+        .roomTypes {
+            margin-bottom: 0;
+        }
+
+        .furnishingFilter {
+            height: 40px;
+            &.selected {
+                background-color: color(brand, secondaryText);
+            }
+        }
+
+        .furnishTypes {
+            margin-bottom: 2rem;
+            text-transform: capitalize;
+        }
+    }
+
+    .roomsTitle {
+        @include heading-md;
+        font-weight: bold;
+        margin: 0 0 2rem 0;
+        color: color(cta, primary);
+    }
+
+    .roomsDescription {
+        @include body-lg;
+    }
+
+    .showroomsContainer {
+        display: flex;
+        flex-wrap: wrap;
+        margin-bottom: 2rem;
+
+        .BouncingBallLoader {
+            background-color: color(default, placeholder);
+            height: 50rem;
+            margin-bottom: 2rem;
+        }
+
+        &.isUserBucketedInShowroomAB {
+            margin-bottom: 2rem;
+        }
+        .roomThumbnail {
+            display: inline-block;
+            padding: 0 1rem 2rem 0;
+            width: calc(100% / 2);
+
+            &.planner {
+                // Hide room builder UI if screen is smaller than 1280px
+                @media (max-width: 1279px) {
+                    display: none;
+                }
+                .roomInnerThumbnail {
+                    height: 100%;
+                    position: relative;
+
+                    .roomImage {
+                        width: 100%;
+                        display: flex;
+                    }
+                    .roomDescription {
+                        display: flex;
+                        flex-direction: column;
+                        align-items: flex-start;
+                        .title {
+                            @include body-md;
+                            font-weight: bold;
+                            overflow: hidden;
+                        }
+                        .description {
+                            @include font-caption;
+                            color: color(default, hint);
+                            font-weight: normal;
+                        }
+                    }
+                }
+            }
+
+            .roomInnerThumbnail {
+                box-shadow: 0 0.35rem 1rem color(default, border);
+                border-radius: 0.25rem;
+                transition: all 0.25s ease;
+                overflow: hidden;
+
+                .roomImage {
+                    position: relative;
+
+                    img {
+                        width: 100%;
+                        border-radius: 0.25rem 0.25rem 0 0;
+                        aspect-ratio: 16/10;
+                        object-fit: cover;
+                        display: block;
+                    }
+                    .overlay {
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        @include docs-heading-md;
+                        color: color(brand, secondaryText);
+                        opacity: 0;
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        width: 100%;
+                        height: 100%;
+                        padding-top: 0.5rem;
+                        z-index: zed(above);
+                        pointer-events: none;
+                        transition: opacity 0.25s ease;
+                        background-color: color(modal, overlay);
+                        text-align: center;
+
+                        .roomIcon {
+                            margin-right: 0.5rem;
+                        }
+                    }
+                }
+                .roomDescription {
+                    padding: 1rem;
+                    position: relative;
+                    height: 5rem;
+                    p {
+                        @include body-md;
+                        font-weight: bold;
+                        overflow: hidden;
+                    }
+
+                    .ThumbnailInfo {
+                        .multiViewInfo,
+                        .showroomName {
+                            transition: opacity 0.25s ease;
+                        }
+                    }
+                }
+                .roomDescription {
+                    .ThumbnailInfo {
+                        .showroomName {
+                            display: none;
+                        }
+                        .multiViewInfo {
+                            display: flex;
+                        }
+                    }
+                }
+                &:hover {
+                    cursor: pointer;
+                    box-shadow: 0 0.35rem 1rem color(default, hint);
+
+                    .overlay {
+                        opacity: 1;
+                    }
+                }
+            }
+
+            @include md {
+                width: calc(100% / 3);
+            }
+
+            @include lg {
+                width: calc(100% / 4);
+            }
+        }
+    }
+}

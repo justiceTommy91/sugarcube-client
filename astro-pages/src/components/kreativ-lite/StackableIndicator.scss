@@ -1,0 +1,31 @@
+@import 'style/colors';
+@import 'z-indices';
+
+.StackableIndicator {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: $z-viewer-controls;
+    font-size: 0.875rem;
+    line-height: 1.5;
+    justify-content: center;
+    align-items: flex-start;
+    border: 0.25rem solid color(brand, secondary);
+    transition: border-width 0.25s ease;
+    pointer-events: none;
+
+    p {
+        padding: 0.25rem 0.5rem;
+        color: color(brand, foreground);
+        background-color: color(brand, secondary);
+        border-radius: 0.25rem;
+        pointer-events: all;
+    }
+
+    &.isStackableDraggingMode {
+        display: flex;
+    }
+}

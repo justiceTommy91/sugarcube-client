@@ -1,0 +1,82 @@
+@use 'style/typography' as *;
+@import 'style/colors';
+
+.PAXCustomizePanel {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1.5rem 2rem;
+    gap: 2rem;
+
+    .progress-step__circle {
+        background-color: color(default, link) !important;
+    }
+
+    .progress-step--completed .progress-step__line {
+        background-color: color(default, backgroundAlt) !important;
+    }
+
+    .progress-step .progress-step__content {
+        margin-block-end: 2.5rem;
+        margin-block-start: 0.2rem;
+    }
+
+    .progress-step:nth-child(2) .progress-step__content {
+        margin-block-start: -0.1rem;
+        margin-block-end: 2.5rem;
+    }
+}
+
+.PAXCustomizePanel__videoWrapper {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    overflow: hidden;
+
+    .PAXCustomizePanel__video {
+        position: unset;
+        width: 100%;
+        height: 17rem;
+
+        .simple-video {
+            object-fit: contain;
+        }
+    }
+
+    .simple-video__video-action {
+        left: 0;
+    }
+}
+
+.PAXCustomizePanel__heroCopy {
+    @include typography-base;
+    @include body-m;
+}
+
+.PAXCustomizePanel__stepContent {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    font-weight: bold;
+
+    button {
+        width: fit-content;
+    }
+}
+
+.progress-step:nth-child(2) .PAXCustomizePanel__stepContent {
+    gap: 0.4rem;
+}
+
+.PAXCustomizePanel__stepLabelRow {
+    display: flex;
+    align-items: center;
+    color: color(default, info);
+}
+
+.PAXCustomizePanel__stepHelper {
+    @include typography-base;
+    @include body-m;
+    color: color(menu, foreground);
+    font-weight: lighter;
+    width: 80%;
+}

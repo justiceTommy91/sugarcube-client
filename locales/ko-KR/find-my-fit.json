@@ -1,0 +1,134 @@
+{
+  "find-my-fit": {
+    "actions": {
+      "takePhoto": "사진 찍기",
+      "uploadPhoto": "사진 업로드"
+    },
+    "chooseSample": {
+      "scene_0": "편안한 공간",
+      "scene_1": "무드 있는 코너",
+      "title": "샘플 공간을 선택하여 사용해 보세요."
+    },
+    "csat": {
+      "bad": "나쁨",
+      "cancel": "취소",
+      "describeIt": "자세히 알려주세요",
+      "dissatisfied": "불만족",
+      "good": "좋음",
+      "goodOrBad": "감사합니다! 선택한 이유를 듣고 싶습니다. 경험에서 무엇이 돋보였나요?",
+      "neutral": "뉴트럴",
+      "privacyText": "개인정보(예: 이메일, 전화번호)를 포함하지 않도록 주의하세요.",
+      "ratingDescription": "여러분의 피드백은 경험을 개선하는 데 도움이 됩니다.",
+      "satisfied": "만족",
+      "submit": "제출",
+      "title": "어떠신가요?"
+    },
+    "hero": {
+      "imageAlt": "선반",
+      "subtitle": "사진을 추가하여 추천을 받아보세요.",
+      "title": "공간에 맞는 수납장 찾기"
+    },
+    "landing": {
+      "actions": {
+        "addPhoto": "사진 추가",
+        "takePhoto": "사진 찍기",
+        "trySampleSpace": "샘플 공간 사용해보기",
+        "uploadPhoto": "사진 업로드"
+      },
+      "comingSoon": {
+        "appStoreBadgeAlt": "App Store에서 다운로드",
+        "designOnDesktop": "데스크톱 디자인",
+        "getApp": "이케아 앱으로 공간 디자인하기",
+        "googlePlayBadgeAlt": "Google Play에서 다운로드",
+        "kreativLink": "이케아 Kreativ 링크",
+        "linkCopied": "링크가 복사되었습니다.",
+        "title": "이 기능은 곧 출시될 예정입니다!"
+      },
+      "features": {
+        "compare": {
+          "title": "옵션을 빠르게 비교하려면 스와이프하세요"
+        },
+        "intro": {
+          "title": "Find My Fit으로 수납 제품을 쉽게 쇼핑하세요"
+        },
+        "save": {
+          "title": "즐겨찾기와 '딱 맞는' 제품 찾기"
+        },
+        "setArea": {
+          "title": "대상 영역 그리기"
+        }
+      },
+      "hero": {
+        "genericCategory": "수납",
+        "imageAlt": "수납용품 이미지",
+        "privacyNote": "사람, 개인정보 또는 개인 소지품이 포함된 이미지를 업로드하지 마세요. 자세한 내용은 <1>개인정보처리방침</1>을 참조하세요.",
+        "subtitle": "사진을 사용하고 특정 공간에 맞는 {{subject}} 스타일을 둘러보세요",
+        "title": "공간에 맞는 수납장 찾기",
+        "videoAlt": "Find My Fit 기능 시연"
+      },
+      "page": {
+        "description": "사진을 업로드하면 탐색 중인 선반을 쇼핑할 수 있고, 추측할 필요 없이 적절한 모양과 크기를 찾을 수 있어요.",
+        "title": "Find My Fit"
+      },
+      "sampleSpaces": {
+        "error": "문제가 발생했습니다. 다시 시도해주세요.",
+        "title": "샘플 공간 선택"
+      }
+    },
+    "loginPrompt": {
+      "body": "공간에 맞는 수납 제품을 추천받으려면 무료 이케아 계정으로 로그인하거나 계정을 만드세요.",
+      "logIn": "로그인",
+      "signUp": "가입하기",
+      "title": "로그인하여 사진을 업로드하세요."
+    },
+    "page": {
+      "description": "이케아에서 우리 집에 꼭 맞는 제품을 찾아보세요",
+      "title": "Find My Fit"
+    },
+    "toasts": {
+      "unableToFavorite": "죄송하지만 제품을 목록에 추가할 수 없습니다."
+    },
+    "viewer": {
+      "accessibilityDescription": "Find My Fit은 사용자 공간의 사진을 사용하여 선택한 공간에 맞는 이케아 제품을 추천합니다. 시각 장애인이나 시력이 좋지 않은 분들에게는 그림 및 시각적 상호작용이 어려울 수 있습니다. 결과가 표시되면 제품 세부 정보, 가격 및 쇼핑 기능을 모두 이용할 수 있습니다.",
+      "addToBag": "장바구니에 추가",
+      "adjustHeader": "검색 영역 조정",
+      "clearDrawing": "명확한 도면",
+      "confirmDimension": "치수 확인",
+      "continue": "계속하기",
+      "continueAriaLabel": "다음 단계로 진행",
+      "decreaseDimension": "크기 줄이기",
+      "dimDepth": "깊이",
+      "dimHeight": "높이",
+      "dimWidth": "너비",
+      "done": "완료",
+      "doneAriaLabel": "편집 완료",
+      "drawFocusArea": "원하는 포커스 영역을 그립니다.",
+      "drawingHeader": "어디에 수납공간을 두고 싶으세요?",
+      "editArea": "편집 영역",
+      "fewResultsToast": "검색 영역의 크기를 조정하여 더 많은 결과를 확인해 보세요.",
+      "goBack": "돌아 가",
+      "goToImage": "이미지로 이동 {{index}}",
+      "increaseDimension": "크기 늘리기",
+      "magicEraser": "마법 지우개",
+      "noResults": "이 공간에 맞는 제품을 찾을 수 없습니다.",
+      "noResultsButton": "결과가 없습니다.",
+      "noResultsTitle": "결과가 없습니다.",
+      "removedFromFavorites": "즐겨찾기에서 제거됨",
+      "removeFavorite": "즐겨찾기에서 제거",
+      "retrySearch": "다시 시도하세요",
+      "savedToFavorites": "즐겨찾기에 추가됨",
+      "saveFavorite": "즐겨찾기에 추가",
+      "search": "검색",
+      "searchError": "일치하는 제품을 찾을 수 없습니다. 다른 영역을 그려보세요.",
+      "searchErrorToast": "문제가 발생했습니다. 다시 시도해주세요.",
+      "searching": "검색...",
+      "seeAllResults": "모든 결과 보기",
+      "showMoreDetails": "자세히 보기",
+      "swipeForMore": "더 보려면 스와이프하세요",
+      "tapToSelect": "제품 선택을 탭하세요.",
+      "tryAgain": "다시 시도하세요",
+      "viewResults_one": "결과 보기 {{count}}",
+      "viewResults_other": "결과 보기 {{count}}"
+    }
+  }
+}

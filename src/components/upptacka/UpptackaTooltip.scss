@@ -1,0 +1,26 @@
+.UpptackaTooltip {
+    position: absolute;
+    z-index: 1;
+    background: black;
+    color: white;
+    padding: 0.75rem;
+    border-radius: 0.25rem;
+    bottom: -12rem;
+    pointer-events: none;
+    left: 50%;
+    transform: translateX(-50%);
+    &.hide {
+        display: none;
+    }
+    .UpptackaTooltip__arrow-down {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        top: 100%;
+        width: 0;
+        height: 0;
+        border-left: 0.5rem solid transparent;
+        border-right: 0.5rem solid transparent;
+        border-top: 0.5rem solid black;
+    }
+}

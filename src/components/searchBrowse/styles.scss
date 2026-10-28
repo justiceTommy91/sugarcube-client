@@ -1,0 +1,381 @@
+@import 'style/colors';
+@import 'style/type';
+@import 'style/screen';
+@import 'style/zed';
+
+@keyframes shimmer {
+    0% {
+        background-position: -468px 0;
+    }
+    100% {
+        background-position: 468px 0;
+    }
+}
+
+@mixin shimmer-effect {
+    -webkit-animation-duration: 1s;
+    -webkit-animation-fill-mode: forwards;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-name: shimmer;
+    -webkit-animation-timing-function: linear;
+    background: #f6f7f8;
+    background-image: linear-gradient(to right, #f6f7f8 0%, #edeef1 20%, #f6f7f8 40%, #f6f7f8 100%);
+    background-repeat: no-repeat;
+    background-size: 800px 100%;
+    display: inline-block;
+    position: relative;
+}
+
+.SearchBrowse {
+    margin: 3rem auto;
+    color: color(default, foreground);
+
+    @include sm {
+        max-width: 60rem;
+        padding: 2rem;
+    }
+
+    @include lg {
+        max-width: 77rem;
+        padding: 0;
+    }
+
+    @include mob {
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        max-width: 30rem;
+        margin-top: 0;
+        margin: 2rem 1.5rem;
+    }
+
+    .brandName {
+        margin: 2rem 0;
+        padding-left: 0.7rem;
+
+        @include mob {
+            margin: 1rem;
+            margin-left: 0;
+        }
+
+        .label {
+            padding-left: 0.75rem;
+            font-weight: bold;
+        }
+    }
+
+    .headerContainer {
+        display: flex;
+        justify-content: space-between;
+        padding-left: 0.75rem;
+
+        .info {
+            .header {
+                @include heading-md;
+                font-weight: 700;
+                margin-bottom: 0.5rem;
+            }
+            .subheader {
+                @include body-lg;
+                color: color(default, description);
+                margin-bottom: 1.5rem;
+            }
+        }
+
+        .images {
+            padding: 0.25rem;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            width: 20rem;
+            align-self: flex-start;
+
+            .productImage {
+                width: 4rem;
+            }
+        }
+    }
+
+    .showroomsContainer {
+        margin-top: 1rem;
+
+        .showroomsCards {
+            //override carosel style to accomodate the box shadows
+            .carousel__content {
+                padding-left: 0.75rem;
+                padding-top: 0.75rem;
+            }
+        }
+        .showroomsItem {
+            display: flex;
+            flex-direction: column;
+            width: 18rem;
+        }
+
+        .showroomCard {
+            display: inline-block;
+            &.isLoading {
+                opacity: 0.5;
+                pointer-events: none;
+            }
+            &.top {
+                margin-bottom: 1.5rem;
+            }
+
+            .showroomCardInner {
+                box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.1);
+                border-radius: 0.25rem;
+                transition: all 0.25s ease;
+                overflow: hidden;
+
+                .roomImage {
+                    position: relative;
+
+                    img {
+                        width: 100%;
+                        border-radius: 0.25rem 0.25rem 0 0;
+                        aspect-ratio: 16/10;
+                        object-fit: cover;
+                        display: block;
+                    }
+                    .overlay {
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        @include docs-heading-md;
+                        color: color(brand, secondaryText);
+                        opacity: 0;
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        width: 100%;
+                        height: 100%;
+                        padding-top: 0.5rem;
+                        z-index: zed(above);
+                        pointer-events: none;
+                        transition: opacity 0.25s ease;
+                        background-color: color(modal, overlay);
+
+                        .roomIcon {
+                            margin-right: 0.5rem;
+                        }
+                    }
+                }
+                .roomDescription {
+                    padding: 1.25rem 1rem;
+                    position: relative;
+                    text-align: start;
+                    p {
+                        @include body-md;
+                        font-weight: bold;
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                        white-space: nowrap;
+                    }
+                }
+                &:hover {
+                    cursor: pointer;
+                    box-shadow: 0 0.35rem 1rem color(default, hint);
+
+                    .overlay {
+                        opacity: 1;
+                    }
+                }
+            }
+        }
+    }
+
+    .designInAppContainer {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding-left: 0.75rem;
+
+        .designInAppText {
+            margin-right: 2rem;
+            .header {
+                @include heading-md;
+                font-weight: 700;
+                margin-bottom: 0.5rem;
+            }
+            .subheader {
+                @include body-lg;
+                color: color(default, description);
+                margin-bottom: 1.5rem;
+            }
+        }
+        .designInAppImageContainer {
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            .designInAppButton {
+                position: absolute;
+                z-index: zed(above);
+            }
+            .designInAppImage {
+                border-radius: 0.5rem;
+                filter: drop-shadow(0px 6px 30px rgba(0, 0, 0, 0.1));
+                width: 100%;
+
+                @include md {
+                    max-width: 26.25rem;
+                }
+            }
+        }
+    }
+
+    .image {
+        display: grid;
+        place-items: center;
+        height: 100%;
+        background-position: top;
+        background-image: url('#{$PATH-PREFIX}/images/graphics/searchBrowse/mobile-own-space.png');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        border-radius: 0;
+        border-top-left-radius: 0.5rem;
+        border-top-right-radius: 0.5rem;
+
+        @include lg {
+            background-image: url('#{$PATH-PREFIX}/images/graphics/searchBrowse/own-space.png');
+            background-size: cover;
+        }
+
+        &.disabled {
+            width: 8.25rem;
+            max-height: 4.6875rem;
+            border-radius: 0.5rem;
+        }
+    }
+
+    .mobileCard {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 2rem;
+        background-color: color(default, backgroundAlt);
+        border-radius: 0.5rem;
+        max-width: 21rem;
+        margin: 0 auto 5rem;
+        height: 75%;
+
+        &.loading {
+            @include shimmer-effect;
+            width: 100%;
+        }
+
+        .title {
+            font-size: 1.125rem;
+            font-weight: bold;
+            line-height: 1.625rem;
+            letter-spacing: -0.076px;
+            margin-top: 1rem;
+        }
+        .subtitle {
+            margin-top: 1rem;
+            @include body-md;
+        }
+
+        .goToApp {
+            margin-top: 1rem;
+            color: color(default, background);
+            background-color: color(default, foreground);
+            width: 60%;
+            padding: 0;
+            @include body-md;
+        }
+    }
+
+    .parent {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, auto);
+        grid-gap: 0.5rem;
+        grid-template-areas:
+            'banner banner'
+            'card1 card2'
+            'card3 ownSpace'
+            'card4 ownSpace';
+
+        @include lg {
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-areas:
+                'banner banner ownSpace'
+                'card1 card2 ownSpace'
+                'card3 card4 ownSpace';
+        }
+
+        &.isMobile {
+            grid-template-areas:
+                'card1 card2'
+                'card3 ownSpace';
+        }
+
+        .searchBrowseCard {
+            border-radius: 0.5rem;
+            position: relative;
+            background-position: center;
+            background-size: cover;
+            height: 12.3125rem;
+
+            &.loading {
+                @include shimmer-effect;
+            }
+        }
+
+        .mobileCardImage {
+            max-width: 8.25rem;
+            max-height: 4.6875rem;
+        }
+
+        .card1 {
+            grid-area: card1;
+        }
+        .card2 {
+            grid-area: card2;
+        }
+        .card3 {
+            grid-area: card3;
+        }
+        .card4 {
+            grid-area: card4;
+        }
+
+        .cardPill {
+            transition: 0.1s ease-in;
+            position: absolute;
+            bottom: 1rem;
+            left: 1rem;
+            background-color: transparent;
+            color: color(brand, foreground) !important;
+            background-color: color(modal, overlay);
+
+            @include mob {
+                @include body-xs;
+            }
+        }
+
+        .ikeaAppPill {
+            @include mob {
+                @include body-xs;
+                padding: 0 0.5rem;
+                -webkit-padding-start: 0.5rem;
+                min-height: 2rem;
+                margin-top: 1rem;
+                .pill__icon {
+                    margin-inline-end: 0;
+                    width: 1.25rem;
+                    height: 1.25rem;
+                }
+            }
+        }
+    }
+    .moreRooms {
+        display: flex;
+        justify-content: center;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+}

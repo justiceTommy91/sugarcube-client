@@ -1,0 +1,134 @@
+{
+  "find-my-fit": {
+    "actions": {
+      "takePhoto": "Prendre une photo",
+      "uploadPhoto": "Télécharge une photo"
+    },
+    "chooseSample": {
+      "scene_0": "Coin détente",
+      "scene_1": "Le coin de la mauvaise humeur",
+      "title": "Choisis un exemple d’espace pour l’essayer"
+    },
+    "csat": {
+      "bad": "Mauvais",
+      "cancel": "Annuler",
+      "describeIt": "Merci de nous en dire plus",
+      "dissatisfied": "Insatisfait",
+      "good": "Bien",
+      "goodOrBad": "Merci! Nous aimerions savoir pourquoi vous avez choisi cette option. Qu’est-ce qui a marqué l’expérience, en bien ou en mal?",
+      "neutral": "Neutre",
+      "privacyText": "Afin de protéger ta vie privée, évite d’inclure des informations personnelles (p. ex. e-mail, téléphone).",
+      "ratingDescription": "Vos commentaires nous aideront à améliorer l’expérience.",
+      "satisfied": "Satisfait",
+      "submit": "Soumettre",
+      "title": "Comment est ton expérience?"
+    },
+    "hero": {
+      "imageAlt": "Étagères",
+      "subtitle": "Ajoutez une photo pour obtenir des recommandations.",
+      "title": "Trouvez le Rangement qui correspond à votre espace"
+    },
+    "landing": {
+      "actions": {
+        "addPhoto": "Ajouter une photo",
+        "takePhoto": "Prendre une photo",
+        "trySampleSpace": "Essayer un exemple d’espace",
+        "uploadPhoto": "Télécharge une photo"
+      },
+      "comingSoon": {
+        "appStoreBadgeAlt": "Télécharger sur l’App Magasin",
+        "designOnDesktop": "Conception sur ordinateur de bureau",
+        "getApp": "Télécharge l’ appli IKEA pour aménager un espace",
+        "googlePlayBadgeAlt": "Téléchargez-le sur Google Play",
+        "kreativLink": "Lien IKEA Kreativ",
+        "linkCopied": "Lien copié",
+        "title": "Cette fonctionnalité arrive bientôt!"
+      },
+      "features": {
+        "compare": {
+          "title": "Faites glisser pour comparer rapidement les options"
+        },
+        "intro": {
+          "title": "Acheter du Rangement est un jeu d’enfant avec Find My Fit"
+        },
+        "save": {
+          "title": "produits favoris et trouver «le bon»"
+        },
+        "setArea": {
+          "title": "Dessine ta zone cible"
+        }
+      },
+      "hero": {
+        "genericCategory": "Rangement",
+        "imageAlt": "Images des produits de Rangement",
+        "privacyNote": "Merci de ne pas télécharger d’images contenant des personnes, des données personnelles ou des objets privés. Pour en savoir plus, consulte notre <1>déclaration de protection des données</1> .",
+        "subtitle": "Utilise une photo et feuillette les styles de {{subject}} pour s’adapter à une zone spécifique",
+        "title": "Trouvez le Rangement qui correspond à votre espace",
+        "videoAlt": "Démonstration de la fonction Find My Fit"
+      },
+      "page": {
+        "description": "Télécharge une photo pour Magasin les étagères que tu explorais, afin d’obtenir l’apparence et la coupe qui te conviennent, sans avoir à deviner.",
+        "title": "Trouver ma forme"
+      },
+      "sampleSpaces": {
+        "error": "Une erreur s’est produite. Merci de réessayer.",
+        "title": "Choisis un exemple d’espace"
+      }
+    },
+    "loginPrompt": {
+      "body": "Pour obtenir des recommandations de Rangement pour ton espace, connecte-toi ou crée un compte IKEA gratuit.",
+      "logIn": "Se connecter",
+      "signUp": "Inscription",
+      "title": "Connectez-vous pour télécharger une photo"
+    },
+    "page": {
+      "description": "Trouve l’agencement parfait pour ta maison avec IKEA",
+      "title": "Trouver ma forme"
+    },
+    "toasts": {
+      "unableToFavorite": "Nous sommes désolés, mais nous n’avons pas pu ajouter ton Produit à la liste."
+    },
+    "viewer": {
+      "accessibilityDescription": "Find My Fit utilise une photo de ton espace pour te recommander des produits IKEA adaptés à la zone choisie. Le dessin et l’interaction visuelle peuvent être difficiles pour les personnes malvoyantes. Les détails du produit, les prix et les actions d’achat sont entièrement accessibles une fois les résultats affichés.",
+      "addToBag": "Ajouter au panier",
+      "adjustHeader": "Ajuster ta zone de recherche",
+      "clearDrawing": "Dessin clair",
+      "confirmDimension": "Confirmer la dimension",
+      "continue": "Continuer",
+      "continueAriaLabel": "Continuer à l'étape suivant",
+      "decreaseDimension": "Diminuer la dimension",
+      "dimDepth": "Profondeur",
+      "dimHeight": "Hauteur",
+      "dimWidth": "Largeur",
+      "done": "Terminé",
+      "doneAriaLabel": "Modifications terminées",
+      "drawFocusArea": "Dessine la zone de mise au point souhaitée",
+      "drawingHeader": "Où veux-tu ton Rangement?",
+      "editArea": "Zone d’édition",
+      "fewResultsToast": "Essayez de redimensionner votre zone de recherche pour obtenir plus de résultats.",
+      "goBack": "Revenir en arrière",
+      "goToImage": "Aller à l’image {{index}}",
+      "increaseDimension": "Augmenter la dimension",
+      "magicEraser": "Gomme magique",
+      "noResults": "Aucun produits trouvé pour cet espace.",
+      "noResultsButton": "Aucun résultat trouvé",
+      "noResultsTitle": "Aucun résultat trouvé",
+      "removedFromFavorites": "Retiré des favoris",
+      "removeFavorite": "Supprimer des favoris",
+      "retrySearch": "Réessaye",
+      "savedToFavorites": "Enregistré dans les favoris",
+      "saveFavorite": "Enregistrer dans les favoris",
+      "search": "Recherche",
+      "searchError": "Aucun produits correspondant trouvé. Essaye de dessiner une autre zone.",
+      "searchErrorToast": "Quelque chose s’est mal passé. Réessaye.",
+      "searching": "Recherche...",
+      "seeAllResults": "Voir tous les résultats",
+      "showMoreDetails": "Afficher plus de détails",
+      "swipeForMore": "Faites glisser pour en savoir plus",
+      "tapToSelect": "Appuyez pour sélectionner Produit",
+      "tryAgain": "Réessaye",
+      "viewResults_one": "Afficher {{count}} résultat",
+      "viewResults_other": "Afficher {{count}} résultats"
+    }
+  }
+}

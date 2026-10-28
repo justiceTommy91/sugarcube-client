@@ -1,0 +1,48 @@
+@import 'style/type';
+@import 'style/colors';
+@import 'style/zed';
+
+.ProductQuickFilters {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+
+    .headline {
+        @include heading-sm;
+    }
+
+    .trigger {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .pills-container {
+        display: flex;
+        flex-direction: row;
+        gap: 1rem;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    .pill {
+        @include body-xl;
+        padding: 1rem 1.75rem !important;
+        height: 4rem;
+    }
+
+    .pill--icon {
+        width: 4rem;
+    }
+}
+
+.ProductQuickFilters__popover-content {
+    width: 285px;
+    z-index: zed('tooltip');
+    .list-box__body {
+        max-height: 42rem;
+        padding: 0;
+    }
+    .list-view-item__title {
+        @include body-lg;
+    }
+}

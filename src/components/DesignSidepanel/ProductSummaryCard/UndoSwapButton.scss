@@ -1,0 +1,13 @@
+@import 'style/type';
+
+.UndoSwapButton {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .UndoSwapButton__notice {
+        @include body-sm;
+        margin: 0.5rem 0;
+    }
+}

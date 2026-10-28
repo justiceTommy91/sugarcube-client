@@ -1,0 +1,69 @@
+@import 'style/dimensions';
+@import 'style/colors';
+
+.DesignSidepanelOverlayPanel {
+    isolation: isolate;
+
+    .DesignSidepanelOverlayPanel__backdrop {
+        position: absolute;
+        inset: 0 -1px 0 0;
+        background: #00000040;
+        opacity: 0;
+        pointer-events: none;
+        transition: 300ms ease-in-out;
+    }
+
+    .DesignSidepanelOverlayPanel__wrapper {
+        position: absolute;
+        background: color(default, background);
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+        inset: 0 -1px 0 0;
+        transition: all 300ms ease-in-out;
+        transform: translateX(-100%);
+        border-inline-end: 1px solid #dfdfdf;
+    }
+
+    .DesignSidepanelOverlayPanel__header {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        padding-inline: 1rem;
+        font-weight: 700;
+        font-size: 1.125rem;
+        line-height: 1.44;
+        block-size: $topbar-height;
+        box-sizing: content-box;
+        border-bottom: 1px solid color(default, border);
+        color: color(default, foreground);
+        white-space: nowrap;
+    }
+
+    .DesignSidepanelOverlayPanel__action {
+        display: flex;
+        align-items: center;
+        justify-content: start;
+    }
+
+    .DesignSidepanelOverlayPanel__content {
+        overflow-y: auto;
+        display: flex;
+        flex-direction: column;
+        flex: 1 0;
+    }
+
+    &.DesignSidepanelOverlayPanel_open {
+        .DesignSidepanelOverlayPanel__backdrop {
+            opacity: 1;
+            pointer-events: all;
+            transform: translateX(0%);
+        }
+
+        .DesignSidepanelOverlayPanel__wrapper {
+            transform: translateX(0);
+        }
+    }
+}

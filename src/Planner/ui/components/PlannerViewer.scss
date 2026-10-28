@@ -1,0 +1,29 @@
+
+.PlannerViewer {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    .children {
+        position: absolute;
+    }
+}
+
+.PlannerViewerCanvas {
+    &.isHoveringWallElement {
+        cursor: url('#{$PATH-PREFIX}/images/icons/cursor_drag.svg') 21 20, grab;
+    }
+    &.isDraggingWallElement {
+        cursor: url('#{$PATH-PREFIX}/images/icons/cursor_dragging.svg') 21 20, grabbing;
+    }
+    &.isOrbitCameraEnabled {
+        cursor: -webkit-grab;
+        cursor: url('#{$PATH-PREFIX}/images/icons/cursor_orbit.svg') 21 20, grab;
+    }
+    &.isOrbitCameraDragging {
+        cursor: -webkit-grabbing;
+        cursor: url('#{$PATH-PREFIX}/images/icons/cursor_orbit_dragging.svg') 21 20, grabbing !important;
+    }
+}

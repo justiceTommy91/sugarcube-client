@@ -1,0 +1,90 @@
+@use 'style/typography' as *;
+@import 'style/colors';
+
+.FeedbackDrawer {
+    &__content {
+        padding: 0.5rem 1.25rem 1.25rem;
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    &__title {
+        @include typography-base;
+        @include heading-m;
+        margin: 0;
+    }
+
+    &__instruction {
+        @include typography-base;
+        @include body-m;
+        margin: 0;
+        color: color(default, subHeader);
+    }
+
+    &__rating {
+        display: flex;
+        justify-content: space-between;
+        gap: 0.5rem;
+    }
+
+    &__rating-btn {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 3rem;
+        height: 3rem;
+        padding: 0.375rem; // (48px - 36px) / 2
+        background: none;
+        border: none;
+        flex: 1;
+        color: color(menu, foreground);
+
+        svg {
+            width: 2.25rem;
+            height: 2.25rem;
+            display: block;
+        }
+
+        &--selected {
+            color: color(menu, selectedForeground);
+        }
+
+        &:focus-visible {
+            outline: 0.125rem solid color(default, interactive);
+            outline-offset: 0.125rem;
+        }
+    }
+
+    &__textarea {
+        @include typography-base;
+        @include body-m;
+        width: 100%;
+        box-sizing: border-box;
+        resize: none;
+        border: none;
+        border-radius: 0.5rem;
+        padding: 0.75rem;
+        background-color: color(default, backgroundAlt);
+        color: color(default, foreground);
+        font-family: inherit;
+        transition: background-color 0.15s ease;
+
+        &::placeholder {
+            color: color(default, subHeader);
+        }
+
+        &:focus {
+            outline: 0.125rem solid color(default, interactive);
+            outline-offset: -0.0625rem;
+        }
+    }
+
+    &__char-count {
+        @include typography-base;
+        @include body-s;
+        margin: 0;
+        color: color(default, subHeader);
+        text-align: right;
+    }
+}

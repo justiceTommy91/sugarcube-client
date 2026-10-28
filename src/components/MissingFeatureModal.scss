@@ -1,0 +1,62 @@
+@import 'style/type';
+@import 'style/colors';
+@import 'style/zed';
+
+$iconSize: 2.6rem;
+.MissingFeatureModal {
+    .modalPrompt {
+        display: flex;
+    }
+
+    .modalImageContainer {
+        display: flex;
+        position: relative;
+        justify-content: center;
+        z-index: zed(above);
+        margin: 2rem;
+        img {
+            margin-top: -2.75rem;
+            height: 150px;
+        }
+    }
+
+    .modalContent {
+        p {
+            @include body-lg;
+            color: color(default, description);
+            font-size: 0.875rem;
+            line-height: 1.625rem;
+            margin-top: -0.5rem;
+        }
+    }
+
+    .modalFooter {
+        padding: 1.5rem 2rem 0.5rem 2rem;
+        display: flex;
+        justify-content: space-around;
+        button {
+            span {
+                display: flex;
+                height: 3.5rem;
+                padding: 0.5rem 1.5rem;
+                justify-content: center;
+                align-items: center;
+            }
+            &.noWrap {
+                white-space: nowrap;
+            }
+        }
+    }
+
+    .closeModal {
+        display: flex;
+        justify-content: flex-end;
+        z-index: zed(above);
+        margin: 1.5rem 0.75rem 0 0;
+        button {
+            height: 3.5rem;
+            margin-top: -3.75rem;
+            margin-right: -2.25rem;
+        }
+    }
+}

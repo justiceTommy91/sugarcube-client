@@ -1,0 +1,134 @@
+{
+  "find-my-fit": {
+    "actions": {
+      "takePhoto": "Take a photo",
+      "uploadPhoto": "Upload a photo"
+    },
+    "chooseSample": {
+      "scene_0": "Relaxing nook",
+      "scene_1": "Moody corner",
+      "title": "Choose a sample space to try it out"
+    },
+    "csat": {
+      "bad": "Bad",
+      "cancel": "Cancel",
+      "describeIt": "Please tell us more",
+      "dissatisfied": "Dissatisfied",
+      "good": "Good",
+      "goodOrBad": "Thanks! We’d love to learn why you chose that. What stood out in the experience, good, or bad?",
+      "neutral": "Neutral",
+      "privacyText": "To protect your privacy, please avoid including personal information (e.g. email, phone).",
+      "ratingDescription": "Your feedback will help us improve.",
+      "satisfied": "Satisfied",
+      "submit": "Submit",
+      "title": "How is your experience?"
+    },
+    "hero": {
+      "imageAlt": "Shelves",
+      "subtitle": "Add a photo to get recommendations.",
+      "title": "Find storage that matches your space"
+    },
+    "landing": {
+      "actions": {
+        "addPhoto": "Add a photo",
+        "takePhoto": "Take a photo",
+        "trySampleSpace": "Try a sample space",
+        "uploadPhoto": "Upload a photo"
+      },
+      "comingSoon": {
+        "appStoreBadgeAlt": "Download on the App Store",
+        "designOnDesktop": "Design on desktop",
+        "getApp": "Get the IKEA app to design a space",
+        "googlePlayBadgeAlt": "Get it on Google Play",
+        "kreativLink": "IKEA Kreativ link",
+        "linkCopied": "Link copied",
+        "title": "This feature is coming soon!"
+      },
+      "features": {
+        "compare": {
+          "title": "Swipe to quickly compare options"
+        },
+        "intro": {
+          "title": "Shopping for storage is easy with Find My Fit"
+        },
+        "save": {
+          "title": "Favorite items and find “the one”"
+        },
+        "setArea": {
+          "title": "Draw your target area"
+        }
+      },
+      "hero": {
+        "genericCategory": "storage",
+        "imageAlt": "Images of storage items",
+        "privacyNote": "Please don't upload images with people, personal data or private items. Learn more in our <1>privacy policy</1>.",
+        "subtitle": "Use a photo and flip through styles of {{subject}} to fit a specific area",
+        "title": "Find storage that matches your space",
+        "videoAlt": "Find My Fit feature demonstration"
+      },
+      "page": {
+        "description": "Upload a photo to shop for shelving you were exploring, to get the right look and fit, without the guesswork.",
+        "title": "Find My Fit"
+      },
+      "sampleSpaces": {
+        "error": "Something went wrong. Please try again.",
+        "title": "Pick a sample space"
+      }
+    },
+    "loginPrompt": {
+      "body": "To get storage suggestions for your space, sign in or create a free IKEA account.",
+      "logIn": "Log in",
+      "signUp": "Sign up",
+      "title": "Sign in to upload a photo"
+    },
+    "page": {
+      "description": "Find the perfect fit for your home with IKEA",
+      "title": "Find My Fit"
+    },
+    "toasts": {
+      "unableToFavorite": "We're sorry, but we could not add your item to the list."
+    },
+    "viewer": {
+      "accessibilityDescription": "Find My Fit uses a photo of your space to recommend IKEA products that fit a chosen area. The drawing and visual interaction may be challenging for those with visual impairments or low vision. Product details, pricing, and shopping actions are fully accessible once results are shown.",
+      "addToBag": "Add to bag",
+      "adjustHeader": "Adjust your search area",
+      "clearDrawing": "Clear drawing",
+      "confirmDimension": "Confirm dimension",
+      "continue": "Continue",
+      "continueAriaLabel": "Continue to next step",
+      "decreaseDimension": "Decrease dimension",
+      "dimDepth": "Depth",
+      "dimHeight": "Height",
+      "dimWidth": "Width",
+      "done": "Done",
+      "doneAriaLabel": "Done editing",
+      "drawFocusArea": "Draw your desired focus area",
+      "drawingHeader": "Where do you want your storage?",
+      "editArea": "Edit area",
+      "fewResultsToast": "Try resizing your search area to get more results.",
+      "goBack": "Go back",
+      "goToImage": "Go to image {{index}}",
+      "increaseDimension": "Increase dimension",
+      "magicEraser": "Magic eraser",
+      "noResults": "No products found for this space.",
+      "noResultsButton": "No results found",
+      "noResultsTitle": "No results found",
+      "removedFromFavorites": "Removed from favorites",
+      "removeFavorite": "Remove from favorites",
+      "retrySearch": "Try again",
+      "savedToFavorites": "Saved to favorites",
+      "saveFavorite": "Save to favorites",
+      "search": "Search",
+      "searchError": "No matching products found. Try drawing a different area.",
+      "searchErrorToast": "Something went wrong. Please try again.",
+      "searching": "Searching...",
+      "seeAllResults": "See all results",
+      "showMoreDetails": "Show More Details",
+      "swipeForMore": "Swipe for more",
+      "tapToSelect": "Tap to select item",
+      "tryAgain": "Try again",
+      "viewResults_one": "View {{count}} result",
+      "viewResults_other": "View {{count}} results"
+    }
+  }
+}

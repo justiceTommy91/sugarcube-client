@@ -1,0 +1,68 @@
+@import 'style/colors';
+
+@font-face {
+    font-family: 'Noto Sans Monospaced IKEA';
+    src: url('#{$PATH-PREFIX}/fonts/NotoSansMonospacedIKEA-Bold.woff2') format('woff2');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+.SummaryPrice {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    .price {
+        display: flex;
+        align-items: flex-start;
+        font-size: 1.125rem;
+        font-family: 'Noto Sans Monospaced IKEA', monospace;
+        line-height: 1;
+        letter-spacing: 0.0625rem;
+        color: color(cta, primary);
+        margin-left: 0.5rem;
+
+        .currency,
+        .fraction,
+        .decimal {
+            font-size: 0.875rem;
+        }
+
+        .currency.subscript {
+            align-self: flex-end;
+        }
+
+        .integer,
+        .fraction {
+            display: inline-block;
+        }
+
+        .currency::before {
+            display: 'block';
+            content: ' ';
+        }
+    }
+
+    &:hover {
+        background-color: transparent;
+    }
+    button {
+        .btn__inner {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 0.5rem;
+            @media (min-width: 1280px) {
+                padding: 0 1rem 0 1.25rem;
+            }
+        }
+        span {
+            display: none;
+            @media (min-width: 1280px) {
+                display: block;
+            }
+        }
+    }
+}

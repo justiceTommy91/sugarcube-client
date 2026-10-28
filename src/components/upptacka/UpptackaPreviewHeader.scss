@@ -1,0 +1,24 @@
+.UpptackaPreviewHeader {
+    position: relative;
+    padding: 2.875rem 4rem;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .UpptackaPreviewHeader__right-buttons {
+        display: flex;
+        justify-content: space-between;
+        gap: 1rem;
+        .UpptackaPreviewHeader__save-button {
+            font-size: 1.25rem;
+            line-height: 1;
+        }
+    }
+    .btn__inner {
+        padding: 1.25rem;
+        height: 100%;
+        .Icon {
+            height: 24px;
+        }
+    }
+}

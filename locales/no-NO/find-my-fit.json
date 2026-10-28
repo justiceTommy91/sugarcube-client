@@ -1,0 +1,134 @@
+{
+  "find-my-fit": {
+    "actions": {
+      "takePhoto": "Ta et bilde",
+      "uploadPhoto": "Last opp et bilde"
+    },
+    "chooseSample": {
+      "scene_0": "Avslappende krok",
+      "scene_1": "Stemningsfullt hjørne",
+      "title": "Velg en prøveplass for å prøve den ut"
+    },
+    "csat": {
+      "bad": "Dårlig",
+      "cancel": "Avbryt",
+      "describeIt": "Fortell oss mer",
+      "dissatisfied": "Misfornøyd",
+      "good": "Bra",
+      "goodOrBad": "Takk! Vi vil gjerne vite hvorfor du valgte det. Hva var bra eller dårlig i opplevelsen som skilte seg ut?",
+      "neutral": "Nøytralt",
+      "privacyText": "For å beskytte personvernet ditt må du unngå å inkludere personopplysninger (f.eks. e-post, telefon).",
+      "ratingDescription": "Tilbakemeldingen din vil hjelpe oss med å forbedre opplevelsen.",
+      "satisfied": "Fornøyd",
+      "submit": "Send inn",
+      "title": "Hvordan er erfaringen din?"
+    },
+    "hero": {
+      "imageAlt": "Hyller",
+      "subtitle": "Legg til et bilde for å få anbefalinger.",
+      "title": "Finn oppbevaring som passer til plassen din"
+    },
+    "landing": {
+      "actions": {
+        "addPhoto": "Legg til et bilde",
+        "takePhoto": "Ta et bilde",
+        "trySampleSpace": "Prøv et rom",
+        "uploadPhoto": "Last opp et bilde"
+      },
+      "comingSoon": {
+        "appStoreBadgeAlt": "Last ned på App Store",
+        "designOnDesktop": "Design på skrivebordet",
+        "getApp": "Skaff deg IKEA app for å designe et rom",
+        "googlePlayBadgeAlt": "Last ned på Google Play",
+        "kreativLink": "IKEA Kreativ -lenke",
+        "linkCopied": "Lenken er kopiert",
+        "title": "Denne funksjonen kommer snart!"
+      },
+      "features": {
+        "compare": {
+          "title": "Sveip for å sammenligne alternativer raskt"
+        },
+        "intro": {
+          "title": "Det er enkelt å kjøpe oppbevaring med Find My Fit"
+        },
+        "save": {
+          "title": "Favorittgjenstander og finn «den ene»"
+        },
+        "setArea": {
+          "title": "Tegn målområdet ditt"
+        }
+      },
+      "hero": {
+        "genericCategory": "oppbevaring",
+        "imageAlt": "Bilder av oppbevaringsartikler",
+        "privacyNote": "Ikke last opp bilder med personer, personopplysninger eller private gjenstander. Les mer i våre <1>retningslinjer for personvern</1>.",
+        "subtitle": "Bruk et bilde og bla gjennom stiler på {{subject}} for å passe til et bestemt område",
+        "title": "Finn oppbevaring som passer til plassen din",
+        "videoAlt": "Demonstrasjon av funksjonen Finn My Fit"
+      },
+      "page": {
+        "description": "Last opp et bilde for å handle hyllene du utforsket, for å få riktig utseende og passform, uten å måtte gjette.",
+        "title": "Finn meg som passer"
+      },
+      "sampleSpaces": {
+        "error": "Noe gikk galt. Prøv igjen.",
+        "title": "Velg et rom"
+      }
+    },
+    "loginPrompt": {
+      "body": "Logg inn eller opprett en gratis IKEA konto for å få anbefalinger for oppbevaringsplass.",
+      "logIn": "Logg inn",
+      "signUp": "Meld deg på",
+      "title": "Logg på for å laste opp et bilde"
+    },
+    "page": {
+      "description": "Finn den som passer perfekt til hjemmet ditt med IKEA",
+      "title": "Finn meg som passer"
+    },
+    "toasts": {
+      "unableToFavorite": "Vi beklager, men vi kunne ikke legge til artikkelen din på listen."
+    },
+    "viewer": {
+      "accessibilityDescription": "Find My Fit bruker et bilde av stedet ditt for å anbefale IKEA -produkter som passer til et valgt område. Tegningen og den visuelle interaksjonen kan være utfordrende for de med synshemming eller svaksynt. Produkt,priser og handlehandlinger er tilgjengelige når resultatene vises.",
+      "addToBag": "Legg til i handlevogna",
+      "adjustHeader": "Juster søkeområdet",
+      "clearDrawing": "Tydelig tegning",
+      "confirmDimension": "Bekreft dimensjon",
+      "continue": "Fortsett",
+      "continueAriaLabel": "Fortsett til neste trinn",
+      "decreaseDimension": "Redusere dimensjonen",
+      "dimDepth": "Dybde",
+      "dimHeight": "Høyde",
+      "dimWidth": "Bredde",
+      "done": "Ferdig",
+      "doneAriaLabel": "Ferdig med redigering",
+      "drawFocusArea": "Tegn ønsket fokusområde",
+      "drawingHeader": "Hvor vil du ha oppbevaringsplassen din?",
+      "editArea": "Rediger område",
+      "fewResultsToast": "Prøv å endre størrelsen på søkeområdet for å få flere resultater.",
+      "goBack": "Gå tilbake",
+      "goToImage": "Gå til bildet {{index}}",
+      "increaseDimension": "Øke dimensjonen",
+      "magicEraser": "Magisk viskelær",
+      "noResults": "Finner ingen produkter for dette lokalet.",
+      "noResultsButton": "Fant ingen resultater",
+      "noResultsTitle": "Fant ingen resultater",
+      "removedFromFavorites": "Fjernet fra favoritter",
+      "removeFavorite": "Fjern fra favoritter",
+      "retrySearch": "Prøv igjen",
+      "savedToFavorites": "Lagret i favoritter",
+      "saveFavorite": "Lagre i favoritter",
+      "search": "Søk",
+      "searchError": "Fant ingen passende produkter. Prøv å tegne et annet område.",
+      "searchErrorToast": "Noe gikk galt. Prøv igjen.",
+      "searching": "Søker ...",
+      "seeAllResults": "Se alle resultater",
+      "showMoreDetails": "Vis flere detaljer",
+      "swipeForMore": "Sveip for mer",
+      "tapToSelect": "Trykk for å velge element",
+      "tryAgain": "Prøv igjen",
+      "viewResults_one": "Visning {{count}} resultatet",
+      "viewResults_other": "Visning {{count}} resultater"
+    }
+  }
+}

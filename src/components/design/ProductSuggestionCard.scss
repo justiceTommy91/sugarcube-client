@@ -1,0 +1,31 @@
+@import 'style/colors';
+
+.suggestionCard {
+    .choice-item {
+        padding: 1rem 0;
+        margin: 1rem 0;
+
+        .choice-item__border {
+            border-color: color(form, inputBorder);
+            opacity: 0.5;
+            border-width: 1px;
+        }
+
+        .choice-item__action {
+            padding-left: 1.5rem;
+            padding-right: 1rem;
+            cursor: default;
+        }
+
+        .captionRow {
+            display: flex;
+            flex-direction: row;
+
+            .pill {
+                color: color(default, background);
+                background-color: color(default, foreground);
+                height: 1rem;
+            }
+        }
+    }
+}

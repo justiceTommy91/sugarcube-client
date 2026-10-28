@@ -1,0 +1,143 @@
+@use 'style/typography' as *;
+@use 'style/screen' as *;
+
+.BeforeAfterSection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 4rem 0rem;
+    gap: 4rem;
+    @include skapa-l {
+        padding: 5.5rem 0rem;
+    }
+
+    h3 {
+        margin: 0 2rem;
+        @include typography-base;
+        @include statement-m;
+        @include skapa-l {
+            @include statement-l;
+        }
+    }
+
+    &__images-container {
+        position: relative;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    &__background-strip {
+        position: absolute;
+        top: 50%;
+        left: 0;
+        right: 0;
+        height: 195px;
+        transform: translateY(-50%);
+        // one-off color for this section
+        background-color: #f1ece1;
+        z-index: 0;
+    }
+
+    &__image-pair-container {
+        display: grid;
+        padding: 0 2rem;
+        gap: 2.5rem;
+        position: relative;
+        z-index: 1;
+        grid-template-columns: 1fr;
+        @include skapa-m {
+            grid-template-columns: repeat(2, minmax(0, 450px));
+        }
+    }
+
+    &__image-wrapper {
+        position: relative;
+        overflow: hidden;
+        border-radius: 0.75rem;
+    }
+
+    &__transition-image {
+        width: 100%;
+        height: auto;
+        display: block;
+        transition: opacity 0.5s ease-in-out;
+
+        &--room-one {
+            position: relative;
+            animation: fadeInOutRoomOne 12s ease-in-out infinite;
+        }
+
+        &--room-two {
+            position: absolute;
+            top: 0;
+            left: 0;
+            animation: fadeInOutRoomTwo 12s ease-in-out infinite;
+        }
+
+        &--room-three {
+            position: absolute;
+            top: 0;
+            left: 0;
+            animation: fadeInOutRoomThree 12s ease-in-out infinite;
+        }
+    }
+
+    @keyframes fadeInOutRoomOne {
+        0% {
+            opacity: 1;
+        }
+        26.67% {
+            opacity: 1;
+        }
+        33.33% {
+            opacity: 0;
+        }
+        93.33% {
+            opacity: 0;
+        }
+        100% {
+            opacity: 1;
+        }
+    }
+
+    @keyframes fadeInOutRoomTwo {
+        0% {
+            opacity: 0;
+        }
+        26.67% {
+            opacity: 0;
+        }
+        33.33% {
+            opacity: 1;
+        }
+        60% {
+            opacity: 1;
+        }
+        66.67% {
+            opacity: 0;
+        }
+        100% {
+            opacity: 0;
+        }
+    }
+
+    @keyframes fadeInOutRoomThree {
+        0% {
+            opacity: 0;
+        }
+        60% {
+            opacity: 0;
+        }
+        66.67% {
+            opacity: 1;
+        }
+        93.33% {
+            opacity: 1;
+        }
+        100% {
+            opacity: 0;
+        }
+    }
+}

@@ -1,0 +1,44 @@
+---
+import { KreativLiteApp } from '@astro-components/kreativ-lite/KreativLiteApp'
+import BaseLayout from '@layouts/BaseLayout.astro'
+import { generateLocaleStaticPaths, type LocalePageProps, type Translations } from '@lib/static-paths-utils'
+
+export async function getStaticPaths() {
+    return generateLocaleStaticPaths()
+}
+
+const { locale, translations } = Astro.props as LocalePageProps
+const { country, lang } = Astro.params
+const market = `${country}/${lang}`
+---
+
+<BaseLayout
+    locale={locale}
+    market={market}
+    title="IKEA Kreativ"
+    description=""
+    allowSeo={false}
+    showPricePackage={false}
+    showHeader={false}
+    showFooter={false}
+>
+    <KreativLiteApp client:only="react" locale={locale} market={market} translations={translations as Translations} />
+</BaseLayout>
+
+<style is:global>
+    body {
+        margin: 0;
+        overflow: hidden;
+        /* Prevent iOS rubber-band overscroll from cancelling ongoing touch/pointer drag sequences */
+        overscroll-behavior: none;
+    }
+
+    body .hnf-2nd-line {
+        height: 0;
+        margin-top: 0;
+    }
+
+    body .hnf-2nd-line .hnf-page-container__inner .hnf-page-container__main {
+        border-bottom: none;
+    }
+</style>

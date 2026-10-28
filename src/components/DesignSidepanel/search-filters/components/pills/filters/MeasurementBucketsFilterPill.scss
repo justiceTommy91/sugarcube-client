@@ -1,0 +1,14 @@
+.MeasurementBucketsFilterPill {
+    position: relative;
+
+    &__measurementBuckets {
+        padding: 1rem 0;
+    }
+
+    &__dimensionTitle {
+        font-size: 0.875rem;
+        font-weight: 600;
+        color: #000;
+        margin: 0 0 0.75rem 0;
+    }
+}

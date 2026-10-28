@@ -1,0 +1,281 @@
+{
+  "campaigns": {
+    "btc": {
+      "cards": {
+        "cards": {
+          "0": {
+            "alt": "Cropped virtual room configured in IKEA Kreativ with blue walls, wood flooring, and a window. The top of the walls showcase measurements.",
+            "subtitle": "Make it just like your dorm, define room shape and size. Customize doors, windows, and floor style.",
+            "title": "Build your room"
+          },
+          "1": {
+            "alt": "Empty virtual dorm room in IKEA Kreativ with light wood flooring, blush-colored walls, and a white pendant lamp hanging from the ceiling.",
+            "subtitle": "Quickly visualize your favorite dorm essentials and other IKEA products together in this empty room.",
+            "title": "Try a starter room"
+          },
+          "2": {
+            "alt": "Empty virtual dorm room in IKEA Kreativ with light gray wood flooring, white walls except for a pale blue accent wall, and a window allowing natural light to flow in.",
+            "subtitle": "Find your saved scans and designs here. Or, explore other rooms in our gallery.",
+            "title": "Discover more rooms"
+          }
+        },
+        "title": "Other ways to design your college dorm room"
+      },
+      "designOnYourComputer": {
+        "alt": "A hand holding a mobile device showing a scanned room with added IKEA dorm decor and furniture in IKEA Kreativ. The actual room is partially visible in the background.",
+        "body": "If you’d rather design your dorm room on a bigger screen, try IKEA Kreativ on ikea.com.",
+        "title": "Design on your computer"
+      },
+      "dorms": {
+        "cards": {
+          "0": {
+            "alt": "Dollhouse view of pink, green, and yellow virtual dorm room design in IKEA Kreativ. The room includes a MALM bed, nightstand, dresser, desk, wardrobe, coffee table, and sofa.",
+            "label": "Modern whimsy dorm room"
+          },
+          "1": {
+            "alt": "Dollhouse view of a blue, pink, yellow, and orange virtual dorm room in IKEA Kreativ. The room includes a MALM bed, nightstand, dresser, desk, wardrobe, chair, and table.",
+            "label": "Creative energy dorm room"
+          }
+        },
+        "subtitle": "Swap, move, and rotate desks, chairs, dressers, and other dorm room essentials until you find a layout that suits your style and your space.",
+        "title": "Put your spin on a furnished dorm room"
+      },
+      "downloadAppMobileButton": {
+        "text": "Try IKEA Kreativ in the IKEA app"
+      },
+      "hero-dorm-1": {
+        "alt": "Video demonstration showcasing how to use IKEA Kreativ to virtually design colorful dorm rooms. The video highlights swapping and dorm decor product recommendations.",
+        "body": "Transform Your Dorm Room from oh no 😖 to oh yes 😍 in minutes.",
+        "cta": {
+          "mobile": "Try IKEA Kreativ in the IKEA app",
+          "web": "Get started"
+        },
+        "title": "Make your dorm room dreams come true"
+      },
+      "mixAndMatch": {
+        "alt": "Stylish and colorful IKEA dorm decor product recommendations, including bedding, storage, desk organization, and lighting.",
+        "body": "Find all of your college must-haves in one place. Try different product combinations in a virtual room to find the perfect look and fit. Let the fun begin!",
+        "cta": {
+          "mobile": "Try IKEA Kreativ in the IKEA app",
+          "web": "Open an empty room"
+        },
+        "title": "Mix and match dorm essentials"
+      },
+      "scanPromo": {
+        "alt": "A hand holding a mobile device showing a scanned room with added IKEA dorm decor and furniture in IKEA Kreativ. The actual room is partially visible in the background.",
+        "body": "Take your dorm room to the next level. Scan your space with the IKEA App. Erase items you don’t want and design a room you love.",
+        "cta": {
+          "mobile": "Try IKEA Kreativ in the IKEA app",
+          "web": "Get the IKEA app"
+        },
+        "title": "Scan your room for a perfect fit"
+      },
+      "seo": {
+        "description": "Transform your college dorm room with IKEA Kreativ. This virtual dorm designer is fun, fast, and easy. Discover dorm room inspo and dorm decor must-haves.",
+        "keywords": "Dorm room ideas, College dorm room, dorm room design ideas, college dorm design, dorm decor, dorm room decor, dorm decor ideas, dorm room design, dorm design, Dorm room planner, Dorm designer, Dorm planner, Dorm room visualizer, Virtual dorm designer, Dorm decoration, Dorm room decoration, College room designs",
+        "title": "Dorm Room Design Ideas and Dorm Essentials"
+      },
+      "social": {
+        "posts": {
+          "0": {
+            "alt": "A virtual dorm room design in IKEA Kreativ with a MALM bed, small nightstand, colorful striped rug, and a yellow cart. Oversized artwork and a memoboard hang on the walls.",
+            "cta": {
+              "mobile": "Try this room",
+              "web": "Try this room"
+            },
+            "username": "@fun2bme"
+          },
+          "1": {
+            "alt": "A virtual dorm room design in IKEA Kreativ with green side chair, red desk chair, white furniture, and a striped rug. A pegboard and shelving unit hang on the walls.",
+            "cta": {
+              "mobile": "Try this room",
+              "web": "Try this room"
+            },
+            "username": "@anudhagat"
+          },
+          "2": {
+            "alt": "A virtual dorm room design in IKEA Kreativ with a bed topped with a striped duvet cover and a blue pillow. A patchwork rug, art on the walls, and a blue chair next to a side table.",
+            "cta": {
+              "mobile": "Try this room",
+              "web": "Try this room"
+            },
+            "username": "@tonyrovello"
+          },
+          "3": {
+            "alt": "A virtual college room design in IKEA Kreativ with a black chair and side table next to a window. Minimal white dresser and wardrobe alongside a bed with a floral duvet cover.",
+            "cta": {
+              "mobile": "Try this room",
+              "web": "Try this room"
+            },
+            "username": "@pinatasbyd"
+          },
+          "4": {
+            "alt": "A virtual shared dorm room idea in IKEA Kreativ with a desk and chair near a window. A lounge chair and an area rug sit in front of a MALM bed with a blue duvet cover.",
+            "cta": {
+              "mobile": "Try this room",
+              "web": "Try this room"
+            },
+            "username": "@she_is_mor"
+          }
+        },
+        "subtitle": "Get inspired! Jump into other people’s dorm room designs, then change the look to fit your own style. Show off your Kreativ-ity by sharing your project on Instagram. Use #MyIKEAKreativDorm for a chance to be featured here.",
+        "title": "As seen on Instagram"
+      },
+      "tips": {
+        "cta": {
+          "mobile": "Keep reading",
+          "web": "Keep reading"
+        },
+        "firstCard": {
+          "alt": "A virtual dorm room seating area in IKEA Kreativ with yellow loveseat, black side table, green coffee table. The top of the table is lifted to reveal hidden storage space.",
+          "body": "College dorm rooms are notoriously small. Select furniture and decor that will offer you a little extra storage, like the GRIMSARBO side table. The GRANVÅG wall mirror also has hidden storage behind it.",
+          "title": "Think outside of the box when it comes to storage"
+        },
+        "secondCard": {
+          "alt": "A virtual dorm room seating area in IKEA Kreativ with green movable furniture and brightly colored textiles. A green cart with casters is stocked with kitchen essentials.",
+          "body": "Many different activities take place in dorm rooms including sleeping, studying, movie nights, and impromptu dance parties with friends. That being said, furniture with wheels will make it super easy to rearrange your space without breaking a sweat.",
+          "title": "Invest in furniture with casters"
+        },
+        "title": "Design tips"
+      }
+    },
+    "winter-holiday": {
+      "cards": {
+        "cards": {
+          "0": {
+            "alt": "Cropped image of a virtual room configured in IKEA Kreativ with blue walls, wood flooring, and a window. The tops of the walls feature measurements.",
+            "subtitle": "Define room shape and size. Customize doors, windows, and floor style.",
+            "title": "Build your room"
+          },
+          "1": {
+            "alt": "A hand holding a mobile device showing a scanned room with added IKEA dorm decor and furniture in IKEA Kreativ. The actual room is partially visible in the background.",
+            "subtitle": "See how products look and fit in your own home. Scan in the IKEA App. Design in App or Web.",
+            "title": "Scan your room"
+          },
+          "2": {
+            "alt": "Dollhouse views of three empty virtual rooms in IKEA Kreativ, each with different door and window layouts, wall colors, and wood floors.",
+            "subtitle": "Find your saved scans and designs here. Or explore other rooms in our gallery.",
+            "title": "Discover more rooms"
+          }
+        },
+        "title": "Other ways to start"
+      },
+      "designOnYourComputer": {
+        "alt": "A person sits at a table using a laptop and smartphone. The screens show a virtual room layout created with the the IKEA Kreativ room designer.",
+        "body": "If you’d rather design your space on a bigger screen, try IKEA Kreativ on ikea.com.",
+        "title": "Design on your computer"
+      },
+      "downloadAppMobileButton": {
+        "text": "Try IKEA Kreativ in the IKEA app"
+      },
+      "hero-dorm-1": {
+        "alt": "Video demonstration showcasing how to use IKEA Kreativ to virtually design a festive living room and dining room. The video highlights holiday decor recommendations.",
+        "body": "Transform your home into a dreamy winter wonderland with the IKEA Kreativ room designer. Mix and match furniture and decor until you find a combination that’s merry & bright.",
+        "cta": {
+          "mobile": "Try IKEA Kreativ in the IKEA app",
+          "web": "Get started"
+        },
+        "title": "Welcome guests in style this holiday season"
+      },
+      "mixAndMatch": {
+        "alt": "Festive and colorful IKEA holiday decor recommendations, including products such as a Christmas tree, dining chair, table, dishware, rug, and other holiday accessories.",
+        "body": "Jump into an empty virtual room to try different combinations of furniture,  storage, and decor. Let the celebrations begin!",
+        "cta": {
+          "mobile": "Try IKEA Kreativ in the IKEA app",
+          "web": "Give it a try"
+        },
+        "title": "Mix and match holiday essentials"
+      },
+      "rooms": {
+        "cards": {
+          "0": {
+            "alt": "Virtual living space with IKEA holiday decor, featuring two armchairs, a sofa bed, a dining table with blue and red chairs, and a VINTERFINT Christmas tree by the window.",
+            "label": "Holiday warmth multi-use space"
+          },
+          "1": {
+            "alt": "Virtual dining space with a wooden table, chairs, and a patterned rug beside a modern kitchen. A decorated VINTERFINT Christmas tree stands in the corner against light blue walls and cabinets.",
+            "label": "Joyfully cozy dining space"
+          }
+        },
+        "title": "Put your spin on a furnished room"
+      },
+      "scanPromo": {
+        "alt": "A person holds a smartphone displaying a photographic room scan in IKEA Kreativ, with the real bedroom blurred and partially visible in the background.",
+        "body": "Take your holiday decorating to the next level. Scan your space with the IKEA App. Erase items you don't want and design a room you love.",
+        "cta": {
+          "mobile": "Try IKEA Kreativ in the IKEA app",
+          "web": "Get the IKEA app"
+        },
+        "title": "Scan your room for a perfect fit"
+      },
+      "seo": {
+        "description": "Deck the halls of your home with festive holiday decor using IKEA Kreativ — the virtual room designer that makes Christmas decorating fun, fast, and easy.",
+        "keywords": "Christmas decor,Christmas decorating ideas,Christmas decor ideas,Holiday decor,Holiday decorating ideas,Holiday shopping,Holiday decorating,Christmas decorations,Modern Christmas decor,Christmas home decor,Scandinavian Christmas decor",
+        "title": "Festive Holiday Decor & Cozy Christmas Decorating Ideas"
+      },
+      "social": {
+        "posts": {
+          "0": {
+            "alt": "A holiday bedroom design created with IKEA Kreativ, featuring a navy blue bed with a blue and white duvet set, green accent pillows, and a beige area rug. Three decorative wreaths hang above the headboard, framed by matching nightstands and wall lamps.",
+            "cta": {
+              "mobile": "Try this room",
+              "web": "Try this room"
+            },
+            "username": "@fun2bme"
+          },
+          "1": {
+            "alt": "A festive virtual playroom created with IKEA Kreativ, showcasing a green sectional sofa, black coffee table, and red patterned rug. Light wood wall paneling adds a warm backdrop for a Christmas tree, holiday wreath, and colorful children’s toys.",
+            "cta": {
+              "mobile": "Try this room",
+              "web": "Try this room"
+            },
+            "username": "@anudhagat"
+          },
+          "2": {
+            "alt": "A virtual holiday living room in IKEA Kreativ featuring a white sofa, lounge chair, and round wooden coffee table on a patterned rug with green wainscoting, wreath, and festive décor.",
+            "cta": {
+              "mobile": "Try this room",
+              "web": "Try this room"
+            },
+            "username": "@tonyrovello"
+          },
+          "3": {
+            "alt": "A virtual holiday dining room in IKEA Kreativ featuring red chairs, a white round table, and a black sideboard topped with Christmas décor.",
+            "cta": {
+              "mobile": "Try this room",
+              "web": "Try this room"
+            },
+            "username": "@pinatasbyd"
+          },
+          "4": {
+            "alt": "A virtual holiday-themed living space in IKEA Kreativ with green walls, a red sectional sofa, a desk area, and a Christmas tree. Black accents and festive décor create a cozy, modern setting for both work and celebration.",
+            "cta": {
+              "mobile": "Try this room",
+              "web": "Try this room"
+            },
+            "username": "@she_is_mor"
+          }
+        },
+        "subtitle": "‘Tis the season! Jump into these customer room designs, then change the look to fit your own holiday style. Show off your Kreativ-ity by sharing your project on Instagram. Use #IKEAKreativHolidays for a chance to be featured here.",
+        "title": "As seen on Instagram"
+      },
+      "tips": {
+        "cta": {
+          "mobile": "Keep reading",
+          "web": "Keep reading"
+        },
+        "firstCard": {
+          "alt": "Holiday dining room with a table and mismatched chairs. Right: Virtual holiday dining room in IKEA Kreativ with a table, chairs, and a patterned rug, surrounded by blue kitchen cabinets.",
+          "body": "If you really want to liven up your holiday dinner party, use different chairs around the table. While taking a break from matchy-matchy furniture sets can be daunting, boldly consider a few options in a variety of colors, materials, and silhouettes for a look that’s both interesting and bursting with personality.",
+          "title": "Mix up your dining chairs"
+        },
+        "secondCard": {
+          "alt": "Sofa bed unfolded with blue and white checkered bedding. Right: Virtual holiday living room in IKEA Kreativ with a sofa bed and armchairs on a patterned rug, with a Christmas tree by the window.",
+          "body": "No guest room? No problem. Toss out that old air mattress, and get a stylish sofa that quickly and easily transforms into a bed. Once you find the perfect look and fit for your space, take your hosting skills and sleeper sofa to the next level with a set of plush pillows and cozy linens.",
+          "title": "Invest in a sofa that offers more than meets the eye"
+        },
+        "title": "Design tips"
+      }
+    }
+  }
+}

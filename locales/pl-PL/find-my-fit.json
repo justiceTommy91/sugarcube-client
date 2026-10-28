@@ -1,0 +1,134 @@
+{
+  "find-my-fit": {
+    "actions": {
+      "takePhoto": "Zrób zdjęcie (Take a photo)",
+      "uploadPhoto": "Prześlij zdjęcie (upload)"
+    },
+    "chooseSample": {
+      "scene_0": "Kącik do relaksu",
+      "scene_1": "Nastrojowy kącik",
+      "title": "Wybierz przykładową przestrzeń, aby wypróbować narzędzie"
+    },
+    "csat": {
+      "bad": "Źle",
+      "cancel": "Anuluj",
+      "describeIt": "Powiedz nam więcej",
+      "dissatisfied": "Niezadowolony",
+      "good": "Dobrze",
+      "goodOrBad": "Dziękujemy! Chcielibyśmy dowiedzieć się, dlaczego tak uważasz. Co szczególnie zapadło ci w pamięć, pozytywnie lub negatywnie?",
+      "neutral": "Neutralne (beżowe)",
+      "privacyText": "Aby chronić swoją prywatność, nie podawaj danych osobowych (np. adresu e-mail czy numeru telefonu).",
+      "ratingDescription": "Twoja informacja zwrotna pomoże nam poprawić jakość obsługi.",
+      "satisfied": "Zadowolony / zadowolona",
+      "submit": "Prześlij odpowiedź",
+      "title": "Jakie są twoje doświadczenia?"
+    },
+    "hero": {
+      "imageAlt": "Półki i regały",
+      "subtitle": "Dodaj zdjęcie, aby uzyskać rekomendacje.",
+      "title": "Znajdź rozwiązanie do przechowywania, które pasuje do twojej przestrzeni"
+    },
+    "landing": {
+      "actions": {
+        "addPhoto": "Dodaj zdjęcie",
+        "takePhoto": "Zrób zdjęcie (Take a photo)",
+        "trySampleSpace": "Wypróbuj przykładową przestrzeń",
+        "uploadPhoto": "Prześlij zdjęcie (upload)"
+      },
+      "comingSoon": {
+        "appStoreBadgeAlt": "Pobierz w sklepie App Store",
+        "designOnDesktop": "Projektowanie na komputerze stacjonarnym",
+        "getApp": "Pobierz aplikację IKEA, aby zaprojektować przestrzeń",
+        "googlePlayBadgeAlt": "Pobierz w Google Play",
+        "kreativLink": "IKEA Kreativ link",
+        "linkCopied": "Link został skopiowany",
+        "title": "Ta funkcja jest już w drodze!"
+      },
+      "features": {
+        "compare": {
+          "title": "Przesuń, aby szybko porównać opcje"
+        },
+        "intro": {
+          "title": "Zakupy rozwiązań do przechowywania z Find My Fit to bułka z masłem"
+        },
+        "save": {
+          "title": "Ulubione produkty i znalezienie „tego jedynego“"
+        },
+        "setArea": {
+          "title": "Narysuj obszar docelowy"
+        }
+      },
+      "hero": {
+        "genericCategory": "przechowywanie",
+        "imageAlt": "Obrazy przedstawiające produkty do przechowywania",
+        "privacyNote": "Nie przesyłaj zdjęć zawierających osoby, dane osobowe lub rzeczy osobiste. Dowiedz się więcej o naszej <1>Polityce prywatności</1>.",
+        "subtitle": "Użyj zdjęcia i przejrzyj style {{subject}} aby dopasować je do konkretnego obszaru",
+        "title": "Znajdź rozwiązanie do przechowywania, które pasuje do twojej przestrzeni",
+        "videoAlt": "Demo funkcji „Znajdź moje dopasowanie“"
+      },
+      "page": {
+        "description": "Prześlij zdjęcie, aby kupić regał, który oglądałeś, i uzyskać odpowiedni wygląd i dopasowanie bez zgadywania.",
+        "title": "Znajdź mój rozmiar"
+      },
+      "sampleSpaces": {
+        "error": "Coś poszło nie tak. Spróbuj ponownie.",
+        "title": "Wybierz przykładową przestrzeń"
+      }
+    },
+    "loginPrompt": {
+      "body": "Aby uzyskać rekomendacje dotyczące przechowywania dla swojej przestrzeni, zaloguj się lub utwórz bezpłatne konto IKEA.",
+      "logIn": "Zaloguj się",
+      "signUp": "Zapisz się na listę oczekujących",
+      "title": "Zaloguj się, aby przesłać zdjęcie"
+    },
+    "page": {
+      "description": "Znajdź idealne rozwiązanie do swojego domu z IKEA",
+      "title": "Znajdź mój rozmiar"
+    },
+    "toasts": {
+      "unableToFavorite": "Przepraszamy, ale nie udało się dodać produktu do listy."
+    },
+    "viewer": {
+      "accessibilityDescription": "Narzędzie „Znajdź moje dopasowanie“ wykorzystuje zdjęcie twojej przestrzeni, aby polecić produkty IKEA, które pasują do wybranego obszaru. Rysowanie i interakcja wizualna mogą stanowić wyzwanie dla osób z zaburzeniami widzenia lub słabym wzrokiem. Szczegóły produktu, ceny i działania zakupowe są w pełni dostępne po wyświetleniu wyników.",
+      "addToBag": "Dodaj do koszyka",
+      "adjustHeader": "Dostosuj obszar wyszukiwania",
+      "clearDrawing": "Rysunek bez cieniowania",
+      "confirmDimension": "Potwierdź wymiary",
+      "continue": "Kontynuuj",
+      "continueAriaLabel": "Przejdź do następnego kroku",
+      "decreaseDimension": "Zmniejsz wymiar",
+      "dimDepth": "Głębokość",
+      "dimHeight": "Wysokość",
+      "dimWidth": "Szerokość",
+      "done": "Gotowe",
+      "doneAriaLabel": "Zakończono edycję",
+      "drawFocusArea": "Narysuj obszar, na którym chcesz się skupić",
+      "drawingHeader": "Gdzie chcesz umieścić swoje rozwiązanie do przechowywania?",
+      "editArea": "Edytuj obszar",
+      "fewResultsToast": "Spróbuj zmienić rozmiar obszaru wyszukiwania, aby uzyskać więcej wyników.",
+      "goBack": "Przejdź wstecz",
+      "goToImage": "Przejdź do obrazu {{index}}",
+      "increaseDimension": "Zwiększ wymiar",
+      "magicEraser": "Gąbka do czyszczenia",
+      "noResults": "Nie znaleziono produktów dla tej przestrzeni.",
+      "noResultsButton": "Nie znaleziono wyników",
+      "noResultsTitle": "Nie znaleziono wyników",
+      "removedFromFavorites": "Usunięto z ulubionych",
+      "removeFavorite": "Usuń z ulubionych",
+      "retrySearch": "Spróbuj ponownie",
+      "savedToFavorites": "Zapisano w ulubionych",
+      "saveFavorite": "Zapisz w ulubionych",
+      "search": "Szukaj",
+      "searchError": "Nie znaleziono pasujących produktów. Spróbuj narysować inny obszar.",
+      "searchErrorToast": "Coś poszło nie tak. Spróbuj ponownie.",
+      "searching": "Wyszukiwanie...",
+      "seeAllResults": "Zobacz wszystkie wyniki",
+      "showMoreDetails": "Pokaż więcej szczegółów",
+      "swipeForMore": "Przesuń, aby zobaczyć więcej",
+      "tapToSelect": "Stuknij, aby wybrać element",
+      "tryAgain": "Spróbuj ponownie",
+      "viewResults_one": "Wyświetl {{count}} wyników",
+      "viewResults_other": "Wyświetl {{count}} wyników"
+    }
+  }
+}

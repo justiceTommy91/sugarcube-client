@@ -1,0 +1,29 @@
+@import 'style/type';
+@import 'style/colors';
+
+.NoResults {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    max-width: 18rem;
+    color: color(default, foreground);
+    text-align: center;
+
+    .NoResults__image {
+        max-width: 10.3125rem;
+        height: auto;
+    }
+
+    .NoResults__headline {
+        @include heading-md;
+        padding: 1.5rem 0 0.5rem 0;
+    }
+
+    .NoResults__message {
+        @include body-sm;
+        display: flex;
+        flex-direction: column;
+        gap: 1.125rem;
+    }
+}

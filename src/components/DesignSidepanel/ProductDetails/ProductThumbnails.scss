@@ -1,0 +1,86 @@
+@import 'style/colors';
+
+.ProductThumbnails {
+    .ProductThumbnails__controls {
+        position: relative;
+        margin-bottom: 0.25rem;
+    }
+
+    .ProductThumbnails__mainImageButton {
+        border: none;
+        padding: 0;
+        background: transparent;
+        cursor: pointer;
+        display: block;
+
+        &:hover img {
+            opacity: 0.9;
+        }
+
+        &:focus-visible {
+            outline: 2px solid color(brand, secondary);
+            outline-offset: 2px;
+        }
+    }
+
+    .ProductThumbnails__prevButton,
+    .ProductThumbnails__nextButton {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        border: 1px solid color(default, border);
+        background: color(default, background);
+        z-index: 1;
+    }
+
+    .ProductThumbnails__prevButton {
+        left: 0.5rem;
+    }
+
+    .ProductThumbnails__nextButton {
+        right: 0.5rem;
+    }
+
+    .ProductThumbnails__thumbnailPickersWrapper {
+        overflow: hidden;
+    }
+
+    .ProductThumbnails__thumbnailPickers {
+        list-style: none;
+        display: flex;
+        gap: 2px;
+        inline-size: fit-content;
+    }
+
+    [role='tab'] {
+        display: block;
+        padding-block-end: 1px;
+        border-block-end: 4px solid transparent;
+
+        &[aria-selected='true'],
+        &:focus-visible {
+            border-color: color(brand, secondary);
+            outline: none;
+        }
+    }
+
+    .ProductThumbnails__thumbnailPickerImage {
+        display: block;
+        width: 3.25rem;
+        height: 3.25rem;
+        // overrides default max-width: 100% styling from .image (since this now uses <Image />)
+        max-width: unset;
+    }
+
+    &:not(.ProductThumbnails_isTransitioning) {
+        [role='tab']:hover {
+            border-color: color(brand, primary);
+        }
+    }
+
+    @media (prefers-reduced-motion: no-preference) {
+        .ProductThumbnails__thumbnailPickers {
+            transition: all 300ms ease-in-out;
+        }
+    }
+}

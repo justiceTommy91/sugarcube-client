@@ -1,0 +1,42 @@
+@import 'style/colors';
+@import 'style/type';
+@import 'style/zed';
+
+.PreviewLoading {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: color(modal, overlay);
+    z-index: zed(fullPageLoader);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .loadingContentContainer {
+        width: 25rem;
+        height: 15rem;
+        background-color: color(default, background);
+        border-radius: 0.5rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        padding: 2.25rem;
+        text-align: center;
+
+        h4 {
+            margin-bottom: 1.25rem;
+        }
+
+        .ballContainer {
+            margin-top: 2.25rem;
+
+            .BouncingBallLoader {
+                position: relative;
+                bottom: -1rem;
+            }
+        }
+    }
+}

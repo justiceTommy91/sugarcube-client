@@ -1,0 +1,134 @@
+{
+  "find-my-fit": {
+    "actions": {
+      "takePhoto": "Készíts egy fényképet",
+      "uploadPhoto": "Tölts fel egy fényképet"
+    },
+    "chooseSample": {
+      "scene_0": "Pihenősarok",
+      "scene_1": "Hangulatos sarok",
+      "title": "Válassz egy mintateret, hogy kipróbáld!"
+    },
+    "csat": {
+      "bad": "Rossz",
+      "cancel": "Mégse",
+      "describeIt": "Kérjük, mesélj nekünk többet!",
+      "dissatisfied": "Elégedetlen",
+      "good": "Jó",
+      "goodOrBad": "Köszönjük! Nagyon kíváncsiak vagyunk, miért ezt választottad. Mi tűnt ki a tapasztalatodban, akár jó, akár rossz?",
+      "neutral": "Semleges",
+      "privacyText": "Az adataid védelme érdekében arra kérünk, ne adj meg személyes információkat (pl. e-mail-cím, telefonszám).",
+      "ratingDescription": "Visszajelzésed segít nekünk abban, hogy még jobbá tegyük az élményt.",
+      "satisfied": "Elégedett",
+      "submit": "Beküldés",
+      "title": "Milyen a tapasztalatod?"
+    },
+    "hero": {
+      "imageAlt": "Polcok",
+      "subtitle": "Adj hozzá egy fényképet, hogy ajánlásokat kapj.",
+      "title": "Találj olyan tárolót, ami illik az otthonodhoz!"
+    },
+    "landing": {
+      "actions": {
+        "addPhoto": "Fotó hozzáadása",
+        "takePhoto": "Készíts egy fényképet",
+        "trySampleSpace": "Mintaszoba kipróbálása",
+        "uploadPhoto": "Tölts fel egy fényképet"
+      },
+      "comingSoon": {
+        "appStoreBadgeAlt": "Letöltés az App Store-ból",
+        "designOnDesktop": "Tervezés asztali számítógépen",
+        "getApp": "Töltsd le az IKEA alkalmazást, hogy megtervezhesd a tered!",
+        "googlePlayBadgeAlt": "Szerezd meg a Google Playen",
+        "kreativLink": "IKEA Kreativ link",
+        "linkCopied": "Hivatkozás másolva",
+        "title": "Ez a funkció hamarosan elérhető lesz!"
+      },
+      "features": {
+        "compare": {
+          "title": "Húzd végig az ujjad, hogy gyorsan összehasonlíthasd a lehetőségeket"
+        },
+        "intro": {
+          "title": "A tárolás vásárlása egyszerű a Find My Fit segítségével"
+        },
+        "save": {
+          "title": "Kedvenc termékek és megtalálni „az igazit”"
+        },
+        "setArea": {
+          "title": "Rajzold meg a célterületet"
+        }
+      },
+      "hero": {
+        "genericCategory": "tárolás",
+        "imageAlt": "Tárolóeszközök képei",
+        "privacyNote": "Arra kérünk, ne tölts fel olyan képeket, amiken emberek, személyes adatok vagy magánjellegű tárgyak vannak. Részletek az <1>adatvédelmi szabályzatunkban</1>.",
+        "subtitle": "Használj egy fényképet, és lapozz végig a {{subject}} stílusai között, hogy megtaláld a hozzád illőt az adott helyiségbe.",
+        "title": "Találj olyan tárolót, ami illik az otthonodhoz!",
+        "videoAlt": "A „Találd meg a méreted!” funkció bemutatása"
+      },
+      "page": {
+        "description": "Tölts fel egy fotót, hogy könnyedén megtaláld a számodra megfelelő polcrendszert – így biztosan passzol majd az otthonodba, és nem kell találgatnod a stílust vagy a méretet.",
+        "title": "Találd meg a hozzád illőt"
+      },
+      "sampleSpaces": {
+        "error": "Hiba történt. Próbálkozz újra.",
+        "title": "Mintaszoba kiválasztása"
+      }
+    },
+    "loginPrompt": {
+      "body": "Ha szeretnél tárolási javaslatokat kapni az otthonodhoz, jelentkezz be, vagy hozz létre egy ingyenes IKEA fiókot.",
+      "logIn": "Bejelentkezés",
+      "signUp": "Regisztráció",
+      "title": "Jelentkezz be a fénykép feltöltéséhez"
+    },
+    "page": {
+      "description": "Találd meg az otthonodhoz tökéletes megoldást az IKEA-val!",
+      "title": "Találd meg a hozzád illőt"
+    },
+    "toasts": {
+      "unableToFavorite": "Sajnáljuk, de nem sikerült hozzáadni a terméket a listához."
+    },
+    "viewer": {
+      "accessibilityDescription": "A Find My Fit egy fotó alapján ajánl IKEA termékeket, amik illenek az otthonod kiválasztott részébe. A rajzolás és a vizuális interakció nehézséget okozhat, ha látássérült vagy gyengénlátó vagy. Amint megjelennek a találatok, a termékadatok, az árak és a vásárlási lehetőségek is teljes mértékben hozzáférhetők lesznek számodra.",
+      "addToBag": "Kosárba teszem",
+      "adjustHeader": "Módosítsd a keresési területet",
+      "clearDrawing": "Átlátható rajz",
+      "confirmDimension": "Méretek megerősítése",
+      "continue": "Folytatás",
+      "continueAriaLabel": "Folytatás a következő lépésre",
+      "decreaseDimension": "Csökkentsd a méretet",
+      "dimDepth": "Mélység",
+      "dimHeight": "Magasság",
+      "dimWidth": "Szélesség",
+      "done": "Kész",
+      "doneAriaLabel": "Szerkesztés kész",
+      "drawFocusArea": "Rajzold meg a kívánt fókuszterületet",
+      "drawingHeader": "Hová szeretnéd a tárolódat?",
+      "editArea": "Szerkesztési terület",
+      "fewResultsToast": "Próbáld meg nagyobbra állítani a keresési területet, hogy több találatot kapj.",
+      "goBack": "Menj vissza",
+      "goToImage": "Ugrás a képre {{index}}",
+      "increaseDimension": "Növeld a méretet",
+      "magicEraser": "Varázsszivacs",
+      "noResults": "Nem találtunk termékeket ehhez a helyiséghez.",
+      "noResultsButton": "Nincs találat",
+      "noResultsTitle": "Nincs találat",
+      "removedFromFavorites": "Eltávolítva a kedvencek közül",
+      "removeFavorite": "Eltávolítás a kedvencek közül",
+      "retrySearch": "Próbáld újra",
+      "savedToFavorites": "Kedvencekhez mentve",
+      "saveFavorite": "Mentés a kedvencek közé",
+      "search": "Keresés",
+      "searchError": "Nincs találat a keresett termékekre. Próbálj meg egy másik területet kijelölni.",
+      "searchErrorToast": "Valami hiba történt. Kérjük, próbálkozz újra.",
+      "searching": "Keresgél...",
+      "seeAllResults": "Összes találat megtekintése",
+      "showMoreDetails": "További részletek megjelenítése",
+      "swipeForMore": "Lapozz tovább még többért",
+      "tapToSelect": "Érintsd meg a kiválasztáshoz",
+      "tryAgain": "Próbáld újra",
+      "viewResults_one": "Eredmény megtekintése",
+      "viewResults_other": "Eredmények megtekintése"
+    }
+  }
+}

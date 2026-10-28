@@ -1,0 +1,24 @@
+@import 'style/colors';
+
+.ViewerLayout {
+    // Shrinks to fit its canvas — sibling BottomArea gets the remaining flex space.
+    flex-shrink: 0;
+    width: 100%;
+
+    &__canvas {
+        // Letterbox background + flex-centers the native-AR canvas.
+        position: relative;
+        width: 100%;
+        background-color: color(default, backgroundLightGray);
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &__canvas-native {
+        // width/height are explicit px values from ViewerLayout.tsx — no CSS chains.
+        position: relative;
+        flex-shrink: 0;
+    }
+}

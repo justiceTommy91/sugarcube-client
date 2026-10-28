@@ -1,0 +1,100 @@
+/**
+ * Cross-Browser Drag & Scroll CSS Solution
+ * 
+ * This CSS class enables reliable drag-and-drop functionality while preserving
+ * vertical scrolling capability across all browsers, including Firefox.
+ * 
+ * Key Principles:
+ * 1. Start with touch-action: pan-y (allows vertical scrolling)
+ * 2. JavaScript dynamically switches to touch-action: none for horizontal drags
+ * 3. Button elements get explicit touch-action: pan-y to ensure consistent behavior
+ */
+.seamless-drag-enabled {
+    cursor: grab;
+    
+    // Allow text selection by default (better UX)
+    user-select: text;
+    -webkit-user-select: text;
+    -moz-user-select: text;
+    -ms-user-select: text;
+
+    // Disable browser touch behaviors that interfere with drag detection
+    -webkit-touch-callout: none;        // Disable context menu on iOS
+    -webkit-tap-highlight-color: transparent;  // Remove tap highlight
+
+    // CRITICAL: Initial touch-action allows vertical scrolling
+    // JavaScript will dynamically change this to 'none' when horizontal drag is detected
+    touch-action: pan-y;
+
+    // Ensure interaction events reach our JavaScript handlers
+    pointer-events: auto;
+
+    // Allow interaction with child elements (buttons, links, etc.)
+    * {
+        pointer-events: auto;
+    }
+
+    // FIREFOX TOUCH FIX: Explicit touch-action on buttons
+    // Firefox needs this explicit declaration to properly handle the dynamic
+    // touch-action changes from JavaScript. Without this, buttons can block
+    // both dragging and scrolling.
+    button {
+        touch-action: pan-y;
+    }
+
+    // Visual feedback for drag affordance
+    &:hover {
+        cursor: grab;
+    }
+}
+
+.seamless-drag-activated {
+    transform: scale(1.02);
+    opacity: 0.9;
+    transition: transform 0.1s ease, opacity 0.1s ease;
+    z-index: 1;
+
+    // Disable text selection only when dragging
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+
+        // CRITICAL: Disable pointer events on child elements during active drag
+    // This prevents buttons and other interactive elements from interfering with
+    // the drag operation once it has started. Without this, child elements can
+    // "steal" pointer events and break the drag gesture.
+    button,
+    .card-content,
+    img,
+    * {
+        pointer-events: none !important;
+    }
+}
+
+.seamless-drag-dragging {
+    transform: scale(0.98);
+    opacity: 0.7;
+    transition: transform 0.1s ease, opacity 0.1s ease;
+}
+
+// Prevent pointer events on ghost element
+.drag-preview-ghost {
+    pointer-events: none !important;
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+}
+
+// Targeted overscroll prevention during drag operations
+[data-drag-drop-container="true"].drag-active-no-overscroll {
+    overscroll-behavior: none !important;
+    overscroll-behavior-x: none !important;
+    overscroll-behavior-y: none !important;
+    -webkit-overflow-scrolling: auto !important;
+}
+
+[data-drag-drop-container="true"].drag-active-no-overscroll * {
+    overscroll-behavior: none !important;
+}

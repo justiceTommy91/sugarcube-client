@@ -1,0 +1,1 @@
+export { EditFurnitureTab } from './EditFurnitureTab'

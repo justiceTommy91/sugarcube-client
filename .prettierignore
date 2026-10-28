@@ -1,0 +1,32 @@
+# Dev files
+dist
+.DS_Store
+.vscode
+node_modules
+.env
+.cache
+package-lock.json
+coverage
+src/gatsby-types.d.ts
+
+# Our files
+.stylelintrc
+.eslintignore
+kubernetes
+static
+testAssets
+.buildkite
+public
+.prettierrc
+# Let Phrase handle locale formatting
+locales
+
+# Should enable
+plugins
+functions
+e2eTests
+src/lib
+src/Renderer
+src/Planner
+src/Renderer/WallSnap.js
+src/utils/stackablesUX.ts

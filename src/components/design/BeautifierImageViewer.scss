@@ -1,0 +1,355 @@
+@import 'style/colors';
+@import 'style/type';
+@import 'style/zed';
+
+.BeautifierImageViewer {
+    grid-area: content;
+    z-index: zed(modalBaseLayer);
+    position: absolute;
+    inset: 0;
+    background-color: $color-beautifier-preview-bg;
+    display: flex;
+    flex-direction: column;
+    padding: 2rem 0;
+}
+
+// --- Top bar ---
+
+.BeautifierImageViewer__top-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-shrink: 0;
+    padding: 0 2rem;
+}
+
+.BeautifierImageViewer__back-btn {
+    border-radius: 1.5rem;
+    border-color: transparent;
+    box-shadow: none;
+    background-color: $color-ikea-white;
+
+    &,
+    &:hover:not([disabled]),
+    &:focus-visible {
+        border: none;
+        box-shadow: none;
+    }
+
+    .btn__inner {
+        border: none;
+        border-radius: 1.5rem;
+        background-color: $color-ikea-white;
+        padding-left: 1rem;
+        padding-right: 1.25rem;
+    }
+}
+
+// Custom asset matches design spec (image + sparkles); not the Ingka “room” icon.
+.BeautifierImageViewer__generate-btn {
+    background-color: $color-ikea-white;
+    flex-shrink: 0;
+    border-radius: 1.25rem;
+
+    .btn__inner {
+        display: inline-flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 0.5rem;
+        border-radius: 1.25rem;
+        padding-left: 1.25rem;
+        padding-right: 1.25rem;
+
+        &::before {
+            content: '';
+            flex-shrink: 0;
+            width: 1.5rem;
+            height: 1.5rem;
+            background: url('#{$PATH-PREFIX}/images/icons/beautifier_generate_new.svg') center / contain no-repeat;
+        }
+    }
+}
+
+// --- Main image area ---
+
+.BeautifierImageViewer__main {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    min-height: 0;
+    padding: 1rem 0;
+}
+
+.BeautifierImageViewer__image-container {
+    max-width: 100%;
+    max-height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.BeautifierImageViewer__image {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+
+.BeautifierImageViewer__nav {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: opacity 0.15s ease;
+
+    img {
+        width: 2.5rem;
+        height: 2.5rem;
+    }
+
+    &:hover {
+        opacity: 0.8;
+    }
+
+    &--prev {
+        right: calc(100% - 3.5rem);
+    }
+
+    &--next {
+        left: calc(100% - 3.5rem);
+    }
+}
+
+.BeautifierImageViewer__disclaimer {
+    position: absolute;
+    top: -2.5rem;
+    right: 2rem;
+    z-index: 2;
+    max-width: 20.5rem;
+    display: flex;
+    align-items: stretch;
+    background-color: $color-ikea-white;
+    border-radius: 0.5rem;
+    box-shadow: 0 0.25rem 1rem rgba(0, 0, 0, 0.12);
+    overflow: hidden;
+}
+
+.BeautifierImageViewer__disclaimer-accent {
+    width: 0.25rem;
+    flex-shrink: 0;
+    background-color: $color-ikeablue;
+}
+
+.BeautifierImageViewer__disclaimer-inner {
+    flex: 1;
+    padding: 1rem 0.75rem 1rem 1rem;
+    min-width: 0;
+}
+
+.BeautifierImageViewer__disclaimer-header {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 0.5rem;
+}
+
+.BeautifierImageViewer__disclaimer-title-row {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.75rem;
+    min-width: 0;
+}
+
+.BeautifierImageViewer__disclaimer-info-icon {
+    flex-shrink: 0;
+    width: 1.25rem;
+    height: 1.25rem;
+    margin-top: 0.125rem;
+    color: $color-ikeablue;
+}
+
+.BeautifierImageViewer__disclaimer-title {
+    @include body-md;
+    font-weight: 700;
+    color: $color-black;
+    margin: 0;
+}
+
+.BeautifierImageViewer__disclaimer-close {
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 1.25rem;
+    padding: 0;
+    border: none;
+    border-radius: 0.25rem;
+    background: transparent;
+    cursor: pointer;
+    color: $color-black;
+
+    &:hover {
+        opacity: 0.7;
+    }
+
+    &:focus-visible {
+        outline: 2px solid $color-ikeablue;
+        outline-offset: 2px;
+    }
+
+    svg {
+        width: 1rem;
+        height: 1rem;
+    }
+}
+
+.BeautifierImageViewer__disclaimer-body {
+    @include body-sm;
+    color: $color-black;
+    margin: 0.75rem 1.75rem 1rem;
+}
+
+.BeautifierImageViewer__disclaimer-footer {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.75rem;
+    padding-right: 1.75rem;
+    padding-left: 1.75rem;
+}
+
+.BeautifierImageViewer__disclaimer-dont-show {
+    @include body-sm;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: $color-black;
+    cursor: pointer;
+}
+
+.BeautifierImageViewer__disclaimer-checkbox {
+    width: 1rem;
+    height: 1rem;
+    flex-shrink: 0;
+    margin: 0;
+    cursor: pointer;
+}
+
+.BeautifierImageViewer__disclaimer-understand {
+    align-self: flex-end;
+
+    .btn__inner {
+        padding-left: 1.25rem;
+        padding-right: 1.25rem;
+        border-radius: 1.25rem;
+        font-weight: 700;
+    }
+}
+
+// --- Bottom bar ---
+
+.BeautifierImageViewer__bottom-bar {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    flex-shrink: 0;
+    padding: 0 2rem;
+}
+
+.BeautifierImageViewer__thumbnails {
+    display: flex;
+    gap: 0.5rem;
+    overflow-x: auto;
+}
+
+.BeautifierImageViewer__thumbnail {
+    width: 5rem;
+    height: 5rem;
+    border-radius: 0.375rem;
+    overflow: hidden;
+    flex-shrink: 0;
+    cursor: pointer;
+    border: 0.5px solid $color-gray-500;
+    padding: 0;
+    background: none;
+    transition: border-color 0.15s ease;
+
+    &--active {
+        border: 2px solid $color-black;
+    }
+
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        display: block;
+    }
+}
+
+.BeautifierImageViewer__actions {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+.BeautifierImageViewer__delete-btn {
+    flex-shrink: 0;
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+    border: none;
+    box-shadow: none;
+    background-color: $color-ikea-white;
+
+    &,
+    &:hover:not([disabled]),
+    &:focus-visible {
+        border: none;
+        box-shadow: none;
+    }
+
+    .btn__inner {
+        border: none;
+        border-radius: 50%;
+        box-shadow: none;
+        background-color: $color-ikea-white;
+        min-height: auto;
+        min-width: auto;
+        width: 100%;
+        height: 100%;
+        padding: 0.5rem;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+.BeautifierImageViewer__download-btn {
+    border-radius: 1.5rem;
+
+    .btn__inner {
+        display: inline-flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 0.5rem;
+        border-radius: 1.5rem;
+        padding-left: 1.25rem;
+        padding-right: 1.25rem;
+
+        &::before {
+            content: '';
+            flex-shrink: 0;
+            width: 1.5rem;
+            height: 1.5rem;
+            background: url('#{$PATH-PREFIX}/images/icons/beautifier_download.svg') center / contain no-repeat;
+        }
+    }
+}

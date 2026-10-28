@@ -1,0 +1,28 @@
+---
+import FindMyFitUploadApp from '@astro-components/find-my-fit/FindMyFitUploadApp'
+import BaseLayout from '@layouts/BaseLayout.astro'
+import { generateLocaleStaticPaths, type LocalePageProps, type Translations } from '@lib/static-paths-utils'
+
+export async function getStaticPaths() {
+    return generateLocaleStaticPaths()
+}
+
+const { locale, translations } = Astro.props as LocalePageProps
+const { country, lang } = Astro.params
+const market = `${country}/${lang}`
+---
+
+<BaseLayout
+    locale={locale}
+    market={market}
+    title=""
+    description=""
+    allowSeo={false}
+    showHeader={false}
+    showFooter={false}
+    showConsentScripts={true}
+    showPricePackage={false}
+    showScripts={true}
+>
+    <FindMyFitUploadApp client:only="react" locale={locale} market={market} translations={translations as Translations} />
+</BaseLayout>

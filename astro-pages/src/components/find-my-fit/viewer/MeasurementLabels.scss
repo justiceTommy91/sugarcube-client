@@ -1,0 +1,16 @@
+@import 'style/zed';
+@import 'style/colors';
+
+.FmfViewer__product-dimension {
+    border-radius: 0.25rem;
+    padding: 0.25rem 0.3rem;
+    font-size: 0.75rem;
+    line-height: 0.75rem;
+    color: color(default-invert, foreground);
+    position: absolute;
+    user-select: none;
+    z-index: zed(above);
+    width: max-content;
+    pointer-events: none;
+    background-color: color(actionPanel, background);
+}

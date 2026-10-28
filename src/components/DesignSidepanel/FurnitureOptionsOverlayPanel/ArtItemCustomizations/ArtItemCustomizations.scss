@@ -1,0 +1,22 @@
+@import 'style/colors';
+
+.ArtItemCustomizations {
+    button.accordion-item-header {
+        padding-inline: 1.5rem;
+    }
+
+    .ArtItemCustomizations__title {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        text-transform: capitalize;
+    }
+
+    .ArtItemCustomizations__optionGroups {
+        list-style: none;
+
+        & > li {
+            border-top: 1px solid color(default, border);
+        }
+    }
+}

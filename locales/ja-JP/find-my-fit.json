@@ -1,0 +1,134 @@
+{
+  "find-my-fit": {
+    "actions": {
+      "takePhoto": "写真を撮る",
+      "uploadPhoto": "写真をアップロード"
+    },
+    "chooseSample": {
+      "scene_0": "くつろぎのコーナー",
+      "scene_1": "ムーディーなコーナー",
+      "title": "サンプルスペースを選択して試す"
+    },
+    "csat": {
+      "bad": "悪い",
+      "cancel": "キャンセル",
+      "describeIt": "詳しく教えてください",
+      "dissatisfied": "不満",
+      "good": "よい",
+      "goodOrBad": "ありがとう！それを選んだ理由を教えてください。その体験の中で際立った点は何ですか？ 良かった点、または悪かった点は何ですか？",
+      "neutral": "ニュートラル",
+      "privacyText": "プライバシーを守るために、メールアドレスや電話番号などの個人情報はご入力にならないようお願いいたします。",
+      "ratingDescription": "あなたのフィードバックは、私たちが体験を改善するのに役立ちます。",
+      "satisfied": "満足",
+      "submit": "送信する",
+      "title": "どのような経験をしてきましたか？"
+    },
+    "hero": {
+      "imageAlt": "棚",
+      "subtitle": "写真を追加すると、おすすめが表示されます。",
+      "title": "スペースに合った収納を見つけましょう"
+    },
+    "landing": {
+      "actions": {
+        "addPhoto": "写真を追加する",
+        "takePhoto": "写真を撮る",
+        "trySampleSpace": "サンプルスペースをお試しください",
+        "uploadPhoto": "写真をアップロード"
+      },
+      "comingSoon": {
+        "appStoreBadgeAlt": "アプリ Storeでダウンロード",
+        "designOnDesktop": "デスクトップでデザイン",
+        "getApp": "イケアアプリでスペースをデザイン",
+        "googlePlayBadgeAlt": "Google Playで入手",
+        "kreativLink": "IKEA Kreativリンク",
+        "linkCopied": "リンクをコピーしました",
+        "title": "この機能はまもなくご利用いただけるようになります。"
+      },
+      "features": {
+        "compare": {
+          "title": "スワイプしてオプションをすばやく比較"
+        },
+        "intro": {
+          "title": "「Find MyFit」で収納を簡単にショッピング"
+        },
+        "save": {
+          "title": "お気に入りのアイテムと「自分だけ」を見つける"
+        },
+        "setArea": {
+          "title": "ターゲットエリアを描きます"
+        }
+      },
+      "hero": {
+        "genericCategory": "収納",
+        "imageAlt": "収納アイテムの画像",
+        "privacyNote": "人物や個人情報、私物が写っている画像のアップロードはご遠慮ください。詳しくは、<1>プライバシーポリシー</1>をご覧ください。",
+        "subtitle": "写真を使用して、さまざまなスタイルの {{subject}} 特定のエリアに合わせて",
+        "title": "スペースに合った収納を見つけましょう",
+        "videoAlt": "「Find MyFit」機能のデモンストレーション"
+      },
+      "page": {
+        "description": "探していた棚の写真をアップロードして、当て推量なしで適切な外観とフィット感を手に入れましょう。",
+        "title": "自分に合うものを探す"
+      },
+      "sampleSpaces": {
+        "error": "エラーが発生しました。もう一度お試しください。",
+        "title": "サンプルスペースを選んでください"
+      }
+    },
+    "loginPrompt": {
+      "body": "あなたのスペースのおすすめの収納を確認するには、サインインするか、無料のイケアアカウントを作成してください。",
+      "logIn": "ログイン",
+      "signUp": "登録する",
+      "title": "写真をアップロードするにはログインしてください"
+    },
+    "page": {
+      "description": "イケアであなたの家にぴったりの家具を見つけましょう",
+      "title": "自分に合うものを探す"
+    },
+    "toasts": {
+      "unableToFavorite": "申し訳ありませんが、商品をリストに追加できませんでした。"
+    },
+    "viewer": {
+      "accessibilityDescription": "「Find Myフィット」は、スペースの写真を使用して、選択したエリアに合うイケア製品をおすすめします。視覚障がいのある方やビジョンの方には、お絵描きや視覚的操作が難しい場合があります。結果が表示されると、商品の詳細、価格設定、ショッピングアクションに完全にアクセスできます。",
+      "addToBag": "バッグに入れる",
+      "adjustHeader": "検索エリアを調整する",
+      "clearDrawing": "明確な図面",
+      "confirmDimension": "寸法を確認する",
+      "continue": "続ける",
+      "continueAriaLabel": "次のステップに進む",
+      "decreaseDimension": "次元を減らす",
+      "dimDepth": "奥行き",
+      "dimHeight": "高さ",
+      "dimWidth": "幅",
+      "done": "完了",
+      "doneAriaLabel": "編集完了",
+      "drawFocusArea": "フォーカスエリアを描きます",
+      "drawingHeader": "どこに収納を置きたいですか？",
+      "editArea": "編集エリア",
+      "fewResultsToast": "より多くの結果を得るために、検索エリアのサイズを変更してみてください。",
+      "goBack": "戻る",
+      "goToImage": "画像に移動 {{index}}",
+      "increaseDimension": "次元を増やす",
+      "magicEraser": "マジック消しゴム",
+      "noResults": "このスペースの商品は見つかりませんでした。",
+      "noResultsButton": "結果が見つかりませんでした",
+      "noResultsTitle": "結果が見つかりませんでした",
+      "removedFromFavorites": "お気に入りから削除しました",
+      "removeFavorite": "お気に入りから削除",
+      "retrySearch": "もう一度試してください",
+      "savedToFavorites": "お気に入りに保存しました",
+      "saveFavorite": "お気に入りに保存",
+      "search": "検索",
+      "searchError": "一致する商品が見つかりませんでした。別のエリアを描いてみてください。",
+      "searchErrorToast": "エラーが発生しました。もう一度試してください。",
+      "searching": "検索中...",
+      "seeAllResults": "すべての結果を見る",
+      "showMoreDetails": "詳細を表示",
+      "swipeForMore": "スワイプしてもっと見る",
+      "tapToSelect": "タップしてアイテムを選択します",
+      "tryAgain": "もう一度試してください",
+      "viewResults_one": "見る {{count}} 結果",
+      "viewResults_other": "見る {{count}} 結果"
+    }
+  }
+}

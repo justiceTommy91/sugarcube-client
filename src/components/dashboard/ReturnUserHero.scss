@@ -1,0 +1,41 @@
+@import 'style/colors';
+@import 'style/type';
+@import 'style/screen';
+@import 'style/a11y';
+
+.ReturnUserHero {
+    background-image: url('#{$PATH-PREFIX}/images/graphics/dashboard/hero_logged_in.jpg');
+    background-position-y: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    .heroContainer {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 5.25rem;
+        max-width: 1216px;
+        margin: 0 auto;
+        position: relative;
+        overflow: hidden;
+        padding: 0 2rem;
+        min-height: 5.25rem;
+
+        .heroTitleLoggedIn {
+            @include heading-md;
+            font-weight: 700;
+            color: color(brand, secondaryText);
+
+            .paintBrushIcon {
+                margin-right: 0.875rem;
+            }
+        }
+        .heroTagline {
+            @include screen-reader-only;
+        }
+
+        @include mob {
+            background-size: cover;
+        }
+    }
+}

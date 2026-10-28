@@ -1,0 +1,162 @@
+@import 'style/colors';
+@import 'style/type';
+@import 'style/zed';
+
+.SharePanel {
+    z-index: zed(modalMidLayer) !important;
+
+    .modalSheets {
+        max-width: 31rem;
+
+        .modalHeader {
+            height: 2rem;
+            min-height: 2rem;
+            margin-top: 2rem;
+        }
+
+        .sharePanelInner {
+            width: 25rem;
+
+            .sharePanelHeader {
+                display: flex;
+                flex-direction: column;
+
+                h2 {
+                    flex: 1;
+                    @include heading-md;
+                    margin-bottom: 0.5rem;
+                }
+                p {
+                    @include body-md;
+                    color: color(default, subHeader);
+                    font-weight: 400;
+                    margin-bottom: 2.5rem;
+                }
+            }
+        }
+        .sharePermissionsContainter {
+            display: flex;
+            flex-direction: column;
+            ul.shareButtonsContainer {
+                display: flex;
+                gap: 1rem;
+                list-style: none;
+                margin: 0;
+                padding: 0;
+                &.isSaving {
+                    opacity: 0.5;
+                }
+                
+                li {
+                    display: contents;
+                }
+            }
+            .loader {
+                margin: 3rem 0;
+            }
+
+            .shareButton {
+                display: inline-flex;
+                align-items: center;
+
+                .Icon,
+                .mailIcon {
+                    padding: 1rem;
+                    border: solid 1px color(default, border);
+                    border-radius: 50%;
+                    &:hover {
+                        border: solid 1px color(form, inputBorder);
+                    }
+                }
+                .Icon.font {
+                    // checkmark icon: set height the same as the other icons
+                    height: 1.5rem;
+                }
+
+                &.copyLink {
+                    @include body-md;
+                    position: relative;
+                    .linkCopied {
+                        position: absolute;
+                        left: -2rem;
+                        top: 4rem;
+                        display: flex;
+                        width: 10rem;
+                        align-items: center;
+                        svg {
+                            border: none;
+                            border-radius: unset;
+                            padding: 0.25rem;
+                        }
+                    }
+                }
+            }
+            .sharePermissionsRadios {
+                legend {
+                    @include heading-sm;
+                    color: color(default, description);
+                }
+                margin-bottom: 2.5rem;
+                .sharePermissionDescription {
+                    @include body-sm;
+                    color: color(default, subHeader);
+                }
+                
+                // Fix radio button focus indicators
+                input[type="radio"] {
+                    &:focus-visible {
+                        outline: 2px solid color(default, foreground);
+                        outline-offset: 2px;
+                    }
+                }
+            }
+
+            .shareDescription {
+                label {
+                    @include heading-sm;
+                    color: color(default, description);
+                    margin-bottom: 0.5rem;
+                }
+                margin-bottom: 2.5rem;
+                textarea {
+                    @include body-md;
+                    font-family: inherit;
+                    color: color(form, inputBorder);
+                }
+            }
+
+            .shareButtonsTitle {
+                @include heading-sm;
+                color: color(default, description);
+                margin-bottom: 1rem;
+                &.isSaving {
+                    opacity: 0.5;
+                }
+            }
+
+            .fadeOut {
+                animation: fadeOutAnimation 2s ease;
+            }
+            @keyframes fadeOutAnimation {
+                0% {
+                    opacity: 1;
+                }
+                100% {
+                    opacity: 0;
+                }
+            }
+        }
+
+        .sharePanelMessage {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            .sharePanelHeader p {
+                margin-bottom: 1.5rem;
+            }
+            button .btn__inner {
+                width: fit-content;
+            }
+        }
+    }
+}
